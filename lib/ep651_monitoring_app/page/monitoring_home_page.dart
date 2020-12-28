@@ -9,6 +9,12 @@ class MonitoringHomePage extends StatefulWidget {
 class _MonitoringHomePageState extends State<MonitoringHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Stack(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
