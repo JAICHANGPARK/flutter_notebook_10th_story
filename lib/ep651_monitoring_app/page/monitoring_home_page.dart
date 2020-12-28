@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class MonitoringHomePage extends StatefulWidget {
@@ -27,12 +26,9 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
             top: 180,
             bottom: 0,
             child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white
-              ),
+              decoration: BoxDecoration(color: Colors.white),
             ),
           ),
-
         ],
       ),
     );
