@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MonitoringApp());
+import './ep651_monitoring_app/monitoring_app.dart';
+void main() {
+  runApp(MonitoringApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
