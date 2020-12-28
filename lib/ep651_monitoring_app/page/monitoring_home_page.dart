@@ -9,27 +9,30 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Positioned(
-            right: 0,
-            left: 0,
-            top: 0,
-            bottom: 0,
-            child: Container(
-              color: Colors.blueAccent,
+      body: SafeArea(
+        top: true,
+        child: Stack(
+          children: [
+            Positioned(
+              right: 0,
+              left: 0,
+              top: 0,
+              bottom: 0,
+              child: Container(
+                color: Colors.blueAccent,
+              ),
             ),
-          ),
-          Positioned(
-            right: 0,
-            left: 0,
-            top: 180,
-            bottom: 0,
-            child: Container(
-              decoration: BoxDecoration(color: Colors.white),
+            Positioned(
+              right: 0,
+              left: 0,
+              top: 180,
+              bottom: 0,
+              child: Container(
+                decoration: BoxDecoration(color: Colors.white),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
