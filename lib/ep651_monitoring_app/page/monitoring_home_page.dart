@@ -44,7 +44,9 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                         "Monitoring",
                         style: TextStyle(fontSize: 20),
                       ),
-                      SizedBox(height: 8,),
+                      SizedBox(
+                        height: 8,
+                      ),
                       GridView.count(
                         shrinkWrap: true,
                         crossAxisCount: 3,
@@ -72,7 +74,8 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 ],
                               ),
                             ),
-                          ), Card(
+                          ),
+                          Card(
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
@@ -94,7 +97,8 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 ],
                               ),
                             ),
-                          ) ,  Card(
+                          ),
+                          Card(
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
@@ -139,7 +143,8 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 ],
                               ),
                             ),
-                          ),  Card(
+                          ),
+                          Card(
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
@@ -161,7 +166,8 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 ],
                               ),
                             ),
-                          ),  Card(
+                          ),
+                          Card(
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
