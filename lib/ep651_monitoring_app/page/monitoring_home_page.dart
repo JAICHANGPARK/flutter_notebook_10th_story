@@ -81,7 +81,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 children: [
                                   Icon(Icons.whatshot),
                                   Text(
-                                    "90",
+                                    "0",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20,
@@ -103,7 +103,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 children: [
                                   Icon(Icons.whatshot),
                                   Text(
-                                    "90",
+                                    "3210",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20,
@@ -124,9 +124,9 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.whatshot),
+                                  Icon(Icons.list_alt),
                                   Text(
-                                    "90",
+                                    "89",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20,
@@ -146,9 +146,9 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.whatshot),
+                                  Icon(Icons.data_usage),
                                   Text(
-                                    "90",
+                                    "20",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20,
@@ -168,9 +168,9 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.whatshot),
+                                  Icon(Icons.chat),
                                   Text(
-                                    "90",
+                                    "46",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 20,
