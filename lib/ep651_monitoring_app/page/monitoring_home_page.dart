@@ -45,12 +45,13 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                         style: TextStyle(fontSize: 20),
                       ),
                       Container(
-                        height: 160,
                         decoration: BoxDecoration(
                           color: Colors.blue,
                         ),
                         child: GridView.count(
+                          shrinkWrap: true,
                           crossAxisCount: 3,
+                          childAspectRatio: 1.1,
                           children: [
                             Card(
                               child: Padding(
@@ -97,6 +98,73 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 ),
                               ),
                             ) ,  Card(
+                              child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Icon(Icons.whatshot),
+                                    Text(
+                                      "90",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Fire",
+                                      style: TextStyle(fontSize: 20),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Card(
+                              child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Icon(Icons.whatshot),
+                                    Text(
+                                      "90",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Fire",
+                                      style: TextStyle(fontSize: 20),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),  Card(
+                              child: Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Icon(Icons.whatshot),
+                                    Text(
+                                      "90",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Fire",
+                                      style: TextStyle(fontSize: 20),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),  Card(
                               child: Padding(
                                 padding: const EdgeInsets.all(12.0),
                                 child: Column(
