@@ -36,7 +36,16 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                     )),
                 child: SingleChildScrollView(
                   child: Column(
-                    children: [],
+                    children: [
+                      Text("Monitoring"),
+                      Container(
+                        height: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
