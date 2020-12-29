@@ -30,7 +30,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
               bottom: 0,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Color(0xfffafafa),
                     borderRadius: BorderRadius.only(
                       topRight: Radius.circular(16),
                       topLeft: Radius.circular(16),
