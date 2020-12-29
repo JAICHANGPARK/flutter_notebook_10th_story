@@ -51,12 +51,16 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                         child: GridView.count(crossAxisCount: 3,
                         children: [
                           Card(
-                            child: Column(
-                              children: [
-                                Icon(Icons.whatshot),
-                                Text("90"),
-                                Text("Fire")
-                              ],
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.whatshot),
+                                  Text("90"),
+                                  Text("Fire")
+                                ],
+                              ),
                             ),
                           )
                         ],),
