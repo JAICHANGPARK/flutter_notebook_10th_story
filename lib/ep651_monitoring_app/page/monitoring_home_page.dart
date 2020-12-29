@@ -85,8 +85,10 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.whatshot,
-                                    color: Colors.blueGrey[200],),
+                                  Icon(
+                                    Icons.whatshot,
+                                    color: Colors.blueGrey[200],
+                                  ),
                                   Text(
                                     "0",
                                     style: TextStyle(
@@ -109,8 +111,10 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.whatshot,
-                                    color: Colors.blueGrey[200],),
+                                  Icon(
+                                    Icons.whatshot,
+                                    color: Colors.blueGrey[200],
+                                  ),
                                   Text(
                                     "3210",
                                     style: TextStyle(
@@ -133,8 +137,10 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.list_alt,
-                                    color: Colors.blueGrey[200],),
+                                  Icon(
+                                    Icons.list_alt,
+                                    color: Colors.blueGrey[200],
+                                  ),
                                   Text(
                                     "89",
                                     style: TextStyle(
@@ -157,8 +163,10 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.data_usage,
-                                    color: Colors.blueGrey[200],),
+                                  Icon(
+                                    Icons.data_usage,
+                                    color: Colors.blueGrey[200],
+                                  ),
                                   Text(
                                     "20",
                                     style: TextStyle(
@@ -178,11 +186,13 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.chat,
-                                    color: Colors.blueGrey[200],),
+                                  Icon(
+                                    Icons.chat,
+                                    color: Colors.blueGrey[200],
+                                  ),
                                   Text(
                                     "46",
                                     style: TextStyle(
