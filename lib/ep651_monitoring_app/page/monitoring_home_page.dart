@@ -34,6 +34,11 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                       topRight: Radius.circular(16),
                       topLeft: Radius.circular(16),
                     )),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [],
+                  ),
+                ),
               ),
             ),
           ],
