@@ -210,6 +210,9 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                           )
                         ],
                       ),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Text("Fire inspection",
                         style: TextStyle(fontSize: 20),)
                     ],
