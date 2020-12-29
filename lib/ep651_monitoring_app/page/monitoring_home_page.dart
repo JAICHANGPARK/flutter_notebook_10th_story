@@ -54,7 +54,8 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                             child: Column(
                               children: [
                                 Icon(Icons.whatshot),
-                                Text("90")
+                                Text("90"),
+                                Text("")
                               ],
                             ),
                           )
