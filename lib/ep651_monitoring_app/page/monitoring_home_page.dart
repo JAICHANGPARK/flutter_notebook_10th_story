@@ -47,8 +47,18 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                         height: 160,
                         decoration: BoxDecoration(
                           color: Colors.blue,
-
                         ),
+                        child: GridView.count(crossAxisCount: 3,
+                        children: [
+                          Card(
+                            child: Column(
+                              children: [
+                                Icon(Icons.whatshot),
+                                Text("90")
+                              ],
+                            ),
+                          )
+                        ],),
                       ),
                     ],
                   ),
