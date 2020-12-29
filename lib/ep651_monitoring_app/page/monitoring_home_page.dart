@@ -213,18 +213,28 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                       SizedBox(
                         height: 16,
                       ),
-                      Text("Fire inspection",
-                        style: TextStyle(fontSize: 20),),
+                      Text(
+                        "Fire inspection",
+                        style: TextStyle(fontSize: 20),
+                      ),
                       Card(
-                        child: Column(
-                          children: [
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            children: [
                               Container(
-                                height: 64,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[100]
+                                height: 72,
+                                decoration: BoxDecoration(color: Colors.grey[100]),
+                                child: Row(
+                                  children: [
+                                    Column(
+                                      children: [],
+                                    )
+                                  ],
                                 ),
                               )
-                          ],
+                            ],
+                          ),
                         ),
                       )
                     ],
