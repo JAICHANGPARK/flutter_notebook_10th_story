@@ -229,7 +229,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 child: Row(
                                   children: [
                                     Column(
-                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
 
