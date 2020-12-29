@@ -44,7 +44,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                         fontSize: 20
                       ),),
                       Container(
-                        height: 120,
+                        height: 160,
                         decoration: BoxDecoration(
                           color: Colors.blue,
 
