@@ -28,7 +28,12 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
               top: 180,
               bottom: 0,
               child: Container(
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(16),
+                      topLeft: Radius.circular(16),
+                    )),
               ),
             ),
           ],
