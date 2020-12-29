@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MonitoringHomePage extends StatefulWidget {
@@ -34,10 +35,14 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                       topRight: Radius.circular(16),
                       topLeft: Radius.circular(16),
                     )),
+                padding: EdgeInsets.all(16),
                 child: SingleChildScrollView(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Monitoring"),
+                      Text("Monitoring", style: TextStyle(
+                        fontSize: 20
+                      ),),
                       Container(
                         height: 120,
                         decoration: BoxDecoration(
