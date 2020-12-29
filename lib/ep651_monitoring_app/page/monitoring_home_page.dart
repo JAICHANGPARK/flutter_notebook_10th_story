@@ -55,7 +55,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                               children: [
                                 Icon(Icons.whatshot),
                                 Text("90"),
-                                Text("")
+                                Text("Fire")
                               ],
                             ),
                           )
