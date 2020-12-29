@@ -59,7 +59,10 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.whatshot),
+                                  Icon(
+                                    Icons.whatshot,
+                                    color: Colors.blueGrey[200],
+                                  ),
                                   Text(
                                     "90",
                                     style: TextStyle(
