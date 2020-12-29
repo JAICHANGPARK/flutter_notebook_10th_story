@@ -214,7 +214,19 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                         height: 16,
                       ),
                       Text("Fire inspection",
-                        style: TextStyle(fontSize: 20),)
+                        style: TextStyle(fontSize: 20),),
+                      Card(
+                        child: Column(
+                          children: [
+                              Container(
+                                height: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100]
+                                ),
+                              )
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
