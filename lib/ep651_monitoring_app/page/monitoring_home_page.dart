@@ -225,6 +225,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                               Container(
                                 height: 72,
                                 decoration: BoxDecoration(color: Colors.grey[100]),
+                                padding: EdgeInsets.all(8),
                                 child: Row(
                                   children: [
                                     Column(
@@ -243,7 +244,15 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                         ),),
 
                                       ],
-                                    )
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: VerticalDivider(
+                                        color: Colors.black,
+                                        thickness: 2,
+                                      ),
+                                    ),
+
                                   ],
                                 ),
                               )
