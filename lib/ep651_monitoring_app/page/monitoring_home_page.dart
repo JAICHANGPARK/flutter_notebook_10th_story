@@ -52,13 +52,19 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                         children: [
                           Card(
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Icon(Icons.whatshot),
-                                  Text("90"),
-                                  Text("Fire")
+                                  Text("90", style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),),
+                                  Text("Fire",style: TextStyle(
+                                    fontSize: 20
+                                  ),)
                                 ],
                               ),
                             ),
