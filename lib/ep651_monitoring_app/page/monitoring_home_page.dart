@@ -227,22 +227,22 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 decoration: BoxDecoration(color: Colors.grey[100]),
                                 padding: EdgeInsets.all(8),
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Column(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-
-                                        Text("2132", style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold
-                                        ),),
-
-                                        Text("Sample", style: TextStyle(
+                                        Text(
+                                          "2132",
+                                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                        ),
+                                        Text(
+                                          "Sample",
+                                          style: TextStyle(
                                             fontSize: 18,
-
-                                        ),),
-
+                                          ),
+                                        ),
                                       ],
                                     ),
                                     Padding(
@@ -256,17 +256,16 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-
-                                        Text("2132", style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold
-                                        ),),
-
-                                        Text("Sample", style: TextStyle(
-                                          fontSize: 18,
-
-                                        ),),
-
+                                        Text(
+                                          "0",
+                                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                        ),
+                                        Text(
+                                          "Sample",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                     Padding(
@@ -280,20 +279,18 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-
-                                        Text("2132", style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold
-                                        ),),
-
-                                        Text("Sample", style: TextStyle(
-                                          fontSize: 18,
-
-                                        ),),
-
+                                        Text(
+                                          "38",
+                                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                        ),
+                                        Text(
+                                          "Sample",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                          ),
+                                        ),
                                       ],
                                     ),
-                                   
                                   ],
                                 ),
                               )
