@@ -228,7 +228,20 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 child: Row(
                                   children: [
                                     Column(
-                                      children: [],
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+
+                                        Text("2132", style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold
+                                        ),),
+
+                                        Text("Sample", style: TextStyle(
+                                            fontSize: 18,
+
+                                        ),),
+
+                                      ],
                                     )
                                   ],
                                 ),
