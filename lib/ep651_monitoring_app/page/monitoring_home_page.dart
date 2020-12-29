@@ -56,7 +56,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Icon(
@@ -82,7 +82,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Icon(Icons.whatshot,
@@ -106,7 +106,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Icon(Icons.whatshot,
@@ -130,7 +130,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Icon(Icons.list_alt,
@@ -154,7 +154,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                             child: Padding(
                               padding: const EdgeInsets.all(12.0),
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Icon(Icons.data_usage,
