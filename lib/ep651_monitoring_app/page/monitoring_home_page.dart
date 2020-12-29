@@ -246,10 +246,10 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                       ],
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
                                       child: VerticalDivider(
-                                        color: Colors.black,
-                                        thickness: 2,
+                                        color: Colors.grey,
+                                        thickness: 1.5,
                                       ),
                                     ),
 
