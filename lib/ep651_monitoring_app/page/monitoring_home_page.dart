@@ -20,7 +20,15 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
               top: 0,
               bottom: 0,
               child: Container(
-                color: Colors.blueAccent,
+
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(colors: [
+                     Colors.blueAccent,
+
+                  ]
+
+                  )
+                ),
               ),
             ),
             Positioned(
