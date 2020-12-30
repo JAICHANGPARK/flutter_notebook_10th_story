@@ -309,7 +309,10 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                           color: Colors.grey[100],
                                           borderRadius: BorderRadius.circular(4),
                                         ),
-                                        child: Icon(Icons.add_chart),
+                                        child: Icon(Icons.add_chart,
+                                          size: 20,
+                                          color: Colors.blue,
+                                        ),
                                       )
                                     ],
                                   );
