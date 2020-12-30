@@ -76,7 +76,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   ),
                                 ),
                                 Text(
-                                  "Network\nEvent",
+                                  "Site report",
                                   style: TextStyle(color: Colors.white,
                                       fontSize: 16),
                                 )
