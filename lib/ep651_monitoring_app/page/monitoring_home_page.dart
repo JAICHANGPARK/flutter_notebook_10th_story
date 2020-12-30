@@ -295,7 +295,13 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   ],
                                 ),
                               ),
-                              ListView.separated(itemBuilder: (context, index), separatorBuilder: (context, index){
+                              ListView.separated(itemBuilder: (context, index){
+                                return Row(
+                                  children: [
+
+                                  ],
+                                );
+                              }, separatorBuilder: (context, index){
                                 return Divider();
                               }, itemCount: 5)
                             ],
