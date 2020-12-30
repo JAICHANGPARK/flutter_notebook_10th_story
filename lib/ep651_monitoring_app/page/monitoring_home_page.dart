@@ -149,7 +149,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                     ),
                                   ),
                                   Text(
-                                    "Fire",
+                                    "Set",
                                     style: TextStyle(fontSize: 20),
                                   )
                                 ],
@@ -201,7 +201,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                     ),
                                   ),
                                   Text(
-                                    "Fire",
+                                    "Pending",
                                     style: TextStyle(fontSize: 20),
                                   )
                                 ],
