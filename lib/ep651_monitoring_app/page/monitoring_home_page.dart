@@ -40,7 +40,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       child: Container(
                         height: 100,
-                        color: Colors.grey,
+                      
                         child: Row(
                           children: [
                             Column(
@@ -51,7 +51,8 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   radius: 32,
                                   foregroundColor: Colors.blue,
                                   backgroundColor: Colors.white,
-                                  child: Icon(Icons.camera_alt_outlined),
+                                  child: Icon(Icons.camera_alt_outlined,
+                                  size: 38,),
                                 ),
                                 Text("Network Event", style: TextStyle(
                                   color: Colors.white
