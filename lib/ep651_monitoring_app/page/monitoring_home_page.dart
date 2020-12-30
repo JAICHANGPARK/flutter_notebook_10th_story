@@ -98,7 +98,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   ),
                                   Text(
                                     "Ongoing event",
-                                    style: TextStyle(fontSize: 20),
+                                    style: TextStyle(fontSize: 12),
                                   )
                                 ],
                               ),
@@ -123,8 +123,8 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                     ),
                                   ),
                                   Text(
-                                    "Fire",
-                                    style: TextStyle(fontSize: 20),
+                                    "Completed",
+                                    style: TextStyle(fontSize: 18),
                                   )
                                 ],
                               ),
