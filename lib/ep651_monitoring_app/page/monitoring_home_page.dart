@@ -37,10 +37,26 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
                       child: Container(
                         height: 100,
                         color: Colors.grey,
+                        child: Row(
+                          children: [
+                            Column(
+                              children: [
+                                CircleAvatar(
+                                  radius: 32,
+                                  foregroundColor: Colors.blue,
+                                  backgroundColor: Colors.white,
+                                ),
+                                Text("Network Event", style: TextStyle(
+                                  color: Colors.white
+                                ),)
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     )
                   ],
