@@ -41,7 +41,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Monitoring",
+                        "Todo Today",
                         style: TextStyle(fontSize: 20),
                       ),
                       SizedBox(
@@ -71,7 +71,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                     ),
                                   ),
                                   Text(
-                                    "Fire",
+                                    "Todo",
                                     style: TextStyle(fontSize: 20),
                                   )
                                 ],
@@ -97,7 +97,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                     ),
                                   ),
                                   Text(
-                                    "Fire",
+                                    "Ongoing event",
                                     style: TextStyle(fontSize: 20),
                                   )
                                 ],
