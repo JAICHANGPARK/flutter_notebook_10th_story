@@ -224,7 +224,8 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                             children: [
                               Container(
                                 height: 72,
-                                decoration: BoxDecoration(color: Colors.grey[100]),
+                                decoration: BoxDecoration(color: Colors.grey[100],
+                                borderRadius: BorderRadius.circular(8)),
                                 padding: EdgeInsets.all(8),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
