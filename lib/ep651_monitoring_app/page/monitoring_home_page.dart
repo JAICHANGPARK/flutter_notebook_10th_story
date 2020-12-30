@@ -44,11 +44,14 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                         child: Row(
                           children: [
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 CircleAvatar(
                                   radius: 32,
                                   foregroundColor: Colors.blue,
                                   backgroundColor: Colors.white,
+                                  child: Icon(Icons.camera_alt_outlined),
                                 ),
                                 Text("Network Event", style: TextStyle(
                                   color: Colors.white
