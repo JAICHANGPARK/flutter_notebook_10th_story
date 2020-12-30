@@ -217,6 +217,9 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                         "Fire inspection",
                         style: TextStyle(fontSize: 20),
                       ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Card(
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
@@ -314,9 +317,12 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                           color: Colors.blue,
                                         ),
                                       ),
-                                      Text("Completion rate", style: TextStyle(
-                                        fontSize: 16,
-                                      ),),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Text("Completion rate", style: TextStyle(
+                                          fontSize: 16,
+                                        ),),
+                                      ),
                                       Spacer(),
                                       Text("70%", style: TextStyle(
                                         fontWeight: FontWeight.bold,
