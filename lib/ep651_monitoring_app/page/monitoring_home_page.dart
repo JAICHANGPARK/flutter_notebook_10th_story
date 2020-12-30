@@ -20,15 +20,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
               top: 0,
               bottom: 0,
               child: Container(
-
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: [
-                     Colors.blueAccent,
-
-                  ]
-
-                  )
-                ),
+                decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.lightBlue, Colors.blueAccent])),
               ),
             ),
             Positioned(
@@ -235,8 +227,8 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                             children: [
                               Container(
                                 height: 72,
-                                decoration: BoxDecoration(color: Colors.grey[100],
-                                borderRadius: BorderRadius.circular(8)),
+                                decoration:
+                                    BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
                                 padding: EdgeInsets.all(8),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -308,37 +300,43 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 padding: const EdgeInsets.only(top: 16),
                                 child: ListView.separated(
                                     shrinkWrap: true,
-                                    itemBuilder: (context, index){
-                                  return Row(
-                                    children: [
-                                      Container(
-                                        height: 28,
-                                        width: 28,
-                                        decoration: BoxDecoration(
-                                          color: Colors.grey[100],
-                                          borderRadius: BorderRadius.circular(4),
-                                        ),
-                                        child: Icon(Icons.add_chart,
-                                          size: 20,
-                                          color: Colors.blue,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text("Completion rate", style: TextStyle(
-                                          fontSize: 16,
-                                        ),),
-                                      ),
-                                      Spacer(),
-                                      Text("70%", style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16
-                                      ),)
-                                    ],
-                                  );
-                                }, separatorBuilder: (context, index){
-                                  return Divider();
-                                }, itemCount: 5),
+                                    itemBuilder: (context, index) {
+                                      return Row(
+                                        children: [
+                                          Container(
+                                            height: 28,
+                                            width: 28,
+                                            decoration: BoxDecoration(
+                                              color: Colors.grey[100],
+                                              borderRadius: BorderRadius.circular(4),
+                                            ),
+                                            child: Icon(
+                                              Icons.add_chart,
+                                              size: 20,
+                                              color: Colors.blue,
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                              "Completion rate",
+                                              style: TextStyle(
+                                                fontSize: 16,
+                                              ),
+                                            ),
+                                          ),
+                                          Spacer(),
+                                          Text(
+                                            "70%",
+                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                          )
+                                        ],
+                                      );
+                                    },
+                                    separatorBuilder: (context, index) {
+                                      return Divider();
+                                    },
+                                    itemCount: 5),
                               )
                             ],
                           ),
