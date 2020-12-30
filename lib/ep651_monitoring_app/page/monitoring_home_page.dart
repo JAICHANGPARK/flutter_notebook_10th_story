@@ -56,7 +56,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   ),
                                 ),
                                 Text(
-                                  "Network\nEvent",
+                                  "Network Event",
                                   style: TextStyle(color: Colors.white,
                                   fontSize: 16),
                                 )
@@ -96,7 +96,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   ),
                                 ),
                                 Text(
-                                  "Network\nEvent",
+                                  "Risk",
                                   style: TextStyle(color: Colors.white,
                                       fontSize: 16),
                                 )
@@ -116,7 +116,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   ),
                                 ),
                                 Text(
-                                  "Network\nEvent",
+                                  "Laws",
                                   style: TextStyle(color: Colors.white,
                                       fontSize: 16),
                                 )
