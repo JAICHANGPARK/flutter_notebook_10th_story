@@ -58,8 +58,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 ),
                                 Text(
                                   "Network",
-                                  style: TextStyle(color: Colors.white,
-                                  fontSize: 16),
+                                  style: TextStyle(color: Colors.white, fontSize: 16),
                                 )
                               ],
                             ),
@@ -78,8 +77,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 ),
                                 Text(
                                   "Site report",
-                                  style: TextStyle(color: Colors.white,
-                                      fontSize: 16),
+                                  style: TextStyle(color: Colors.white, fontSize: 16),
                                 )
                               ],
                             ),
@@ -98,8 +96,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 ),
                                 Text(
                                   "Risk",
-                                  style: TextStyle(color: Colors.white,
-                                      fontSize: 16),
+                                  style: TextStyle(color: Colors.white, fontSize: 16),
                                 )
                               ],
                             ),
@@ -118,8 +115,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                 ),
                                 Text(
                                   "Laws",
-                                  style: TextStyle(color: Colors.white,
-                                      fontSize: 16),
+                                  style: TextStyle(color: Colors.white, fontSize: 16),
                                 )
                               ],
                             )
