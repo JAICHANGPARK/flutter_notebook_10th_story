@@ -303,12 +303,13 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   return Row(
                                     children: [
                                       Container(
-                                        height: 32,
-                                        width: 32,
+                                        height: 28,
+                                        width: 28,
                                         decoration: BoxDecoration(
                                           color: Colors.grey[100],
-                                          borderRadius: BorderRadius.circular(4)
+                                          borderRadius: BorderRadius.circular(4),
                                         ),
+                                        child: Icon(Icons.add_chart),
                                       )
                                     ],
                                   );
