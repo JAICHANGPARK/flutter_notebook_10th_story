@@ -295,7 +295,9 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   ],
                                 ),
                               ),
-                              ListView.separated(itemBuilder: (context, index){
+                              ListView.separated(
+                                  shrinkWrap: true,
+                                  itemBuilder: (context, index){
                                 return Row(
                                   children: [
                                     Container(
