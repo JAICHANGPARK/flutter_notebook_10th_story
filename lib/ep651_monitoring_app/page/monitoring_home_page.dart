@@ -313,7 +313,15 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                           size: 20,
                                           color: Colors.blue,
                                         ),
-                                      )
+                                      ),
+                                      Text("Completion rate", style: TextStyle(
+                                        fontSize: 16,
+                                      ),),
+                                      Spacer(),
+                                      Text("70%", style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16
+                                      ),)
                                     ],
                                   );
                                 }, separatorBuilder: (context, index){
