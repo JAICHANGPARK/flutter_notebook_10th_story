@@ -25,13 +25,23 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                     colors: [Colors.lightBlue, Colors.blueAccent],
                   ),
                 ),
+                padding: EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("To do today", style: TextStyle(
                       color: Colors.white,
                       fontSize: 21,
-                    ),)
+                    ),),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Container(
+                        height: 100,
+                        color: Colors.grey
+                        ,
+
+                      ),
+                    )
                   ],
                 ),
               ),
