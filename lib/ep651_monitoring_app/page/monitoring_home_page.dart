@@ -238,9 +238,9 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                                         ),
                                         Text(
-                                          "Sample",
+                                          "Delay Task",
                                           style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 14,
                                           ),
                                         ),
                                       ],
