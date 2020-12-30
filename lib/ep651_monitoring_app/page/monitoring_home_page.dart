@@ -39,8 +39,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       child: Container(
-                        height: 100,
-                      
+                        height: 110,
                         child: Row(
                           children: [
                             Column(
@@ -51,12 +50,76 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   radius: 32,
                                   foregroundColor: Colors.blue,
                                   backgroundColor: Colors.white,
-                                  child: Icon(Icons.camera_alt_outlined,
-                                  size: 38,),
+                                  child: Icon(
+                                    Icons.camera_alt_outlined,
+                                    size: 38,
+                                  ),
                                 ),
-                                Text("Network Event", style: TextStyle(
-                                  color: Colors.white
-                                ),)
+                                Text(
+                                  "Network\nEvent",
+                                  style: TextStyle(color: Colors.white,
+                                  fontSize: 16),
+                                )
+                              ],
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                CircleAvatar(
+                                  radius: 32,
+                                  foregroundColor: Colors.blue,
+                                  backgroundColor: Colors.white,
+                                  child: Icon(
+                                    Icons.camera_alt_outlined,
+                                    size: 38,
+                                  ),
+                                ),
+                                Text(
+                                  "Network\nEvent",
+                                  style: TextStyle(color: Colors.white,
+                                      fontSize: 16),
+                                )
+                              ],
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                CircleAvatar(
+                                  radius: 32,
+                                  foregroundColor: Colors.blue,
+                                  backgroundColor: Colors.white,
+                                  child: Icon(
+                                    Icons.camera_alt_outlined,
+                                    size: 38,
+                                  ),
+                                ),
+                                Text(
+                                  "Network\nEvent",
+                                  style: TextStyle(color: Colors.white,
+                                      fontSize: 16),
+                                )
+                              ],
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                CircleAvatar(
+                                  radius: 32,
+                                  foregroundColor: Colors.blue,
+                                  backgroundColor: Colors.white,
+                                  child: Icon(
+                                    Icons.camera_alt_outlined,
+                                    size: 38,
+                                  ),
+                                ),
+                                Text(
+                                  "Network\nEvent",
+                                  style: TextStyle(color: Colors.white,
+                                      fontSize: 16),
+                                )
                               ],
                             )
                           ],
