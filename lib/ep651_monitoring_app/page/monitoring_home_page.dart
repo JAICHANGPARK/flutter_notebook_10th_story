@@ -261,7 +261,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                                         ),
                                         Text(
-                                          "Sample",
+                                          "Duty",
                                           style: TextStyle(
                                             fontSize: 18,
                                           ),
@@ -284,7 +284,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                                         ),
                                         Text(
-                                          "Sample",
+                                          "Irregular",
                                           style: TextStyle(
                                             fontSize: 18,
                                           ),
