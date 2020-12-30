@@ -67,12 +67,12 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 CircleAvatar(
-                                  radius: 32,
+                                  radius: 28,
                                   foregroundColor: Colors.blue,
                                   backgroundColor: Colors.white,
                                   child: Icon(
                                     Icons.camera_alt_outlined,
-                                    size: 38,
+                                    size: 28,
                                   ),
                                 ),
                                 Text(
@@ -86,12 +86,12 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 CircleAvatar(
-                                  radius: 32,
+                                  radius: 28,
                                   foregroundColor: Colors.blue,
                                   backgroundColor: Colors.white,
                                   child: Icon(
                                     Icons.camera_alt_outlined,
-                                    size: 38,
+                                    size: 28,
                                   ),
                                 ),
                                 Text(
@@ -105,12 +105,12 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 CircleAvatar(
-                                  radius: 32,
+                                  radius: 28,
                                   foregroundColor: Colors.blue,
                                   backgroundColor: Colors.white,
                                   child: Icon(
                                     Icons.camera_alt_outlined,
-                                    size: 38,
+                                    size: 28,
                                   ),
                                 ),
                                 Text(
