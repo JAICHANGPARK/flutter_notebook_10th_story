@@ -41,6 +41,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                       child: Container(
                         height: 110,
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -56,7 +57,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   ),
                                 ),
                                 Text(
-                                  "Network Event",
+                                  "Network",
                                   style: TextStyle(color: Colors.white,
                                   fontSize: 16),
                                 )
