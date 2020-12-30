@@ -295,24 +295,27 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                   ],
                                 ),
                               ),
-                              ListView.separated(
-                                  shrinkWrap: true,
-                                  itemBuilder: (context, index){
-                                return Row(
-                                  children: [
-                                    Container(
-                                      height: 32,
-                                      width: 32,
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey[100],
-                                        borderRadius: BorderRadius.circular(4)
-                                      ),
-                                    )
-                                  ],
-                                );
-                              }, separatorBuilder: (context, index){
-                                return Divider();
-                              }, itemCount: 5)
+                              Padding(
+                                padding: const EdgeInsets.only(top: 16),
+                                child: ListView.separated(
+                                    shrinkWrap: true,
+                                    itemBuilder: (context, index){
+                                  return Row(
+                                    children: [
+                                      Container(
+                                        height: 32,
+                                        width: 32,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey[100],
+                                          borderRadius: BorderRadius.circular(4)
+                                        ),
+                                      )
+                                    ],
+                                  );
+                                }, separatorBuilder: (context, index){
+                                  return Divider();
+                                }, itemCount: 5),
+                              )
                             ],
                           ),
                         ),
