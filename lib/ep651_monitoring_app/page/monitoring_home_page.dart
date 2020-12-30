@@ -249,12 +249,11 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                         ),
                                       ],
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
-                                      child: VerticalDivider(
-                                        color: Colors.grey,
-                                        thickness: 1.5,
-                                      ),
+                                    VerticalDivider(
+                                      color: Colors.grey,
+                                      thickness: 1.5,
+                                      indent: 16,
+                                      endIndent: 16,
                                     ),
                                     Column(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -272,12 +271,11 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                                         ),
                                       ],
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
-                                      child: VerticalDivider(
-                                        color: Colors.grey,
-                                        thickness: 1.5,
-                                      ),
+                                    VerticalDivider(
+                                      color: Colors.grey,
+                                      thickness: 1.5,
+                                      indent: 16,
+                                      endIndent: 16,
                                     ),
                                     Column(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
