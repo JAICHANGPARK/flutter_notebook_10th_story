@@ -298,7 +298,14 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                               ListView.separated(itemBuilder: (context, index){
                                 return Row(
                                   children: [
-
+                                    Container(
+                                      height: 32,
+                                      width: 32,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[100],
+                                        borderRadius: BorderRadius.circular(4)
+                                      ),
+                                    )
                                   ],
                                 );
                               }, separatorBuilder: (context, index){
