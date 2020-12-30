@@ -20,7 +20,20 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
               top: 0,
               bottom: 0,
               child: Container(
-                decoration: BoxDecoration(gradient: LinearGradient(colors: [Colors.lightBlue, Colors.blueAccent])),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Colors.lightBlue, Colors.blueAccent],
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("To do today", style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 21,
+                    ),)
+                  ],
+                ),
               ),
             ),
             Positioned(
@@ -41,7 +54,7 @@ class _MonitoringHomePageState extends State<MonitoringHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Todo Today",
+                        "Todo",
                         style: TextStyle(fontSize: 20),
                       ),
                       SizedBox(
