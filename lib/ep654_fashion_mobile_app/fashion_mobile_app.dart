@@ -20,7 +20,34 @@ class FashionHomePage extends StatefulWidget {
 class _FashionHomePageState extends State<FashionHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+       body: Column(
+         children: [
+           Expanded(child: Placeholder())
+         ],
+       ),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
