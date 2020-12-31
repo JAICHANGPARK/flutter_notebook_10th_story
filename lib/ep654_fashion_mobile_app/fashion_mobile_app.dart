@@ -18,6 +18,7 @@ class FashionHomePage extends StatefulWidget {
 }
 
 class _FashionHomePageState extends State<FashionHomePage> {
+  int _homeIdx = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +37,12 @@ class _FashionHomePageState extends State<FashionHomePage> {
         showSelectedLabels: false,
         unselectedItemColor: Colors.grey,
         selectedItemColor: Colors.black,
+        currentIndex: _homeIdx,
+
         onTap: (homeIndex){
+          setState(() {
+            _homeIdx = homeIndex;
+          });
         },
         type: BottomNavigationBarType.fixed,
         items: [
