@@ -31,7 +31,22 @@ class _FashionHomePageState extends State<FashionHomePage> {
          ),
 
        ),
-      
+      bottomNavigationBar: BottomNavigationBar(
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home_outlined,
+          ),
+          label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.home_outlined,
+          ),
+              label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.home_outlined,
+          ),
+              label: ""),
+
+        ],
+      ),
     );
   }
 }
