@@ -27,7 +27,20 @@ class _FashionHomePageState extends State<FashionHomePage> {
            children: [
              Expanded(
                  flex: 2,
-                 child: Placeholder()),
+                 child: Container(
+                   child: TextField(
+
+                     decoration: InputDecoration(
+                       enabledBorder: OutlineInputBorder(
+                         borderSide: BorderSide(
+                           color: Colors.grey,
+                           width: 1.2
+                         )
+                       ),
+                       focusedBorder: OutlineInputBorder()
+                     ),
+                   ),
+                 )),
              Expanded(
                  flex: 3,
                  child: Placeholder()),
