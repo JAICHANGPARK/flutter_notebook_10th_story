@@ -23,7 +23,9 @@ class _FashionHomePageState extends State<FashionHomePage> {
     return Scaffold(
        body: Column(
          children: [
-           Expanded(child: Placeholder())
+           Expanded(child: Placeholder()),
+           Expanded(child: Placeholder()),
+           Expanded(child: Placeholder()),
          ],
        ),
     );
