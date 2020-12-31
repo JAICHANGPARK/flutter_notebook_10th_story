@@ -31,7 +31,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                   child: TextField(
                     cursorColor: Colors.black,
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.search),
+                      prefixIcon: Icon(Icons.search, color: Colors.grey,),
                       hintText: "Search Products",
                       enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.grey, width: 1.2)),
                       focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.grey, width: 1.2)),
