@@ -34,6 +34,8 @@ class _FashionHomePageState extends State<FashionHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
         showSelectedLabels: false,
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.black,
         onTap: (homeIndex){
         },
         type: BottomNavigationBarType.fixed,
