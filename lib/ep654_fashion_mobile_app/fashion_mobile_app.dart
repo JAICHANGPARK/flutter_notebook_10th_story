@@ -34,6 +34,9 @@ class _FashionHomePageState extends State<FashionHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
         showSelectedLabels: false,
+        onTap: (homeIndex){
+        },
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_outlined,
           ),
