@@ -25,9 +25,15 @@ class _FashionHomePageState extends State<FashionHomePage> {
        body: SafeArea(
          child: Column(
            children: [
-             Expanded(child: Placeholder()),
-             Expanded(child: Placeholder()),
-             Expanded(child: Placeholder()),
+             Expanded(
+                 flex: 2,
+                 child: Placeholder()),
+             Expanded(
+                 flex: 3,
+                 child: Placeholder()),
+             Expanded(
+                 flex: 14,
+                 child: Placeholder()),
            ],
          ),
 
