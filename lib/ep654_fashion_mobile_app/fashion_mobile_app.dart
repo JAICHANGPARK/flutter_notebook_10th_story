@@ -37,7 +37,12 @@ class _FashionHomePageState extends State<FashionHomePage> {
                            width: 1.2
                          )
                        ),
-                       focusedBorder: OutlineInputBorder()
+                       focusedBorder:  OutlineInputBorder(
+                           borderSide: BorderSide(
+                               color: Colors.grey,
+                               width: 1.2
+                           )
+                       ),
                      ),
                    ),
                  )),
