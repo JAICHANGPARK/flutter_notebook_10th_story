@@ -28,6 +28,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
              Expanded(
                  flex: 2,
                  child: Container(
+                   padding: EdgeInsets.symmetric(horizontal: 16),
                    child: TextField(
 
                      decoration: InputDecoration(
