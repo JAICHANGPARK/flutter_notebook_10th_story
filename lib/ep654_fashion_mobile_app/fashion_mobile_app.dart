@@ -31,8 +31,10 @@ class _FashionHomePageState extends State<FashionHomePage> {
                  child: Container(
                    padding: EdgeInsets.symmetric(horizontal: 16),
                    child: TextField(
-
+          cursorColor: Colors.black,
                      decoration: InputDecoration(
+                       icon: Icon(Icons.search),
+                       hintText: "Search Products",
                        enabledBorder: OutlineInputBorder(
                          borderSide: BorderSide(
                            color: Colors.grey,
