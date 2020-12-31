@@ -21,13 +21,17 @@ class _FashionHomePageState extends State<FashionHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       body: Column(
-         children: [
-           Expanded(child: Placeholder()),
-           Expanded(child: Placeholder()),
-           Expanded(child: Placeholder()),
-         ],
+       body: SafeArea(
+         child: Column(
+           children: [
+             Expanded(child: Placeholder()),
+             Expanded(child: Placeholder()),
+             Expanded(child: Placeholder()),
+           ],
+         ),
+
        ),
+      
     );
   }
 }
