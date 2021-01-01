@@ -16,6 +16,7 @@ class FashionHomePage extends StatefulWidget {
 
 class _FashionHomePageState extends State<FashionHomePage> {
   int _homeIdx = 0;
+  int _pageIdx = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -171,7 +172,9 @@ class _FashionHomePageState extends State<FashionHomePage> {
 
             PageView(
               onPageChanged: (pIdx){
-                
+                setState(() {
+                  _pageIdx = pIdx;
+                });
               },
               children: [
 
