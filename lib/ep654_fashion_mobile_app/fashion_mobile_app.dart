@@ -179,7 +179,18 @@ class _FashionHomePageState extends State<FashionHomePage> {
                 });
               },
               children: [
+                Stack(
+                  children: [
+                    Positioned(child: Text("Casual\nCollections", style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.indigo,
+                    ),
+                    
+                    ),
 
+                    ),
+                  ],
+                )
               ],
             )),
           ],
