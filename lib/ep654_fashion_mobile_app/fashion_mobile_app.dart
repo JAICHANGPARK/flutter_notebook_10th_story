@@ -94,6 +94,15 @@ class _FashionHomePageState extends State<FashionHomePage> {
                         Text("Jeans"),
                       ],
                     ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 32,
+                          backgroundColor: Colors.brown[100],
+                        ),
+                        Text("Shoes"),
+                      ],
+                    ),
                   ],
                 )),
             Expanded(flex: 14, child: Placeholder()),
