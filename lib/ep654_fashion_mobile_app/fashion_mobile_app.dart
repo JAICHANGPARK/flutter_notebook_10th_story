@@ -60,10 +60,10 @@ class _FashionHomePageState extends State<FashionHomePage> {
                           radius: 32,
                         ),
                         Positioned(
-                          right: 16,
-                          top: 16,
+                          right: 3,
+                          top: 6,
                           child: CircleAvatar(
-                            radius: 3,
+                            radius: 6,
                             backgroundColor: Colors.redAccent,
                           ),
                         ),
