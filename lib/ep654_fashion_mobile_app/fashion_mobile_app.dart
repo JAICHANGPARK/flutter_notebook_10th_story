@@ -167,7 +167,16 @@ class _FashionHomePageState extends State<FashionHomePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 14, child: Placeholder()),
+            Expanded(flex: 14, child:
+
+            PageView(
+              onPageChanged: (pIdx){
+                
+              },
+              children: [
+
+              ],
+            )),
           ],
         ),
       ),
