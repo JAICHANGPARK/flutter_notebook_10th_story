@@ -171,6 +171,8 @@ class _FashionHomePageState extends State<FashionHomePage> {
             Expanded(flex: 14, child:
 
             PageView(
+              scrollDirection: Axis.horizontal,
+              physics: BouncingScrollPhysics(),
               onPageChanged: (pIdx){
                 setState(() {
                   _pageIdx = pIdx;
