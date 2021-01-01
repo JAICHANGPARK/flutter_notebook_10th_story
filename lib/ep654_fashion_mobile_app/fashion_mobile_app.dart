@@ -182,13 +182,30 @@ class _FashionHomePageState extends State<FashionHomePage> {
                     Stack(
                       children: [
                         Positioned(
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            top: 84,
-                            child: Container(
-                              color: Colors.blue[50],
-                            )),
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          top: 88,
+                          child: Container(
+                            color: Colors.indigo[50],
+                            child: Row(
+                              children: [
+                                IconButton(
+                                  onPressed:_pageIdx == 0 ? null :  (){
+                                    _pageIdx -= 1;
+                                    if(_pageIdx < 0 ){
+                                      setState(() {
+                                        _pageIdx = 0;
+                                      });
+                                    }
+                                  },
+                                ),
+                                IconButton(),
+
+                              ],
+                            ),
+                          ),
+                        ),
                         Positioned(
                           left: 0,
                           right: 0,
