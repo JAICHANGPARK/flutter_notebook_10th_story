@@ -41,7 +41,11 @@ class _FashionHomePageState extends State<FashionHomePage> {
                     ),
                   ),
                 )),
-            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 3, child: ListView(
+              children: [
+                
+              ],
+            )),
             Expanded(flex: 14, child: Placeholder()),
           ],
         ),
