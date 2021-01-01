@@ -58,26 +58,29 @@ class _FashionHomePageState extends State<FashionHomePage> {
                         ],
                       ),
                     ),
-                    Column(
-                      children: [
-                        Stack(
-                          children: [
-                            CircleAvatar(
-                              radius: 32,
-                              backgroundColor: Colors.blue[200],
-                            ),
-                            Positioned(
-                              right: 3,
-                              top: 6,
-                              child: CircleAvatar(
-                                radius: 6,
-                                backgroundColor: Colors.redAccent,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Column(
+                        children: [
+                          Stack(
+                            children: [
+                              CircleAvatar(
+                                radius: 32,
+                                backgroundColor: Colors.blue[200],
                               ),
-                            ),
-                          ],
-                        ),
-                        Text("Gloves"),
-                      ],
+                              Positioned(
+                                right: 3,
+                                top: 6,
+                                child: CircleAvatar(
+                                  radius: 6,
+                                  backgroundColor: Colors.redAccent,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Text("Gloves"),
+                        ],
+                      ),
                     ),
                     Column(
                       children: [
