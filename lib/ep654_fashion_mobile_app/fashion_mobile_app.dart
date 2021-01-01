@@ -51,6 +51,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             CircleAvatar(
                               radius: 32,
@@ -62,7 +63,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8),
-                        child: Column(
+                        child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Stack(
                               children: [
@@ -84,7 +85,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                           ],
                         ),
                       ),
-                      Column(
+                      Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           CircleAvatar(
                             radius: 32,
