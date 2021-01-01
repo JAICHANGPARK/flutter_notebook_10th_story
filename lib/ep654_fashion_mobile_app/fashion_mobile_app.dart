@@ -43,73 +43,76 @@ class _FashionHomePageState extends State<FashionHomePage> {
                 )),
             Expanded(
                 flex: 3,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                      child: Column(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: Column(
+                          children: [
+                            CircleAvatar(
+                              radius: 32,
+                              backgroundColor: Colors.green[200],
+                            ),
+                            Text("Hats"),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: Column(
+                          children: [
+                            Stack(
+                              children: [
+                                CircleAvatar(
+                                  radius: 32,
+                                  backgroundColor: Colors.blue[200],
+                                ),
+                                Positioned(
+                                  right: 3,
+                                  top: 6,
+                                  child: CircleAvatar(
+                                    radius: 6,
+                                    backgroundColor: Colors.redAccent,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Text("Gloves"),
+                          ],
+                        ),
+                      ),
+                      Column(
                         children: [
                           CircleAvatar(
                             radius: 32,
-                            backgroundColor: Colors.green[200],
+                            backgroundColor: Colors.brown[100],
                           ),
-                          Text("Hats"),
+                          Text("Bags"),
                         ],
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                      child: Column(
+                      Column(
                         children: [
-                          Stack(
-                            children: [
-                              CircleAvatar(
-                                radius: 32,
-                                backgroundColor: Colors.blue[200],
-                              ),
-                              Positioned(
-                                right: 3,
-                                top: 6,
-                                child: CircleAvatar(
-                                  radius: 6,
-                                  backgroundColor: Colors.redAccent,
-                                ),
-                              ),
-                            ],
+                          CircleAvatar(
+                            radius: 32,
+                            backgroundColor: Colors.brown[200],
                           ),
-                          Text("Gloves"),
+                          Text("Jeans"),
                         ],
                       ),
-                    ),
-                    Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 32,
-                          backgroundColor: Colors.brown[100],
-                        ),
-                        Text("Bags"),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 32,
-                          backgroundColor: Colors.brown[200],
-                        ),
-                        Text("Jeans"),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 32,
-                          backgroundColor: Colors.brown[100],
-                        ),
-                        Text("Shoes"),
-                      ],
-                    ),
-                  ],
+                      Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 32,
+                            backgroundColor: Colors.brown[100],
+                          ),
+                          Text("Shoes"),
+                        ],
+                      ),
+                    ],
+                  ),
                 )),
             Expanded(flex: 14, child: Placeholder()),
           ],
