@@ -46,14 +46,17 @@ class _FashionHomePageState extends State<FashionHomePage> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 32,
-                          backgroundColor: Colors.green[200],
-                        ),
-                        Text("Hats"),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 32,
+                            backgroundColor: Colors.green[200],
+                          ),
+                          Text("Hats"),
+                        ],
+                      ),
                     ),
                     Column(
                       children: [
