@@ -57,10 +57,13 @@ class _FashionHomePageState extends State<FashionHomePage> {
                     Stack(
                       children: [
                         CircleAvatar(
+                          radius: 1,
+                        ),
+                        CircleAvatar(
                           radius: 32,
                         ),
                       ],
-                     
+
                     ),
                     Text("Hats"),
                   ],
