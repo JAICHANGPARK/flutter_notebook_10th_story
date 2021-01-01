@@ -85,32 +85,41 @@ class _FashionHomePageState extends State<FashionHomePage> {
                           ],
                         ),
                       ),
-                      Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          CircleAvatar(
-                            radius: 32,
-                            backgroundColor: Colors.brown[100],
-                          ),
-                          Text("Bags"),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CircleAvatar(
+                              radius: 32,
+                              backgroundColor: Colors.brown[100],
+                            ),
+                            Text("Bags"),
+                          ],
+                        ),
                       ),
-                      Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          CircleAvatar(
-                            radius: 32,
-                            backgroundColor: Colors.brown[200],
-                          ),
-                          Text("Jeans"),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CircleAvatar(
+                              radius: 32,
+                              backgroundColor: Colors.brown[200],
+                            ),
+                            Text("Jeans"),
+                          ],
+                        ),
                       ),
-                      Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          CircleAvatar(
-                            radius: 32,
-                            backgroundColor: Colors.brown[100],
-                          ),
-                          Text("Shoes"),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CircleAvatar(
+                              radius: 32,
+                              backgroundColor: Colors.brown[100],
+                            ),
+                            Text("Shoes"),
+                          ],
+                        ),
                       ),
                     ],
                   ),
