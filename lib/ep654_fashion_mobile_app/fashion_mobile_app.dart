@@ -58,6 +58,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                       children: [
                         CircleAvatar(
                           radius: 32,
+                          backgroundColor: Colors.blue[200],
                         ),
                         Positioned(
                           right: 3,
@@ -71,7 +72,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                       ],
 
                     ),
-                    Text("Hats"),
+                    Text("Gloves"),
                   ],
                 )
               ],
