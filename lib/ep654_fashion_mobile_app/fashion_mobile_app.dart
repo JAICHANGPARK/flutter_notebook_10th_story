@@ -168,41 +168,41 @@ class _FashionHomePageState extends State<FashionHomePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 14, child:
-
-            PageView(
-              scrollDirection: Axis.horizontal,
-              physics: BouncingScrollPhysics(),
-              onPageChanged: (pIdx){
-                setState(() {
-                  _pageIdx = pIdx;
-                });
-              },
-              children: [
-                Stack(
+            Expanded(
+                flex: 14,
+                child: PageView(
+                  scrollDirection: Axis.horizontal,
+                  physics: BouncingScrollPhysics(),
+                  onPageChanged: (pIdx) {
+                    setState(() {
+                      _pageIdx = pIdx;
+                    });
+                  },
                   children: [
-                    Positioned(
-                      left: 0,
-                      right: 0,
-                      top: 0,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text("Casual\nCollections", style: TextStyle(
-                          fontSize: 40,
-                          color: Colors.indigo,
-                    ),
-                    textAlign: TextAlign.center,
-
-                    ),
-                        ],
-                      ),
-
-                    ),
+                    Stack(
+                      children: [
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          top: 16,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Casual\nCollections",
+                                style: TextStyle(
+                                  fontSize: 40,
+                                  color: Colors.indigo,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    )
                   ],
-                )
-              ],
-            )),
+                )),
           ],
         ),
       ),
