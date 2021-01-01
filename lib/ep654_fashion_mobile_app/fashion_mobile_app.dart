@@ -80,18 +80,18 @@ class _FashionHomePageState extends State<FashionHomePage> {
                       children: [
                         CircleAvatar(
                           radius: 32,
-                          backgroundColor: Colors.green[200],
+                          backgroundColor: Colors.brown[100],
                         ),
-                        Text("Hats"),
+                        Text("Bags"),
                       ],
                     ),
                     Column(
                       children: [
                         CircleAvatar(
                           radius: 32,
-                          backgroundColor: Colors.green[200],
+                          backgroundColor: Colors.brown[200],
                         ),
-                        Text("Hats"),
+                        Text("Jeans"),
                       ],
                     ),
                   ],
