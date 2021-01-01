@@ -41,42 +41,61 @@ class _FashionHomePageState extends State<FashionHomePage> {
                     ),
                   ),
                 )),
-            Expanded(flex: 3, child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                Column(
+            Expanded(
+                flex: 3,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
                   children: [
-                    CircleAvatar(
-                      radius: 32,
-                    ),
-                    Text("Hats"),
-                  ],
-                ),
-                Column(
-                  children: [
-                    Stack(
+                    Column(
                       children: [
                         CircleAvatar(
                           radius: 32,
-                          backgroundColor: Colors.blue[200],
+                          backgroundColor: Colors.green[200],
                         ),
-                        Positioned(
-                          right: 3,
-                          top: 6,
-                          child: CircleAvatar(
-                            radius: 6,
-                            backgroundColor: Colors.redAccent,
-                          ),
-                        ),
-
+                        Text("Hats"),
                       ],
-
                     ),
-                    Text("Gloves"),
+                    Column(
+                      children: [
+                        Stack(
+                          children: [
+                            CircleAvatar(
+                              radius: 32,
+                              backgroundColor: Colors.blue[200],
+                            ),
+                            Positioned(
+                              right: 3,
+                              top: 6,
+                              child: CircleAvatar(
+                                radius: 6,
+                                backgroundColor: Colors.redAccent,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text("Gloves"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 32,
+                          backgroundColor: Colors.green[200],
+                        ),
+                        Text("Hats"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 32,
+                          backgroundColor: Colors.green[200],
+                        ),
+                        Text("Hats"),
+                      ],
+                    ),
                   ],
-                )
-              ],
-            )),
+                )),
             Expanded(flex: 14, child: Placeholder()),
           ],
         ),
