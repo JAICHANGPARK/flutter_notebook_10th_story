@@ -191,17 +191,26 @@ class _FashionHomePageState extends State<FashionHomePage> {
                             child: Row(
                               children: [
                                 IconButton(
-                                  onPressed:_pageIdx == 0 ? null :  (){
-                                    _pageIdx -= 1;
-                                    if(_pageIdx < 0 ){
-                                      setState(() {
-                                        _pageIdx = 0;
-                                      });
-                                    }
-                                  },
+                                  onPressed: _pageIdx == 0
+                                      ? null
+                                      : () {
+                                          _pageIdx -= 1;
+                                          if (_pageIdx < 0) {
+                                            setState(() {
+                                              _pageIdx = 0;
+                                            });
+                                          }
+                                        },
+                                  icon: Icon(Icons.arrow_back),
                                 ),
-                                IconButton(),
-
+                                IconButton(
+                                  onPressed: () {
+                                    setState(() {
+                                      _pageIdx++;
+                                    });
+                                  },
+                                  icon: Icon(Icons.arrow_forward),
+                                ),
                               ],
                             ),
                           ),
