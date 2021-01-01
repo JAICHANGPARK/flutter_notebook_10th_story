@@ -56,8 +56,13 @@ class _FashionHomePageState extends State<FashionHomePage> {
                   children: [
                     Stack(
                       children: [
-                        CircleAvatar(
-                          radius: 1,
+                        Positioned(
+                          right: 16,
+                          top: 16,
+                          child: CircleAvatar(
+                            radius: 3,
+                            backgroundColor: Colors.redAccent,
+                          ),
                         ),
                         CircleAvatar(
                           radius: 32,
