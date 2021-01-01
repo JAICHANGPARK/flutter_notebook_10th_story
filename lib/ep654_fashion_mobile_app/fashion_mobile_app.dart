@@ -54,8 +54,13 @@ class _FashionHomePageState extends State<FashionHomePage> {
                 ),
                 Column(
                   children: [
-                    CircleAvatar(
-                      radius: 32,
+                    Stack(
+                      children: [
+                        CircleAvatar(
+                          radius: 32,
+                        ),
+                      ],
+                     
                     ),
                     Text("Hats"),
                   ],
