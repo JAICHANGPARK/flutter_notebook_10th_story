@@ -171,7 +171,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
             Expanded(
                 flex: 14,
                 child: PageView(
-                  
+
                   scrollDirection: Axis.horizontal,
                   physics: BouncingScrollPhysics(),
                   onPageChanged: (pIdx) {
@@ -226,6 +226,63 @@ class _FashionHomePageState extends State<FashionHomePage> {
                             children: [
                               Text(
                                 "Casual\nCollections",
+                                style: TextStyle(
+                                  fontSize: 40,
+                                  color: Colors.indigo,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Stack(
+                      children: [
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          top: 88,
+                          child: Container(
+                            color: Colors.indigo[50],
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                IconButton(
+                                  onPressed: _pageIdx == 0
+                                      ? null
+                                      : () {
+                                    _pageIdx -= 1;
+                                    if (_pageIdx < 0) {
+                                      setState(() {
+                                        _pageIdx = 0;
+                                      });
+                                    }
+                                  },
+                                  icon: Icon(Icons.arrow_back),
+                                ),
+                                IconButton(
+                                  onPressed: () {
+                                    setState(() {
+                                      _pageIdx++;
+                                    });
+                                  },
+                                  icon: Icon(Icons.arrow_forward),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          top: 16,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Kids\nCollections",
                                 style: TextStyle(
                                   fontSize: 40,
                                   color: Colors.indigo,
