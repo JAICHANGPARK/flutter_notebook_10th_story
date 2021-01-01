@@ -42,8 +42,13 @@ class _FashionHomePageState extends State<FashionHomePage> {
                   ),
                 )),
             Expanded(flex: 3, child: ListView(
+              scrollDirection: Axis.horizontal,
               children: [
-                
+                Column(
+                  children: [
+                    CircleAvatar()
+                  ],
+                )
               ],
             )),
             Expanded(flex: 14, child: Placeholder()),
