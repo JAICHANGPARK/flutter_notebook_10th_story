@@ -94,7 +94,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                           Text("Bags"),
                         ],
                       ),
-                      Column(
+                      Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           CircleAvatar(
                             radius: 32,
@@ -103,7 +103,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                           Text("Jeans"),
                         ],
                       ),
-                      Column(
+                      Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           CircleAvatar(
                             radius: 32,
