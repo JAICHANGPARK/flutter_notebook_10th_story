@@ -182,6 +182,14 @@ class _FashionHomePageState extends State<FashionHomePage> {
                     Stack(
                       children: [
                         Positioned(
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            top: 84,
+                            child: Container(
+                              color: Colors.blue[50],
+                            )),
+                        Positioned(
                           left: 0,
                           right: 0,
                           top: 16,
