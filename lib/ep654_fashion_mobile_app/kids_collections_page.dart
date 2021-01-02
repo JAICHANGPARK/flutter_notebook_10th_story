@@ -10,6 +10,10 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+      ),
+      backgroundColor: Colors.white,
       body: Column(),
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
