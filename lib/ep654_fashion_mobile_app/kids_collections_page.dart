@@ -39,7 +39,25 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
           GridView.count(
             crossAxisCount: 2,
             shrinkWrap: true,
-            children: [],
+            children: [
+              Column(
+                children: [
+                  Stack(
+                    children: [
+                      CircleAvatar(
+                        radius: 64,
+                      ),
+                      Positioned(
+                          right: 8,
+                          child: CircleAvatar(
+
+                        backgroundColor: Colors.teal,
+                      ))
+                    ],
+                  )
+                ],
+              )
+            ],
           )
         ],
       ),
