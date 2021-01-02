@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class KidsCollectionsPage extends StatefulWidget {
@@ -24,7 +25,24 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
             ),
           ]),
       backgroundColor: Colors.white,
-      body: Column(),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            "Kids\nCollections",
+            style: TextStyle(
+              fontSize: 40,
+              color: Colors.indigo,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          GridView.count(
+            crossAxisCount: 2,
+            shrinkWrap: true,
+            children: [],
+          )
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
         showSelectedLabels: false,
