@@ -234,6 +234,12 @@ class _FashionHomePageState extends State<FashionHomePage> {
                             ],
                           ),
                         ),
+                        Positioned(
+                          left: 64,
+                          right: 64,
+                          top: 32,
+                          bottom: 0,
+                        )
                       ],
                     ),
                     Stack(
