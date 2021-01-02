@@ -36,6 +36,7 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
             ),
             textAlign: TextAlign.center,
           ),
+          SizedBox(height: 16,),
           GridView.count(
             crossAxisCount: 2,
             shrinkWrap: true,
@@ -55,6 +56,10 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
                             backgroundColor: Colors.teal,
                           ))
                     ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Casual",),
                   )
                 ],
               )
