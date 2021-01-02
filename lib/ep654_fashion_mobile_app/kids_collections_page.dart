@@ -7,19 +7,22 @@ class KidsCollectionsPage extends StatefulWidget {
 
 class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
   int _homeIdx = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        iconTheme: IconThemeData(
-          color: Colors.black,
-        ),
-        actions:[IconButton(
-          icon: Icon(Icons.filter_alt_outlined),
-        ),]
-      ),
+          backgroundColor: Colors.white,
+          elevation: 0,
+          iconTheme: IconThemeData(
+            color: Colors.black,
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.filter_alt_outlined),
+            ),
+          ]),
       backgroundColor: Colors.white,
       body: Column(),
       bottomNavigationBar: BottomNavigationBar(
