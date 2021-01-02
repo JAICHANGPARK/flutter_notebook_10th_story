@@ -48,11 +48,12 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
                         radius: 64,
                       ),
                       Positioned(
-                          right: 8,
+                          right: 12,
+                          top: 8,
                           child: CircleAvatar(
-radius: 12,
-                        backgroundColor: Colors.teal,
-                      ))
+                            radius: 10,
+                            backgroundColor: Colors.teal,
+                          ))
                     ],
                   )
                 ],
