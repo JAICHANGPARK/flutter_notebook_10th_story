@@ -15,8 +15,10 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
         elevation: 0,
         iconTheme: IconThemeData(
           color: Colors.black,
-
         ),
+        actions:[IconButton(
+          icon: Icon(Icons.filter_alt_outlined),
+        ),]
       ),
       backgroundColor: Colors.white,
       body: Column(),
