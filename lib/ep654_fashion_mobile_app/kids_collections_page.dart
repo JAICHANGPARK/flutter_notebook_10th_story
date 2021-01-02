@@ -94,7 +94,7 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("Elegant",),
+                      child: Text("Costume",),
                     )
                   ],
                 ),
@@ -110,7 +110,7 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("Elegant",),
+                      child: Text("Classic",),
                     )
                   ],
                 ),
