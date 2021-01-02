@@ -37,50 +37,134 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 16,),
-          GridView.count(
-            crossAxisCount: 2,
-            shrinkWrap: true,
-            children: [
-              Column(
-                children: [
-                  Stack(
-                    children: [
-                      CircleAvatar(
-                        radius: 64,
-                        backgroundColor: Colors.indigo[50],
-                      ),
-                      Positioned(
-                          right: 12,
-                          top: 8,
-                          child: CircleAvatar(
-                            radius: 10,
-                            backgroundColor: Colors.teal,
-                          ))
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Casual",),
-                  )
-                ],
-              ),
-              Column(
-                children: [
-                  Stack(
-                    children: [
-                      CircleAvatar(
-                        radius: 64,
-                        backgroundColor: Colors.indigo[50],
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Elegant",),
-                  )
-                ],
-              )
-            ],
+          Container(
+            height: MediaQuery.of(context).size.height - 286,
+            child: GridView.count(
+              crossAxisCount: 2,
+
+              children: [
+                Column(
+                  children: [
+                    Stack(
+                      children: [
+                        CircleAvatar(
+                          radius: 64,
+                          backgroundColor: Colors.indigo[50],
+                        ),
+                        Positioned(
+                            right: 12,
+                            top: 8,
+                            child: CircleAvatar(
+                              radius: 10,
+                              backgroundColor: Colors.teal,
+                            ))
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Casual",),
+                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    Stack(
+                      children: [
+                        CircleAvatar(
+                          radius: 64,
+                          backgroundColor: Colors.indigo[50],
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Elegant",),
+                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    Stack(
+                      children: [
+                        CircleAvatar(
+                          radius: 64,
+                          backgroundColor: Colors.indigo[50],
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Elegant",),
+                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    Stack(
+                      children: [
+                        CircleAvatar(
+                          radius: 64,
+                          backgroundColor: Colors.indigo[50],
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Elegant",),
+                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    Stack(
+                      children: [
+                        CircleAvatar(
+                          radius: 64,
+                          backgroundColor: Colors.indigo[50],
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Elegant",),
+                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    Stack(
+                      children: [
+                        CircleAvatar(
+                          radius: 64,
+                          backgroundColor: Colors.indigo[50],
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Elegant",),
+                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    Stack(
+                      children: [
+                        CircleAvatar(
+                          radius: 64,
+                          backgroundColor: Colors.indigo[50],
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Elegant",),
+                    )
+                  ],
+                ),
+
+              ],
+            ),
           )
         ],
       ),
