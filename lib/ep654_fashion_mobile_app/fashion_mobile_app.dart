@@ -322,7 +322,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                           bottom: -32,
                           child: GestureDetector(
                             onTap: (){
-
+                              Navigator.of(context).pushNamed("/kids/collections");
                             },
                             child: Image.network("https://www.freepnglogos.com/uploads/kids-png/omaha-healthy-kids-alliance-38.png",
                               fit: BoxFit.fitHeight,),
