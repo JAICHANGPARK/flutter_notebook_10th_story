@@ -47,6 +47,7 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
                     children: [
                       CircleAvatar(
                         radius: 64,
+                        backgroundColor: Colors.indigo[50],
                       ),
                       Positioned(
                           right: 12,
@@ -69,6 +70,7 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
                     children: [
                       CircleAvatar(
                         radius: 64,
+                        backgroundColor: Colors.indigo[50],
                       ),
                     ],
                   ),
