@@ -299,6 +299,14 @@ class _FashionHomePageState extends State<FashionHomePage> {
                             ],
                           ),
                         ),
+                        Positioned(
+                          left: 64,
+                          right: 64,
+                          top: 100,
+                          bottom: -32,
+                          child: Image.network("https://www.freepnglogos.com/uploads/kids-png/omaha-healthy-kids-alliance-38.png",
+                            fit: BoxFit.fitHeight,),
+                        )
                       ],
                     )
                   ],
