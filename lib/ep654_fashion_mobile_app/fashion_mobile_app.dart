@@ -184,9 +184,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
                   onPageChanged: (pIdx) {
                     setState(() {
                       _pageIdx = pIdx;
-                      _pageController.animateToPage(_pageIdx, duration: Duration(
-                        milliseconds: 500
-                      ), curve: Curves.easeIn);
+
                     });
                   },
                   children: [
@@ -212,6 +210,9 @@ class _FashionHomePageState extends State<FashionHomePage> {
                                               _pageIdx = 0;
                                             });
                                           }
+                                          _pageController.animateToPage(_pageIdx, duration: Duration(
+                                              milliseconds: 500
+                                          ), curve: Curves.easeIn);
                                         },
                                   icon: Icon(Icons.arrow_back),
                                 ),
@@ -219,6 +220,9 @@ class _FashionHomePageState extends State<FashionHomePage> {
                                   onPressed: () {
                                     setState(() {
                                       _pageIdx++;
+                                      _pageController.animateToPage(_pageIdx, duration: Duration(
+                                          milliseconds: 500
+                                      ), curve: Curves.easeIn);
                                     });
                                   },
                                   icon: Icon(Icons.arrow_forward),
@@ -362,4 +366,12 @@ class _FashionHomePageState extends State<FashionHomePage> {
       ),
     );
   }
+
+  void jumpCollectionsPage(int page, int duration){
+    if(_pageController != null)
+    _pageController.animateToPage(page, duration: Duration(
+        milliseconds: 500
+    ), curve: Curves.easeIn);
+  }
+
 }
