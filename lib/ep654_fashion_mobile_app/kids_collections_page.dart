@@ -62,6 +62,21 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
                     child: Text("Casual",),
                   )
                 ],
+              ),
+              Column(
+                children: [
+                  Stack(
+                    children: [
+                      CircleAvatar(
+                        radius: 64,
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Elegant",),
+                  )
+                ],
               )
             ],
           )
