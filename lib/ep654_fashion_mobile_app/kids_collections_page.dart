@@ -6,10 +6,11 @@ class KidsCollectionsPage extends StatefulWidget {
 }
 
 class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
+  int _homeIdx = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ,
+      body: Column(),
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: false,
         showSelectedLabels: false,
