@@ -184,7 +184,9 @@ class _FashionHomePageState extends State<FashionHomePage> {
                   onPageChanged: (pIdx) {
                     setState(() {
                       _pageIdx = pIdx;
-                      _pageController.animateToPage(_pageIdx, duration: Duration(), curve: Curves.easeIn);
+                      _pageController.animateToPage(_pageIdx, duration: Duration(
+                        milliseconds: 500
+                      ), curve: Curves.easeIn);
                     });
                   },
                   children: [
