@@ -17,7 +17,14 @@ class FashionHomePage extends StatefulWidget {
 class _FashionHomePageState extends State<FashionHomePage> {
   int _homeIdx = 0;
   int _pageIdx = 0;
+  PageController _pageController;
 
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController(initialPage: _pageIdx, );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
