@@ -171,7 +171,6 @@ class _FashionHomePageState extends State<FashionHomePage> {
             Expanded(
                 flex: 14,
                 child: PageView(
-
                   scrollDirection: Axis.horizontal,
                   physics: BouncingScrollPhysics(),
                   onPageChanged: (pIdx) {
@@ -253,13 +252,13 @@ class _FashionHomePageState extends State<FashionHomePage> {
                                   onPressed: _pageIdx == 0
                                       ? null
                                       : () {
-                                    _pageIdx -= 1;
-                                    if (_pageIdx < 0) {
-                                      setState(() {
-                                        _pageIdx = 0;
-                                      });
-                                    }
-                                  },
+                                          _pageIdx -= 1;
+                                          if (_pageIdx < 0) {
+                                            setState(() {
+                                              _pageIdx = 0;
+                                            });
+                                          }
+                                        },
                                   icon: Icon(Icons.arrow_back),
                                 ),
                                 IconButton(
