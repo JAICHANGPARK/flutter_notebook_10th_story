@@ -178,6 +178,7 @@ class _FashionHomePageState extends State<FashionHomePage> {
             Expanded(
                 flex: 14,
                 child: PageView(
+                  controller: _pageController,
                   scrollDirection: Axis.horizontal,
                   physics: BouncingScrollPhysics(),
                   onPageChanged: (pIdx) {
