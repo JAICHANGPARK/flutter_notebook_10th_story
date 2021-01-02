@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_10th_story/ep654_fashion_mobile_app/kids_collections_page.dart';
 
 class FashionMobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(routes: {
       "/": (context) => FashionHomePage(),
+      "/kids/collections" : (context) => KidsCollectionsPage()
     });
   }
 }
