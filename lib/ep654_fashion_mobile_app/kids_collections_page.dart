@@ -12,6 +12,9 @@ class _KidsCollectionsPageState extends State<KidsCollectionsPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        iconTheme: IconThemeData(
+          color: Colors.black
+        ),
       ),
       backgroundColor: Colors.white,
       body: Column(),
