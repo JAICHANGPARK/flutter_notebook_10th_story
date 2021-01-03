@@ -21,10 +21,18 @@ class _YogaHomePageState extends State<YogaHomePage> {
             ),
           ),
           Positioned(
-            left: 0,
-            right: 0,
+            left: 24,
+            right: 24,
             bottom: 24,
-            child: Card(),
+            child: Card(
+              child: Row(
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.home), onPressed: () {  },
+                  )
+                ],
+              ),
+            ),
           ),
         ],
       ),
