@@ -25,12 +25,21 @@ class _YogaHomePageState extends State<YogaHomePage> {
             right: 24,
             bottom: 24,
             child: Card(
-              child: Row(
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.home), onPressed: () {  },
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Row(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.home),
+color: Colors.orange,
+                      iconSize: 32,
+                      onPressed: () {  },
+                    ),
+                    Text("Home", style: TextStyle(
+                      color: Colors.orange
+                    ),)
+                  ],
+                ),
               ),
             ),
           ),
