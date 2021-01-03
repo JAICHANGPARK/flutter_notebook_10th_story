@@ -1,8 +1,12 @@
 
 
+import 'package:flutter/material.dart';
+
 class YogaContentsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: YogaHomePage(),
+    );
   }
 }
