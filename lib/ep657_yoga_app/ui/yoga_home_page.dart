@@ -28,6 +28,10 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
             child: CustomScrollView(
               slivers: [
                 SliverAppBar(
+                  floating: true,
+                  pinned: true,
+                  snap: true,
+                  expandedHeight: 200,
                   elevation: 16,
                   backgroundColor: Colors.white,
                   title: Text(
@@ -44,7 +48,9 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                       ),
                     ),
                   ],
+
                   bottom: PreferredSize(
+
                     preferredSize: Size.fromHeight(140),
                     child: Column(
                       children: [
