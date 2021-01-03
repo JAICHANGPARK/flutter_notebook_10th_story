@@ -42,23 +42,24 @@ class _YogaHomePageState extends State<YogaHomePage> {
                           iconSize: 32,
                           onPressed: () {},
                         ),
+                        Text(
+                          "Home",
+                          style: TextStyle(color: Colors.orange),
+                        ),
                       ],
                     ),
-                    Text(
-                      "Home",
-                      style: TextStyle(color: Colors.orange),
-                    ),
+
 
                     IconButton(
-                      icon: Icon(Icons.home_outlined),
-                      color: Colors.orange,
+                      icon: Icon(Icons.add_chart),
+                      color: Colors.black,
                       iconSize: 32,
                       onPressed: () {},
                     ),
 
                     IconButton(
-                      icon: Icon(Icons.home_outlined),
-                      color: Colors.orange,
+                      icon: Icon(Icons.person_outline),
+                      color: Colors.black,
                       iconSize: 32,
                       onPressed: () {},
                     ),
