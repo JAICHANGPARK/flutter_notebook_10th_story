@@ -26,6 +26,9 @@ class _YogaHomePageState extends State<YogaHomePage> {
             bottom: 24,
             child: Card(
               elevation: 8,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16)
+              ),
               child: Padding(
                 padding: const EdgeInsets.all(4.0),
                 child: Row(
