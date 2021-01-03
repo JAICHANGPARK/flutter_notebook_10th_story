@@ -32,17 +32,36 @@ class _YogaHomePageState extends State<YogaHomePage> {
               child: Padding(
                 padding: const EdgeInsets.all(4.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
+                    Row(
+                      children: [
+                        IconButton(
+                          icon: Icon(Icons.home_outlined),
+                          color: Colors.orange,
+                          iconSize: 32,
+                          onPressed: () {},
+                        ),
+                      ],
+                    ),
+                    Text(
+                      "Home",
+                      style: TextStyle(color: Colors.orange),
+                    ),
+
                     IconButton(
                       icon: Icon(Icons.home_outlined),
                       color: Colors.orange,
                       iconSize: 32,
                       onPressed: () {},
                     ),
-                    Text(
-                      "Home",
-                      style: TextStyle(color: Colors.orange),
-                    )
+
+                    IconButton(
+                      icon: Icon(Icons.home_outlined),
+                      color: Colors.orange,
+                      iconSize: 32,
+                      onPressed: () {},
+                    ),
                   ],
                 ),
               ),
