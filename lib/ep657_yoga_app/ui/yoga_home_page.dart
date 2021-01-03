@@ -5,7 +5,14 @@ class YogaHomePage extends StatefulWidget {
   _YogaHomePageState createState() => _YogaHomePageState();
 }
 
-class _YogaHomePageState extends State<YogaHomePage> {
+class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderStateMixin{
+  TabController _tabController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 2, vsync: this);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
