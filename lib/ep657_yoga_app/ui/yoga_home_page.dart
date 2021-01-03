@@ -17,7 +17,24 @@ class _YogaHomePageState extends State<YogaHomePage> {
             top: 0,
             bottom: 0,
             child: CustomScrollView(
-              slivers: [SliverAppBar()],
+              slivers: [SliverAppBar(
+                title: Text("Welcome Dream Walker"),
+                actions: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: CircleAvatar(
+                      radius: 24,
+                    ),
+                  ),
+                ],
+                bottom: PreferredSize(preferredSize: Size.fromHeight(24), child: Column(children: [
+
+                ],),
+
+                  
+                ),
+
+              )],
             ),
           ),
           Positioned(
@@ -26,9 +43,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
             bottom: 24,
             child: Card(
               elevation: 8,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16)
-              ),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
               child: Padding(
                 padding: const EdgeInsets.all(4.0),
                 child: Row(
@@ -48,15 +63,12 @@ class _YogaHomePageState extends State<YogaHomePage> {
                         ),
                       ],
                     ),
-
-
                     IconButton(
                       icon: Icon(Icons.add_chart),
                       color: Colors.black,
                       iconSize: 32,
                       onPressed: () {},
                     ),
-
                     IconButton(
                       icon: Icon(Icons.person_outline),
                       color: Colors.black,
