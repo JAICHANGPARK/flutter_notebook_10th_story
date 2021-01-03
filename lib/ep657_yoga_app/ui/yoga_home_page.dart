@@ -5,14 +5,16 @@ class YogaHomePage extends StatefulWidget {
   _YogaHomePageState createState() => _YogaHomePageState();
 }
 
-class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderStateMixin{
+class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderStateMixin {
   TabController _tabController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,35 +26,42 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
             top: 0,
             bottom: 0,
             child: CustomScrollView(
-              slivers: [SliverAppBar(
-                title: Text("Welcome Dream Walker"),
-                actions: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: CircleAvatar(
-                      radius: 24,
+              slivers: [
+                SliverAppBar(
+                  backgroundColor: Colors.white,
+                  title: Text("Welcome Dream Walker", ),
+                  actions: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: CircleAvatar(
+                        radius: 24,
+                      ),
+                    ),
+                  ],
+                  bottom: PreferredSize(
+                    preferredSize: Size.fromHeight(120),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 64,
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        TabBar(controller: _tabController, tabs: [
+                          Tab(
+                            text: "Subscribed",
+                          ),
+                          Tab(
+                            text: "Trending",
+                          )
+                        ])
+                      ],
                     ),
                   ),
-                ],
-                bottom: PreferredSize(preferredSize: Size.fromHeight(120), child: Column(children: [
-                  Container(
-                    height: 64,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                    ),
-                  ),
-                  TabBar(
-                      controller: _tabController,
-                      tabs: [
-
-                    Tab(text: "Subscribed",),
-                        Tab(text: "Subscribed",)])
-                ],),
-
-                  
                 ),
 
-              )],
+              ],
             ),
           ),
           Positioned(
