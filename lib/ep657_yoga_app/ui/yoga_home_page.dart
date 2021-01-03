@@ -30,10 +30,12 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                 SliverAppBar(
                   elevation: 16,
                   backgroundColor: Colors.white,
-                  title: Text("Welcome Dream Walker",
-                  style: TextStyle(
-                    color: Colors.black,
-                  ),),
+                  title: Text(
+                    "Welcome Dream Walker",
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                  ),
                   actions: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -50,10 +52,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Container(
                             height: 64,
-                            decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(16)
-                            ),
+                            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
                           ),
                         ),
                         Padding(
@@ -64,21 +63,21 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                               indicatorColor: Colors.orange,
                               isScrollable: false,
                               indicatorSize: TabBarIndicatorSize.label,
-
-                              controller: _tabController, tabs: [
-                            Tab(
-                              text: "Subscribed",
-                            ),
-                            Tab(
-                              text: "Trending",
-                            )
-                          ]),
+                              labelStyle: TextStyle(fontWeight: FontWeight.bold),
+                              controller: _tabController,
+                              tabs: [
+                                Tab(
+                                  text: "Subscribed",
+                                ),
+                                Tab(
+                                  text: "Trending",
+                                )
+                              ]),
                         )
                       ],
                     ),
                   ),
                 ),
-
               ],
             ),
           ),
