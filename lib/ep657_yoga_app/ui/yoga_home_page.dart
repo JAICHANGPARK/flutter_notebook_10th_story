@@ -28,6 +28,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
             child: CustomScrollView(
               slivers: [
                 SliverAppBar(
+                  elevation: 16,
                   backgroundColor: Colors.white,
                   title: Text("Welcome Dream Walker",
                   style: TextStyle(
@@ -42,7 +43,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                     ),
                   ],
                   bottom: PreferredSize(
-                    preferredSize: Size.fromHeight(120),
+                    preferredSize: Size.fromHeight(140),
                     child: Column(
                       children: [
                         Padding(
@@ -51,21 +52,28 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                             height: 64,
                             decoration: BoxDecoration(
                               color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(16)
                             ),
                           ),
                         ),
-                        TabBar(
-                            labelColor: Colors.orange,
-                            unselectedLabelColor: Colors.grey,
-                            indicatorColor: Colors.orange,
-                            controller: _tabController, tabs: [
-                          Tab(
-                            text: "Subscribed",
-                          ),
-                          Tab(
-                            text: "Trending",
-                          )
-                        ])
+                        Padding(
+                          padding: const EdgeInsets.only(top: 16),
+                          child: TabBar(
+                              labelColor: Colors.orange,
+                              unselectedLabelColor: Colors.grey,
+                              indicatorColor: Colors.orange,
+                              isScrollable: false,
+                              indicatorSize: TabBarIndicatorSize.label,
+
+                              controller: _tabController, tabs: [
+                            Tab(
+                              text: "Subscribed",
+                            ),
+                            Tab(
+                              text: "Trending",
+                            )
+                          ]),
+                        )
                       ],
                     ),
                   ),
