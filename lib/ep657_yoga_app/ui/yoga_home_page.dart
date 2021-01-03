@@ -41,7 +41,12 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                       color: Colors.grey,
                     ),
                   ),
-                  TabBar(tabs: [Tab(text: "Subscribed",)])
+                  TabBar(
+                      controller: _tabController,
+                      tabs: [
+
+                    Tab(text: "Subscribed",),
+                        Tab(text: "Subscribed",)])
                 ],),
 
                   
