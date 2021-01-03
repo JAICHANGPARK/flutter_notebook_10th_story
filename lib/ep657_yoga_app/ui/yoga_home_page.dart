@@ -29,7 +29,10 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
               slivers: [
                 SliverAppBar(
                   backgroundColor: Colors.white,
-                  title: Text("Welcome Dream Walker", ),
+                  title: Text("Welcome Dream Walker",
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),),
                   actions: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -42,13 +45,20 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                     preferredSize: Size.fromHeight(120),
                     child: Column(
                       children: [
-                        Container(
-                          height: 64,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Container(
+                            height: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                            ),
                           ),
                         ),
-                        TabBar(controller: _tabController, tabs: [
+                        TabBar(
+                            labelColor: Colors.orange,
+                            unselectedLabelColor: Colors.grey,
+                            indicatorColor: Colors.orange,
+                            controller: _tabController, tabs: [
                           Tab(
                             text: "Subscribed",
                           ),
