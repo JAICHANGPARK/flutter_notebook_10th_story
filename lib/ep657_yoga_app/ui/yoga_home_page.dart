@@ -27,8 +27,14 @@ class _YogaHomePageState extends State<YogaHomePage> {
                     ),
                   ),
                 ],
-                bottom: PreferredSize(preferredSize: Size.fromHeight(24), child: Column(children: [
-
+                bottom: PreferredSize(preferredSize: Size.fromHeight(120), child: Column(children: [
+                  Container(
+                    height: 64,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  TabBar(tabs: [Tab(text: "Subscribed",)])
                 ],),
 
                   
