@@ -1,7 +1,4 @@
-
-
 import 'package:flutter/material.dart';
-
 
 class YogaHomePage extends StatefulWidget {
   @override
@@ -20,13 +17,15 @@ class _YogaHomePageState extends State<YogaHomePage> {
             top: 0,
             bottom: 0,
             child: CustomScrollView(
-              slivers: [
-                SliverAppBar(
-
-                )
-              ],
+              slivers: [SliverAppBar()],
             ),
-          )
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 24,
+            child: Card(),
+          ),
         ],
       ),
     );
