@@ -91,9 +91,17 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
               }, body: TabBarView(
               controller: _tabController,
               children: [
+                    Container(
+                      color: Colors.redAccent,
+                    ),
+                Container(
+                  color: Colors.redAccent,
+                ),
+                Container(
+                  color: Colors.redAccent,
+                )
 
 
-                
               ],
             ),
               // slivers: [
