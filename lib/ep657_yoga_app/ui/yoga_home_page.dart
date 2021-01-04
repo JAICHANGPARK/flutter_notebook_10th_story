@@ -26,101 +26,108 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
             top: 0,
             bottom: 0,
             child: NestedScrollView(
-              headerSliverBuilder: (context, innerBoxIsScrolled){
-               return [
-               SliverAppBar(
-
-                 floating: true,
-                 pinned: true,
-                 snap: true,
-                 expandedHeight: 200,
-                 forceElevated: innerBoxIsScrolled,
-                 backgroundColor: Colors.white,
-                 title: Text(
-                   "Welcome Dream Walker",
-                   style: TextStyle(
-                     color: Colors.black,
-                   ),
-                 ),
-                 actions: [
-                   Padding(
-                     padding: const EdgeInsets.all(8.0),
-                     child: CircleAvatar(
-                       radius: 24,
-                     ),
-                   ),
-                 ],
-                
-                 bottom: TabBar(
-                     labelColor: Colors.orange,
-                     unselectedLabelColor: Colors.grey,
-                     indicatorColor: Colors.orange,
-                     isScrollable: false,
-                     indicatorSize: TabBarIndicatorSize.label,
-                     labelStyle: TextStyle(fontWeight: FontWeight.bold),
-                     controller: _tabController,
-                     tabs: [
-                       Tab(
-                         text: "Subscribed",
-                       ),
-                       Tab(
-                         text: "Trending",
-                       )
-                     ]),
-                 // bottom: PreferredSize(
-                 //
-                 //   preferredSize: Size.fromHeight(140),
-                 //   child: Column(
-                 //     children: [
-                 //       Padding(
-                 //         padding: const EdgeInsets.symmetric(horizontal: 16),
-                 //         child: Container(
-                 //           height: 64,
-                 //           decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
-                 //         ),
-                 //       ),
-                 //       Padding(
-                 //         padding: const EdgeInsets.only(top: 16),
-                 //         child: TabBar(
-                 //             labelColor: Colors.orange,
-                 //             unselectedLabelColor: Colors.grey,
-                 //             indicatorColor: Colors.orange,
-                 //             isScrollable: false,
-                 //             indicatorSize: TabBarIndicatorSize.label,
-                 //             labelStyle: TextStyle(fontWeight: FontWeight.bold),
-                 //             controller: _tabController,
-                 //             tabs: [
-                 //               Tab(
-                 //                 text: "Subscribed",
-                 //               ),
-                 //               Tab(
-                 //                 text: "Trending",
-                 //               )
-                 //             ]),
-                 //       )
-                 //     ],
-                 //   ),
-                 // ),
-               )
-
-               ] ;
-
-              }, body: TabBarView(
-              controller: _tabController,
-              children: [
-                    Container(
-                      color: Colors.redAccent,
+              headerSliverBuilder: (context, innerBoxIsScrolled) {
+                return [
+                  SliverAppBar(
+                    floating: true,
+                    pinned: true,
+                    snap: true,
+                    expandedHeight: 200,
+                    forceElevated: innerBoxIsScrolled,
+                    backgroundColor: Colors.white,
+                    // title: Text(
+                    //   "Welcome Dream Walker",
+                    //   style: TextStyle(
+                    //     color: Colors.black,
+                    //   ),
+                    // ),
+                    // actions: [
+                    //   Padding(
+                    //     padding: const EdgeInsets.all(8.0),
+                    //     child: CircleAvatar(
+                    //       radius: 24,
+                    //     ),
+                    //   ),
+                    // ],
+                    flexibleSpace: FlexibleSpaceBar(
+                      collapseMode: CollapseMode.pin,
+                      background: Column(
+                        children: [
+                          Container(
+                            height: 64,
+                            decoration: BoxDecoration(color: Colors.grey[300],
+                                borderRadius: BorderRadius.circular(16)),
+                          ),
+                        ],
+                      ),
                     ),
-                Container(
-                  color: Colors.blue,
-                ),
-                // Container(
-                //   color: Colors.green,
-                // )
-
-
-              ],
-            ),
+                    bottom: TabBar(
+                        labelColor: Colors.orange,
+                        unselectedLabelColor: Colors.grey,
+                        indicatorColor: Colors.orange,
+                        isScrollable: false,
+                        indicatorSize: TabBarIndicatorSize.label,
+                        labelStyle: TextStyle(fontWeight: FontWeight.bold),
+                        controller: _tabController,
+                        tabs: [
+                          Tab(
+                            text: "Subscribed",
+                          ),
+                          Tab(
+                            text: "Trending",
+                          )
+                        ]),
+                    // bottom: PreferredSize(
+                    //
+                    //   preferredSize: Size.fromHeight(140),
+                    //   child: Column(
+                    //     children: [
+                    //       Padding(
+                    //         padding: const EdgeInsets.symmetric(horizontal: 16),
+                    //         child: Container(
+                    //           height: 64,
+                    //           decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
+                    //         ),
+                    //       ),
+                    //       Padding(
+                    //         padding: const EdgeInsets.only(top: 16),
+                    //         child: TabBar(
+                    //             labelColor: Colors.orange,
+                    //             unselectedLabelColor: Colors.grey,
+                    //             indicatorColor: Colors.orange,
+                    //             isScrollable: false,
+                    //             indicatorSize: TabBarIndicatorSize.label,
+                    //             labelStyle: TextStyle(fontWeight: FontWeight.bold),
+                    //             controller: _tabController,
+                    //             tabs: [
+                    //               Tab(
+                    //                 text: "Subscribed",
+                    //               ),
+                    //               Tab(
+                    //                 text: "Trending",
+                    //               )
+                    //             ]),
+                    //       )
+                    //     ],
+                    //   ),
+                    // ),
+                  )
+                ];
+              },
+              body: TabBarView(
+                controller: _tabController,
+                children: [
+                  Container(
+                    color: Colors.redAccent,
+                  ),
+                  Container(
+                    color: Colors.blue,
+                  ),
+                  // Container(
+                  //   color: Colors.green,
+                  // )
+                ],
+              ),
               // slivers: [
               //
               //   SliverList(delegate:
