@@ -26,7 +26,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
             top: 0,
             bottom: 0,
             child: NestedScrollView(
-              headerSliverBuilder: (context, _){
+              headerSliverBuilder: (context, ){
                return [
                SliverAppBar(
                  floating: true,
