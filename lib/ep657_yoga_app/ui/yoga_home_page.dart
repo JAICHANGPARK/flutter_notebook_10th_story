@@ -39,7 +39,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
 
                       actions: [],
                       flexibleSpace: FlexibleSpaceBar(
-                        collapseMode: CollapseMode.parallax,
+                        collapseMode: CollapseMode.pin,
                         background: Column(
                           children: [
                             Container(
@@ -53,6 +53,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                       "Welcome Dream Walker",
                                       style: TextStyle(
                                         color: Colors.black,
+                                        fontSize: 18
                                       ),
                                     ),
                                     Padding(
@@ -65,10 +66,15 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                 ),
                               ),
                             ),
-                            Container(
-                              height: 64,
-                              decoration:
-                                  BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(16)),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16,
+                              vertical: 8),
+                              child: Container(
+                                height: 64,
+
+                                decoration:
+                                    BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(16)),
+                              ),
                             ),
                           ],
                         ),
