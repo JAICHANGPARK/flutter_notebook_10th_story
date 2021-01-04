@@ -26,14 +26,15 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
             top: 0,
             bottom: 0,
             child: NestedScrollView(
-              headerSliverBuilder: (context, ){
+              headerSliverBuilder: (context, innerBoxIsScrolled){
                return [
                SliverAppBar(
+
                  floating: true,
                  pinned: true,
                  snap: true,
                  expandedHeight: 200,
-                 elevation: 16,
+                 forceElevated: innerBoxIsScrolled,
                  backgroundColor: Colors.white,
                  title: Text(
                    "Welcome Dream Walker",
@@ -49,7 +50,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                      ),
                    ),
                  ],
-
+                
                  bottom: TabBar(
                      labelColor: Colors.orange,
                      unselectedLabelColor: Colors.grey,
