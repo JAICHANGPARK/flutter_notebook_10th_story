@@ -71,6 +71,15 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                   color: Colors.grey[200],
                                   borderRadius: BorderRadius.circular(16),
                                 ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      hintText: "Search Yoga",
+                                      suffixIcon: Icon(Icons.search),
+                                    ),
+                                  ),
+                                ),
                               ),
                             ),
                           ],
