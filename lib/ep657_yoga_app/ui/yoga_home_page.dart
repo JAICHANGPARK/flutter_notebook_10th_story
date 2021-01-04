@@ -37,29 +37,24 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                       forceElevated: innerBoxIsScrolled,
                       backgroundColor: Colors.white,
 
-                      actions: [
-
-                      ],
+                      actions: [],
                       flexibleSpace: FlexibleSpaceBar(
                         collapseMode: CollapseMode.parallax,
-
                         background: Column(
                           children: [
                             Container(
                               height: 64,
-                              decoration: BoxDecoration(color: Colors.grey[300],
-                                  borderRadius: BorderRadius.circular(16),
-                              ),
                               child: Padding(
                                 padding: const EdgeInsets.only(right: 16, left: 16),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                  Text(
-                                  "Welcome Dream Walker",
-                                  style: TextStyle(
-                  color: Colors.black,
-                  ),),
+                                    Text(
+                                      "Welcome Dream Walker",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                      ),
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: CircleAvatar(
@@ -72,8 +67,8 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                             ),
                             Container(
                               height: 64,
-                              decoration: BoxDecoration(color: Colors.grey[300],
-                                  borderRadius: BorderRadius.circular(16)),
+                              decoration:
+                                  BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(16)),
                             ),
                           ],
                         ),
