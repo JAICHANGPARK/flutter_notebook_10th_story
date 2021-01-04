@@ -25,9 +25,9 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
             right: 0,
             top: 0,
             bottom: 0,
-            child: CustomScrollView(
-              slivers: [
-                SliverAppBar(
+            child: NestedScrollView(
+              headerSliverBuilder: (context, _){
+               return  SliverAppBar(
                   floating: true,
                   pinned: true,
                   snap: true,
@@ -83,12 +83,15 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                       ],
                     ),
                   ),
-                ),
-                SliverList(delegate:
-                SliverChildBuilderDelegate(
-                    (context, index) => ListTile(title: Text("Sample"),)
-                ))
-              ],
+                );
+              },
+              // slivers: [
+              //
+              //   SliverList(delegate:
+              //   SliverChildBuilderDelegate(
+              //       (context, index) => ListTile(title: Text("Sample"),)
+              //   ))
+              // ],
             ),
           ),
           Positioned(
