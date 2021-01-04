@@ -27,64 +27,75 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
             bottom: 0,
             child: NestedScrollView(
               headerSliverBuilder: (context, _){
-               return  SliverAppBar(
-                  floating: true,
-                  pinned: true,
-                  snap: true,
-                  expandedHeight: 200,
-                  elevation: 16,
-                  backgroundColor: Colors.white,
-                  title: Text(
-                    "Welcome Dream Walker",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
-                  ),
-                  actions: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: CircleAvatar(
-                        radius: 24,
-                      ),
-                    ),
-                  ],
+               return [
+               SliverAppBar(
+                 floating: true,
+                 pinned: true,
+                 snap: true,
+                 expandedHeight: 200,
+                 elevation: 16,
+                 backgroundColor: Colors.white,
+                 title: Text(
+                   "Welcome Dream Walker",
+                   style: TextStyle(
+                     color: Colors.black,
+                   ),
+                 ),
+                 actions: [
+                   Padding(
+                     padding: const EdgeInsets.all(8.0),
+                     child: CircleAvatar(
+                       radius: 24,
+                     ),
+                   ),
+                 ],
 
-                  bottom: PreferredSize(
+                 bottom: PreferredSize(
 
-                    preferredSize: Size.fromHeight(140),
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: Container(
-                            height: 64,
-                            decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 16),
-                          child: TabBar(
-                              labelColor: Colors.orange,
-                              unselectedLabelColor: Colors.grey,
-                              indicatorColor: Colors.orange,
-                              isScrollable: false,
-                              indicatorSize: TabBarIndicatorSize.label,
-                              labelStyle: TextStyle(fontWeight: FontWeight.bold),
-                              controller: _tabController,
-                              tabs: [
-                                Tab(
-                                  text: "Subscribed",
-                                ),
-                                Tab(
-                                  text: "Trending",
-                                )
-                              ]),
-                        )
-                      ],
-                    ),
-                  ),
-                );
-              },
+                   preferredSize: Size.fromHeight(140),
+                   child: Column(
+                     children: [
+                       Padding(
+                         padding: const EdgeInsets.symmetric(horizontal: 16),
+                         child: Container(
+                           height: 64,
+                           decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
+                         ),
+                       ),
+                       Padding(
+                         padding: const EdgeInsets.only(top: 16),
+                         child: TabBar(
+                             labelColor: Colors.orange,
+                             unselectedLabelColor: Colors.grey,
+                             indicatorColor: Colors.orange,
+                             isScrollable: false,
+                             indicatorSize: TabBarIndicatorSize.label,
+                             labelStyle: TextStyle(fontWeight: FontWeight.bold),
+                             controller: _tabController,
+                             tabs: [
+                               Tab(
+                                 text: "Subscribed",
+                               ),
+                               Tab(
+                                 text: "Trending",
+                               )
+                             ]),
+                       )
+                     ],
+                   ),
+                 ),
+               )
+
+               ] ;
+
+              }, body: TabBarView(
+              controller: _tabController,
+              children: [
+
+
+                
+              ],
+            ),
               // slivers: [
               //
               //   SliverList(delegate:
