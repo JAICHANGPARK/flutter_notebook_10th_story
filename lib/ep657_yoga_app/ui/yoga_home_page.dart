@@ -18,7 +18,10 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomPadding: false,
       body: SafeArea(
+
         child: Stack(
           children: [
             Positioned(
