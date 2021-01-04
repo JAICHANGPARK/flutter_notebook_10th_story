@@ -75,6 +75,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                   padding: const EdgeInsets.all(8.0),
                                   child: TextField(
                                     decoration: InputDecoration(
+                                      border: InputBorder.none,
                                       hintText: "Search Yoga",
                                       suffixIcon: Icon(Icons.search, size: 32,
                                       color: Colors.orange,),
