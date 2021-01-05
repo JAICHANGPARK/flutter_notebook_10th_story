@@ -118,49 +118,63 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                       child: ListView.builder(
                           itemCount: 6,
                           itemBuilder: (context, index){
-                            return Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                
-                                Expanded(
-                                  flex: 2,
-                                  child: CircleAvatar(
-                                    radius: 36,
-                                    backgroundImage: NetworkImage("https://thispersondoesnotexist.com/image"),
-                                  ),
-                                ),
-                                Expanded(
-                                  flex: 10,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Row(
-                                          children: [
-                                            Text("Dream Walker"),
-                                            Text("@Dreamwalker"),
+                            return Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 16),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
 
-                                          ],
-                                        ),
-                                        Text("Day 24 of the #YogaDecember"),
-                                        Text("Challenge!"),
-                                        Container(
-                                          height: 120,
-                                          decoration: BoxDecoration(
-                                            color: Colors.orange
-                                          ),
-                                          child: Stack(
-                                            children: [
-
-                                            ],
-                                          )
-                                        )
-                                      ],
+                                  Expanded(
+                                    flex: 2,
+                                    child: CircleAvatar(
+                                      radius: 36,
+                                      backgroundImage: NetworkImage("https://thispersondoesnotexist.com/image"),
                                     ),
                                   ),
-                                )
-                              ],
+                                  Expanded(
+                                    flex: 10,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Text("Dream Walker", style: TextStyle(
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.bold
+                                              ),),
+                                              Text("@Dreamwalker", style: TextStyle(
+                                                color: Colors.orange,
+                                                fontSize: 16
+                                              ),),
+                                              CircleAvatar(
+                                                radius: 8,
+                                                backgroundColor: Colors.orange,
+                                              )
+
+                                            ],
+                                          ),
+                                          Text("Day 24 of the #YogaDecember"),
+                                          Text("Challenge!"),
+                                          Container(
+                                            height: 120,
+                                            decoration: BoxDecoration(
+                                              color: Colors.orange,
+                                              borderRadius: BorderRadius.circular(16)
+                                            ),
+                                            child: Stack(
+                                              children: [
+
+                                              ],
+                                            )
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             );
                           }),
                     ),
