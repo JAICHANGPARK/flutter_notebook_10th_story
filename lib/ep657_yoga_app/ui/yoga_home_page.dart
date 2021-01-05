@@ -113,7 +113,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                   controller: _tabController,
                   children: [
                     Container(
-                      color: Colors.redAccent,
+                      // color: Colors.redAccent,
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: ListView.builder(
                           itemCount: 6,
