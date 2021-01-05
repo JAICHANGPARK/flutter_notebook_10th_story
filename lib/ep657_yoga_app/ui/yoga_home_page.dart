@@ -116,7 +116,13 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                       color: Colors.redAccent,
                       child: ListView.builder(
                           itemCount: 6,
-                          itemBuilder: (context, index){}),
+                          itemBuilder: (context, index){
+                            return Row(
+                              children: [
+
+                              ],
+                            );
+                          }),
                     ),
                     Container(
                       color: Colors.blue,
