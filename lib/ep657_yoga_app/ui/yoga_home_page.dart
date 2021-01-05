@@ -124,13 +124,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                     // )
                   ],
                 ),
-                // slivers: [
-                //
-                //   SliverList(delegate:
-                //   SliverChildBuilderDelegate(
-                //       (context, index) => ListTile(title: Text("Sample"),)
-                //   ))
-                // ],
+              
               ),
             ),
             Positioned(
