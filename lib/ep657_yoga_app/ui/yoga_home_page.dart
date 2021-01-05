@@ -21,7 +21,6 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
       resizeToAvoidBottomInset: false,
       resizeToAvoidBottomPadding: false,
       body: SafeArea(
-
         child: Stack(
           children: [
             Positioned(
@@ -115,6 +114,9 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                   children: [
                     Container(
                       color: Colors.redAccent,
+                      child: ListView.builder(
+                          itemCount: 6,
+                          itemBuilder: (context, index){}),
                     ),
                     Container(
                       color: Colors.blue,
@@ -124,7 +126,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                     // )
                   ],
                 ),
-              
+
               ),
             ),
             Positioned(
