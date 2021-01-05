@@ -106,40 +106,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                               text: "Trending",
                             )
                           ]),
-                      // bottom: PreferredSize(
-                      //
-                      //   preferredSize: Size.fromHeight(140),
-                      //   child: Column(
-                      //     children: [
-                      //       Padding(
-                      //         padding: const EdgeInsets.symmetric(horizontal: 16),
-                      //         child: Container(
-                      //           height: 64,
-                      //           decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(16)),
-                      //         ),
-                      //       ),
-                      //       Padding(
-                      //         padding: const EdgeInsets.only(top: 16),
-                      //         child: TabBar(
-                      //             labelColor: Colors.orange,
-                      //             unselectedLabelColor: Colors.grey,
-                      //             indicatorColor: Colors.orange,
-                      //             isScrollable: false,
-                      //             indicatorSize: TabBarIndicatorSize.label,
-                      //             labelStyle: TextStyle(fontWeight: FontWeight.bold),
-                      //             controller: _tabController,
-                      //             tabs: [
-                      //               Tab(
-                      //                 text: "Subscribed",
-                      //               ),
-                      //               Tab(
-                      //                 text: "Trending",
-                      //               )
-                      //             ]),
-                      //       )
-                      //     ],
-                      //   ),
-                      // ),
+
                     )
                   ];
                 },
