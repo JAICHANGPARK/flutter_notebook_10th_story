@@ -119,7 +119,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                           itemCount: 6,
                           itemBuilder: (context, index){
                             return Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 16),
+                              padding: const EdgeInsets.symmetric(vertical: 8),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -163,17 +163,20 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                           ),
                                           Text("Day 24 of the #YogaDecember"),
                                           Text("Challenge!"),
-                                          Container(
-                                            height: 120,
-                                            decoration: BoxDecoration(
-                                              color: Colors.orange,
-                                              borderRadius: BorderRadius.circular(16)
-                                            ),
-                                            child: Stack(
-                                              children: [
+                                          Padding(
+                                            padding: const EdgeInsets.only(top: 8),
+                                            child: Container(
+                                              height: 120,
+                                              decoration: BoxDecoration(
+                                                color: Colors.orange,
+                                                borderRadius: BorderRadius.circular(16)
+                                              ),
+                                              child: Stack(
+                                                children: [
 
-                                              ],
-                                            )
+                                                ],
+                                              )
+                                            ),
                                           )
                                         ],
                                       ),
