@@ -114,6 +114,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                   children: [
                     Container(
                       color: Colors.redAccent,
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child: ListView.builder(
                           itemCount: 6,
                           itemBuilder: (context, index){
@@ -128,6 +129,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                   ),
                                 ),
                                 Expanded(
+                                  flex: 10,
                                   child: Column(
                                     children: [
                                       Row(
