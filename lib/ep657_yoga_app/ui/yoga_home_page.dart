@@ -130,18 +130,33 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                 ),
                                 Expanded(
                                   flex: 10,
-                                  child: Column(
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Text("Dream Walker"),
-                                          Text("@Dreamwalker"),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text("Dream Walker"),
+                                            Text("@Dreamwalker"),
 
-                                        ],
-                                      ),
-                                      Text("Day 24 of the #YogaDecember"),
-                                      Text("Challenge!")
-                                    ],
+                                          ],
+                                        ),
+                                        Text("Day 24 of the #YogaDecember"),
+                                        Text("Challenge!"),
+                                        Container(
+                                          height: 120,
+                                          decoration: BoxDecoration(
+                                            color: Colors.orange
+                                          ),
+                                          child: Stack(
+                                            children: [
+
+                                            ],
+                                          )
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],
