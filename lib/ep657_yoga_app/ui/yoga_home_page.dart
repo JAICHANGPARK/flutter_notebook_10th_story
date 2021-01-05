@@ -119,7 +119,10 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                           itemBuilder: (context, index){
                             return Row(
                               children: [
-
+                                CircleAvatar(
+                                  radius: 48,
+                                  backgroundImage: NetworkImage("https://thispersondoesnotexist.com/image"),
+                                )
                               ],
                             );
                           }),
