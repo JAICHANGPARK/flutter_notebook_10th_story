@@ -122,6 +122,19 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                 CircleAvatar(
                                   radius: 36,
                                   backgroundImage: NetworkImage("https://thispersondoesnotexist.com/image"),
+                                ),
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Text("Dream Walker"),
+                                        Text("@Dreamwalker"),
+
+                                      ],
+                                    ),
+                                    Text("Day 24 of the #YogaDecember"),
+                                    Text("Challenge!")
+                                  ],
                                 )
                               ],
                             );
