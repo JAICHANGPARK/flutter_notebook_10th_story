@@ -144,13 +144,19 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                                 fontSize: 18,
                                                 fontWeight: FontWeight.bold
                                               ),),
-                                              Text("@Dreamwalker", style: TextStyle(
-                                                color: Colors.orange,
-                                                fontSize: 16
-                                              ),),
-                                              CircleAvatar(
-                                                radius: 8,
-                                                backgroundColor: Colors.orange,
+                                              Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text("@Dreamwalker", style: TextStyle(
+                                                  color: Colors.orange,
+                                                  fontSize: 16
+                                                ),),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: CircleAvatar(
+                                                  radius: 6,
+                                                  backgroundColor: Colors.orange,
+                                                ),
                                               )
 
                                             ],
