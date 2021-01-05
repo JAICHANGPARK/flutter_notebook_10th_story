@@ -177,14 +177,33 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                                         right: 8,
                                                         top: 4,
                                                         child: Row(
-                                                          children: [Icon(Icons.visibility,
-                                                          size: 12,), Padding(
-                                                            padding: const EdgeInsets.all(8.0),
-                                                            child: Text("7.4k",
-                                                            style: TextStyle(
-                                                              fontSize: 12
-                                                            ),),
-                                                          )],
+                                                          children: [
+                                                            Icon(
+                                                              Icons.visibility,
+                                                              size: 12,
+                                                            ),
+                                                            Padding(
+                                                              padding: const EdgeInsets.all(8.0),
+                                                              child: Text(
+                                                                "7.4k",
+                                                                style: TextStyle(fontSize: 12),
+                                                              ),
+                                                            )
+                                                          ],
+                                                        )),
+                                                    Positioned(
+                                                        left: 8,
+                                                        bottom: 4,
+                                                        child: Row(
+                                                          children: [
+                                                            Padding(
+                                                              padding: const EdgeInsets.all(8.0),
+                                                              child: Text(
+                                                                "5:00",
+                                                                style: TextStyle(fontSize: 12, color: Colors.white),
+                                                              ),
+                                                            )
+                                                          ],
                                                         ))
                                                   ],
                                                 )),
