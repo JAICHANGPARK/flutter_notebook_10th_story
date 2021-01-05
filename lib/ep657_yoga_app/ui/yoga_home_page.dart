@@ -38,7 +38,6 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                       expandedHeight: 200,
                       forceElevated: innerBoxIsScrolled,
                       backgroundColor: Colors.white,
-
                       actions: [],
                       flexibleSpace: FlexibleSpaceBar(
                         collapseMode: CollapseMode.pin,
@@ -79,8 +78,11 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                     decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: "Search Yoga",
-                                      suffixIcon: Icon(Icons.search, size: 32,
-                                      color: Colors.orange,),
+                                      suffixIcon: Icon(
+                                        Icons.search,
+                                        size: 32,
+                                        color: Colors.orange,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -105,7 +107,6 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                               text: "Trending",
                             )
                           ]),
-
                     )
                   ];
                 },
@@ -117,18 +118,20 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: ListView.builder(
                           itemCount: 6,
-                          itemBuilder: (context, index){
+                          itemBuilder: (context, index) {
                             return Padding(
                               padding: const EdgeInsets.symmetric(vertical: 8),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-
                                   Expanded(
                                     flex: 2,
-                                    child: CircleAvatar(
-                                      radius: 36,
-                                      backgroundImage: NetworkImage("https://thispersondoesnotexist.com/image"),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(4.0),
+                                      child: CircleAvatar(
+                                        radius: 36,
+                                        backgroundImage: NetworkImage("https://thispersondoesnotexist.com/image"),
+                                      ),
                                     ),
                                   ),
                                   Expanded(
@@ -140,16 +143,16 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                         children: [
                                           Row(
                                             children: [
-                                              Text("Dream Walker", style: TextStyle(
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold
-                                              ),),
+                                              Text(
+                                                "Dream Walker",
+                                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                              ),
                                               Padding(
                                                 padding: const EdgeInsets.all(8.0),
-                                                child: Text("@Dreamwalker", style: TextStyle(
-                                                  color: Colors.orange,
-                                                  fontSize: 16
-                                                ),),
+                                                child: Text(
+                                                  "@Dreamwalker",
+                                                  style: TextStyle(color: Colors.orange, fontSize: 16),
+                                                ),
                                               ),
                                               Padding(
                                                 padding: const EdgeInsets.all(8.0),
@@ -158,7 +161,6 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                                   backgroundColor: Colors.orange,
                                                 ),
                                               )
-
                                             ],
                                           ),
                                           Text("Day 24 of the #YogaDecember"),
@@ -166,17 +168,26 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                                           Padding(
                                             padding: const EdgeInsets.only(top: 8),
                                             child: Container(
-                                              height: 120,
-                                              decoration: BoxDecoration(
-                                                color: Colors.orange,
-                                                borderRadius: BorderRadius.circular(16)
-                                              ),
-                                              child: Stack(
-                                                children: [
-
-                                                ],
-                                              )
-                                            ),
+                                                height: 120,
+                                                decoration: BoxDecoration(
+                                                    color: Colors.orange, borderRadius: BorderRadius.circular(16)),
+                                                child: Stack(
+                                                  children: [
+                                                    Positioned(
+                                                        right: 8,
+                                                        top: 4,
+                                                        child: Row(
+                                                          children: [Icon(Icons.visibility,
+                                                          size: 12,), Padding(
+                                                            padding: const EdgeInsets.all(8.0),
+                                                            child: Text("7.4k",
+                                                            style: TextStyle(
+                                                              fontSize: 12
+                                                            ),),
+                                                          )],
+                                                        ))
+                                                  ],
+                                                )),
                                           )
                                         ],
                                       ),
@@ -195,7 +206,6 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                     // )
                   ],
                 ),
-
               ),
             ),
             Positioned(
