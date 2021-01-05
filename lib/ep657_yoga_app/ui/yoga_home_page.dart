@@ -119,6 +119,7 @@ class _YogaHomePageState extends State<YogaHomePage> with SingleTickerProviderSt
                           itemCount: 6,
                           itemBuilder: (context, index){
                             return Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 
                                 Expanded(
