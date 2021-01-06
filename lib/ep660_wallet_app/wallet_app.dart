@@ -17,7 +17,12 @@ class WalletAppHomePage extends StatefulWidget {
 class _WalletAppHomePageState extends State<WalletAppHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color(0xffe7e9f2),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [],
+      ),
+    );
   }
 }
 
