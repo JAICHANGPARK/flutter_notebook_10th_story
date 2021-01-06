@@ -20,7 +20,12 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
     return Scaffold(
       backgroundColor: Color(0xffe7e9f2),
       bottomNavigationBar: BottomNavigationBar(
-        items: [],
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
+          ),
+        ],
       ),
     );
   }
