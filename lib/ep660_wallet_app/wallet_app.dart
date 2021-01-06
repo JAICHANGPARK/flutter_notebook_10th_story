@@ -18,7 +18,15 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Color(0xffe7e9f2),
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.deepPurpleAccent,
