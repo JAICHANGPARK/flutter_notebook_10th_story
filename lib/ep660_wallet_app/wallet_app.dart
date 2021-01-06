@@ -35,7 +35,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
               label: "Cards"
           ),
           BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
-              label: "Cards"
+              label: "More"
           ),
         ],
       ),
