@@ -21,9 +21,15 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
       backgroundColor: Color(0xffe7e9f2),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
+          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined,
+          ),
+          label: "History"
           ),
           BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
+              label: "Transfers"
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
+              label: "Transfers"
           ),
         ],
       ),
