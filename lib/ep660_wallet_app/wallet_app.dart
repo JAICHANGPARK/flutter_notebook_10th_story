@@ -29,7 +29,13 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
               label: "Transfers"
           ),
           BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
-              label: "Transfers"
+              label: "Requests"
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
+              label: "Cards"
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
+              label: "Cards"
           ),
         ],
       ),
