@@ -24,25 +24,17 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
         selectedItemColor: Colors.deepPurpleAccent,
         unselectedItemColor: Color(0xffaebec1),
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined,
-          ),
-          label: "History"
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.send),
-              label: "Transfers"
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.request_page),
-              label: "Requests"
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.card),
-              label: "Cards"
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.account_balance_wallet_outlined),
-              label: "More"
-          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.account_balance_wallet_outlined,
+              ),
+              label: "History"),
+          BottomNavigationBarItem(icon: Icon(Icons.send), label: "Transfers"),
+          BottomNavigationBarItem(icon: Icon(Icons.request_page), label: "Requests"),
+          BottomNavigationBarItem(icon: Icon(Icons.credit_card), label: "Cards"),
+          BottomNavigationBarItem(icon: Icon(Icons.apps), label: "More"),
         ],
       ),
     );
   }
 }
-
