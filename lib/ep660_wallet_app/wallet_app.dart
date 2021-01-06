@@ -17,7 +17,7 @@ class WalletAppHomePage extends StatefulWidget {
 class _WalletAppHomePageState extends State<WalletAppHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
 
