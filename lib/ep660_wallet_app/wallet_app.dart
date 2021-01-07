@@ -48,17 +48,22 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                     ),
                     Row(
                       children: [
-                        Text("History from", style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.bold,
-                        ),),
-                        Text("All accounts",
-                        style: TextStyle(
-                          color: Colors.deepPurpleAccent
-                        ),),
+                        Text(
+                          "History from",
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "All accounts",
+                          style: TextStyle(color: Colors.deepPurpleAccent[100],
+                              fontWeight: FontWeight.bold,),
+                        ),
                         Icon(
                           Icons.keyboard_arrow_down_rounded,
+                          color: Colors.purple,
                         )
                       ],
                     )
