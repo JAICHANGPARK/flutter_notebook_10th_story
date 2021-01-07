@@ -45,6 +45,15 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                           Icon(Icons.search),
                         ],
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Text("History from"),
+                        Text("All accounts"),
+                        Icon(
+                          Icons.keyboard_arrow_down_rounded,
+                        )
+                      ],
                     )
                   ],
                 )),
