@@ -16,6 +16,7 @@ class WalletAppHomePage extends StatefulWidget {
 
 class _WalletAppHomePageState extends State<WalletAppHomePage> {
   int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -91,10 +92,13 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                         decoration: BoxDecoration(color: Colors.blueGrey[100], borderRadius: BorderRadius.circular(3)),
                         padding: EdgeInsets.symmetric(horizontal: 12),
                         child: Center(
-                          child: Text("Only Me", style: TextStyle(
-                            color: Colors.black54,
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          child: Text(
+                            "Only Me",
+                            style: TextStyle(
+                              color: Colors.black54,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -105,10 +109,13 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                         decoration: BoxDecoration(color: Colors.blueGrey[100], borderRadius: BorderRadius.circular(3)),
                         padding: EdgeInsets.symmetric(horizontal: 12),
                         child: Center(
-                          child: Text("Attachment", style: TextStyle(
-                            color: Colors.black54,
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          child: Text(
+                            "Attachment",
+                            style: TextStyle(
+                              color: Colors.black54,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -119,10 +126,13 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                         decoration: BoxDecoration(color: Colors.blueGrey[100], borderRadius: BorderRadius.circular(3)),
                         padding: EdgeInsets.symmetric(horizontal: 12),
                         child: Center(
-                          child: Text("Method", style: TextStyle(
-                            color: Colors.black54,
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          child: Text(
+                            "Method",
+                            style: TextStyle(
+                              color: Colors.black54,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       )
                     ],
@@ -138,7 +148,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
         selectedItemColor: Colors.deepPurpleAccent,
         unselectedItemColor: Color(0xffaebec1),
         currentIndex: _pageIndex,
-        onTap: (newIndex){
+        onTap: (newIndex) {
           setState(() {
             _pageIndex = newIndex;
           });
