@@ -25,6 +25,8 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
             Expanded(
                 flex: 3,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -57,6 +59,9 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                               color: Colors.grey,
                               fontWeight: FontWeight.bold,
                             ),
+                          ),
+                          SizedBox(
+                            width: 8,
                           ),
                           Text(
                             "All accounts",
