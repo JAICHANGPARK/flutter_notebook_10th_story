@@ -27,9 +27,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 16,vertical: 8
-                      ),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       child: Row(
                         children: [
                           Text(
@@ -48,26 +46,31 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                         ],
                       ),
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          "History from",
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.grey,
-                            fontWeight: FontWeight.bold,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        children: [
+                          Text(
+                            "History from",
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        Text(
-                          "All accounts",
-                          style: TextStyle(color: Colors.purple[300],
-                              fontWeight: FontWeight.bold,),
-                        ),
-                        Icon(
-                          Icons.keyboard_arrow_down_rounded,
-                          color: Colors.purple[300],
-                        )
-                      ],
+                          Text(
+                            "All accounts",
+                            style: TextStyle(
+                              color: Colors.purple[300],
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Icon(
+                            Icons.keyboard_arrow_down_rounded,
+                            color: Colors.purple[300],
+                          )
+                        ],
+                      ),
                     )
                   ],
                 )),
