@@ -15,6 +15,7 @@ class WalletAppHomePage extends StatefulWidget {
 }
 
 class _WalletAppHomePageState extends State<WalletAppHomePage> {
+  int _pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -127,6 +128,12 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.deepPurpleAccent,
         unselectedItemColor: Color(0xffaebec1),
+        currentIndex: _pageIndex,
+        onTap: (newIndex){
+          setState(() {
+            _pageIndex = newIndex;
+          });
+        },
         items: [
           BottomNavigationBarItem(
               icon: Icon(
