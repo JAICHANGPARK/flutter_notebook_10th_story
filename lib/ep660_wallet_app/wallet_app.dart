@@ -84,7 +84,9 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                 child: Row(
                   children: [
                     Container(
+                      margin: EdgeInsets.symmetric(vertical: 3),
                       decoration: BoxDecoration(color: Colors.blueGrey[100]),
+                      padding: EdgeInsets.symmetric(horizontal: 8),
                       child: Center(
                         child: Text("Only Me"),
                       ),
