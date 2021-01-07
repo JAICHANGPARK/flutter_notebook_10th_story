@@ -58,12 +58,12 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                         ),
                         Text(
                           "All accounts",
-                          style: TextStyle(color: Colors.deepPurpleAccent[100],
+                          style: TextStyle(color: Colors.purple[300],
                               fontWeight: FontWeight.bold,),
                         ),
                         Icon(
                           Icons.keyboard_arrow_down_rounded,
-                          color: Colors.purple,
+                          color: Colors.purple[300],
                         )
                       ],
                     )
