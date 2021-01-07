@@ -35,7 +35,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                           Text(
                             "\$ 101,080.00",
                             style: TextStyle(
-                              fontSize: 23,
+                              fontSize: 24,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -79,7 +79,18 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                     )
                   ],
                 )),
-            Expanded(flex: 2, child: Placeholder()),
+            Expanded(flex: 1, child: Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey
+                  ),
+                  child: Center(
+                    child: Text("Only Me"),
+                  ),
+                )
+              ],
+            )),
             Expanded(flex: 5, child: Placeholder()),
             Expanded(flex: 6, child: Placeholder()),
           ],
