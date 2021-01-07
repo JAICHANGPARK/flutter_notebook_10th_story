@@ -32,11 +32,11 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                         children: [
                           Text("\$ 101,080.00"),
                           Spacer(),
-                          Icon(Icons.info_outline),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Icon(Icons.search),
+                            child: Icon(Icons.info_outline),
                           ),
+                          Icon(Icons.search),
                         ],
                       ),
                     )
