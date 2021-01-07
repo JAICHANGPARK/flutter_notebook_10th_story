@@ -24,7 +24,18 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
           children: [
             Expanded(
                 flex: 3,
-                child: Placeholder()),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text("\$ 101,080.00"),
+                        Icon(
+                          Icons.info_outline
+                        )
+                      ],
+                    )
+                  ],
+                )),
             Expanded(
                 flex: 2,
                 child: Placeholder()),
