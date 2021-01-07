@@ -30,7 +30,13 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                       padding: const EdgeInsets.all(16.0),
                       child: Row(
                         children: [
-                          Text("\$ 101,080.00"),
+                          Text(
+                            "\$ 101,080.00",
+                            style: TextStyle(
+                              fontSize: 23,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Spacer(),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
