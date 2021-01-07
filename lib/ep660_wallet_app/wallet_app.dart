@@ -18,7 +18,6 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       backgroundColor: Color(0xffe7e9f2),
       body: SafeArea(
         child: Column(
@@ -27,7 +26,6 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
             Expanded(child: Placeholder()),
             Expanded(child: Placeholder()),
             Expanded(child: Placeholder()),
-
           ],
         ),
       ),
