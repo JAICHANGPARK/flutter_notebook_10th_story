@@ -81,17 +81,20 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                 )),
             Expanded(
                 flex: 1,
-                child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: 3),
-                      decoration: BoxDecoration(color: Colors.blueGrey[100]),
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: Center(
-                        child: Text("Only Me"),
-                      ),
-                    )
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 3),
+                        decoration: BoxDecoration(color: Colors.blueGrey[100]),
+                        padding: EdgeInsets.symmetric(horizontal: 8),
+                        child: Center(
+                          child: Text("Only Me"),
+                        ),
+                      )
+                    ],
+                  ),
                 )),
             Expanded(flex: 5, child: Placeholder()),
             Expanded(flex: 6, child: Placeholder()),
