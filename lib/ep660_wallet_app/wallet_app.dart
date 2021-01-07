@@ -23,7 +23,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
         child: Column(
           children: [
             Expanded(
-                flex: 3,
+                flex: 2,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -86,22 +86,33 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                   child: Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 3),
-                        decoration: BoxDecoration(color: Colors.blueGrey[100],
-                        borderRadius: BorderRadius.circular(3)),
+                        margin: EdgeInsets.symmetric(vertical: 4),
+                        decoration: BoxDecoration(color: Colors.blueGrey[100], borderRadius: BorderRadius.circular(3)),
                         padding: EdgeInsets.symmetric(horizontal: 12),
                         child: Center(
                           child: Text("Only Me"),
                         ),
                       ),
-                      SizedBox(width: 8,),
+                      SizedBox(
+                        width: 8,
+                      ),
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 3),
-                        decoration: BoxDecoration(color: Colors.blueGrey[100],
-                            borderRadius: BorderRadius.circular(3)),
+                        margin: EdgeInsets.symmetric(vertical: 4),
+                        decoration: BoxDecoration(color: Colors.blueGrey[100], borderRadius: BorderRadius.circular(3)),
                         padding: EdgeInsets.symmetric(horizontal: 12),
                         child: Center(
                           child: Text("Attachment"),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 4),
+                        decoration: BoxDecoration(color: Colors.blueGrey[100], borderRadius: BorderRadius.circular(3)),
+                        padding: EdgeInsets.symmetric(horizontal: 12),
+                        child: Center(
+                          child: Text("Method"),
                         ),
                       )
                     ],
