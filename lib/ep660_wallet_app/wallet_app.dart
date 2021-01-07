@@ -26,25 +26,25 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                 flex: 3,
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        Text("\$ 101,080.00"),
-                        Icon(
-                          Icons.info_outline
-                        )
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          Text("\$ 101,080.00"),
+                          Spacer(),
+                          Icon(Icons.info_outline),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Icon(Icons.search),
+                          ),
+                        ],
+                      ),
                     )
                   ],
                 )),
-            Expanded(
-                flex: 2,
-                child: Placeholder()),
-            Expanded(
-                flex: 5,
-                child: Placeholder()),
-            Expanded(
-                flex: 6,
-                child: Placeholder()),
+            Expanded(flex: 2, child: Placeholder()),
+            Expanded(flex: 5, child: Placeholder()),
+            Expanded(flex: 6, child: Placeholder()),
           ],
         ),
       ),
