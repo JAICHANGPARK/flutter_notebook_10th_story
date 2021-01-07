@@ -28,8 +28,12 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
             Expanded(
                 flex: 2,
                 child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(
+                flex: 5,
+                child: Placeholder()),
+            Expanded(
+                flex: 6,
+                child: Placeholder()),
           ],
         ),
       ),
