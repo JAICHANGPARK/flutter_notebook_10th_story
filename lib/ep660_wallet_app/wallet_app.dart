@@ -91,7 +91,10 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                         decoration: BoxDecoration(color: Colors.blueGrey[100], borderRadius: BorderRadius.circular(3)),
                         padding: EdgeInsets.symmetric(horizontal: 12),
                         child: Center(
-                          child: Text("Only Me"),
+                          child: Text("Only Me", style: TextStyle(
+                            color: Colors.black54,
+                            fontWeight: FontWeight.bold,
+                          ),),
                         ),
                       ),
                       SizedBox(
