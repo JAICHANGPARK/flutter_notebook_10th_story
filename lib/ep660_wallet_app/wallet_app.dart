@@ -155,6 +155,12 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
+                              ),
+                              Column(
+                                children: [
+                                  Text("Figma"),
+                                  Text("Outgoing transfer")
+                                ],
                               )
                             ],
                           ),
