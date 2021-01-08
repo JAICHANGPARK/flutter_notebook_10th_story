@@ -139,7 +139,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                   ),
                 )),
             Expanded(
-                flex: 5,
+                flex: 4,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                   child: Column(
@@ -205,7 +205,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                     height: 42,
                                     width: 42,
                                     decoration: BoxDecoration(
-                                      color: Colors.black,
+                                      color: Colors.green,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                   ),
@@ -215,13 +215,13 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          "Figma",
+                                          "Enato Market",
                                           style: TextStyle(
                                             fontSize: 16,
                                           ),
                                         ),
                                         Text(
-                                          "Outgoing transfer",
+                                          "Card - Mike transfer",
                                           style: TextStyle(fontSize: 11, color: Colors.grey),
                                         ),
                                       ],
@@ -229,7 +229,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                   ),
                                   Spacer(),
                                   Text(
-                                    "- 2,560.00 EUR",
+                                    "- 560.00 EUR",
                                     style: TextStyle(
                                       fontSize: 20,
                                     ),
