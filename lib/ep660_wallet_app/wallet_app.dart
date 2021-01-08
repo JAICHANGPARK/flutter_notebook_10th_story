@@ -140,43 +140,49 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                 )),
             Expanded(
                 flex: 5,
-                child: Column(
-                  children: [
-                    Text("Today"),
-                    Card(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                height: 42,
-                                width: 42,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Text("Today"),
+                      Card(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Row(
                                 children: [
-                                  Text("Figma"),
-                                  Text("Outgoing transfer"),
+                                  Container(
+                                    height: 42,
+                                    width: 42,
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Figma"),
+                                      Text("Outgoing transfer"),
+                                    ],
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "- 2,560.00 EUR",
+                                    style: TextStyle(
+                                      fontSize: 22,
+                                    ),
+                                  )
                                 ],
                               ),
-                              Spacer(),
-                              Text(
-                                "- 2,560.00 EUR",
-                                style: TextStyle(
-                                  fontSize: 22,
-                                ),
-                              )
-                            ],
-                          ),
-                          Divider()
-                        ],
-                      ),
-                    )
-                  ],
+                            ),
+                            Divider()
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 )),
             Expanded(flex: 6, child: Placeholder()),
           ],
