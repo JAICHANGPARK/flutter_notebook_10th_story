@@ -145,16 +145,20 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Today", style: TextStyle(
-                        color: Colors.grey,
-                      ),),
-                      SizedBox(height: 8,),
+                      Text(
+                        "Today",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Card(
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16,
-                              vertical: 4),
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                               child: Row(
                                 children: [
                                   Container(
@@ -197,8 +201,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                               color: Colors.grey,
                             ),
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16,
-                                  vertical: 4),
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                               child: Row(
                                 children: [
                                   Container(
@@ -243,7 +246,115 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 6, child: Placeholder()),
+            Expanded(
+              flex: 6,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Today",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Card(
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Figma",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Outgoing transfer",
+                                        style: TextStyle(fontSize: 11, color: Colors.grey),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Spacer(),
+                                Text(
+                                  "- 2,560.00 EUR",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Divider(
+                            color: Colors.grey,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(
+                                    color: Colors.green,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Enato Market",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Card - Mike transfer",
+                                        style: TextStyle(fontSize: 11, color: Colors.grey),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Spacer(),
+                                Text(
+                                  "- 560.00 EUR",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
