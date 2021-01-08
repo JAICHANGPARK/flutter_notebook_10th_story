@@ -254,7 +254,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Today",
+                      "This week",
                       style: TextStyle(
                         color: Colors.grey,
                       ),
