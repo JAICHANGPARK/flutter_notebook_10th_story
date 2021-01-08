@@ -193,7 +193,50 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                 ],
                               ),
                             ),
-                            Divider()
+                            Divider(
+                              color: Colors.grey,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16,
+                                  vertical: 4),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 42,
+                                    width: 42,
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Figma",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Outgoing transfer",
+                                          style: TextStyle(fontSize: 11, color: Colors.grey),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "- 2,560.00 EUR",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            )
                           ],
                         ),
                       )
