@@ -141,7 +141,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
             Expanded(
                 flex: 5,
                 child: Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Column(
                     children: [
                       Text("Today"),
@@ -149,7 +149,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
                               child: Row(
                                 children: [
                                   Container(
