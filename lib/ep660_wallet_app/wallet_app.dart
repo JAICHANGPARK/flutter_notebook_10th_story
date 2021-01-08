@@ -160,12 +160,23 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                   ),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("Figma"),
-                                      Text("Outgoing transfer"),
-                                    ],
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Figma",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Outgoing transfer",
+                                          style: TextStyle(fontSize: 11, color: Colors.grey),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                   Spacer(),
                                   Text(
