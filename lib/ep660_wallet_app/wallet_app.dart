@@ -163,10 +163,13 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                   Text("Outgoing transfer"),
                                 ],
                               ),
-                              
-                              Text("- 2,560.00 EUR", style: TextStyle(
-                                fontSize: 22,
-                              ),)
+                              Spacer(),
+                              Text(
+                                "- 2,560.00 EUR",
+                                style: TextStyle(
+                                  fontSize: 22,
+                                ),
+                              )
                             ],
                           ),
                           Divider()
