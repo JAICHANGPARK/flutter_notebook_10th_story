@@ -140,7 +140,19 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                 )),
             Expanded(flex: 5, child: Column(
               children: [
-                
+                Text("Today"),
+                Card(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+          
+                        ],
+                      ),
+                      Divider()
+                    ],
+                  ),
+                )
               ],
             )),
             Expanded(flex: 6, child: Placeholder()),
