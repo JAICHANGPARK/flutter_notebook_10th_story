@@ -157,7 +157,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                     width: 42,
                                     decoration: BoxDecoration(
                                       color: Colors.black,
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(12),
                                     ),
                                   ),
                                   Padding(
@@ -182,7 +182,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                   Text(
                                     "- 2,560.00 EUR",
                                     style: TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                     ),
                                   )
                                 ],
