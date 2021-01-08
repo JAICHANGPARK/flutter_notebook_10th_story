@@ -157,11 +157,16 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                                 ),
                               ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text("Figma"),
-                                  Text("Outgoing transfer")
+                                  Text("Outgoing transfer"),
                                 ],
-                              )
+                              ),
+                              
+                              Text("- 2,560.00 EUR", style: TextStyle(
+                                fontSize: 22,
+                              ),)
                             ],
                           ),
                           Divider()
