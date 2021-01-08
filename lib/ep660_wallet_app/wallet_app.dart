@@ -263,8 +263,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                       height: 8,
                     ),
                     Card(
-                      child: ListView(
-                        shrinkWrap: true,
+                      child: Column(
                         children: [
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
@@ -392,49 +391,7 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                               ],
                             ),
                           ),
-                          Divider(
-                            color: Colors.grey,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                            child: Row(
-                              children: [
-                                Container(
-                                  height: 42,
-                                  width: 42,
-                                  decoration: BoxDecoration(
-                                    color: Colors.green,
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Enato Market",
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                        ),
-                                      ),
-                                      Text(
-                                        "Card - Mike transfer",
-                                        style: TextStyle(fontSize: 11, color: Colors.grey),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Spacer(),
-                                Text(
-                                  "- 560.00 EUR",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                  ),
-                                )
-                              ],
-                            ),
-                          )
+
                         ],
                       ),
                     )
