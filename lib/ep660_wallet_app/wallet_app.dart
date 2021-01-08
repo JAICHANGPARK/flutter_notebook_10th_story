@@ -141,15 +141,20 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
             Expanded(
                 flex: 5,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Today"),
+                      Text("Today", style: TextStyle(
+                        color: Colors.grey,
+                      ),),
+                      SizedBox(height: 8,),
                       Card(
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16),
+                              padding: const EdgeInsets.symmetric(horizontal: 16,
+                              vertical: 4),
                               child: Row(
                                 children: [
                                   Container(
