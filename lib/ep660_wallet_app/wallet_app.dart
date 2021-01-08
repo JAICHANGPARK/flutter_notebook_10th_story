@@ -138,23 +138,32 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 5, child: Column(
-              children: [
-                Text("Today"),
-                Card(
-                  child: Column(
-                    children: [
-                      Row(
+            Expanded(
+                flex: 5,
+                child: Column(
+                  children: [
+                    Text("Today"),
+                    Card(
+                      child: Column(
                         children: [
-          
+                          Row(
+                            children: [
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              )
+                            ],
+                          ),
+                          Divider()
                         ],
                       ),
-                      Divider()
-                    ],
-                  ),
-                )
-              ],
-            )),
+                    )
+                  ],
+                )),
             Expanded(flex: 6, child: Placeholder()),
           ],
         ),
