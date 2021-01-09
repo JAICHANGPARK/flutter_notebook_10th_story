@@ -30,17 +30,59 @@ class _EstateMainPageState extends State<EstateMainPage> {
       )),
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 64,
+          height: 72,
           child: Row(
             children: [
               Column(
-                children: [IconButton(icon: Icon(Icons.home_outlined),
-                    onPressed: () {
-
-                    }),
-                Text("Home", style: TextStyle(
-                  color: Colors.orange
-                ),)
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.home_outlined),
+                    onPressed: () {},
+                    iconSize: 32,
+                  ),
+                  Text(
+                    "Home",
+                    style: TextStyle(color: Colors.orange),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.home_outlined),
+                    onPressed: () {},
+                    iconSize: 32,
+                  ),
+                  Text(
+                    "Home",
+                    style: TextStyle(color: Colors.orange),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.home_outlined),
+                    onPressed: () {},
+                    iconSize: 32,
+                  ),
+                  Text(
+                    "Home",
+                    style: TextStyle(color: Colors.orange),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  IconButton(
+                    icon: Icon(Icons.home_outlined),
+                    onPressed: () {},
+                    iconSize: 32,
+                  ),
+                  Text(
+                    "Home",
+                    style: TextStyle(color: Colors.orange),
+                  ),
                 ],
               )
             ],
@@ -50,18 +92,3 @@ class _EstateMainPageState extends State<EstateMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
