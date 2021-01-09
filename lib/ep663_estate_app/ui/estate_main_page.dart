@@ -8,6 +8,8 @@ class EstateMainPage extends StatefulWidget {
 class _EstateMainPageState extends State<EstateMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(child: Stack()),
+    );
   }
 }
