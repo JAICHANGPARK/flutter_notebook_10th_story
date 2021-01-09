@@ -36,8 +36,12 @@ class _EstateMainPageState extends State<EstateMainPage> {
               Column(
                 children: [IconButton(icon: Icon(Icons.home_outlined),
                     onPressed: () {
-                  
-                    })],
+
+                    }),
+                Text("Home", style: TextStyle(
+                  color: Colors.orange
+                ),)
+                ],
               )
             ],
           ),
