@@ -391,7 +391,6 @@ class _WalletAppHomePageState extends State<WalletAppHomePage> {
                               ],
                             ),
                           ),
-
                         ],
                       ),
                     )
