@@ -11,7 +11,11 @@ class _EstateMainPageState extends State<EstateMainPage> {
     return Scaffold(
       body: SafeArea(child: Stack(
         children: [
-
+          Positioned(child: Placeholder(),
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: MediaQuery.of(context).size.height / 2,)
         ],
 
       )),
