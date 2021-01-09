@@ -47,7 +47,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
                     ),
                     Text(
                       "Home",
-                      style: TextStyle(color: Colors.orange,  fontSize: 12),
+                      style: TextStyle(color: Colors.orange, fontSize: 12),
                     ),
                   ],
                 ),
@@ -63,8 +63,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
                     ),
                     Text(
                       "Chat",
-                      style: TextStyle(color: Colors.grey,
-                          fontSize: 12),
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
                     ),
                   ],
                 ),
@@ -73,11 +72,13 @@ class _EstateMainPageState extends State<EstateMainPage> {
                 height: 48,
                 width: 48,
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.indigo, width: 3),
-                    borderRadius: BorderRadius.circular(12)),
+                    border: Border.all(color: Colors.indigo, width: 3), borderRadius: BorderRadius.circular(12)),
                 child: Center(
-                  child: Icon(Icons.add, size: 32,
-                  color: Colors.indigo,),
+                  child: Icon(
+                    Icons.add,
+                    size: 32,
+                    color: Colors.indigo,
+                  ),
                 ),
               ),
               Padding(
@@ -91,8 +92,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
                     ),
                     Text(
                       "Save",
-                      style: TextStyle(color: Colors.grey,
-                      fontSize: 12),
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
                     ),
                   ],
                 ),
