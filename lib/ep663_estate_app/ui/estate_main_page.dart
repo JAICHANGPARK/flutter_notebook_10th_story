@@ -30,7 +30,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
       )),
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 72,
+          height: 76,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -69,8 +69,8 @@ class _EstateMainPageState extends State<EstateMainPage> {
                 ),
               ),
               Container(
-                height: 48,
-                width: 48,
+                height: 42,
+                width: 42,
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.indigo, width: 3), borderRadius: BorderRadius.circular(12)),
                 child: Center(
@@ -100,7 +100,6 @@ class _EstateMainPageState extends State<EstateMainPage> {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton(
                       icon: Icon(Icons.person_outline),
