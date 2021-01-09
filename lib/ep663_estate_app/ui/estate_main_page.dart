@@ -71,18 +71,22 @@ class _EstateMainPageState extends State<EstateMainPage> {
                   color: Colors.indigo,),
                 ),
               ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.favorite_border),
-                    onPressed: () {},
-                    iconSize: 32,
-                  ),
-                  Text(
-                    "Home",
-                    style: TextStyle(color: Colors.orange),
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Column(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.favorite_border),
+                      onPressed: () {},
+                      iconSize: 28,
+                    ),
+                    Text(
+                      "Save",
+                      style: TextStyle(color: Colors.grey,
+                      fontSize: 12),
+                    ),
+                  ],
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 4),
@@ -92,11 +96,11 @@ class _EstateMainPageState extends State<EstateMainPage> {
                     IconButton(
                       icon: Icon(Icons.person_outline),
                       onPressed: () {},
-                      iconSize: 32,
+                      iconSize: 28,
                     ),
                     Text(
                       "Profile",
-                      style: TextStyle(color: Colors.orange),
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
                     ),
                   ],
                 ),
