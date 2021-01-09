@@ -59,6 +59,17 @@ class _EstateMainPageState extends State<EstateMainPage> {
                   ),
                 ],
               ),
+              Container(
+                height: 48,
+                width: 48,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.indigo, width: 3),
+                    borderRadius: BorderRadius.circular(12)),
+                child: Center(
+                  child: Icon(Icons.add, size: 32,
+                  color: Colors.indigo,),
+                ),
+              ),
               Column(
                 children: [
                   IconButton(
