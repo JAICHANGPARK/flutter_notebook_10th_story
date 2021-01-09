@@ -33,32 +33,41 @@ class _EstateMainPageState extends State<EstateMainPage> {
           height: 72,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.home_outlined),
-                    onPressed: () {},
-                    iconSize: 32,
-                  ),
-                  Text(
-                    "Home",
-                    style: TextStyle(color: Colors.orange),
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Column(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.home_outlined),
+                      onPressed: () {},
+                      iconSize: 28,
+                      color: Colors.orange,
+                    ),
+                    Text(
+                      "Home",
+                      style: TextStyle(color: Colors.orange,  fontSize: 12),
+                    ),
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.chat_bubble_outline),
-                    onPressed: () {},
-                    iconSize: 32,
-                  ),
-                  Text(
-                    "Home",
-                    style: TextStyle(color: Colors.orange),
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Column(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.chat_outlined),
+                      onPressed: () {},
+                      iconSize: 28,
+                    ),
+                    Text(
+                      "Chat",
+                      style: TextStyle(color: Colors.grey,
+                          fontSize: 12),
+                    ),
+                  ],
+                ),
               ),
               Container(
                 height: 48,
