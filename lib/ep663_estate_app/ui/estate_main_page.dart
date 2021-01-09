@@ -32,6 +32,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
         child: Container(
           height: 72,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
                 children: [
@@ -49,7 +50,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
               Column(
                 children: [
                   IconButton(
-                    icon: Icon(Icons.home_outlined),
+                    icon: Icon(Icons.chat_bubble_outline),
                     onPressed: () {},
                     iconSize: 32,
                   ),
@@ -73,7 +74,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
               Column(
                 children: [
                   IconButton(
-                    icon: Icon(Icons.home_outlined),
+                    icon: Icon(Icons.favorite_border),
                     onPressed: () {},
                     iconSize: 32,
                   ),
@@ -83,18 +84,22 @@ class _EstateMainPageState extends State<EstateMainPage> {
                   ),
                 ],
               ),
-              Column(
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.home_outlined),
-                    onPressed: () {},
-                    iconSize: 32,
-                  ),
-                  Text(
-                    "Home",
-                    style: TextStyle(color: Colors.orange),
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.person_outline),
+                      onPressed: () {},
+                      iconSize: 32,
+                    ),
+                    Text(
+                      "Profile",
+                      style: TextStyle(color: Colors.orange),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
