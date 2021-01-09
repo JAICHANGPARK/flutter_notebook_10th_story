@@ -15,7 +15,13 @@ class _EstateMainPageState extends State<EstateMainPage> {
           top: 0,
           left: 0,
           right: 0,
-          bottom: MediaQuery.of(context).size.height / 2,)
+          bottom: MediaQuery.of(context).size.height / 2.3,),
+          Positioned(child: Placeholder(),
+            top: MediaQuery.of(context).size.height / 2.8,
+            left: 0,
+            right: 0,
+            bottom: 0,),
+
         ],
 
       )),
