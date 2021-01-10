@@ -22,7 +22,6 @@ class _EstateMainPageState extends State<EstateMainPage> {
                     bottomLeft: Radius.circular(36),
                     bottomRight: Radius.circular(36),
                   )),
-
               child: Column(
                 children: [
                   Padding(
@@ -55,6 +54,22 @@ class _EstateMainPageState extends State<EstateMainPage> {
                         )
                       ],
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Text(
+                            "House Buy",
+                            style: TextStyle(
+                              color: Colors.white.withOpacity(0.2),
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
                   )
                 ],
               ),
