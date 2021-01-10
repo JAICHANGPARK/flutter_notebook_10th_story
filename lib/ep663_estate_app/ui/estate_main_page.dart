@@ -216,12 +216,12 @@ class _EstateMainPageState extends State<EstateMainPage> {
                 height: 42,
                 width: 42,
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.indigo, width: 3), borderRadius: BorderRadius.circular(12)),
+                    border: Border.all(color: appColor, width: 3), borderRadius: BorderRadius.circular(12)),
                 child: Center(
                   child: Icon(
                     Icons.add,
                     size: 32,
-                    color: Colors.indigo,
+                    color: appColor,
                   ),
                 ),
               ),
