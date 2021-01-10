@@ -14,7 +14,13 @@ class _EstateMainPageState extends State<EstateMainPage> {
         children: [
           Positioned(
             child: Container(
-              
+              decoration: BoxDecoration(
+                color: Colors.indigo,
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(16)
+                )
+                
+              ),
             ),
             top: 0,
             left: 0,
