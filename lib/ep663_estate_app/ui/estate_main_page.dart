@@ -26,7 +26,15 @@ class _EstateMainPageState extends State<EstateMainPage> {
                 children: [
                   Row(
                     children: [
-                      
+                      Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          // 96 99 126  60 63 7E
+                          color: Color(0xff60637e),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      )
                     ],
                   )
 
