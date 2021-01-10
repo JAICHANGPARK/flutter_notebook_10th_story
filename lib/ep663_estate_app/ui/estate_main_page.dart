@@ -7,6 +7,7 @@ class EstateMainPage extends StatefulWidget {
 
 class _EstateMainPageState extends State<EstateMainPage> {
   final Color appColor = Color(0xff223444);
+  int searchTabIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -57,19 +58,28 @@ class _EstateMainPageState extends State<EstateMainPage> {
                   ),
                   Row(
                     children: [
-                      Column(
-                        children: [
-                          Text(
-                            "House Buy",
-                            style: TextStyle(
-                              color: Colors.white.withOpacity(0.2),
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
+                      GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            searchTabIndex = 0;
+                          });
+                        },
+                        child: Column(
+                          children: [
+                            Text(
+                              "House Buy",
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(0.2),
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 4,),
-                          Container(width: 100, height: 3, color: Colors.deepOrange)
-                        ],
+                            SizedBox(height: 4,),
+                            Container(width: 100, height: 3, color:
+                            searchTabIndex == 0 ?
+                            Colors.deepOrange :Colors.transparent)
+                          ],
+                        ),
                       )
                     ],
                   )
