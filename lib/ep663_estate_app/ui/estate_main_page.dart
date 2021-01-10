@@ -67,7 +67,6 @@ class _EstateMainPageState extends State<EstateMainPage> {
                             });
                           },
                           child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "House Buy",
@@ -127,15 +126,23 @@ class _EstateMainPageState extends State<EstateMainPage> {
                     child: Row(
                       children: [
                         Expanded(
-                            flex: 10,
-                            child: Container(
-                              height: 52,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(8)
+                          flex: 10,
+                          child: Container(
+                            height: 52,
+                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                            padding: EdgeInsets.only(left: 16),
+                            child: TextField(
+                              decoration: InputDecoration(
+                                icon: Icon(Icons.search),
+                                hintText: "Search Properties..."
                               ),
-                            )),
-                        SizedBox(width: 16,),
+                            ),
+                          ),
+
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
                         Expanded(
                             flex: 2,
                             child: Container(
