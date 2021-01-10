@@ -117,6 +117,12 @@ class _EstateMainPageState extends State<EstateMainPage> {
                         )
                       ],
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(child: Placeholder()),
+                      Expanded(child: Placeholder()),
+                    ],
                   )
                 ],
               ),
