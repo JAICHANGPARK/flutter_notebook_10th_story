@@ -13,7 +13,9 @@ class _EstateMainPageState extends State<EstateMainPage> {
           child: Stack(
         children: [
           Positioned(
-            child: Placeholder(),
+            child: Container(
+              
+            ),
             top: 0,
             left: 0,
             right: 0,
