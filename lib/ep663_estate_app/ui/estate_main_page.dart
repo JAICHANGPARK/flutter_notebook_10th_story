@@ -126,7 +126,10 @@ class _EstateMainPageState extends State<EstateMainPage> {
                             flex: 10,
                             child: Container(
                               height: 52,
-                              color: Colors.white,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8)
+                              ),
                             )),
                         SizedBox(width: 16,),
                         Expanded(
