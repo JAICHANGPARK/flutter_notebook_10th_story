@@ -22,34 +22,39 @@ class _EstateMainPageState extends State<EstateMainPage> {
                     bottomLeft: Radius.circular(36),
                     bottomRight: Radius.circular(36),
                   )),
+
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        height: 48,
-                        width: 48,
-                        decoration: BoxDecoration(
-                          // 96 99 126  60 63 7E
-                          color: Color(0xff60637e),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: Center(
-                          child: Icon(
-                            Icons.apps_outlined,
-                            color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 48,
+                          width: 48,
+                          decoration: BoxDecoration(
+                            // 96 99 126  60 63 7E
+                            color: Color(0xff60637e),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Center(
+                            child: Icon(
+                              Icons.apps_outlined,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
-                      ),
-                      Container(
-                        height: 48,
-                        width: 48,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      )
-                    ],
+                        Container(
+                          height: 48,
+                          width: 48,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
