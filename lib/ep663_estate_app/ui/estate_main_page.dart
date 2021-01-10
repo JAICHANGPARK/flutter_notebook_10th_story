@@ -34,6 +34,9 @@ class _EstateMainPageState extends State<EstateMainPage> {
                           color: Color(0xff60637e),
                           borderRadius: BorderRadius.circular(8),
                         ),
+                        child: Center(
+                          child: Icon(Icons.apps_outlined, color: Colors.white,),
+                        ),
                       )
                     ],
                   )
