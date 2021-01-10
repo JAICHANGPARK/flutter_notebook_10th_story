@@ -120,8 +120,17 @@ class _EstateMainPageState extends State<EstateMainPage> {
                   ),
                   Row(
                     children: [
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder()),
+                      Expanded(
+                          flex: 10,
+                          child: Container(
+                        height: 36,
+                        color: Colors.white,
+                      )),
+                      Expanded(
+                          flex : 4,child: Container(
+                        height: 36,
+                        width: 36,
+                      )),
                     ],
                   )
                 ],
