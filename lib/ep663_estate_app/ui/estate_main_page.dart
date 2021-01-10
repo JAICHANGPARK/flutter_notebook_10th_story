@@ -21,7 +21,16 @@ class _EstateMainPageState extends State<EstateMainPage> {
                   bottomLeft: Radius.circular(36),
                   bottomRight: Radius.circular(36),
                 )
-                
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      
+                    ],
+                  )
+
+                ],
               ),
             ),
             top: 0,
