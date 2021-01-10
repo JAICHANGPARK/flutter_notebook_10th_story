@@ -7,6 +7,7 @@ class EstateMainPage extends StatefulWidget {
 
 class _EstateMainPageState extends State<EstateMainPage> {
   final Color appColor = Color(0xff223444);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,12 +17,11 @@ class _EstateMainPageState extends State<EstateMainPage> {
           Positioned(
             child: Container(
               decoration: BoxDecoration(
-                color: appColor, // 34 52 68  ==> 22 34 44
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(36),
-                  bottomRight: Radius.circular(36),
-                )
-              ),
+                  color: appColor, // 34 52 68  ==> 22 34 44
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(36),
+                    bottomRight: Radius.circular(36),
+                  )),
               child: Column(
                 children: [
                   Row(
@@ -35,12 +35,22 @@ class _EstateMainPageState extends State<EstateMainPage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Center(
-                          child: Icon(Icons.apps_outlined, color: Colors.white,),
+                          child: Icon(
+                            Icons.apps_outlined,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
                         ),
                       )
                     ],
                   )
-
                 ],
               ),
             ),
