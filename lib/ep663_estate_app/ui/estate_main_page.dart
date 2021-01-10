@@ -26,7 +26,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -67,6 +67,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
                             });
                           },
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "House Buy",
@@ -117,6 +118,9 @@ class _EstateMainPageState extends State<EstateMainPage> {
                         )
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    height: 8,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
