@@ -59,7 +59,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
                   Row(
                     children: [
                       GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
                             searchTabIndex = 0;
                           });
@@ -74,10 +74,39 @@ class _EstateMainPageState extends State<EstateMainPage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(height: 4,),
-                            Container(width: 100, height: 3, color:
-                            searchTabIndex == 0 ?
-                            Colors.deepOrange :Colors.transparent)
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Container(
+                                width: 100,
+                                height: 3,
+                                color: searchTabIndex == 0 ? Colors.deepOrange : Colors.transparent)
+                          ],
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            searchTabIndex = 1;
+                          });
+                        },
+                        child: Column(
+                          children: [
+                            Text(
+                              "House Rent",
+                              style: TextStyle(
+                                color: searchTabIndex == 1 ? Colors.deepOrange : Colors.white.withOpacity(0.2),
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 4,
+                            ),
+                            Container(
+                                width: 100,
+                                height: 3,
+                                color: searchTabIndex == 1 ? Colors.deepOrange : Colors.transparent)
                           ],
                         ),
                       )
