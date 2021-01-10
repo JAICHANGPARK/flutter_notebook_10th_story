@@ -118,20 +118,25 @@ class _EstateMainPageState extends State<EstateMainPage> {
                       ],
                     ),
                   ),
-                  Row(
-                    children: [
-                      Expanded(
-                          flex: 10,
-                          child: Container(
-                        height: 36,
-                        color: Colors.white,
-                      )),
-                      Expanded(
-                          flex : 4,child: Container(
-                        height: 36,
-                        width: 36,
-                      )),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Expanded(
+                            flex: 10,
+                            child: Container(
+                              height: 52,
+                              color: Colors.white,
+                            )),
+                        SizedBox(width: 16,),
+                        Expanded(
+                            flex: 2,
+                            child: Container(
+                              height: 52,
+                              color: Colors.deepOrange,
+                            )),
+                      ],
+                    ),
                   )
                 ],
               ),
