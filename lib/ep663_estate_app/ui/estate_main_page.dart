@@ -57,7 +57,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                     child: Row(
                       children: [
                         GestureDetector(
@@ -71,7 +71,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
                               Text(
                                 "House Buy",
                                 style: TextStyle(
-                                  color: Colors.white.withOpacity(0.2),
+                                  color: searchTabIndex == 0 ? Colors.deepOrange : Colors.white.withOpacity(0.2),
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -80,11 +80,14 @@ class _EstateMainPageState extends State<EstateMainPage> {
                                 height: 4,
                               ),
                               Container(
-                                  width: 100,
+                                  width: 96,
                                   height: 3,
                                   color: searchTabIndex == 0 ? Colors.deepOrange : Colors.transparent)
                             ],
                           ),
+                        ),
+                        SizedBox(
+                          width: 16,
                         ),
                         GestureDetector(
                           onTap: () {
