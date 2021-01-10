@@ -17,7 +17,8 @@ class _EstateMainPageState extends State<EstateMainPage> {
               decoration: BoxDecoration(
                 color: Colors.indigo,
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(16)
+                  bottomLeft: Radius.circular(36),
+                  bottomRight: Radius.circular(36),
                 )
                 
               ),
