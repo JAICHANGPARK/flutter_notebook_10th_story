@@ -67,7 +67,8 @@ class _EstateMainPageState extends State<EstateMainPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Container(width: 100, height: 2, color: Colors.deepOrange)
+                          SizedBox(height: 4,),
+                          Container(width: 100, height: 3, color: Colors.deepOrange)
                         ],
                       )
                     ],
