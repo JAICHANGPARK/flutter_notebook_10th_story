@@ -161,11 +161,11 @@ class _EstateMainPageState extends State<EstateMainPage> {
             top: 0,
             left: 0,
             right: 0,
-            bottom: MediaQuery.of(context).size.height / 2.3,
+            bottom: MediaQuery.of(context).size.height / 2.2,
           ),
           Positioned(
             child: Placeholder(),
-            top: MediaQuery.of(context).size.height / 2.8,
+            top: MediaQuery.of(context).size.height / 3.1,
             left: 0,
             right: 0,
             bottom: 0,
