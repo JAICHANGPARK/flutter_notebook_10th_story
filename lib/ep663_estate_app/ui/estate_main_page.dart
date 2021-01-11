@@ -169,7 +169,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 16,),
                     child: SizedBox(
                       height: MediaQuery.of(context).size.height / 3,
                       width: double.infinity,
