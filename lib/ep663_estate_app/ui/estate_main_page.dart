@@ -171,7 +171,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16,),
                     child: SizedBox(
-                      height: MediaQuery.of(context).size.height / 3,
+                      height: MediaQuery.of(context).size.height / 2.6,
                       width: double.infinity,
                       child: Card(
                         child: Padding(
@@ -182,8 +182,20 @@ class _EstateMainPageState extends State<EstateMainPage> {
                               Text("Browse Properties", style: TextStyle(
                                   fontSize: 18,
                                 fontWeight: FontWeight.bold,
-
-                              ),)
+                              ),),
+                              TabBar(
+                                onTap: (tabIdx){}, tabs: [
+                                  Tab(
+                                    text: "Homes",
+                                  ),
+                                Tab(
+                                  text: "Plots",
+                                ),
+                                Tab(
+                                  text: "Commercial",
+                                ),
+                              ],
+                              )
                             ],
                           ),
                         ),
