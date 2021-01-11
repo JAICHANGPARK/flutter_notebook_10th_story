@@ -204,7 +204,8 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                 labelColor: Colors.deepOrange,
                                 indicatorSize: TabBarIndicatorSize.label,
                                 indicatorColor: Colors.deepOrange,
-                                indicatorWeight: 3,
+                                indicatorWeight: 3,isScrollable: true,
+                                unselectedLabelColor: Colors.grey,
                                 onTap: (tabIdx) {},
                                 tabs: [
                                   Tab(
