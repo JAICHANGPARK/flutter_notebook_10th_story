@@ -219,7 +219,8 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                   ),
                                 ],
                               ),
-                              TabBarView(children: [
+                              TabBarView(
+                                  controller: _tabController,children: [
                                 Column(
                                   children: [
                                     Row(
