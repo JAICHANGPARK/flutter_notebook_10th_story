@@ -202,6 +202,9 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                               TabBar(
                                 controller: _tabController,
                                 labelColor: Colors.deepOrange,
+                                indicatorSize: TabBarIndicatorSize.label,
+                                indicatorColor: Colors.deepOrange,
+                                indicatorWeight: 3,
                                 onTap: (tabIdx) {},
                                 tabs: [
                                   Tab(
