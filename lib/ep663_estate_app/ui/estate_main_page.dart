@@ -168,7 +168,13 @@ class _EstateMainPageState extends State<EstateMainPage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  
+                  Card(
+                    child: Column(
+                      children: [
+
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
