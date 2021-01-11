@@ -5,11 +5,11 @@ class EstateMainPage extends StatefulWidget {
   _EstateMainPageState createState() => _EstateMainPageState();
 }
 
-class _EstateMainPageState extends State<EstateMainPage>
-with TickerProviderStateMixin{
+class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStateMixin {
   final Color appColor = Color(0xff223444);
   int searchTabIndex = 0;
   TabController _tabController;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -157,7 +157,10 @@ with TickerProviderStateMixin{
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Center(
-                              child: Icon(Icons.tune, color: Colors.white,),
+                              child: Icon(
+                                Icons.tune,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
@@ -177,7 +180,9 @@ with TickerProviderStateMixin{
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16,),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                    ),
                     child: SizedBox(
                       height: MediaQuery.of(context).size.height / 2.6,
                       width: double.infinity,
@@ -187,22 +192,28 @@ with TickerProviderStateMixin{
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Browse Properties", style: TextStyle(
+                              Text(
+                                "Browse Properties",
+                                style: TextStyle(
                                   fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),),
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               TabBar(
-                                onTap: (tabIdx){}, tabs: [
+                                controller: _tabController,
+                                labelColor: Colors.deepOrange,
+                                onTap: (tabIdx) {},
+                                tabs: [
                                   Tab(
                                     text: "Homes",
                                   ),
-                                Tab(
-                                  text: "Plots",
-                                ),
-                                Tab(
-                                  text: "Commercial",
-                                ),
-                              ],
+                                  Tab(
+                                    text: "Plots",
+                                  ),
+                                  Tab(
+                                    text: "Commercial",
+                                  ),
+                                ],
                               )
                             ],
                           ),
