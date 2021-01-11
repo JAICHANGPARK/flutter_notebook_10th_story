@@ -8,11 +8,12 @@ class EstateMainPage extends StatefulWidget {
 class _EstateMainPageState extends State<EstateMainPage> {
   final Color appColor = Color(0xff223444);
   int searchTabIndex = 0;
-  
+  TabController _tabController;
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+    _tabController = TabController(length: 3, vsync: this);
   }
 
   @override
