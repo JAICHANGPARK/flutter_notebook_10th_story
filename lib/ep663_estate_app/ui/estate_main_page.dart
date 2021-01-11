@@ -220,11 +220,14 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                 ],
                               ),
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Text("Popular"),
-                                  Text("Popular"),
-                                  Text("Popular"),
-                                  Text("Popular")
+                                  Text("Popular", style: TextStyle(
+                                    color: Colors.grey,
+                                  ),),
+                                  Text("Type"),
+                                  Text("Location"),
+                                  Text("Area Size")
                                 ],
                               )
                             ],
