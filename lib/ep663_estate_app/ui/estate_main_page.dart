@@ -165,7 +165,13 @@ class _EstateMainPageState extends State<EstateMainPage> {
             bottom: MediaQuery.of(context).size.height / 2.2,
           ),
           Positioned(
-            child: Placeholder(),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  
+                ],
+              ),
+            ),
             top: MediaQuery.of(context).size.height / 3.1,
             left: 0,
             right: 0,
