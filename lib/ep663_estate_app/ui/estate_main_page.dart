@@ -227,14 +227,14 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                               SizedBox(
                                 height: 180,
                                 child: Container(
-                                  color: Colors.purple,
+
                                   child: TabBarView(
                                       controller: _tabController,children: [
                                     Column(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
                                           children: [
                                             Text("Popular", style: TextStyle(
                                               color: Colors.grey,
