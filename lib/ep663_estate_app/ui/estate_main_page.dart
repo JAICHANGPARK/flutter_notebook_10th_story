@@ -21,7 +21,6 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-
       body: SafeArea(
           child: Stack(
         children: [
@@ -206,7 +205,8 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                 labelColor: Colors.deepOrange,
                                 indicatorSize: TabBarIndicatorSize.label,
                                 indicatorColor: Colors.deepOrange,
-                                indicatorWeight: 3,isScrollable: true,
+                                indicatorWeight: 3,
+                                isScrollable: true,
                                 unselectedLabelColor: Colors.grey,
                                 onTap: (tabIdx) {},
                                 tabs: [
@@ -227,27 +227,38 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                               SizedBox(
                                 height: 180,
                                 child: Container(
-
-                                  child: TabBarView(
-                                      controller: _tabController,children: [
+                                  child: TabBarView(controller: _tabController, children: [
                                     Column(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                                           children: [
-                                            Text("Popular", style: TextStyle(
-                                              color: Colors.grey,
-                                            ),),
-                                            Text("Type", style: TextStyle(
-                                              color: Colors.grey,
-                                            ),),
-                                            Text("Location", style: TextStyle(
-                                              color: Colors.deepOrange,
-                                            ),),
-                                            Text("Area Size", style: TextStyle(
-                                              color: Colors.grey,
-                                            ),)
+                                            Text(
+                                              "Popular",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                            Text(
+                                              "Type",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                            Text(
+                                              "Location",
+                                              style: TextStyle(
+                                                color: Colors.deepOrange,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              "Area Size",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
+                                            )
                                           ],
                                         ),
                                         Container(
@@ -256,7 +267,6 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                             color: Colors.pink,
                                           ),
                                         )
-
                                       ],
                                     ),
                                     Container(),
@@ -264,7 +274,6 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                   ]),
                                 ),
                               ),
-
                             ],
                           ),
                         ),
