@@ -5,7 +5,8 @@ class EstateMainPage extends StatefulWidget {
   _EstateMainPageState createState() => _EstateMainPageState();
 }
 
-class _EstateMainPageState extends State<EstateMainPage> {
+class _EstateMainPageState extends State<EstateMainPage>
+with TickerProviderStateMixin{
   final Color appColor = Color(0xff223444);
   int searchTabIndex = 0;
   TabController _tabController;
