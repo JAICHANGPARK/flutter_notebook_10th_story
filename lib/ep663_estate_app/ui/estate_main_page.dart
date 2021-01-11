@@ -231,6 +231,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                   child: TabBarView(
                                       controller: _tabController,children: [
                                     Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -250,7 +251,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                           ],
                                         ),
                                         Container(
-                                          height: 120,
+                                          height: 140,
                                           decoration: BoxDecoration(
                                             color: Colors.pink,
                                           ),
