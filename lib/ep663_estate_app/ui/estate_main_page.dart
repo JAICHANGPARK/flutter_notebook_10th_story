@@ -173,7 +173,9 @@ class _EstateMainPageState extends State<EstateMainPage> {
                     child: Card(
                       child: Column(
                         children: [
-
+                          Text("Browse Properties", style: TextStyle(
+                            
+                          ),)
                         ],
                       ),
                     ),
