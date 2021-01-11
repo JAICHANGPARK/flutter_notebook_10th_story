@@ -20,6 +20,8 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      
       body: SafeArea(
           child: Stack(
         children: [
