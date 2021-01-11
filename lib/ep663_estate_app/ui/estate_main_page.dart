@@ -219,26 +219,33 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                   ),
                                 ],
                               ),
-                              TabBarView(
-                                  controller: _tabController,children: [
-                                Column(
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              SizedBox(
+                                height: 160,
+                                child: Container(
+                                  color: Colors.purple,
+                                  child: TabBarView(
+
+                                      controller: _tabController,children: [
+                                    Column(
                                       children: [
-                                        Text("Popular", style: TextStyle(
-                                          color: Colors.grey,
-                                        ),),
-                                        Text("Type"),
-                                        Text("Location"),
-                                        Text("Area Size")
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                          children: [
+                                            Text("Popular", style: TextStyle(
+                                              color: Colors.grey,
+                                            ),),
+                                            Text("Type"),
+                                            Text("Location"),
+                                            Text("Area Size")
+                                          ],
+                                        )
                                       ],
-                                    )
-                                  ],
+                                    ),
+                                    Container(),
+                                    Container(),
+                                  ]),
                                 ),
-                                Container(),
-                                Container(),
-                              ]),
+                              ),
 
                             ],
                           ),
