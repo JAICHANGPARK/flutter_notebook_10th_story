@@ -132,7 +132,10 @@ class _EstateMainPageState extends State<EstateMainPage> {
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                             padding: EdgeInsets.only(left: 16),
                             child: TextField(
-                              decoration: InputDecoration(icon: Icon(Icons.search), hintText: "Search Properties..."),
+                              decoration: InputDecoration(icon: Icon(Icons.search),
+
+                                  hintText: "Search Properties...",
+                              border: InputBorder.none),
                             ),
                           ),
                         ),
