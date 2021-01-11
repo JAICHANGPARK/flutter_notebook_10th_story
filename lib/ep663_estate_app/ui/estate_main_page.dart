@@ -219,17 +219,26 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                   ),
                                 ],
                               ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Text("Popular", style: TextStyle(
-                                    color: Colors.grey,
-                                  ),),
-                                  Text("Type"),
-                                  Text("Location"),
-                                  Text("Area Size")
-                                ],
-                              )
+                              TabBarView(children: [
+                                Column(
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Text("Popular", style: TextStyle(
+                                          color: Colors.grey,
+                                        ),),
+                                        Text("Type"),
+                                        Text("Location"),
+                                        Text("Area Size")
+                                      ],
+                                    )
+                                  ],
+                                ),
+                                Container(),
+                                Container(),
+                              ]),
+
                             ],
                           ),
                         ),
