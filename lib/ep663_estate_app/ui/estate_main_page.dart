@@ -218,6 +218,14 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                     text: "Commercial",
                                   ),
                                 ],
+                              ),
+                              Row(
+                                children: [
+                                  Text("Popular"),
+                                  Text("Popular"),
+                                  Text("Popular"),
+                                  Text("Popular")
+                                ],
                               )
                             ],
                           ),
