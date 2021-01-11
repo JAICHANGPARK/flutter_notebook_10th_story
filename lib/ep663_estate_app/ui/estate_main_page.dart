@@ -132,13 +132,9 @@ class _EstateMainPageState extends State<EstateMainPage> {
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                             padding: EdgeInsets.only(left: 16),
                             child: TextField(
-                              decoration: InputDecoration(
-                                icon: Icon(Icons.search),
-                                hintText: "Search Properties..."
-                              ),
+                              decoration: InputDecoration(icon: Icon(Icons.search), hintText: "Search Properties..."),
                             ),
                           ),
-
                         ),
                         SizedBox(
                           width: 16,
@@ -147,10 +143,8 @@ class _EstateMainPageState extends State<EstateMainPage> {
                             flex: 2,
                             child: Container(
                               height: 52,
-                              decoration: BoxDecoration(
-                                color: Colors.deepOrange,
-                                borderRadius: BorderRadius.circular(8)
-                              ),
+                              decoration:
+                                  BoxDecoration(color: Colors.deepOrange, borderRadius: BorderRadius.circular(8)),
                             )),
                       ],
                     ),
