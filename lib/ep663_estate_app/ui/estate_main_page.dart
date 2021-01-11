@@ -141,14 +141,18 @@ class _EstateMainPageState extends State<EstateMainPage> {
                           width: 16,
                         ),
                         Expanded(
-                            flex: 2,
-                            child: Container(
-                              height: 52,
-                              decoration: BoxDecoration(
-                                color: Colors.deepOrange,
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                            )),
+                          flex: 2,
+                          child: Container(
+                            height: 52,
+                            decoration: BoxDecoration(
+                              color: Colors.deepOrange,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Center(
+                              child: Icon(Icons.tune, color: Colors.white,),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   )
