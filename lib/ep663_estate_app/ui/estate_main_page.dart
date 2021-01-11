@@ -247,7 +247,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                             ),)
                                           ],
                                         ),
-                                        
+
                                       ],
                                     ),
                                     Container(),
