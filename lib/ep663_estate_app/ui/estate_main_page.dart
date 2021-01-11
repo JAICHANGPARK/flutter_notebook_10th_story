@@ -168,15 +168,19 @@ class _EstateMainPageState extends State<EstateMainPage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height / 3,
-                    child: Card(
-                      child: Column(
-                        children: [
-                          Text("Browse Properties", style: TextStyle(
-                            
-                          ),)
-                        ],
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: SizedBox(
+                      height: MediaQuery.of(context).size.height / 3,
+                      width: double.infinity,
+                      child: Card(
+                        child: Column(
+                          children: [
+                            Text("Browse Properties", style: TextStyle(
+
+                            ),)
+                          ],
+                        ),
                       ),
                     ),
                   )
