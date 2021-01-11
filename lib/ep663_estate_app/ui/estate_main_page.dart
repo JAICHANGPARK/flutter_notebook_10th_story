@@ -184,7 +184,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                       horizontal: 16,
                     ),
                     child: SizedBox(
-                      height: MediaQuery.of(context).size.height / 2.6,
+                      height: MediaQuery.of(context).size.height / 2.4,
                       width: double.infinity,
                       child: Card(
                         child: Padding(
@@ -223,7 +223,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                 height: 16,
                               ),
                               SizedBox(
-                                height: 160,
+                                height: 180,
                                 child: Container(
                                   color: Colors.purple,
                                   child: TabBarView(
@@ -240,13 +240,14 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                               color: Colors.grey,
                                             ),),
                                             Text("Location", style: TextStyle(
-                                              color: Colors.grey,
+                                              color: Colors.deepOrange,
                                             ),),
                                             Text("Area Size", style: TextStyle(
                                               color: Colors.grey,
                                             ),)
                                           ],
-                                        )
+                                        ),
+                                        
                                       ],
                                     ),
                                     Container(),
