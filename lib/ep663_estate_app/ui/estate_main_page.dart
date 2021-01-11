@@ -220,11 +220,13 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                 ],
                               ),
                               SizedBox(
+                                height: 16,
+                              ),
+                              SizedBox(
                                 height: 160,
                                 child: Container(
                                   color: Colors.purple,
                                   child: TabBarView(
-
                                       controller: _tabController,children: [
                                     Column(
                                       children: [
