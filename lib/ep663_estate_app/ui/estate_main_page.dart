@@ -231,14 +231,20 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                     Column(
                                       children: [
                                         Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text("Popular", style: TextStyle(
                                               color: Colors.grey,
                                             ),),
-                                            Text("Type"),
-                                            Text("Location"),
-                                            Text("Area Size")
+                                            Text("Type", style: TextStyle(
+                                              color: Colors.grey,
+                                            ),),
+                                            Text("Location", style: TextStyle(
+                                              color: Colors.grey,
+                                            ),),
+                                            Text("Area Size", style: TextStyle(
+                                              color: Colors.grey,
+                                            ),)
                                           ],
                                         )
                                       ],
