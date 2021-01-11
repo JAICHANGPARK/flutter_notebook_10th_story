@@ -174,13 +174,18 @@ class _EstateMainPageState extends State<EstateMainPage> {
                       height: MediaQuery.of(context).size.height / 3,
                       width: double.infinity,
                       child: Card(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Browse Properties", style: TextStyle(
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Browse Properties", style: TextStyle(
+                                  fontSize: 18,
+                                fontWeight: FontWeight.bold,
 
-                            ),)
-                          ],
+                              ),)
+                            ],
+                          ),
                         ),
                       ),
                     ),
