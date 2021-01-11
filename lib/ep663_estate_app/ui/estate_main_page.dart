@@ -175,6 +175,7 @@ class _EstateMainPageState extends State<EstateMainPage> {
                       width: double.infinity,
                       child: Card(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Browse Properties", style: TextStyle(
 
