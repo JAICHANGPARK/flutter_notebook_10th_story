@@ -289,7 +289,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                               ),
                                               child: Center(child: Padding(
                                                 padding: const EdgeInsets.all(8.0),
-                                                child: Text("Johar Town Phase 1"),
+                                                child: Text("Rolwind Road"),
                                               )),
                                             ),Container(
                                               decoration: BoxDecoration(
@@ -298,7 +298,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                               ),
                                               child: Center(child: Padding(
                                                 padding: const EdgeInsets.all(8.0),
-                                                child: Text("Johar Town Phase 1"),
+                                                child: Text("Alla lqbal Town"),
                                               )),
                                             ),
                                             Container(
