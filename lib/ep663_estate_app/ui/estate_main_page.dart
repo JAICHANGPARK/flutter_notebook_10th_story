@@ -318,7 +318,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                               ),
                                               child: Center(child: Padding(
                                                 padding: const EdgeInsets.all(8.0),
-                                                child: Text("Johar Town Phase 1"),
+                                                child: Text("Wapda Town"),
                                               )),
                                             ),
                                             Container(
@@ -328,7 +328,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                               ),
                                               child: Center(child: Padding(
                                                 padding: const EdgeInsets.all(8.0),
-                                                child: Text("Johar Town Phase 1"),
+                                                child: Text("Cantt city"),
                                               )),
                                             ),
                                             Container(),
