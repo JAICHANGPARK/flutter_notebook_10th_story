@@ -271,11 +271,11 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                             childAspectRatio: 1.5,
                                           mainAxisSpacing: 8,
                                           crossAxisSpacing: 8,
-
                                           children: [
                                             Container(
                                               decoration: BoxDecoration(
                                                 color: Colors.grey[100],
+                                                borderRadius: BorderRadius.circular(8)
                                               ),
                                               child: Center(child: Text("Johar Town Phase 1")),
                                             ),
