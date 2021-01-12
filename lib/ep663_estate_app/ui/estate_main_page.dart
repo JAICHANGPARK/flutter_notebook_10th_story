@@ -260,8 +260,11 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                             )
                                           ],
                                         ),
+                                        SizedBox(
+                                          height: 16,
+                                        ),
                                         Container(
-                                          height: 100,
+                                          height: 140,
                                           padding: EdgeInsets.symmetric(horizontal: 8),
                                           child: GridView.count(
                                             crossAxisCount: 3,
@@ -339,13 +342,17 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                                   child: Text("Cantt city"),
                                                 )),
                                               ),
-                                              Container(),
+
                                             ],
                                           ),
                                         )
                                       ],
                                     ),
-                                    Container(),
+                                Container(
+                                  child: Center(
+                                    child: Text("Center 1 "),
+                                  ),
+                                ),
                                     Container(),
                                   ]),
                                 ),
