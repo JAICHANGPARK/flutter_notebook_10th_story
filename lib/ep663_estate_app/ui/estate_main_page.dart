@@ -268,7 +268,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                           ),
                                           child: GridView.count(crossAxisCount: 3,
                                           shrinkWrap: true,
-                                            childAspectRatio: 1.5,
+                                            childAspectRatio: 1.6,
                                           mainAxisSpacing: 8,
                                           crossAxisSpacing: 8,
                                           children: [
@@ -276,6 +276,45 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                               decoration: BoxDecoration(
                                                 color: Colors.grey[100],
                                                 borderRadius: BorderRadius.circular(8)
+                                              ),
+                                              child: Center(child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text("Johar Town Phase 1"),
+                                              )),
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey[100],
+                                                  borderRadius: BorderRadius.circular(8)
+                                              ),
+                                              child: Center(child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text("Johar Town Phase 1"),
+                                              )),
+                                            ),Container(
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey[100],
+                                                  borderRadius: BorderRadius.circular(8)
+                                              ),
+                                              child: Center(child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text("Johar Town Phase 1"),
+                                              )),
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey[100],
+                                                  borderRadius: BorderRadius.circular(8)
+                                              ),
+                                              child: Center(child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text("Johar Town Phase 1"),
+                                              )),
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey[100],
+                                                  borderRadius: BorderRadius.circular(8)
                                               ),
                                               child: Center(child: Padding(
                                                 padding: const EdgeInsets.all(8.0),
