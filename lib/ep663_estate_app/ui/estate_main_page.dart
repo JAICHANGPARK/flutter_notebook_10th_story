@@ -348,6 +348,11 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                         ),
                       ),
                     ),
+                  ),
+
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height / 2.4,
+                    child: Card(),
                   )
                 ],
               ),
