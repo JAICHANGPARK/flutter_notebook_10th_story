@@ -263,78 +263,86 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                         ),
                                         Container(
                                           height: 140,
-                                          padding: EdgeInsets.symmetric(
-                                            horizontal: 8
-                                          ),
-                                          child: GridView.count(crossAxisCount: 3,
-                                          shrinkWrap: true,
+                                          padding: EdgeInsets.symmetric(horizontal: 8),
+                                          child: GridView.count(
+                                            crossAxisCount: 3,
+                                            shrinkWrap: true,
                                             childAspectRatio: 1.6,
-                                          mainAxisSpacing: 8,
-                                          crossAxisSpacing: 8,
-                                          children: [
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.grey[100],
-                                                borderRadius: BorderRadius.circular(8)
+                                            mainAxisSpacing: 8,
+                                            crossAxisSpacing: 8,
+                                            children: [
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                                                child: Center(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Text(
+                                                    "Johar Town Phase 1",
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                )),
                                               ),
-                                              child: Center(child: Padding(
-                                                padding: const EdgeInsets.all(8.0),
-                                                child: Text("Johar Town Phase 1",
-                                                textAlign: TextAlign.center,),
-                                              )),
-                                            ),
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                  color: Colors.grey[100],
-                                                  borderRadius: BorderRadius.circular(8)
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                                                child: Center(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Text(
+                                                    "Rolwind Road",
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                )),
                                               ),
-                                              child: Center(child: Padding(
-                                                padding: const EdgeInsets.all(8.0),
-                                                child: Text("Rolwind Road",textAlign: TextAlign.center,),
-                                              )),
-                                            ),Container(
-                                              decoration: BoxDecoration(
-                                                  color: Colors.grey[100],
-                                                  borderRadius: BorderRadius.circular(8)
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                                                child: Center(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Text(
+                                                    "Alla lqbal Town",
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                )),
                                               ),
-                                              child: Center(child: Padding(
-                                                padding: const EdgeInsets.all(8.0),
-                                                child: Text("Alla lqbal Town",textAlign: TextAlign.center,),
-                                              )),
-                                            ),
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                  color: Colors.grey[100],
-                                                  borderRadius: BorderRadius.circular(8)
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                                                child: Center(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Text(
+                                                    "Johar Town Phase 1",
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                )),
                                               ),
-                                              child: Center(child: Padding(
-                                                padding: const EdgeInsets.all(8.0),
-                                                child: Text("Johar Town Phase 1",textAlign: TextAlign.center,),
-                                              )),
-                                            ),
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                  color: Colors.grey[100],
-                                                  borderRadius: BorderRadius.circular(8)
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                                                child: Center(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Text(
+                                                    "Wapda Town",
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                )),
                                               ),
-                                              child: Center(child: Padding(
-                                                padding: const EdgeInsets.all(8.0),
-                                                child: Text("Wapda Town",textAlign: TextAlign.center,),
-                                              )),
-                                            ),
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                  color: Colors.grey[100],
-                                                  borderRadius: BorderRadius.circular(8)
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey[100], borderRadius: BorderRadius.circular(8)),
+                                                child: Center(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Text("Cantt city"),
+                                                )),
                                               ),
-                                              child: Center(child: Padding(
-                                                padding: const EdgeInsets.all(8.0),
-                                                child: Text("Cantt city"),
-                                              )),
-                                            ),
-                                            Container(),
-
-                                          ],),
+                                              Container(),
+                                            ],
+                                          ),
                                         )
                                       ],
                                     ),
@@ -349,15 +357,15 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                       ),
                     ),
                   ),
-
-                  SizedBox(
-                    width: double.infinity,
-                    height: MediaQuery.of(context).size.height / 2.4,
-                    child: Card(
-                      child: Column(
-                        children: [
-                          
-                        ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: SizedBox(
+                      width: double.infinity,
+                      height: MediaQuery.of(context).size.height / 2.4,
+                      child: Card(
+                        child: Column(
+                          children: [],
+                        ),
                       ),
                     ),
                   )
