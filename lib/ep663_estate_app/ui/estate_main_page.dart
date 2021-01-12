@@ -266,6 +266,10 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                           decoration: BoxDecoration(
                                             color: Colors.pink,
                                           ),
+                                          child: GridView.count(crossAxisCount: 3,
+                                          children: [
+                                            
+                                          ],),
                                         )
                                       ],
                                     ),
