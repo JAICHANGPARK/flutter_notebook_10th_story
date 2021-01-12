@@ -342,18 +342,21 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                                   child: Text("Cantt city"),
                                                 )),
                                               ),
-
                                             ],
                                           ),
                                         )
                                       ],
                                     ),
-                                Container(
-                                  child: Center(
-                                    child: Text("Center 1 "),
-                                  ),
-                                ),
-                                    Container(),
+                                    Container(
+                                      child: Center(
+                                        child: Text("Center 1 "),
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Center(
+                                        child: Text("Center 2"),
+                                      ),
+                                    ),
                                   ]),
                                 ),
                               ),
