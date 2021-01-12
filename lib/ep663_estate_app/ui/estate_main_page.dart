@@ -277,15 +277,20 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                                 color: Colors.grey[100],
                                                 borderRadius: BorderRadius.circular(8)
                                               ),
-                                              child: Center(child: Text("Johar Town Phase 1")),
+                                              child: Center(child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text("Johar Town Phase 1"),
+                                              )),
                                             ),
                                             Container(
                                               decoration: BoxDecoration(
-                                                color: Colors.grey,
+                                                  color: Colors.grey[100],
+                                                  borderRadius: BorderRadius.circular(8)
                                               ),
-                                              child: Center(
-                                                child: Text("Ralwind Road"),
-                                              ),
+                                              child: Center(child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text("Johar Town Phase 1"),
+                                              )),
                                             ),
                                             Container(),
 
