@@ -263,9 +263,6 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                         ),
                                         Container(
                                           height: 140,
-                                          decoration: BoxDecoration(
-                                            color: Colors.pink,
-                                          ),
                                           child: GridView.count(crossAxisCount: 3,
                                           shrinkWrap: true,
                                             childAspectRatio: 1.6,
