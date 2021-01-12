@@ -372,13 +372,17 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                       width: double.infinity,
                       height: MediaQuery.of(context).size.height / 2.4,
                       child: Card(
-                        child: Column(
-                          children: [
-                            Text(
-                              "Popular Properties",
-                              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                            )
-                          ],
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Popular Properties",
+                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
