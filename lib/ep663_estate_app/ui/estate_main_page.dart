@@ -263,6 +263,9 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                         ),
                                         Container(
                                           height: 140,
+                                          padding: EdgeInsets.symmetric(
+                                            horizontal: 8
+                                          ),
                                           child: GridView.count(crossAxisCount: 3,
                                           shrinkWrap: true,
                                             childAspectRatio: 1.6,
@@ -276,7 +279,8 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                               ),
                                               child: Center(child: Padding(
                                                 padding: const EdgeInsets.all(8.0),
-                                                child: Text("Johar Town Phase 1"),
+                                                child: Text("Johar Town Phase 1",
+                                                textAlign: TextAlign.center,),
                                               )),
                                             ),
                                             Container(
