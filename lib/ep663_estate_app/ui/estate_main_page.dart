@@ -309,7 +309,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                               ),
                                               child: Center(child: Padding(
                                                 padding: const EdgeInsets.all(8.0),
-                                                child: Text("Johar Town Phase 1"),
+                                                child: Text("Johar Town Phase 1",textAlign: TextAlign.center,),
                                               )),
                                             ),
                                             Container(
@@ -319,7 +319,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                               ),
                                               child: Center(child: Padding(
                                                 padding: const EdgeInsets.all(8.0),
-                                                child: Text("Wapda Town"),
+                                                child: Text("Wapda Town",textAlign: TextAlign.center,),
                                               )),
                                             ),
                                             Container(
