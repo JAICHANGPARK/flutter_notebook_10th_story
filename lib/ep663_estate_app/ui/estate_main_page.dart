@@ -229,7 +229,6 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                 child: Container(
                                   child: TabBarView(controller: _tabController, children: [
                                     Column(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -262,7 +261,7 @@ class _EstateMainPageState extends State<EstateMainPage> with TickerProviderStat
                                           ],
                                         ),
                                         Container(
-                                          height: 140,
+                                          height: 100,
                                           padding: EdgeInsets.symmetric(horizontal: 8),
                                           child: GridView.count(
                                             crossAxisCount: 3,
