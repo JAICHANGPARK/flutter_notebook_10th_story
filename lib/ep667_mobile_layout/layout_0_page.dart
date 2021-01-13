@@ -165,15 +165,17 @@ class Layout0Page extends StatelessWidget {
               Divider(color: Colors.white, thickness: 1, height: 8,),
               Center(
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TextButton(
                       onPressed: () {  },
                       child: Text("See all", style: TextStyle(
-                        color: Colors.white
+                        color: Colors.white,
+                        fontSize: 16
                       ),),
 
                     ),
-                    Icon(Icons.arrow_forward, size: 18,)
+                    Icon(Icons.arrow_forward, size: 18, color: Colors.white,)
                   ],
                 ),
               )
