@@ -13,25 +13,28 @@ class Layout0Page extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Attica",
-                      style: TextStyle(color: Colors.white, fontSize: 48,
-                      fontWeight: FontWeight.bold),
-                    ),
-                    Text("asd"),
-                  ],
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Attica",
+                        style: TextStyle(color: Colors.white, fontSize: 48,
+                        fontWeight: FontWeight.bold),
+                      ),
+                      Text("asd"),
+                      Divider(
+                        color: Colors.white,
+                        thickness: 1,
+                      ),
+                    ],
+                  ),
                 ),
               ),
 
-              Divider(
-                color: Colors.white,
-                thickness: 1,
-              ),
+
             ],
           ),
         ));
