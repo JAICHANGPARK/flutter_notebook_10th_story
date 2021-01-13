@@ -164,11 +164,17 @@ class Layout0Page extends StatelessWidget {
               ),
               Divider(color: Colors.white, thickness: 1, height: 8,),
               Center(
-                child: TextButton(
-                  onPressed: () {  },
-                  child: Text("See all", style: TextStyle(
-                    color: Colors.white
-                  ),),
+                child: Row(
+                  children: [
+                    TextButton(
+                      onPressed: () {  },
+                      child: Text("See all", style: TextStyle(
+                        color: Colors.white
+                      ),),
+
+                    ),
+                    Icon(Icons.arrow_forward, size: 18,)
+                  ],
                 ),
               )
             ],
