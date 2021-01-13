@@ -37,7 +37,132 @@ class Layout0Page extends StatelessWidget {
                   ],
                 ),
               ),
-              Divider(color: Colors.white, thickness: 1),
+              Divider(color: Colors.white, thickness: 1, height: 8,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Attica",
+                      style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Divider(color: Colors.white, thickness: 1, height: 8,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Attica",
+                      style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Divider(color: Colors.white, thickness: 1, height: 8,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Attica",
+                      style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Divider(color: Colors.white, thickness: 1, height: 8,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Attica",
+                      style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Divider(color: Colors.white, thickness: 1, height: 8,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Attica",
+                      style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Divider(color: Colors.white, thickness: 1, height: 8,),
             ],
           ),
         ));
