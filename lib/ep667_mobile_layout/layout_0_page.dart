@@ -20,20 +20,24 @@ class Layout0Page extends StatelessWidget {
                   children: [
                     Text(
                       "Attica",
-                      style: TextStyle(color: Colors.white, fontSize: 48,
-                      fontWeight: FontWeight.bold),
+                      style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
                     ),
-                    Text("asd"),
-
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      "asd",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
                   ],
                 ),
               ),
-              Divider(
-                color: Colors.white,
-                thickness: 1,
-              ),
-
-
+              Divider(color: Colors.white, thickness: 1),
             ],
           ),
         ));
