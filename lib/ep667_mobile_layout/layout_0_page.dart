@@ -8,7 +8,7 @@ class Layout0Page extends StatelessWidget {
         backgroundColor: mobileLayoutAppColor,
         body: Padding(
           padding: const EdgeInsets.only(
-            top: 64,
+            top: 58,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -163,6 +163,13 @@ class Layout0Page extends StatelessWidget {
                 ),
               ),
               Divider(color: Colors.white, thickness: 1, height: 8,),
+              Center(
+                child: TextButton(
+                  onPressed: () {  },
+                  child: Text("See all"),
+                  style: ,
+                ),
+              )
             ],
           ),
         ));
