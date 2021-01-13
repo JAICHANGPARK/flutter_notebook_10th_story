@@ -5,18 +5,21 @@ class Layout0Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: mobileLayoutAppColor,
-      body: Padding(
-        padding: const EdgeInsets.only(top: 64, ),
-        child: Column(
-          children: [
-            Text("Attica", style: TextStyle(
-              color: Colors.white,
-              fontSize: 32
-            ),)
-          ],
-        ),
-      )
-    );
+        backgroundColor: mobileLayoutAppColor,
+        body: Padding(
+          padding: const EdgeInsets.only(
+            top: 64,
+          ),
+          child: Column(
+            children: [
+              Text(
+                "Attica",
+                style: TextStyle(color: Colors.white, fontSize: 32),
+              ),
+              Text("asd"),
+              Divider(),
+            ],
+          ),
+        ));
   }
 }
