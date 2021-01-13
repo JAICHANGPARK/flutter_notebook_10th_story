@@ -44,7 +44,7 @@ class Layout0Page extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Attica",
+                      "Crete",
                       style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
                     ),
                     Text(
@@ -69,7 +69,7 @@ class Layout0Page extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Attica",
+                      "Thessaly",
                       style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
                     ),
                     Text(
@@ -94,7 +94,7 @@ class Layout0Page extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Attica",
+                      "W.Greece",
                       style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
                     ),
                     Text(
@@ -119,7 +119,7 @@ class Layout0Page extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Attica",
+                      "Epirus",
                       style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
                     ),
                     Text(
@@ -144,7 +144,7 @@ class Layout0Page extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Attica",
+                      "Mount Athos",
                       style: TextStyle(color: Colors.white, fontSize: 48, fontWeight: FontWeight.bold),
                     ),
                     Text(
