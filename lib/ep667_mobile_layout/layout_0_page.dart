@@ -166,8 +166,9 @@ class Layout0Page extends StatelessWidget {
               Center(
                 child: TextButton(
                   onPressed: () {  },
-                  child: Text("See all"),
-                  style: ,
+                  child: Text("See all", style: TextStyle(
+                    color: Colors.white
+                  ),),
                 ),
               )
             ],
