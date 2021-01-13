@@ -17,7 +17,7 @@ class Layout0Page extends StatelessWidget {
                 style: TextStyle(color: Colors.white, fontSize: 32),
               ),
               Text("asd"),
-              Divider(),
+              Divider(color: Colors.white, thickness: 1,),
             ],
           ),
         ));
