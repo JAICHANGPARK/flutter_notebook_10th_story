@@ -23,34 +23,37 @@ class Layout1Page extends StatelessWidget {
             endIndent: 8,
             thickness: 1.2,
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    "South Aegean",
-                    style: TextStyle(
-                      color: mobileLayoutAppColor,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      "South Aegean",
+                      style: TextStyle(
+                        color: mobileLayoutAppColor,
+                      ),
                     ),
-                  ),
-                  Spacer(),
-                  Text(
-                    "Visit",
-                    style: TextStyle(
-                      color: mobileLayoutAppColor,
+                    Spacer(),
+                    Text(
+                      "Visit",
+                      style: TextStyle(
+                        color: mobileLayoutAppColor,
+                      ),
                     ),
-                  ),
-                  Icon(
-                    Icons.arrow_forward,
-                    size: 18,
-                    color: mobileLayoutAppColor,
-                  )
-                ],
-              ),
-              Text("Administrative region"),
-            ],
+                    Icon(
+                      Icons.arrow_forward,
+                      size: 18,
+                      color: mobileLayoutAppColor,
+                    )
+                  ],
+                ),
+                Text("Administrative region"),
+              ],
+            ),
           )
         ],
       ),
