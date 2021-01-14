@@ -9,10 +9,16 @@ class Layout1Page extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
+          SizedBox(
+            height: 48,
+          ),
           Text("6" ,style: TextStyle(
             fontSize: 280,
             color: mobileLayoutAppColor
-          ),)
+          ),),
+          Divider(
+            color: mobileLayoutAppColor,
+          )
         ],
       ),
     );
