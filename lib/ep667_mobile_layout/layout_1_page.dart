@@ -25,6 +25,7 @@ class Layout1Page extends StatelessWidget {
             height: 48,
             indent: 8,
             endIndent: 8,
+            thickness: 1.2,
           )
         ],
       ),
