@@ -16,9 +16,10 @@ class Layout1Page extends StatelessWidget {
             "6",
             style: TextStyle(fontSize: 280, color: mobileLayoutAppColor, letterSpacing: 0, wordSpacing: 0, height: 0),
           ),
+          SizedBox(height: 8,),
           Divider(
             color: mobileLayoutAppColor,
-            height: 48,
+            height: 24,
             indent: 16,
             endIndent: 16,
             thickness: 1.2,
