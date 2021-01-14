@@ -29,8 +29,14 @@ class Layout1Page extends StatelessWidget {
           ),
           Row(
             children: [
-              Column(children: [
-                  Text("South Aegean"),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text("South Aegean"),
+                    ],
+                  ),
                 Text("Administrative region"),
               ],)
             ],
