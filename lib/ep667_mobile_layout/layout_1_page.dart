@@ -36,7 +36,8 @@ class Layout1Page extends StatelessWidget {
                     children: [
                       Text("South Aegean"),
                       Text("Visit"),
-                      Icon(Icons.arrow_forward)
+                      Icon(Icons.arrow_forward, size: 18,
+                      color: mobileLayoutAppColor,)
                     ],
                   ),
                 Text("Administrative region"),
