@@ -89,8 +89,16 @@ class Layout1Page extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Expanded(child: Text("Area")),
-                    Expanded(child: Text("78.19km^2")),
+                    Expanded(
+                        child: Text(
+                      "Area",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
+                    Expanded(
+                        child: Text(
+                      "78.19km^2",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
                   ],
                 ),
                 Divider(
