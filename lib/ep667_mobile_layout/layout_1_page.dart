@@ -69,8 +69,14 @@ class Layout1Page extends StatelessWidget {
           Spacer(),
           SizedBox(
               width: MediaQuery.of(context).size.width / 1.5,
-              child: Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                style: TextStyle(
+                  fontSize: 10
+                ),),
+              )),
 
           Divider(
             thickness: 1.2,
