@@ -36,6 +36,7 @@ class Layout1Page extends StatelessWidget {
                       "South Aegean",
                       style: TextStyle(
                         color: mobileLayoutAppColor,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Spacer(),
@@ -43,6 +44,7 @@ class Layout1Page extends StatelessWidget {
                       "Visit",
                       style: TextStyle(
                         color: mobileLayoutAppColor,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Icon(
@@ -52,7 +54,11 @@ class Layout1Page extends StatelessWidget {
                     )
                   ],
                 ),
-                Text("Administrative region"),
+                Text("Administrative region",
+                  style: TextStyle(
+                    color: mobileLayoutAppColor,
+                    fontWeight: FontWeight.bold,
+                  ),),
               ],
             ),
           )
