@@ -35,6 +35,7 @@ class Layout1Page extends StatelessWidget {
                   Row(
                     children: [
                       Text("South Aegean"),
+                      Spacer(),
                       Text("Visit"),
                       Icon(Icons.arrow_forward, size: 18,
                       color: mobileLayoutAppColor,)
