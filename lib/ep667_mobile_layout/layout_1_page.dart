@@ -16,7 +16,9 @@ class Layout1Page extends StatelessWidget {
             "6",
             style: TextStyle(fontSize: 280, color: mobileLayoutAppColor, letterSpacing: 0, wordSpacing: 0, height: 0),
           ),
-          SizedBox(height: 8,),
+          SizedBox(
+            height: 8,
+          ),
           Divider(
             color: mobileLayoutAppColor,
             height: 24,
@@ -54,14 +56,23 @@ class Layout1Page extends StatelessWidget {
                     )
                   ],
                 ),
-                Text("Administrative region",
+                Text(
+                  "Administrative region",
                   style: TextStyle(
                     color: mobileLayoutAppColor,
                     fontWeight: FontWeight.normal,
-                  ),),
+                  ),
+                ),
               ],
             ),
-          )
+          ),
+          Spacer(),
+          SizedBox(
+              width: MediaQuery.of(context).size.width / 1.5,
+              child: Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")),
+
+          
         ],
       ),
     );
