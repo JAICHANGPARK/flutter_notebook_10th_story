@@ -70,19 +70,28 @@ class Layout1Page extends StatelessWidget {
           SizedBox(
               width: MediaQuery.of(context).size.width / 1.5,
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-                style: TextStyle(
-                  fontSize: 10
-                ),),
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                  style: TextStyle(fontSize: 10, color: mobileLayoutAppColor),
+                ),
               )),
-
           Divider(
             thickness: 1.2,
             color: mobileLayoutAppColor,
             indent: 16,
             endIndent: 16,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Expanded(child: Text("Area")),
+                  Expanded(child: Text("78.19km^2")),
+                ],
+              ),
+            ],
           )
         ],
       ),
