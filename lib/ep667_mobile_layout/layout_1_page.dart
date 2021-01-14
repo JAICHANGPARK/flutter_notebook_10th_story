@@ -23,36 +23,33 @@ class Layout1Page extends StatelessWidget {
             endIndent: 8,
             thickness: 1.2,
           ),
-          Row(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              Row(
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  Row(
-                    children: [
-                      Text(
-                        "South Aegean",
-                        style: TextStyle(
-                          color: mobileLayoutAppColor,
-                        ),
-                      ),
-                      Spacer(),
-                      Text(
-                        "Visit",
-                        style: TextStyle(
-                          color: mobileLayoutAppColor,
-                        ),
-                      ),
-                      Icon(
-                        Icons.arrow_forward,
-                        size: 18,
-                        color: mobileLayoutAppColor,
-                      )
-                    ],
+                  Text(
+                    "South Aegean",
+                    style: TextStyle(
+                      color: mobileLayoutAppColor,
+                    ),
                   ),
-                  Text("Administrative region"),
+                  Spacer(),
+                  Text(
+                    "Visit",
+                    style: TextStyle(
+                      color: mobileLayoutAppColor,
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward,
+                    size: 18,
+                    color: mobileLayoutAppColor,
+                  )
                 ],
-              )
+              ),
+              Text("Administrative region"),
             ],
           )
         ],
