@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'mobile_layout_app.dart';
 
-
 class Layout1Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -13,13 +12,10 @@ class Layout1Page extends StatelessWidget {
           SizedBox(
             height: 280,
           ),
-          Text("6" ,style: TextStyle(
-            fontSize: 280,
-            color: mobileLayoutAppColor,
-            letterSpacing: 0,
-            wordSpacing: 0,
-            height: 0
-          ),),
+          Text(
+            "6",
+            style: TextStyle(fontSize: 280, color: mobileLayoutAppColor, letterSpacing: 0, wordSpacing: 0, height: 0),
+          ),
           Divider(
             color: mobileLayoutAppColor,
             height: 48,
@@ -34,15 +30,29 @@ class Layout1Page extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text("South Aegean"),
+                      Text(
+                        "South Aegean",
+                        style: TextStyle(
+                          color: mobileLayoutAppColor,
+                        ),
+                      ),
                       Spacer(),
-                      Text("Visit"),
-                      Icon(Icons.arrow_forward, size: 18,
-                      color: mobileLayoutAppColor,)
+                      Text(
+                        "Visit",
+                        style: TextStyle(
+                          color: mobileLayoutAppColor,
+                        ),
+                      ),
+                      Icon(
+                        Icons.arrow_forward,
+                        size: 18,
+                        color: mobileLayoutAppColor,
+                      )
                     ],
                   ),
-                Text("Administrative region"),
-              ],)
+                  Text("Administrative region"),
+                ],
+              )
             ],
           )
         ],
@@ -50,25 +60,3 @@ class Layout1Page extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
