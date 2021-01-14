@@ -96,8 +96,6 @@ class Layout1Page extends StatelessWidget {
                 Divider(
                   thickness: 1.2,
                   color: mobileLayoutAppColor,
-                  indent: 16,
-                  endIndent: 16,
                 ),
               ],
             ),
