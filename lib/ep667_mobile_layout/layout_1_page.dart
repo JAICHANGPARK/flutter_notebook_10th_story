@@ -82,16 +82,25 @@ class Layout1Page extends StatelessWidget {
             indent: 16,
             endIndent: 16,
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Expanded(child: Text("Area")),
-                  Expanded(child: Text("78.19km^2")),
-                ],
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Expanded(child: Text("Area")),
+                    Expanded(child: Text("78.19km^2")),
+                  ],
+                ),
+                Divider(
+                  thickness: 1.2,
+                  color: mobileLayoutAppColor,
+                  indent: 16,
+                  endIndent: 16,
+                ),
+              ],
+            ),
           )
         ],
       ),
