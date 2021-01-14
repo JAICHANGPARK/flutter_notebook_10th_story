@@ -26,6 +26,13 @@ class Layout1Page extends StatelessWidget {
             indent: 8,
             endIndent: 8,
             thickness: 1.2,
+          ),
+          Row(
+            children: [
+              Column(children: [
+
+              ],)
+            ],
           )
         ],
       ),
