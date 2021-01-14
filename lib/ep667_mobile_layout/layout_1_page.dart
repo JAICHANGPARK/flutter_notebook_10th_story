@@ -96,9 +96,81 @@ class Layout1Page extends StatelessWidget {
                     )),
                     Expanded(
                         child: Text(
-                      "78.19km^2",
+                      "78.19 km^2",
                       style: TextStyle(color: mobileLayoutAppColor),
                     )),
+                  ],
+                ),
+                Divider(
+                  thickness: 1.2,
+                  color: mobileLayoutAppColor,
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                        child: Text(
+                          "Max Length",
+                          style: TextStyle(color: mobileLayoutAppColor),
+                        )),
+                    Expanded(
+                        child: Text(
+                          "18 km",
+                          style: TextStyle(color: mobileLayoutAppColor),
+                        )),
+                  ],
+                ),
+                Divider(
+                  thickness: 1.2,
+                  color: mobileLayoutAppColor,
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                        child: Text(
+                          "Max Width",
+                          style: TextStyle(color: mobileLayoutAppColor),
+                        )),
+                    Expanded(
+                        child: Text(
+                          "12 km",
+                          style: TextStyle(color: mobileLayoutAppColor),
+                        )),
+                  ],
+                ),
+                Divider(
+                  thickness: 1.2,
+                  color: mobileLayoutAppColor,
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                        child: Text(
+                          "Area Code",
+                          style: TextStyle(color: mobileLayoutAppColor),
+                        )),
+                    Expanded(
+                        child: Text(
+                          "22860",
+                          style: TextStyle(color: mobileLayoutAppColor),
+                        )),
+                  ],
+                ),
+                Divider(
+                  thickness: 1.2,
+                  color: mobileLayoutAppColor,
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                        child: Text(
+                          "Island Group",
+                          style: TextStyle(color: mobileLayoutAppColor),
+                        )),
+                    Expanded(
+                        child: Text(
+                          "Cyclades",
+                          style: TextStyle(color: mobileLayoutAppColor),
+                        )),
                   ],
                 ),
                 Divider(
