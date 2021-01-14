@@ -72,7 +72,12 @@ class Layout1Page extends StatelessWidget {
               child: Text(
                   "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")),
 
-          
+          Divider(
+            thickness: 1.2,
+            color: mobileLayoutAppColor,
+            indent: 16,
+            endIndent: 16,
+          )
         ],
       ),
     );
