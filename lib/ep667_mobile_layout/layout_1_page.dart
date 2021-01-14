@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'mobile_layout_app.dart';
+
 
 class Layout1Page extends StatelessWidget {
   @override
@@ -8,7 +10,8 @@ class Layout1Page extends StatelessWidget {
       body: Column(
         children: [
           Text("6" ,style: TextStyle(
-            fontSize: 120
+            fontSize: 280,
+            color: mobileLayoutAppColor
           ),)
         ],
       ),
