@@ -30,7 +30,8 @@ class Layout1Page extends StatelessWidget {
           Row(
             children: [
               Column(children: [
-
+                  Text("South Aegean"),
+                Text("Administrative region"),
               ],)
             ],
           )
@@ -39,3 +40,25 @@ class Layout1Page extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
