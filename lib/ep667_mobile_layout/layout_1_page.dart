@@ -35,6 +35,8 @@ class Layout1Page extends StatelessWidget {
                   Row(
                     children: [
                       Text("South Aegean"),
+                      Text("Visit"),
+                      Icon(Icons.arrow_forward)
                     ],
                   ),
                 Text("Administrative region"),
