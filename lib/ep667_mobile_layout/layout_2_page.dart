@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'mobile_layout_app.dart';
+
 class Layout2Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,10 @@ class Layout2Page extends StatelessWidget {
                 Text("Grece"),
               ],
             ),
-            Divider(),
+            Divider(
+              thickness: 1.2,
+              color: mobileLayoutAppColor,
+            ),
           ],
         ),
       ),
