@@ -93,7 +93,37 @@ class Layout2Page extends StatelessWidget {
                     child: Text(
                   "Cities",
                   style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                ))
+                )),
+                Expanded(
+                    child: Column(
+                      children: [
+                        Text(
+                          "Cities",
+                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                        ),
+                        Text(
+                          "Cities",
+                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                        ),
+                        Text(
+                          "Cities",
+                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                        ),
+                        Text(
+                          "Cities",
+                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                        ),
+                        Text(
+                          "Cities",
+                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                        ),
+                        Text(
+                          "Cities",
+                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                        ),
+
+                      ],
+                    ))
               ],
             )
           ],
