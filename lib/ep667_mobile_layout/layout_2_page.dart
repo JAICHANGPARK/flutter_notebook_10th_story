@@ -6,7 +6,11 @@ class Layout3Page extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          
+          Row(
+            children: [
+              Text("Epirus\nRregion")
+            ],
+          )
         ],
       ),
     );
