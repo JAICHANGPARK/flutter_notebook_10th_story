@@ -109,14 +109,14 @@ class Layout1Page extends StatelessWidget {
                   children: [
                     Expanded(
                         child: Text(
-                          "Max Length",
-                          style: TextStyle(color: mobileLayoutAppColor),
-                        )),
+                      "Max Length",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
                     Expanded(
                         child: Text(
-                          "18 km",
-                          style: TextStyle(color: mobileLayoutAppColor),
-                        )),
+                      "18 km",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
                   ],
                 ),
                 Divider(
@@ -127,14 +127,14 @@ class Layout1Page extends StatelessWidget {
                   children: [
                     Expanded(
                         child: Text(
-                          "Max Width",
-                          style: TextStyle(color: mobileLayoutAppColor),
-                        )),
+                      "Max Width",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
                     Expanded(
                         child: Text(
-                          "12 km",
-                          style: TextStyle(color: mobileLayoutAppColor),
-                        )),
+                      "12 km",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
                   ],
                 ),
                 Divider(
@@ -145,14 +145,14 @@ class Layout1Page extends StatelessWidget {
                   children: [
                     Expanded(
                         child: Text(
-                          "Area Code",
-                          style: TextStyle(color: mobileLayoutAppColor),
-                        )),
+                      "Area Code",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
                     Expanded(
                         child: Text(
-                          "22860",
-                          style: TextStyle(color: mobileLayoutAppColor),
-                        )),
+                      "22860",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
                   ],
                 ),
                 Divider(
@@ -163,14 +163,14 @@ class Layout1Page extends StatelessWidget {
                   children: [
                     Expanded(
                         child: Text(
-                          "Island Group",
-                          style: TextStyle(color: mobileLayoutAppColor),
-                        )),
+                      "Island Group",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
                     Expanded(
                         child: Text(
-                          "Cyclades",
-                          style: TextStyle(color: mobileLayoutAppColor),
-                        )),
+                      "Cyclades",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    )),
                   ],
                 ),
                 Divider(
