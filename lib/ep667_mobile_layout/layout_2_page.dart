@@ -93,10 +93,13 @@ class Layout2Page extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
-                      child: Text(
+                      child: Container(
+                        color: Colors.red,
+                        child: Text(
                     "Cities",
                     style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                  )),
+                  ),
+                      )),
                   Expanded(
                       child: Column(
                         children: [
