@@ -9,11 +9,23 @@ class Layout2Page extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(child: Text("Epirus\nRregion")),
-                Text("Grece"),
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Text(
+                    "Epirus\nRregion",
+                    style: TextStyle(color: mobileLayoutAppColor),
+                  )),
+                  Expanded(
+                    child: Text(
+                      "Grece",
+                      style: TextStyle(color: mobileLayoutAppColor),
+                    ),
+                  ),
+                ],
+              ),
             ),
             Divider(
               thickness: 1.2,
