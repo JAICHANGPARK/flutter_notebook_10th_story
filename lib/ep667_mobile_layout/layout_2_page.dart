@@ -43,15 +43,13 @@ class Layout2Page extends StatelessWidget {
                 children: [
                   Expanded(
                       child: Text(
-                        "blablablabalblaabl\nRregion",
-                        style: TextStyle(color: mobileLayoutAppColor,
-                        fontSize: 12),
-                      )),
+                    "blablablabalblaabl\nRregion",
+                    style: TextStyle(color: mobileLayoutAppColor, fontSize: 12),
+                  )),
                   Expanded(
                     child: Text(
                       "blablablabalblaabl\nRregion",
-                      style: TextStyle(color: mobileLayoutAppColor,
-                      fontSize: 12),
+                      style: TextStyle(color: mobileLayoutAppColor, fontSize: 12),
                     ),
                   ),
                 ],
@@ -67,21 +65,20 @@ class Layout2Page extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                  " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
-                  " nisi ut aliquip ex ea commodo consequat. "
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                  " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
-                  "nisi ut aliquip ex ea commodo consequat. ""Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                      " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                      " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
-                      "nisi ut aliquip ex ea commodo consequat. ",
-              style: TextStyle(
-                color: mobileLayoutAppColor,
-                fontSize: 16
-              ),),
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                " nisi ut aliquip ex ea commodo consequat. "
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+                "nisi ut aliquip ex ea commodo consequat. "
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+                "nisi ut aliquip ex ea commodo consequat. ",
+                style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+              ),
             ),
             Divider(
               thickness: 1.2,
@@ -92,29 +89,16 @@ class Layout2Page extends StatelessWidget {
             ),
             Row(
               children: [
-                Expanded(child: Text("Cities", ))
+                Expanded(
+                    child: Text(
+                  "Cities",
+                  style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                ))
               ],
             )
-
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
