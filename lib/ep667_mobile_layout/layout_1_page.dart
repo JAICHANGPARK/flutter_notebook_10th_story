@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'layout_2_page.dart';
 import 'mobile_layout_app.dart';
 
 class Layout1Page extends StatelessWidget {
