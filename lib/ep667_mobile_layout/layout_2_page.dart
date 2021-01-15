@@ -11,13 +11,15 @@ class Layout2Page extends StatelessWidget {
           children: [
             Row(
               children: [
-                Text("Epirus\nRregion"),
+                Expanded(child: Text("Epirus\nRregion")),
                 Text("Grece"),
               ],
             ),
             Divider(
               thickness: 1.2,
               color: mobileLayoutAppColor,
+              indent: 8,
+              endIndent: 8,
             ),
           ],
         ),
