@@ -16,12 +16,14 @@ class Layout2Page extends StatelessWidget {
                   Expanded(
                       child: Text(
                     "Epirus\nRregion",
-                    style: TextStyle(color: mobileLayoutAppColor),
+                    style: TextStyle(color: mobileLayoutAppColor,
+                    fontSize: 16),
                   )),
                   Expanded(
                     child: Text(
                       "Grece",
-                      style: TextStyle(color: mobileLayoutAppColor),
+                      style: TextStyle(color: mobileLayoutAppColor,
+                      fontSize: 16),
                     ),
                   ),
                 ],
