@@ -102,6 +102,7 @@ class Layout2Page extends StatelessWidget {
                       )),
                   Expanded(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "Cities",
