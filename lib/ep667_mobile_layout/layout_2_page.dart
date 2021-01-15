@@ -64,19 +64,29 @@ class Layout2Page extends StatelessWidget {
               endIndent: 8,
               height: 4,
             ),
-            Text(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
-                " nisi ut aliquip ex ea commodo consequat. "
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
-                "nisi ut aliquip ex ea commodo consequat. ",
-            style: TextStyle(
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                  " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  " nisi ut aliquip ex ea commodo consequat. "
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                  " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+                  "nisi ut aliquip ex ea commodo consequat. ",
+              style: TextStyle(
+                color: mobileLayoutAppColor,
+                fontSize: 16
+              ),),
+            ),
+            Divider(
+              thickness: 1.2,
               color: mobileLayoutAppColor,
-              fontSize: 16
-            ),),
+              indent: 8,
+              endIndent: 8,
+              height: 4,
+            ),
 
           ],
         ),
