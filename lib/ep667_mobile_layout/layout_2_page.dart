@@ -87,44 +87,48 @@ class Layout2Page extends StatelessWidget {
               endIndent: 8,
               height: 4,
             ),
-            Row(
-              children: [
-                Expanded(
-                    child: Text(
-                  "Cities",
-                  style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                )),
-                Expanded(
-                    child: Column(
-                      children: [
-                        Text(
-                          "Cities",
-                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                        ),
-                        Text(
-                          "Cities",
-                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                        ),
-                        Text(
-                          "Cities",
-                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                        ),
-                        Text(
-                          "Cities",
-                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                        ),
-                        Text(
-                          "Cities",
-                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                        ),
-                        Text(
-                          "Cities",
-                          style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                        ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                      child: Text(
+                    "Cities",
+                    style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                  )),
+                  Expanded(
+                      child: Column(
+                        children: [
+                          Text(
+                            "Cities",
+                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                          ),
+                          Text(
+                            "Cities",
+                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                          ),
+                          Text(
+                            "Cities",
+                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                          ),
+                          Text(
+                            "Cities",
+                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                          ),
+                          Text(
+                            "Cities",
+                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                          ),
+                          Text(
+                            "Cities",
+                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                          ),
 
-                      ],
-                    ))
-              ],
+                        ],
+                      ))
+                ],
+              ),
             )
           ],
         ),
