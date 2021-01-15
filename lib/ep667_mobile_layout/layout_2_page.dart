@@ -99,35 +99,14 @@ class Layout2Page extends StatelessWidget {
                   )),
                   Expanded(
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Cities",
-                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                          ),
-                          Text(
-                            "Cities",
-                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                          ),
-                          Text(
-                            "Cities",
-                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                          ),
-                          Text(
-                            "Cities",
-                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                          ),
-                          Text(
-                            "Cities",
-                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                          ),
-                          Text(
-                            "Cities",
-                            style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
-                          ),
-
-                        ],
-                      ))
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: List.generate(
+                            10,
+                            (index) => Text(
+                              "Cities",
+                              style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
+                            ),
+                          )))
                 ],
               ),
             )
