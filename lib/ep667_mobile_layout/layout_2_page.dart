@@ -32,6 +32,7 @@ class Layout2Page extends StatelessWidget {
               color: mobileLayoutAppColor,
               indent: 8,
               endIndent: 8,
+              height: 4,
             ),
           ],
         ),
