@@ -34,6 +34,9 @@ class Layout2Page extends StatelessWidget {
               endIndent: 8,
               height: 4,
             ),
+            SizedBox(
+              height: 32,
+            )
           ],
         ),
       ),
