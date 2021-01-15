@@ -49,10 +49,17 @@ class Layout1Page extends StatelessWidget {
                         fontWeight: FontWeight.normal,
                       ),
                     ),
-                    Icon(
-                      Icons.arrow_forward,
-                      size: 18,
-                      color: mobileLayoutAppColor,
+                    InkWell(
+                      onTap: (){
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => Layout2Page()
+                        ));
+                      },
+                      child: Icon(
+                        Icons.arrow_forward,
+                        size: 18,
+                        color: mobileLayoutAppColor,
+                      ),
                     )
                   ],
                 ),
