@@ -49,9 +49,12 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
             height: 80,
             child: Row(
               children: [
-                IconButton(icon: Icon(Icons.home), onPressed: (){}),
-                IconButton(icon: Icon(Icons.chat_bubble_outline), onPressed: (){},
-                color: Colors.grey[400],),
+                IconButton(icon: Icon(Icons.home), onPressed: () {}),
+                IconButton(
+                  icon: Icon(Icons.chat_bubble_outline),
+                  onPressed: () {},
+                  color: Colors.grey[400],
+                ),
                 SizedBox(
                   height: 58,
                   width: 58,
@@ -59,7 +62,6 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                     borderRadius: 4.0,
                     boxShadows: [
                       PolygonBoxShadow(color: Colors.orange, elevation: 3),
-
                     ],
                     child: Container(
                         color: Colors.deepOrangeAccent,
@@ -69,7 +71,11 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                         )),
                     sides: 6,
                   ),
-                )
+                ),
+                IconButton(
+                  icon: Icon(Icons.chat_bubble_outline),
+                  onPressed: () {},
+                ),
               ],
             ),
           ),
