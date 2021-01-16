@@ -37,6 +37,14 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
           _buildBackgroundWidget(),
         ],
       ),
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.circular(32),
+        child: BottomAppBar(
+          child: Container(
+            height: 80,
+          ),
+        ),
+      ),
     );
   }
 }
