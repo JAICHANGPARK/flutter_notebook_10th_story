@@ -78,7 +78,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: Icon(Icons.calendar_today_outlined),
+                  icon: Icon(Icons.person_outline),
                   color: Colors.grey[400],
                   onPressed: () {},
                 ),
