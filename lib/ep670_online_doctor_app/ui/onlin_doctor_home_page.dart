@@ -50,17 +50,21 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
             child: Row(
               children: [
                 SizedBox(
-                  height: 52,
-                  width: 52,
+                  height: 58,
+                  width: 58,
                   child: ClipPolygon(
                     borderRadius: 4.0,
                     boxShadows: [
-                      PolygonBoxShadow(color: Colors.grey[200], elevation: 2),
+                      PolygonBoxShadow(color: Colors.orange, elevation: 3),
+
                     ],
                     child: Container(
-                    
-                      color: Colors.deepOrangeAccent,
-                      child: Icon(Icons.add)), sides: 6,
+                        color: Colors.deepOrangeAccent,
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        )),
+                    sides: 6,
                   ),
                 )
               ],
