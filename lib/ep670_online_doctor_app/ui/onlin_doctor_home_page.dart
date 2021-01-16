@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:polygon_clipper/polygon_clipper.dart';
 
 class OnlineDoctorHomePage extends StatefulWidget {
   @override
@@ -43,8 +44,14 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
           topRight: Radius.circular(36),
         ),
         child: BottomAppBar(
+          elevation: 8,
           child: Container(
             height: 80,
+            child: Row(
+              children: [
+                ClipPolygon(child: Icon(Icons.add), sides: 6)
+              ],
+            ),
           ),
         ),
       ),
