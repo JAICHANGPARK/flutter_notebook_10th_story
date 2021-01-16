@@ -6,8 +6,7 @@ class OnlineDoctorHomePage extends StatefulWidget {
 }
 
 class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
-
-  Widget _buildBackgroundWidget(){
+  Widget _buildBackgroundWidget() {
     return Positioned(
       left: 0,
       top: 0,
@@ -29,6 +28,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +38,10 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
         ],
       ),
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.circular(32),
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(36),
+          topRight: Radius.circular(36),
+        ),
         child: BottomAppBar(
           child: Container(
             height: 80,
