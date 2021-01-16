@@ -16,14 +16,12 @@ class Layout2Page extends StatelessWidget {
                   Expanded(
                       child: Text(
                     "Epirus\nRregion",
-                    style: TextStyle(color: mobileLayoutAppColor,
-                    fontSize: 16),
+                    style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
                   )),
                   Expanded(
                     child: Text(
                       "Grece",
-                      style: TextStyle(color: mobileLayoutAppColor,
-                      fontSize: 16),
+                      style: TextStyle(color: mobileLayoutAppColor, fontSize: 16),
                     ),
                   ),
                 ],
@@ -123,13 +121,12 @@ class Layout2Page extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
-                  " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
-                  " nisi ut aliquip ex ea commodo consequat.", style: TextStyle(
-                fontSize: 10,
-                color: mobileLayoutAppColor
-              ),),
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit,"
+                " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                " nisi ut aliquip ex ea commodo consequat.",
+                style: TextStyle(fontSize: 10, color: mobileLayoutAppColor),
+              ),
             )
           ],
         ),
