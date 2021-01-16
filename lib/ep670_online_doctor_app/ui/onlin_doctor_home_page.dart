@@ -15,7 +15,8 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
             Positioned(
               child: Row(
                 children: [
-                  
+                  Expanded(child: Placeholder()),
+                  Expanded(child: Placeholder()),
                 ],
               ),
             ),
