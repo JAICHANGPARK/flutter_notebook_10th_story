@@ -48,6 +48,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
           child: Container(
             height: 80,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 IconButton(icon: Icon(Icons.home), onPressed: () {}),
                 IconButton(
