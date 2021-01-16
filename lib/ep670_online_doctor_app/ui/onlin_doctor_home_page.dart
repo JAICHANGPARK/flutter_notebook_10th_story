@@ -49,6 +49,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
             height: 80,
             child: Row(
               children: [
+                IconButton(icon: Icon(Icons.home), onPressed: (){}),
                 SizedBox(
                   height: 58,
                   width: 58,
