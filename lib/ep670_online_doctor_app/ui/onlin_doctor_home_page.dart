@@ -14,8 +14,12 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
           Positioned(
             child: Row(
               children: [
-                Expanded(flex: 8, child: Placeholder()),
-                Expanded(flex: 3, child: Placeholder()),
+                Expanded(flex: 8, child: Container(
+                  color: Colors.white,
+                )),
+                Expanded(flex: 3, child: Container(
+                  color: Colors.grey[200],
+                )),
               ],
             ),
           ),
