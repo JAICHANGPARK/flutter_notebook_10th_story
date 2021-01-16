@@ -9,6 +9,8 @@ class OnlineDoctorHomePage extends StatefulWidget {
 class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
