@@ -50,6 +50,8 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
             child: Row(
               children: [
                 IconButton(icon: Icon(Icons.home), onPressed: (){}),
+                IconButton(icon: Icon(Icons.chat_bubble_outline), onPressed: (){},
+                color: Colors.grey[400],),
                 SizedBox(
                   height: 58,
                   width: 58,
