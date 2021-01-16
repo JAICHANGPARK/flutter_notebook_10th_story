@@ -73,7 +73,13 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                   ),
                 ),
                 IconButton(
-                  icon: Icon(Icons.chat_bubble_outline),
+                  icon: Icon(Icons.calendar_today_outlined),
+                  color: Colors.grey[400],
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.calendar_today_outlined),
+                  color: Colors.grey[400],
                   onPressed: () {},
                 ),
               ],
