@@ -115,7 +115,8 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                         child: TextField(
                           decoration: InputDecoration(
                             icon: Icon(Icons.search),
-                            suffixIcon: Icon(Icons.tune)
+                            suffixIcon: Icon(Icons.tune),
+                            hintText: "Search doctors..."
                           ),
                         ),
                       ),
