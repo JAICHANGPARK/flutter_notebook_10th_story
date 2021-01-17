@@ -63,7 +63,10 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                               Text("Welcome home", style: TextStyle(
                                 color: Colors.grey,
                               ),),
-                              Text("Dream Walker", style: TextStyle(),),
+                              SizedBox(height: 12,),
+                              Text("Dream Walker", style: TextStyle(
+                                fontSize: 24,
+                              ),),
                             ],
                           ),
                           Spacer(),
