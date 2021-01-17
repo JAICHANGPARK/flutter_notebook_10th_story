@@ -34,14 +34,22 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SlidingUpPanel(
-        panel: Center(),
-        body: Stack(
-          children: [
-            _buildBackgroundWidget(),
-          ],
-        ),
+      body: Stack(
+        children: [
+          _buildBackgroundWidget(),
+          SlidingUpPanel(
+            panel: Center(),
+          )
+        ],
       ),
+      // body: SlidingUpPanel(
+      //   panel: Center(),
+      //   body: Stack(
+      //     children: [
+      //
+      //     ],
+      //   ),
+      // ),
 
 
       bottomNavigationBar: ClipRRect(
