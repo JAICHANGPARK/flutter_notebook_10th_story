@@ -51,7 +51,18 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
               top: 24,
               child: Column(
                 children: [
+                  Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Welcome home"),
+                          Text("Dream Walker"),
 
+                        ],
+                      )
+                    ],
+                  )
                 ],
               ),
             )
