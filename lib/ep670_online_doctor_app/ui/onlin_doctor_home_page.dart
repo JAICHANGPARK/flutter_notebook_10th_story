@@ -50,7 +50,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                 width: 24,
                 decoration: BoxDecoration(
                   color: Colors.grey,
-                  
+                  borderRadius: BorderRadius.circular(4)
                 ),
               )
             ],
