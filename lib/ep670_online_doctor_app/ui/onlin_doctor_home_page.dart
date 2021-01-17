@@ -35,7 +35,6 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SafeArea(
         child: SlidingUpPanel(
           minHeight: 200,
@@ -61,13 +60,11 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                           children: [
                             Text("Welcome home"),
                             Text("Dream Walker"),
-
                           ],
                         ),
-Badge(
-  child: Icon(Icons.notifications_none),
-
-),
+                        Badge(
+                          child: Icon(Icons.notifications_none),
+                        ),
                       ],
                     )
                   ],
@@ -77,8 +74,6 @@ Badge(
           ),
         ),
       ),
-
-
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(36),
