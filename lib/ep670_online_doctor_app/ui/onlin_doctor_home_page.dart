@@ -53,19 +53,30 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                 bottom: 0,
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Welcome home"),
-                            Text("Dream Walker"),
-                          ],
-                        ),
-                        Badge(
-                          child: Icon(Icons.notifications_none),
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(right: 16),
+                      child: Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Welcome home", style: TextStyle(
+                                color: Colors.grey,
+                              ),),
+                              Text("Dream Walker", style: TextStyle(),),
+                            ],
+                          ),
+                          Spacer(),
+                          Badge(
+                            child: Icon(Icons.notifications_none),
+                          ),
+                          SizedBox(width: 16,),
+                          CircleAvatar(
+                            radius: 24, //default 20
+                          ),
+
+                        ],
+                      ),
                     )
                   ],
                 ),
