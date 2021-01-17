@@ -36,6 +36,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
     return Scaffold(
 
       body: SlidingUpPanel(
+        minHeight: 200,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(36),
           topRight: Radius.circular(36),
@@ -44,6 +45,16 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
         body: Stack(
           children: [
             _buildBackgroundWidget(),
+            Positioned(
+              left: 0,
+              right: 0,
+              top: 24,
+              child: Column(
+                children: [
+
+                ],
+              ),
+            )
           ],
         ),
       ),
