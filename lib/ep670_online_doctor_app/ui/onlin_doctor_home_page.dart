@@ -42,7 +42,19 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
             topLeft: Radius.circular(36),
             topRight: Radius.circular(36),
           ),
-          panel: Center(),
+          panel: Column(
+            children: [
+              SizedBox(height: 24,),
+              Container(
+                height: 3,
+                width: 24,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  
+                ),
+              )
+            ],
+          ),
           body: Stack(
             children: [
               _buildBackgroundWidget(),
