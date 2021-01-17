@@ -45,14 +45,13 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
           ),
           panel: Column(
             children: [
-              SizedBox(height: 24,),
+              SizedBox(
+                height: 24,
+              ),
               Container(
                 height: 3,
                 width: 24,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(4)
-                ),
+                decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
               )
             ],
           ),
@@ -73,36 +72,44 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Welcome home", style: TextStyle(
-                                color: Colors.grey,
-                              ),),
-                              SizedBox(height: 12,),
-                              Text("Dream Walker", style: TextStyle(
-                                fontSize: 24,
-                              ),),
+                              Text(
+                                "Welcome home",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 12,
+                              ),
+                              Text(
+                                "Dream Walker",
+                                style: TextStyle(
+                                  fontSize: 24,
+                                ),
+                              ),
                             ],
                           ),
                           Spacer(),
                           Badge(
                             child: Icon(Icons.notifications_none),
                           ),
-                          SizedBox(width: 16,),
+                          SizedBox(
+                            width: 16,
+                          ),
                           CircleAvatar(
                             radius: 24, //default 20
                           ),
-
                         ],
                       ),
                     ),
-                    Container(
-                      height: 48,
-                      width: double.infinity,
-                      margin: EdgeInsets.symmetric(horizontal: 16),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(color: Colors.black.withOpacity(0.2))
-                        ]
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Container(
+                        height: 48,
+                        width: double.infinity,
+                        margin: EdgeInsets.only(right: 16),
+                        decoration: BoxDecoration(
+                            color: Colors.white, boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2))]),
                       ),
                     )
                   ],
