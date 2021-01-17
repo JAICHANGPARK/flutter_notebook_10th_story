@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:polygon_clipper/polygon_clipper.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
@@ -47,9 +48,10 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
             children: [
               _buildBackgroundWidget(),
               Positioned(
-                left: 0,
+                left: 16,
                 right: 0,
                 top: 24,
+                bottom: 0,
                 child: Column(
                   children: [
                     Row(
@@ -61,7 +63,11 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                             Text("Dream Walker"),
 
                           ],
-                        )
+                        ),
+Badge(
+  child: Icon(Icons.notifications_none),
+
+),
                       ],
                     )
                   ],
