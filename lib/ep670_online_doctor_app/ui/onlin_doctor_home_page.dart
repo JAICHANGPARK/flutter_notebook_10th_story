@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:polygon_clipper/polygon_clipper.dart';
+import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class OnlineDoctorHomePage extends StatefulWidget {
   @override
@@ -33,11 +34,16 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          _buildBackgroundWidget(),
-        ],
+      body: SlidingUpPanel(
+        panel: Center(),
+        body: Stack(
+          children: [
+            _buildBackgroundWidget(),
+          ],
+        ),
       ),
+
+
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(36),
