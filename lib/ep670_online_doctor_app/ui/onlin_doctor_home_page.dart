@@ -1,4 +1,5 @@
 import 'package:badges/badges.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:polygon_clipper/polygon_clipper.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
@@ -94,10 +95,14 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                       ),
                     ),
                     Container(
-                      height: 32,
+                      height: 48,
                       width: double.infinity,
+                      margin: EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
-                        color: Colors.white
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(color: Colors.black.withOpacity(0.2))
+                        ]
                       ),
                     )
                   ],
