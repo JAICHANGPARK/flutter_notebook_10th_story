@@ -92,6 +92,13 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
 
                         ],
                       ),
+                    ),
+                    Container(
+                      height: 32,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.white
+                      ),
                     )
                   ],
                 ),
