@@ -68,6 +68,13 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                       height: 42,
                       width: 42,
                       decoration: BoxDecoration(color: Colors.red[100], borderRadius: BorderRadius.circular(8)),
+                    ),
+                    Column(
+                      children: [
+                          Text("Diagnostic Radiology"),
+                        Text("25 Doctors")
+
+                      ],
                     )
                   ],
                 ),
