@@ -116,13 +116,13 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
-                            "Diagnostic Radiology",
+                            "Nuclear medicine",
                             style: TextStyle(
                               fontSize: 15,
                             ),
                           ),
                           Text(
-                            "25 Doctors",
+                            "12 Doctors",
                             style: TextStyle(fontSize: 11),
                           ),
                         ],
