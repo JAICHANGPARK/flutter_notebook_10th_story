@@ -51,7 +51,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
               Container(
                 height: 3,
                 width: 24,
-                decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
+                decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(4)),
               ),
               SizedBox(
                 height: 16,
