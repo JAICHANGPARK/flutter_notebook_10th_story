@@ -59,6 +59,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
               Container(
                 height: 64,
                 margin: EdgeInsets.symmetric(horizontal: 16),
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 decoration:
                     BoxDecoration(borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.grey)),
                 child: Row(
