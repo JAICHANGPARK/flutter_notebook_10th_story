@@ -51,7 +51,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
               Container(
                 height: 3,
                 width: 24,
-                decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
               ),
               SizedBox(
                 height: 16,
@@ -85,11 +85,11 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                             "25 Doctors",
                             style: TextStyle(fontSize: 11),
                           ),
-                          Spacer(),
-                          IconButton(icon: Icon(Icons.keyboard_arrow_right), onPressed: () {})
                         ],
                       ),
-                    )
+                    ),
+                    Spacer(),
+                    IconButton(icon: Icon(Icons.keyboard_arrow_right), onPressed: () {})
                   ],
                 ),
               ),
