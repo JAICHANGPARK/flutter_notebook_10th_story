@@ -93,6 +93,46 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
+              Container(
+                height: 64,
+                margin: EdgeInsets.symmetric(horizontal: 16),
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                decoration:
+                BoxDecoration(borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.grey)),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(color: Colors.red[100], borderRadius: BorderRadius.circular(8)),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            "Diagnostic Radiology",
+                            style: TextStyle(
+                              fontSize: 15,
+                            ),
+                          ),
+                          Text(
+                            "25 Doctors",
+                            style: TextStyle(fontSize: 11),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Spacer(),
+                    IconButton(icon: Icon(Icons.keyboard_arrow_right), onPressed: () {})
+                  ],
+                ),
+              ),
             ],
           ),
           body: Stack(
