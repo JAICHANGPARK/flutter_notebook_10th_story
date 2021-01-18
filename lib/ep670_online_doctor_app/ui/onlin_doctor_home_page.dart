@@ -65,7 +65,14 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                 ),
                 child: Row(
                   children: [
-                    
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.red[100],
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                    )
                   ],
                 ),
               ),
