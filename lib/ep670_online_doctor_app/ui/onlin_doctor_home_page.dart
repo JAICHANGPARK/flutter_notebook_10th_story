@@ -52,7 +52,11 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                 height: 3,
                 width: 24,
                 decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
-              )
+              ),
+              Container(
+                height: 64,
+                decoration: BoxDecoration(),
+              ),
             ],
           ),
           body: Stack(
