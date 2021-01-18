@@ -109,15 +109,12 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                         width: double.infinity,
                         margin: EdgeInsets.only(right: 16),
                         decoration: BoxDecoration(
-                            color: Colors.white, 
+                            color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
                             boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2))]),
                         child: TextField(
                           decoration: InputDecoration(
-                            icon: Icon(Icons.search),
-                            suffixIcon: Icon(Icons.tune),
-                            hintText: "Search doctors..."
-                          ),
+                              icon: Icon(Icons.search), suffixIcon: Icon(Icons.tune), hintText: "Search doctors..."),
                         ),
                       ),
                     )
