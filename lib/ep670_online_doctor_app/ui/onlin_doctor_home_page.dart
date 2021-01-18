@@ -61,7 +61,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                 margin: EdgeInsets.symmetric(horizontal: 16),
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.grey)),
+                    BoxDecoration(borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.grey[300])),
                 child: Row(
                   children: [
                     Container(
@@ -101,7 +101,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                 margin: EdgeInsets.symmetric(horizontal: 16),
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 decoration:
-                BoxDecoration(borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.grey[500])),
+                BoxDecoration(borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.grey[300])),
                 child: Row(
                   children: [
                     Container(
