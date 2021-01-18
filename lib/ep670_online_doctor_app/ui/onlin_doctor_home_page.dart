@@ -84,7 +84,9 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                           Text(
                             "25 Doctors",
                             style: TextStyle(fontSize: 11),
-                          )
+                          ),
+                          Spacer(),
+                          IconButton(icon: Icon(Icons.keyboard_arrow_right), onPressed: () {})
                         ],
                       ),
                     )
