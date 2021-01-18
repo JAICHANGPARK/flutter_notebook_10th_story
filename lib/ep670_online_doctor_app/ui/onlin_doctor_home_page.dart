@@ -101,7 +101,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                 margin: EdgeInsets.symmetric(horizontal: 16),
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 decoration:
-                BoxDecoration(borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.grey[300])),
+                    BoxDecoration(borderRadius: BorderRadius.circular(16), border: Border.all(color: Colors.grey[300])),
                 child: Row(
                   children: [
                     Container(
@@ -194,7 +194,9 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                             boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2))]),
                         child: TextField(
                           decoration: InputDecoration(
-                              icon: Icon(Icons.search), suffixIcon: Icon(Icons.tune), hintText: "Search doctors..."),
+                            border: InputBorder.none,
+                              icon: Icon(Icons.search), suffixIcon: Icon(Icons.tune),
+                              hintText: "Search doctors..."),
                         ),
                       ),
                     )
