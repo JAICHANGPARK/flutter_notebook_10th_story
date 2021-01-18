@@ -73,17 +73,18 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly
-                        ,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                            Text("Diagnostic Radiology", style: TextStyle(
+                          Text(
+                            "Diagnostic Radiology",
+                            style: TextStyle(
                               fontSize: 15,
-
-                            ),),
-                          Text("25 Doctors",style: TextStyle(
-                            fontSize: 11
-                          ),)
-
+                            ),
+                          ),
+                          Text(
+                            "25 Doctors",
+                            style: TextStyle(fontSize: 11),
+                          )
                         ],
                       ),
                     )
