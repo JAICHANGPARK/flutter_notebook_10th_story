@@ -211,12 +211,15 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                           children: [
                             Expanded(
                               flex: 1,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text("Recommended Doctors"),
-                                  Icon(Icons.more_horiz),
-                                ],
+                              child: Padding(
+                                padding: const EdgeInsets.only(right: 16),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("Recommended Doctors"),
+                                    Icon(Icons.more_horiz),
+                                  ],
+                                ),
                               ),
                             ),
                             Expanded(
@@ -226,7 +229,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                   scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
                                     return Container(
-                                        width: 200,
+                                        width: 260,
                                         margin: EdgeInsets.only(right: 12),
                                         color: Colors.pink,
                                         child: Column());
