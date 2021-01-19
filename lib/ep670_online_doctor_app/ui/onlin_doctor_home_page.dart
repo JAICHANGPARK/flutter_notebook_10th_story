@@ -263,7 +263,10 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                                         Spacer(),
                                                         Icon(Icons.star, color: Colors.orangeAccent,
                                                         size: 14,),
-                                                        Text("(4.0)")
+                                                        Text("(4.0)",
+                                                        style: TextStyle(
+                                                          fontSize: 12
+                                                        ),)
                                                       ],
                                                     )
                                                   ],
