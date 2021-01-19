@@ -237,7 +237,6 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                               child: Container(
                                                 margin: EdgeInsets.only(bottom: 8),
                                                 decoration: BoxDecoration(
-                                                  color: Colors.orangeAccent,
                                                   borderRadius: BorderRadius.circular(16),
                                                 ),
                                               ),
@@ -245,7 +244,6 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                             Expanded(
                                               flex: 2,
                                               child: Container(
-                                                color: Colors.orange,
                                                 padding: EdgeInsets.symmetric(vertical: 12),
                                                 child: Column(
                                                   mainAxisAlignment: MainAxisAlignment.spaceAround,
