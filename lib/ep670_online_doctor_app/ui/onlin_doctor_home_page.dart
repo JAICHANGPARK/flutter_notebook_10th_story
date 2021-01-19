@@ -202,9 +202,19 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                       ),
                     ),
                     SizedBox(
-                      height: 240,
+                      height: 260,
                       child: Container(
                         color: Colors.blue,
+                        child: Column(
+                          children: [
+                            ListView.builder(
+                                shrinkWrap: true,
+                                scrollDirection: Axis.horizontal,
+                                itemBuilder: (context, index){
+                              return Column();
+                            }),
+                          ],
+                        ),
                       ),
                     )
                   ],
