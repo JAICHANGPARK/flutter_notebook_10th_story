@@ -200,6 +200,12 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                               hintText: "Search doctors..."),
                         ),
                       ),
+                    ),
+                    SizedBox(
+                      height: 240,
+                      child: Container(
+                        color: Colors.blue,
+                      ),
                     )
                   ],
                 ),
