@@ -246,6 +246,18 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                               flex: 2,
                                               child: Container(
                                                 color: Colors.orange,
+                                                child: Column(
+                                                  children: [
+                                                    Text('Dr. Dreamwalker'),
+                                                    Row(
+                                                      children: [
+                                                        Text("Flutter Specialist"),
+                                                        Icon(Icons.star, color: Colors.orangeAccent,),
+                                                        Text("(4.0)")
+                                                      ],
+                                                    )
+                                                  ],
+                                                ),
                                               ),
                                             ),
                                           ],
