@@ -203,23 +203,35 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                     ),
                     SizedBox(
                       height: 260,
+                      width: double.infinity,
                       child: Container(
                         color: Colors.blue,
+
                         child: Column(
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Recommended Doctors"),
-                                Icon(Icons.more_horiz),
-                              ],
+                            Expanded(
+                              flex: 1,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("Recommended Doctors"),
+                                  Icon(Icons.more_horiz),
+                                ],
+                              ),
                             ),
-                            ListView.builder(
-                                shrinkWrap: true,
-                                scrollDirection: Axis.horizontal,
-                                itemBuilder: (context, index) {
-                                  return Column();
-                                }),
+                            Expanded(
+                              flex: 5,
+                              child: ListView.builder(
+                                  shrinkWrap: true,
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                        width: 200,
+                                        margin: EdgeInsets.only(right: 12),
+                                        color: Colors.pink,
+                                        child: Column());
+                                  }),
+                            ),
                           ],
                         ),
                       ),
