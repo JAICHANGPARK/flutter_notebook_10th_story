@@ -236,10 +236,12 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                               child: Container(
                                                 margin: EdgeInsets.only(bottom: 0),
                                                 decoration: BoxDecoration(
-                                                  borderRadius: BorderRadius.circular(16),
-                                                  color: Colors.grey
-
-                                                ),
+                                                    borderRadius: BorderRadius.circular(16),
+                                                    color: Colors.grey,
+                                                    image: DecorationImage(
+                                                        image: NetworkImage(
+                                                            "https://cdn.pixabay.com/photo/2020/12/29/22/22/doctor-5871743__340.jpg"),
+                                                    fit: BoxFit.cover)),
                                               ),
                                             ),
                                             Expanded(
@@ -250,25 +252,29 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-                                                    Text('Dr. Dreamwalker', style: TextStyle(
-                                                      fontWeight: FontWeight.bold
-                                                    ),),
+                                                    Text(
+                                                      'Dr. Dreamwalker',
+                                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                                    ),
                                                     Row(
                                                       children: [
-                                                        Text("Flutter Specialist",
-                                                        style: TextStyle(
-                                                          fontSize: 12
-                                                        ),),
+                                                        Text(
+                                                          "Flutter Specialist",
+                                                          style: TextStyle(fontSize: 12),
+                                                        ),
                                                         Spacer(),
                                                         Padding(
                                                           padding: const EdgeInsets.all(8.0),
-                                                          child: Icon(Icons.star, color: Colors.orangeAccent,
-                                                          size: 14,),
+                                                          child: Icon(
+                                                            Icons.star,
+                                                            color: Colors.orangeAccent,
+                                                            size: 14,
+                                                          ),
                                                         ),
-                                                        Text("(4.0)",
-                                                        style: TextStyle(
-                                                          fontSize: 12
-                                                        ),)
+                                                        Text(
+                                                          "(4.0)",
+                                                          style: TextStyle(fontSize: 12),
+                                                        )
                                                       ],
                                                     )
                                                   ],
