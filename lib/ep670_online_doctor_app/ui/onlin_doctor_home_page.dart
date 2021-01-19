@@ -232,7 +232,18 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                         width: 260,
                                         margin: EdgeInsets.only(right: 12),
                                         color: Colors.pink,
-                                        child: Column());
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              flex: 4,
+                                              child: Container(color: Colors.orangeAccent,),
+                                            ),
+                                            Expanded(
+                                              flex:2,
+                                              child: Container(color: Colors.orange,),
+                                            ),
+                                          ],
+                                        ));
                                   }),
                             ),
                           ],
