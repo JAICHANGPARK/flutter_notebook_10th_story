@@ -227,8 +227,8 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                   scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
                                     return Container(
-                                        width: 260,
-                                        margin: EdgeInsets.only(right: 12),
+                                        width: 240,
+                                        margin: EdgeInsets.only(right: 16),
                                         child: Column(
                                           children: [
                                             Expanded(
