@@ -208,6 +208,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                         child: Column(
                           children: [
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text("Recommended Doctors"),
                                 Icon(Icons.more_horiz),
