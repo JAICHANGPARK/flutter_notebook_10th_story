@@ -207,12 +207,18 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                         color: Colors.blue,
                         child: Column(
                           children: [
+                            Row(
+                              children: [
+                                Text("Recommended Doctors"),
+                                Icon(Icons.more_horiz),
+                              ],
+                            ),
                             ListView.builder(
                                 shrinkWrap: true,
                                 scrollDirection: Axis.horizontal,
-                                itemBuilder: (context, index){
-                              return Column();
-                            }),
+                                itemBuilder: (context, index) {
+                                  return Column();
+                                }),
                           ],
                         ),
                       ),
