@@ -235,15 +235,18 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                             Expanded(
                                               flex: 4,
                                               child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.orangeAccent,
-                                                borderRadius: BorderRadius.circular(16)
-                                              ),
+                                                margin: EdgeInsets.only(bottom: 8),
+                                                decoration: BoxDecoration(
+                                                  color: Colors.orangeAccent,
+                                                  borderRadius: BorderRadius.circular(16),
+                                                ),
                                               ),
                                             ),
                                             Expanded(
-                                              flex:2,
-                                              child: Container(color: Colors.orange,),
+                                              flex: 2,
+                                              child: Container(
+                                                color: Colors.orange,
+                                              ),
                                             ),
                                           ],
                                         ));
