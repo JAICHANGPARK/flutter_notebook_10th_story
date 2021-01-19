@@ -256,8 +256,13 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                                     ),),
                                                     Row(
                                                       children: [
-                                                        Text("Flutter Specialist"),
-                                                        Icon(Icons.star, color: Colors.orangeAccent,),
+                                                        Text("Flutter Specialist",
+                                                        style: TextStyle(
+                                                          fontSize: 12
+                                                        ),),
+                                                        Spacer(),
+                                                        Icon(Icons.star, color: Colors.orangeAccent,
+                                                        size: 14,),
                                                         Text("(4.0)")
                                                       ],
                                                     )
