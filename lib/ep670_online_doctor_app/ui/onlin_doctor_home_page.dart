@@ -205,8 +205,6 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                       height: 260,
                       width: double.infinity,
                       child: Container(
-                        color: Colors.blue,
-
                         child: Column(
                           children: [
                             Expanded(
@@ -236,7 +234,12 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                           children: [
                                             Expanded(
                                               flex: 4,
-                                              child: Container(color: Colors.orangeAccent,),
+                                              child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.orangeAccent,
+                                                borderRadius: BorderRadius.circular(16)
+                                              ),
+                                              ),
                                             ),
                                             Expanded(
                                               flex:2,
