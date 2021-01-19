@@ -229,15 +229,16 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                     return Container(
                                         width: 260,
                                         margin: EdgeInsets.only(right: 12),
-                                        color: Colors.pink,
                                         child: Column(
                                           children: [
                                             Expanded(
                                               flex: 4,
                                               child: Container(
-                                                margin: EdgeInsets.only(bottom: 8),
+                                                margin: EdgeInsets.only(bottom: 0),
                                                 decoration: BoxDecoration(
                                                   borderRadius: BorderRadius.circular(16),
+                                                  color: Colors.grey
+
                                                 ),
                                               ),
                                             ),
