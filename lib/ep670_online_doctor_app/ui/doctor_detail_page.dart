@@ -71,6 +71,9 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                             child: Icon(Icons.arrow_back_ios_outlined),
                           ),
                         ),
+                  Text("Detail Doctor", style: TextStyle(
+                    fontSize: 16
+                  ),),
                   IconButton(icon: Icon(Icons.more_horiz), onPressed: (){})
             ],))
           ],
