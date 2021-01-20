@@ -62,8 +62,10 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                           width: 48,
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.grey[300]
+                              color: Colors.grey[300],
+                              
                             ),
+                            borderRadius: BorderRadius.circular(16)
                           ),
                           child: Center(
                             child: Icon(Icons.arrow_back_ios_outlined),
