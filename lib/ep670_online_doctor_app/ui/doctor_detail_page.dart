@@ -53,9 +53,9 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
           children: [
             _buildBackgroundWidget(),
             Positioned(
-                left: 0,
-                right: 0,
-                top: 48,
+                left: 16,
+                right: 16,
+                top: 24,
                 child: Row(children: [
                         Container(
                           height: 48,
