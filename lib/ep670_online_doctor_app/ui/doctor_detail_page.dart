@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 
 class DoctorDetailPage extends StatefulWidget {
@@ -15,6 +16,13 @@ class DoctorDetailPage extends StatefulWidget {
 class _DoctorDetailPageState extends State<DoctorDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+
+        child: SlidingUpPanel(
+          
+        )
+      ),
+    );
   }
 }
