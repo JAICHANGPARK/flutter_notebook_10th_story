@@ -18,8 +18,18 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-
         child: SlidingUpPanel(
+          minHeight: 200,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(36),
+            topRight: Radius.circular(36),
+          ),
+          body:  Stack(
+            children: [
+            _buildBackgroundWidget(),
+
+        ],
+      ),
 
         )
       ),
