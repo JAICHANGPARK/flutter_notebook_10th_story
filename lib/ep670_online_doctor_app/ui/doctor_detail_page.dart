@@ -56,7 +56,9 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                 left: 16,
                 right: 16,
                 top: 24,
-                child: Row(children: [
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
                         Container(
                           height: 48,
                           width: 48,
