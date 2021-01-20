@@ -20,7 +20,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
       body: SafeArea(
 
         child: SlidingUpPanel(
-          
+
         )
       ),
     );
