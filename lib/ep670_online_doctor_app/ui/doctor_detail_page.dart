@@ -47,7 +47,19 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
           topRight: Radius.circular(36),
         ),
         panel: Column(
-          children: [],
+          children: [
+            SizedBox(
+              height: 24,
+            ),
+            Container(
+              height: 3,
+              width: 24,
+              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+          ],
         ),
         body: Stack(
           children: [
@@ -65,12 +77,16 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.grey[300],
-                              
                             ),
                             borderRadius: BorderRadius.circular(16)
                           ),
-                          child: Center(
-                            child: Icon(Icons.arrow_back_ios_outlined),
+                          child: GestureDetector(
+                            onTap: (){
+                              Navigator.of(context).pop();
+                            },
+                            child: Center(
+                              child: Icon(Icons.arrow_back_ios_outlined, size: 18,),
+                            ),
                           ),
                         ),
                   Text("Detail Doctor", style: TextStyle(
