@@ -70,7 +70,8 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                           child: Center(
                             child: Icon(Icons.arrow_back_ios_outlined),
                           ),
-                        )
+                        ),
+                  IconButton(icon: Icon(Icons.more_horiz), onPressed: (){})
             ],))
           ],
         ),
