@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:polygon_clipper/polygon_clipper.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
+import 'doctor_detail_page.dart';
+
 class OnlineDoctorHomePage extends StatefulWidget {
   @override
   _OnlineDoctorHomePageState createState() => _OnlineDoctorHomePageState();
@@ -233,15 +235,26 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                           children: [
                                             Expanded(
                                               flex: 4,
-                                              child: Container(
-                                                margin: EdgeInsets.only(bottom: 0),
-                                                decoration: BoxDecoration(
-                                                    borderRadius: BorderRadius.circular(16),
-                                                    color: Colors.grey,
-                                                    image: DecorationImage(
-                                                        image: NetworkImage(
-                                                            "https://cdn.pixabay.com/photo/2020/12/29/22/22/doctor-5871743__340.jpg"),
-                                                    fit: BoxFit.cover)),
+                                              child: GestureDetector(
+                                                onTap: (){
+                                                  Navigator.of(context).push(MaterialPageRoute(
+                                                    builder: (context) => DoctorDetailPage(
+                                                      doctorName: "Dr.Dreamwalker",
+                                                      doctorPart: "Flutter ",
+                                                      doctorRate: "4.0",
+                                                    )
+                                                  ));
+                                                },
+                                                child: Container(
+                                                  margin: EdgeInsets.only(bottom: 0),
+                                                  decoration: BoxDecoration(
+                                                      borderRadius: BorderRadius.circular(16),
+                                                      color: Colors.grey,
+                                                      image: DecorationImage(
+                                                          image: NetworkImage(
+                                                              "https://cdn.pixabay.com/photo/2020/12/29/22/22/doctor-5871743__340.jpg"),
+                                                      fit: BoxFit.cover)),
+                                                ),
                                               ),
                                             ),
                                             Expanded(
