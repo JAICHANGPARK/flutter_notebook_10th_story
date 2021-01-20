@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
-
 class DoctorDetailPage extends StatefulWidget {
   final String doctorName;
   final String doctorPart;
@@ -14,25 +13,48 @@ class DoctorDetailPage extends StatefulWidget {
 }
 
 class _DoctorDetailPageState extends State<DoctorDetailPage> {
+  Widget _buildBackgroundWidget() {
+    return Positioned(
+      left: 0,
+      top: 0,
+      bottom: 0,
+      right: 0,
+      child: Row(
+        children: [
+          Expanded(
+              flex: 8,
+              child: Container(
+                color: Colors.white,
+              )),
+          Expanded(
+              flex: 3,
+              child: Container(
+                color: Colors.grey[200],
+              )),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SlidingUpPanel(
-          minHeight: 200,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(36),
-            topRight: Radius.circular(36),
-          ),
-          body:  Stack(
-            children: [
+          child: SlidingUpPanel(
+        minHeight: 200,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(36),
+          topRight: Radius.circular(36),
+        ),
+        panel: Column(
+          children: [],
+        ),
+        body: Stack(
+          children: [
             _buildBackgroundWidget(),
-
-        ],
-      ),
-
-        )
-      ),
+          ],
+        ),
+      )),
     );
   }
 }
