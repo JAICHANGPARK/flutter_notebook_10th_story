@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 
 
 class DoctorDetailPage extends StatefulWidget {
-  S
+  final String doctorName;
+  final String doctorPart;
+  final String doctorRate;
+
+  DoctorDetailPage({this.doctorName, this.doctorPart, this.doctorRate});
+
   @override
   _DoctorDetailPageState createState() => _DoctorDetailPageState();
 }
