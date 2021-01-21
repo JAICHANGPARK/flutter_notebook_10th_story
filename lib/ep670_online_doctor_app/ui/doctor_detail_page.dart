@@ -151,12 +151,12 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
             Positioned(
               left: 16,
               right: 16,
-              top: 100,
+              top: 110,
               child: Row(
                 children: [
                   Container(
-                    height: 64,
-                    width: 64,
+                    height: 84,
+                    width: 84,
                     decoration: BoxDecoration(
                       color: Colors.red
                     ),
@@ -166,7 +166,8 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
             ),
             Positioned(child: Container(
               decoration: BoxDecoration(
-                color: Colors.deepOrange,
+                color: Colors.orangeAccent,
+                borderRadius: BorderRadius.circular(32)
               ),
             ),
             left: 0,right: 0,
