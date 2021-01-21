@@ -47,6 +47,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
           topRight: Radius.circular(36),
         ),
         panel: Column(
+
           children: [
             SizedBox(
               height: 24,
@@ -60,10 +61,14 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
               height: 16,
             ),
 
-            Text("About The Doctor"),
-            Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
-                "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+            Column(
+              children: [
+                Text("About The Doctor"),Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                    "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+                    "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+              ],
+            ),
+
           ],
         ),
         body: Stack(
