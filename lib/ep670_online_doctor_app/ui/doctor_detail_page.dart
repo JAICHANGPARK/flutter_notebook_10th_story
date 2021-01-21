@@ -57,15 +57,22 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
               decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
             ),
             SizedBox(
-              height: 16,
+              height: 24,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("About The Doctor"),
-                  SizedBox(height: 16,),
+                  Text(
+                    "About The Doctor",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
                     "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
