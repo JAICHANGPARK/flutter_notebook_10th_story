@@ -71,29 +71,33 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                        Container(
-                          height: 48,
-                          width: 48,
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.grey[300],
-                            ),
-                            borderRadius: BorderRadius.circular(16)
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[300],
                           ),
-                          child: GestureDetector(
-                            onTap: (){
-                              Navigator.of(context).pop();
-                            },
-                            child: Center(
-                              child: Icon(Icons.arrow_back_ios_outlined, size: 18,),
-                            ),
+                          borderRadius: BorderRadius.circular(16)),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Center(
+                          child: Icon(
+                            Icons.arrow_back_ios_outlined,
+                            size: 18,
                           ),
                         ),
-                  Text("Detail Doctor", style: TextStyle(
-                    fontSize: 16
-                  ),),
-                  IconButton(icon: Icon(Icons.more_horiz), onPressed: (){})
-            ],))
+                      ),
+                    ),
+                    Text(
+                      "Detail Doctor",
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    IconButton(icon: Icon(Icons.more_horiz), onPressed: () {})
+                  ],
+                ))
           ],
         ),
       )),
