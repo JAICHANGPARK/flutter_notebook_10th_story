@@ -98,6 +98,17 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                       ),
                     ],
                   ),
+                  SizedBox(
+                    width: double.infinity,
+                    height: 64,
+                    child: OutlinedButton(
+                      onPressed: () {},
+                      child: Text("Booking Now"),
+                      style: Theme.of(context).outlinedButtonTheme.style.copyWith(
+                        
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
