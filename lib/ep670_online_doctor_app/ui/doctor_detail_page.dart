@@ -41,7 +41,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
     return Scaffold(
       body: SafeArea(
           child: SlidingUpPanel(
-        minHeight: 200,
+        minHeight: 300,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(36),
           topRight: Radius.circular(36),
@@ -65,28 +65,32 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("About The Doctor"),
-                  Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
-                      "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  SizedBox(height: 16,),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                    "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+                    "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Chip(label: Text("Dentist"),
+                      Chip(
+                        label: Text("Dentist"),
                         backgroundColor: Colors.grey[200],
                         labelPadding: EdgeInsets.symmetric(horizontal: 16),
                       ),
-                      Chip(label: Text("Cancer"),
+                      Chip(
+                        label: Text("Cancer"),
                         backgroundColor: Colors.grey[200],
                         labelPadding: EdgeInsets.symmetric(horizontal: 16),
                       ),
-                      Chip(label: Text("Heart"),
+                      Chip(
+                        label: Text("Heart"),
                         backgroundColor: Colors.grey[200],
                         labelPadding: EdgeInsets.symmetric(horizontal: 16),
                       ),
                     ],
                   ),
-
                 ],
               ),
             ),
