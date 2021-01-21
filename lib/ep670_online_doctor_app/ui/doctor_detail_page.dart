@@ -47,7 +47,6 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
           topRight: Radius.circular(36),
         ),
         panel: Column(
-
           children: [
             SizedBox(
               height: 24,
@@ -60,15 +59,29 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
             SizedBox(
               height: 16,
             ),
-
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("About The Doctor"),Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                Text("About The Doctor"),
+                Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
                     "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
-                    "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                    "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Chip(label: Text("Dentist"),
+                      backgroundColor: Colors.grey[200],
+                    ),
+                    Chip(label: Text("Cancer"),
+                    ),
+                    Chip(label: Text("Heart"),
+                    ),
+                  ],
+                ),
+
               ],
             ),
-
           ],
         ),
         body: Stack(
