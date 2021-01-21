@@ -151,7 +151,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
             Positioned(
               left: 16,
               right: 16,
-              top: 64,
+              top: 100,
               child: Row(
                 children: [
                   Container(
@@ -163,7 +163,15 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                   )
                 ],
               ),
-            )
+            ),
+            Positioned(child: Container(
+              decoration: BoxDecoration(
+                
+              ),
+            ),
+            left: 0,right: 0,
+            bottom: 0,
+            top: 140,),
           ],
         ),
       )),
