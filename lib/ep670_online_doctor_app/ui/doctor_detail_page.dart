@@ -72,6 +72,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                   children: [
                     Chip(label: Text("Dentist"),
                       backgroundColor: Colors.grey[200],
+                      labelPadding: EdgeInsets.symmetric(horizontal: 16),
                     ),
                     Chip(label: Text("Cancer"),
                     ),
