@@ -104,9 +104,6 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                     child: OutlinedButton(
                       onPressed: () {},
                       child: Text("Booking Now"),
-                      style: Theme.of(context).outlinedButtonTheme.style.copyWith(
-                        
-                      ),
                     ),
                   )
                 ],
@@ -150,7 +147,23 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                     ),
                     IconButton(icon: Icon(Icons.more_horiz), onPressed: () {})
                   ],
-                ))
+                )),
+            Positioned(
+              left: 16,
+              right: 16,
+              top: 64,
+              child: Row(
+                children: [
+                  Container(
+                    height: 64,
+                    width: 64,
+                    decoration: BoxDecoration(
+                      color: Colors.red
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       )),
