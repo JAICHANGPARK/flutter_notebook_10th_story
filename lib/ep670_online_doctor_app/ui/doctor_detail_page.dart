@@ -59,33 +59,36 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
             SizedBox(
               height: 16,
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("About The Doctor"),
-                Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
-                    "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
-                    "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Chip(label: Text("Dentist"),
-                      backgroundColor: Colors.grey[200],
-                      labelPadding: EdgeInsets.symmetric(horizontal: 16),
-                    ),
-                    Chip(label: Text("Cancer"),
-                      backgroundColor: Colors.grey[200],
-                      labelPadding: EdgeInsets.symmetric(horizontal: 16),
-                    ),
-                    Chip(label: Text("Heart"),
-                      backgroundColor: Colors.grey[200],
-                      labelPadding: EdgeInsets.symmetric(horizontal: 16),
-                    ),
-                  ],
-                ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("About The Doctor"),
+                  Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, "
+                      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+                      "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Chip(label: Text("Dentist"),
+                        backgroundColor: Colors.grey[200],
+                        labelPadding: EdgeInsets.symmetric(horizontal: 16),
+                      ),
+                      Chip(label: Text("Cancer"),
+                        backgroundColor: Colors.grey[200],
+                        labelPadding: EdgeInsets.symmetric(horizontal: 16),
+                      ),
+                      Chip(label: Text("Heart"),
+                        backgroundColor: Colors.grey[200],
+                        labelPadding: EdgeInsets.symmetric(horizontal: 16),
+                      ),
+                    ],
+                  ),
 
-              ],
+                ],
+              ),
             ),
           ],
         ),
