@@ -232,7 +232,11 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                       padding: const EdgeInsets.all(8.0),
                       child: Align(
                           alignment: Alignment.centerLeft,
-                          child: Text("Set Schdule")),
+                          child: Text("Set Schdule", style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold
+                          ),)),
                     ),
                     SizedBox(
                       height: 8,
