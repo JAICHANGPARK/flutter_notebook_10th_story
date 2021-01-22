@@ -169,6 +169,13 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                               ),
                               fit: BoxFit.cover)),
                     ),
+                  ),
+                  Column(
+                    children: [
+                      Text(widget.doctorName),
+                      Text(widget.doctorPart),
+                      Text(widget.doctorRate),
+                    ],
                   )
                 ],
               ),
