@@ -154,11 +154,14 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
               top: 110,
               child: Row(
                 children: [
-                  Container(
-                    height: 84,
-                    width: 84,
-                    decoration: BoxDecoration(
-                      color: Colors.red
+                  Hero(
+                    tag: "imgProfile",
+                    child: Container(
+                      height: 84,
+                      width: 84,
+                      decoration: BoxDecoration(
+                        color: Colors.red
+                      ),
                     ),
                   )
                 ],
