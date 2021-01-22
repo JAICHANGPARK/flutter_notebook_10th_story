@@ -161,29 +161,27 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                       height: 84,
                       width: 84,
                       decoration: BoxDecoration(
-                        color: Colors.red,
-                        image: DecorationImage(
-                          image: NetworkImage(
-                            widget.doctorImg,
-                          ),
-                          fit: BoxFit.cover
-                        )
-
-                      ),
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(8),
+                          image: DecorationImage(
+                              image: NetworkImage(
+                                widget.doctorImg,
+                              ),
+                              fit: BoxFit.cover)),
                     ),
                   )
                 ],
               ),
             ),
-            Positioned(child: Container(
-              decoration: BoxDecoration(
-                color: Colors.orangeAccent,
-                borderRadius: BorderRadius.circular(32)
+            Positioned(
+              child: Container(
+                decoration: BoxDecoration(color: Colors.orangeAccent, borderRadius: BorderRadius.circular(32)),
               ),
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 220,
             ),
-            left: 0,right: 0,
-            bottom: 0,
-            top: 220,),
           ],
         ),
       )),
