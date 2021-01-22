@@ -1,3 +1,4 @@
+import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
@@ -228,6 +229,15 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                       height: 24,
                     ),
                     Text("Set Schdule"),
+                    SizedBox(
+                      height: 24,
+                    ),
+                    DatePicker(
+                      DateTime.now(),
+                      initialSelectedDate: DateTime.now(),
+                      selectionColor: Colors.black,
+
+                    )
 
                   ],
                 ),
