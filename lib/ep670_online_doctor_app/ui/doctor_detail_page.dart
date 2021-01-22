@@ -170,26 +170,39 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                               fit: BoxFit.cover)),
                     ),
                   ),
-                  Column(
-                    children: [
-                      Text(widget.doctorName),
-                      Text(widget.doctorPart),
-                      Row(
-                        children: [
-                          Icon(Icons.star, color: Colors.deepOrangeAccent,
-                          size: 14,),
-                          Icon(Icons.star, color: Colors.deepOrangeAccent,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Text(widget.doctorName),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Text(widget.doctorPart),
+                        ),
+                        Row(
+
+                          children: [
+                            Icon(Icons.star, color: Colors.deepOrangeAccent,
                             size: 14,),
-                          Icon(Icons.star, color: Colors.deepOrangeAccent,
-                            size: 14,),
-                          Icon(Icons.star, color: Colors.deepOrangeAccent,
-                            size: 14,),
-                          Icon(Icons.star, color: Colors.grey,
-                            size: 14,),
-                          Text(" (${widget.doctorRate})"),
-                        ],
-                      ),
-                    ],
+                            Icon(Icons.star, color: Colors.deepOrangeAccent,
+                              size: 14,),
+                            Icon(Icons.star, color: Colors.deepOrangeAccent,
+                              size: 14,),
+                            Icon(Icons.star, color: Colors.deepOrangeAccent,
+                              size: 14,),
+                            Icon(Icons.star, color: Colors.grey,
+                              size: 14,),
+                            Text(" (${widget.doctorRate})"),
+                          ],
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),
