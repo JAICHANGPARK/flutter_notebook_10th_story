@@ -235,7 +235,8 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                     DatePicker(
                       DateTime.now(),
                       initialSelectedDate: DateTime.now(),
-                      selectionColor: Colors.black,
+                      selectionColor: Colors.white.withOpacity(0.5),
+                      deactivatedColor: Colors.white,
 
                     )
 
