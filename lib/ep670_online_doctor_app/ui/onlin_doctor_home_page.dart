@@ -245,15 +245,18 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                                     )
                                                   ));
                                                 },
-                                                child: Container(
-                                                  margin: EdgeInsets.only(bottom: 0),
-                                                  decoration: BoxDecoration(
-                                                      borderRadius: BorderRadius.circular(16),
-                                                      color: Colors.grey,
-                                                      image: DecorationImage(
-                                                          image: NetworkImage(
-                                                              "https://cdn.pixabay.com/photo/2020/12/29/22/22/doctor-5871743__340.jpg"),
-                                                      fit: BoxFit.cover)),
+                                                child: Hero(
+                                                  tag: "imgProfile",
+                                                  child: Container(
+                                                    margin: EdgeInsets.only(bottom: 0),
+                                                    decoration: BoxDecoration(
+                                                        borderRadius: BorderRadius.circular(16),
+                                                        color: Colors.grey,
+                                                        image: DecorationImage(
+                                                            image: NetworkImage(
+                                                                "https://cdn.pixabay.com/photo/2020/12/29/22/22/doctor-5871743__340.jpg"),
+                                                        fit: BoxFit.cover)),
+                                                  ),
                                                 ),
                                               ),
                                             ),
