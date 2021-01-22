@@ -186,7 +186,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                             size: 14,),
                           Icon(Icons.star, color: Colors.grey,
                             size: 14,),
-                          Text(widget.doctorRate),
+                          Text(" (${widget.doctorRate})"),
                         ],
                       ),
                     ],
