@@ -228,9 +228,14 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                     SizedBox(
                       height: 24,
                     ),
-                    Text("Set Schdule"),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text("Set Schdule")),
+                    ),
                     SizedBox(
-                      height: 24,
+                      height: 8,
                     ),
                     DatePicker(
                       DateTime.now(),
