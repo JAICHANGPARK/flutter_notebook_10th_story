@@ -14,6 +14,7 @@ dependencies:
   polygon_clipper: ^1.0.2
   sliding_up_panel: any
   badges: any
+  date_picker_timeline: any
 
 dev_dependencies:
   flutter_test:
