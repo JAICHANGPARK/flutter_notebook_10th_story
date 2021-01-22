@@ -5,8 +5,9 @@ class DoctorDetailPage extends StatefulWidget {
   final String doctorName;
   final String doctorPart;
   final String doctorRate;
+  final String doctorImg;
 
-  DoctorDetailPage({this.doctorName, this.doctorPart, this.doctorRate});
+  DoctorDetailPage({this.doctorImg, this.doctorName, this.doctorPart, this.doctorRate});
 
   @override
   _DoctorDetailPageState createState() => _DoctorDetailPageState();
