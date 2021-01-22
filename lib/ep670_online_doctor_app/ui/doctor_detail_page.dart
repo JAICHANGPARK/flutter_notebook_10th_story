@@ -161,7 +161,8 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                       height: 84,
                       width: 84,
                       decoration: BoxDecoration(
-                        color: Colors.red
+                        color: Colors.red,
+                        
                       ),
                     ),
                   )
