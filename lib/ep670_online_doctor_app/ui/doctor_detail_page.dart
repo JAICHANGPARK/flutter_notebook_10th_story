@@ -174,7 +174,21 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                     children: [
                       Text(widget.doctorName),
                       Text(widget.doctorPart),
-                      Text(widget.doctorRate),
+                      Row(
+                        children: [
+                          Icon(Icons.star, color: Colors.deepOrangeAccent,
+                          size: 14,),
+                          Icon(Icons.star, color: Colors.deepOrangeAccent,
+                            size: 14,),
+                          Icon(Icons.star, color: Colors.deepOrangeAccent,
+                            size: 14,),
+                          Icon(Icons.star, color: Colors.deepOrangeAccent,
+                            size: 14,),
+                          Icon(Icons.star, color: Colors.grey,
+                            size: 14,),
+                          Text(widget.doctorRate),
+                        ],
+                      ),
                     ],
                   )
                 ],
