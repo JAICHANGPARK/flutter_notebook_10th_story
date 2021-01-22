@@ -242,6 +242,7 @@ class _OnlineDoctorHomePageState extends State<OnlineDoctorHomePage> {
                                                       doctorName: "Dr.Dreamwalker",
                                                       doctorPart: "Flutter ",
                                                       doctorRate: "4.0",
+                                                      doctorImg: "https://cdn.pixabay.com/photo/2020/12/29/22/22/doctor-5871743__340.jpg",
                                                     )
                                                   ));
                                                 },
