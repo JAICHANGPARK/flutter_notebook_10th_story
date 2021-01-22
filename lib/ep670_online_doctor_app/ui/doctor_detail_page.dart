@@ -216,7 +216,17 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                 decoration: BoxDecoration(color: Colors.orangeAccent, borderRadius: BorderRadius.circular(32)),
                 child: Column(
                   children: [
-                    
+                    SizedBox(
+                      height: 24,
+                    ),
+                    Container(
+                      height: 3,
+                      width: 24,
+                      decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                    ),
+                    SizedBox(
+                      height: 24,
+                    ),
                   ],
                 ),
               ),
