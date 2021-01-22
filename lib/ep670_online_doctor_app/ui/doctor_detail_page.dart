@@ -179,7 +179,11 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
 
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Text(widget.doctorName),
+                          child: Text(widget.doctorName,
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold
+                          ),),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 4),
