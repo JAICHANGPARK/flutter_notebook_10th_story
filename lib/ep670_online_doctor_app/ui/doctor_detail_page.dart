@@ -222,11 +222,13 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                     Container(
                       height: 3,
                       width: 24,
-                      decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                     ),
                     SizedBox(
                       height: 24,
                     ),
+                    Text("Set Schdule"),
+
                   ],
                 ),
               ),
