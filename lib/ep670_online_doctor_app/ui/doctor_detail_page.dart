@@ -162,7 +162,13 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                       width: 84,
                       decoration: BoxDecoration(
                         color: Colors.red,
-                        
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            widget.doctorImg,
+                          ),
+                          fit: BoxFit.cover
+                        )
+
                       ),
                     ),
                   )
