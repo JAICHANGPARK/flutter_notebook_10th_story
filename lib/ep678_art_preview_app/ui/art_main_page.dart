@@ -10,6 +10,6 @@ class ArtMainPage extends StatefulWidget {
 class _ArtMainPageState extends State<ArtMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
