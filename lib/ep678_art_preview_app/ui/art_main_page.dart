@@ -22,6 +22,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
           height: 72,
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
         child: Icon(Icons.add),
