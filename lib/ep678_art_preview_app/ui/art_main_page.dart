@@ -14,8 +14,23 @@ class _ArtMainPageState extends State<ArtMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(
+                flex: 3,
+                child: Column(
+                  children: [
+                    Text("Discover",style: TextStyle(
+                      fontSize: 24,
+                    ),),
+                    Row(
+                      children: [
+                        
+                      ],
+                    )
+                  ],
+                )),
+            Expanded(
+                flex: 10,
+                child: Placeholder()),
           ],
         ),
       ),
