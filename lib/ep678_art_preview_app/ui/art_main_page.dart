@@ -18,36 +18,55 @@ class _ArtMainPageState extends State<ArtMainPage> {
                 flex: 3,
                 child: Column(
                   children: [
-                    Text("Discover",style: TextStyle(
-                      fontSize: 24,
-                    ),),
+                    Text(
+                      "Discover",
+                      style: TextStyle(
+                        fontSize: 24,
+                      ),
+                    ),
                     Row(
-                      children: [
-                        
-                      ],
+                      children: [],
                     )
                   ],
                 )),
-            Expanded(
-                flex: 10,
-                child: Placeholder()),
+            Expanded(flex: 10, child: Placeholder()),
           ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        notchMargin: 8.0,
+        notchMargin: 16.0,
         shape: CircularNotchedRectangle(),
         child: Container(
           height: 72,
+          child: Row(
+            children: [
+              Expanded(
+                child: Placeholder()
+              ),
+              Expanded(
+                  child: Placeholder()
+              ),
+              Expanded(
+                  child: Placeholder()
+              ),
+              Expanded(
+                  child: Placeholder()
+              ),
+              Expanded(
+                  child: Placeholder()
+              ),
+            ],
+          ),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black,
-        onPressed: () {
-
-        },
-        child: Icon(Icons.add, size: 28,),
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
+          size: 28,
+        ),
       ),
     );
   }
