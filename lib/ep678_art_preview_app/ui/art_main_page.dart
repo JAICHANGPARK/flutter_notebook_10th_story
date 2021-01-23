@@ -41,32 +41,26 @@ class _ArtMainPageState extends State<ArtMainPage> {
           child: Row(
             children: [
               Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 12, right: 12, bottom: 16),
-                  child: Column(
-                    children: [
-                      Container(
-                        height: 3,
-                        decoration: BoxDecoration(
-                          color: Colors.blue
-                        ),
-                      )
-                    ],
-                  ),
-                )
-              ),
-              Expanded(
-                  child: Placeholder()
-              ),
-              Expanded(
-                  child: Container()
-              ),
-              Expanded(
-                  child: Placeholder()
-              ),
-              Expanded(
-                  child: Placeholder()
-              ),
+                  child: Padding(
+                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 16),
+                child: Column(
+                  children: [
+                    Container(
+                      height: 3,
+                      decoration: BoxDecoration(color: Colors.blue),
+                    ),
+                    Icon(
+                      Icons.home_outlined,
+                      size: 48,
+                    ),
+                    Text("Library")
+                  ],
+                ),
+              )),
+              Expanded(child: Placeholder()),
+              Expanded(child: Container()),
+              Expanded(child: Placeholder()),
+              Expanded(child: Placeholder()),
             ],
           ),
         ),
