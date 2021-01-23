@@ -44,6 +44,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                   child: Padding(
                 padding: const EdgeInsets.only(left: 12, right: 12, bottom: 16),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       height: 3,
@@ -51,7 +52,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     ),
                     Icon(
                       Icons.home_outlined,
-                      size: 48,
+                      size: 32,
                     ),
                     Text("Library")
                   ],
