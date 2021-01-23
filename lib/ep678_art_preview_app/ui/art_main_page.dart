@@ -70,9 +70,12 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          height: 3,
-                          decoration: BoxDecoration(color: Colors.blue),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Container(
+                            height: 2,
+                            decoration: BoxDecoration(color: Colors.blue),
+                          ),
                         ),
                         Icon(
                           Icons.home_outlined,
@@ -92,9 +95,12 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          height: 3,
-                          decoration: BoxDecoration(color: Colors.blue),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Container(
+                            height: 2,
+                            decoration: BoxDecoration(color: Colors.blue),
+                          ),
                         ),
                         Icon(
                           Icons.home_outlined,
@@ -113,9 +119,12 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          height: 3,
-                          decoration: BoxDecoration(color: Colors.blue),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Container(
+                            height: 2,
+                            decoration: BoxDecoration(color: Colors.blue),
+                          ),
                         ),
                         Icon(
                           Icons.home_outlined,
