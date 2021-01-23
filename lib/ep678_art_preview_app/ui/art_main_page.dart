@@ -11,11 +11,13 @@ class _ArtMainPageState extends State<ArtMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder()),
+            Expanded(child: Placeholder()),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         notchMargin: 8.0,
@@ -30,7 +32,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
         onPressed: () {
 
         },
-        child: Icon(Icons.add),
+        child: Icon(Icons.add, size: 28,),
       ),
     );
   }
