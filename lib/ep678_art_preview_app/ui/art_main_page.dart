@@ -26,7 +26,10 @@ class _ArtMainPageState extends State<ArtMainPage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
+        backgroundColor: Colors.black,
+        onPressed: () {
+
+        },
         child: Icon(Icons.add),
       ),
     );
