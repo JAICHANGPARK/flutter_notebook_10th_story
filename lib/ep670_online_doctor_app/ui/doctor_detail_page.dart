@@ -247,6 +247,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                       selectionColor: Colors.white.withOpacity(0.5),
                       deactivatedColor: Colors.white,
 
+
                     )
 
                   ],
