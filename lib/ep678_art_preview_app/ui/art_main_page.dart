@@ -18,6 +18,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
         ],
       ),
       bottomNavigationBar: BottomAppBar(
+        shape: CircularNotchedRectangle(),
         child: Container(
           height: 72,
         ),
