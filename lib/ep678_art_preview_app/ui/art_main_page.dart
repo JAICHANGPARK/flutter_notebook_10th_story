@@ -10,6 +10,19 @@ class ArtMainPage extends StatefulWidget {
 class _ArtMainPageState extends State<ArtMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+        ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+        ),
+      ),
+      
+    );
   }
 }
