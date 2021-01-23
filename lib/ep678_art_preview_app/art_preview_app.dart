@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class ArtPreviewApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp();
   }
 }
+
