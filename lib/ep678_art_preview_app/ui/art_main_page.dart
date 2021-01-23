@@ -22,7 +22,10 @@ class _ArtMainPageState extends State<ArtMainPage> {
           height: 72,
         ),
       ),
-      
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {  },
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
