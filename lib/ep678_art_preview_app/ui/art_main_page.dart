@@ -29,7 +29,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: Container(
                             height: 32,
                             decoration: BoxDecoration(
@@ -53,26 +53,29 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             ),
                           ),
                         ),
-                        Container(
-                          height: 32,
-                          decoration: BoxDecoration(
-                              color: Colors.blueAccent[100],
-                              borderRadius: BorderRadius.circular(4)
-                          ),
-                          child: Stack(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Center(
-                                  child: Text("Browse"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                          child: Container(
+                            height: 32,
+                            decoration: BoxDecoration(
+                                color: Colors.blueAccent[100],
+                                borderRadius: BorderRadius.circular(4)
+                            ),
+                            child: Stack(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Center(
+                                    child: Text("Browse"),
+                                  ),
                                 ),
-                              ),
-                              Positioned(child: Container(height: 2,
-                                color: Colors.black,),
-                                left: 24,
-                                right: 24,
-                                bottom: 0,)
-                            ],
+                                Positioned(child: Container(height: 2,
+                                  color: Colors.black,),
+                                  left: 24,
+                                  right: 24,
+                                  bottom: 0,)
+                              ],
+                            ),
                           ),
                         ),
                         Container(
