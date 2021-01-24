@@ -166,7 +166,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     child: GestureDetector(
                       onTap: (){
                         setState(() {
-                          _pageIndex = 0;
+                          _pageIndex = 1;
                         });
                       },
                       child: Column(
@@ -177,18 +177,18 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             child: Container(
                               height: 2,
                               decoration: BoxDecoration(color:
-                              _pageIndex == 0 ?
+                              _pageIndex == 1 ?
                               Colors.blue : Colors.transparent),
                             ),
                           ),
                           Icon(
-                            Icons.home_outlined,
+                            Icons.apps_outlined,
                             size: 38,
-                            color: _pageIndex == 0 ? Colors.blue : Colors.grey,
+                            color: _pageIndex == 1 ? Colors.blue : Colors.grey,
                           ),
                           Text(
-                            "Library",
-                            style: TextStyle(color: _pageIndex == 0 ? Colors.blue: Colors.grey),
+                            "Discover",
+                            style: TextStyle(color: _pageIndex == 1 ? Colors.blue: Colors.grey),
                           )
                         ],
                       ),
@@ -197,54 +197,72 @@ class _ArtMainPageState extends State<ArtMainPage> {
               Expanded(child: Container()),
               Expanded(
                   child: Padding(
-                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 6),
-                      child: Container(
-                        height: 2,
-                        decoration: BoxDecoration(color: Colors.blue),
+                    padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+                    child: GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          _pageIndex = 2;
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 6),
+                            child: Container(
+                              height: 2,
+                              decoration: BoxDecoration(color:
+                              _pageIndex == 2 ?
+                              Colors.blue : Colors.transparent),
+                            ),
+                          ),
+                          Icon(
+                            Icons.apps_outlined,
+                            size: 38,
+                            color: _pageIndex == 2 ? Colors.blue : Colors.grey,
+                          ),
+                          Text(
+                            "Discover",
+                            style: TextStyle(color: _pageIndex == 2 ? Colors.blue: Colors.grey),
+                          )
+                        ],
                       ),
                     ),
-                    Icon(
-                      Icons.home_outlined,
-                      size: 38,
-                      color: Colors.blue,
-                    ),
-                    Text(
-                      "Library",
-                      style: TextStyle(color: Colors.blue),
-                    )
-                  ],
-                ),
-              )),
+                  )),
               Expanded(
                   child: Padding(
-                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 6),
-                      child: Container(
-                        height: 2,
-                        decoration: BoxDecoration(color: Colors.blue),
+                    padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+                    child: GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          _pageIndex = 1;
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 6),
+                            child: Container(
+                              height: 2,
+                              decoration: BoxDecoration(color:
+                              _pageIndex == 1 ?
+                              Colors.blue : Colors.transparent),
+                            ),
+                          ),
+                          Icon(
+                            Icons.apps_outlined,
+                            size: 38,
+                            color: _pageIndex == 1 ? Colors.blue : Colors.grey,
+                          ),
+                          Text(
+                            "Discover",
+                            style: TextStyle(color: _pageIndex == 1 ? Colors.blue: Colors.grey),
+                          )
+                        ],
                       ),
                     ),
-                    Icon(
-                      Icons.home_outlined,
-                      size: 38,
-                      color: Colors.blue,
-                    ),
-                    Text(
-                      "Library",
-                      style: TextStyle(color: Colors.blue),
-                    )
-                  ],
-                ),
-              )),
+                  )),
             ],
           ),
         ),
