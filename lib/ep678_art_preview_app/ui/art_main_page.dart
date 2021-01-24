@@ -58,85 +58,89 @@ class _ArtMainPageState extends State<ArtMainPage> {
                       size: 38,
                       color: Colors.blue,
                     ),
-                    Text("Library", style: TextStyle(
-                      color: Colors.blue
-                    ),)
+                    Text(
+                      "Library",
+                      style: TextStyle(color: Colors.blue),
+                    )
                   ],
                 ),
               )),
               Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Container(
-                            height: 2,
-                            decoration: BoxDecoration(color: Colors.blue),
-                          ),
-                        ),
-                        Icon(
-                          Icons.home_outlined,
-                          size: 38,
-                          color: Colors.blue,
-                        ),
-                        Text("Library", style: TextStyle(
-                            color: Colors.blue
-                        ),)
-                      ],
+                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 6),
+                      child: Container(
+                        height: 2,
+                        decoration: BoxDecoration(color: Colors.blue),
+                      ),
                     ),
-                  )),
+                    Icon(
+                      Icons.home_outlined,
+                      size: 38,
+                      color: Colors.blue,
+                    ),
+                    Text(
+                      "Library",
+                      style: TextStyle(color: Colors.blue),
+                    )
+                  ],
+                ),
+              )),
               Expanded(child: Container()),
               Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Container(
-                            height: 2,
-                            decoration: BoxDecoration(color: Colors.blue),
-                          ),
-                        ),
-                        Icon(
-                          Icons.home_outlined,
-                          size: 38,
-                          color: Colors.blue,
-                        ),
-                        Text("Library", style: TextStyle(
-                            color: Colors.blue
-                        ),)
-                      ],
+                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 6),
+                      child: Container(
+                        height: 2,
+                        decoration: BoxDecoration(color: Colors.blue),
+                      ),
                     ),
-                  )),
+                    Icon(
+                      Icons.home_outlined,
+                      size: 38,
+                      color: Colors.blue,
+                    ),
+                    Text(
+                      "Library",
+                      style: TextStyle(color: Colors.blue),
+                    )
+                  ],
+                ),
+              )),
               Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Container(
-                            height: 2,
-                            decoration: BoxDecoration(color: Colors.blue),
-                          ),
-                        ),
-                        Icon(
-                          Icons.home_outlined,
-                          size: 38,
-                          color: Colors.blue,
-                        ),
-                        Text("Library", style: TextStyle(
-                            color: Colors.blue
-                        ),)
-                      ],
+                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 6),
+                      child: Container(
+                        height: 2,
+                        decoration: BoxDecoration(color: Colors.blue),
+                      ),
                     ),
-                  )),
+                    Icon(
+                      Icons.home_outlined,
+                      size: 38,
+                      color: Colors.blue,
+                    ),
+                    Text(
+                      "Library",
+                      style: TextStyle(color: Colors.blue),
+                    )
+                  ],
+                ),
+              )),
             ],
           ),
         ),
