@@ -123,7 +123,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
         notchMargin: 16.0,
         shape: CircularNotchedRectangle(),
         child: Container(
-          height: 72,
+          height: 80,
           child: Row(
             children: [
               Expanded(
@@ -222,7 +222,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             color: _pageIndex == 2 ? Colors.blue : Colors.grey,
                           ),
                           Text(
-                            "Discover",
+                            "Feed",
                             style: TextStyle(color: _pageIndex == 2 ? Colors.blue: Colors.grey),
                           )
                         ],
@@ -251,12 +251,12 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             ),
                           ),
                           Icon(
-                            Icons.apps_outlined,
+                            Icons.settings,
                             size: 38,
                             color: _pageIndex == 3 ? Colors.blue : Colors.grey,
                           ),
                           Text(
-                            "Discover",
+                            "Settings",
                             style: TextStyle(color: _pageIndex == 3 ? Colors.blue: Colors.grey),
                           )
                         ],
