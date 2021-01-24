@@ -48,8 +48,8 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                 ),
                                 Positioned(child: Container(height: 2,
                                 color: Colors.black,),
-                                left: 24,
-                                right: 24,
+                                left: 32,
+                                right: 32,
                                 bottom: 0,)
                               ],
                             ),
@@ -68,15 +68,15 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                 Padding(
                                   padding: const EdgeInsets.symmetric(horizontal: 12),
                                   child: Center(
-                                    child: Text("Browse",style: TextStyle(
+                                    child: Text("Artists",style: TextStyle(
                                       fontSize: 16,
                                     ),),
                                   ),
                                 ),
                                 Positioned(child: Container(height: 2,
                                   color: Colors.black,),
-                                  left: 24,
-                                  right: 24,
+                                  left: 32,
+                                  right: 32,
                                   bottom: 0,)
                               ],
                             ),
