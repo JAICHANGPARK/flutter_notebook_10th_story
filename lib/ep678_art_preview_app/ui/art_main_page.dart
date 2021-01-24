@@ -39,9 +39,11 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             child: Stack(
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12),
                                   child: Center(
-                                    child: Text("Browse"),
+                                    child: Text("Browse",style: TextStyle(
+                                      fontSize: 16,
+                                    ),),
                                   ),
                                 ),
                                 Positioned(child: Container(height: 2,
