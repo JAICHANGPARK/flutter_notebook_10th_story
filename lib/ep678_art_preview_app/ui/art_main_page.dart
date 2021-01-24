@@ -217,7 +217,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             ),
                           ),
                           Icon(
-                            Icons.apps_outlined,
+                            Icons.favorite,
                             size: 38,
                             color: _pageIndex == 2 ? Colors.blue : Colors.grey,
                           ),
@@ -235,7 +235,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     child: GestureDetector(
                       onTap: (){
                         setState(() {
-                          _pageIndex = 1;
+                          _pageIndex = 3;
                         });
                       },
                       child: Column(
@@ -246,18 +246,18 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             child: Container(
                               height: 2,
                               decoration: BoxDecoration(color:
-                              _pageIndex == 1 ?
+                              _pageIndex == 3 ?
                               Colors.blue : Colors.transparent),
                             ),
                           ),
                           Icon(
                             Icons.apps_outlined,
                             size: 38,
-                            color: _pageIndex == 1 ? Colors.blue : Colors.grey,
+                            color: _pageIndex == 3 ? Colors.blue : Colors.grey,
                           ),
                           Text(
                             "Discover",
-                            style: TextStyle(color: _pageIndex == 1 ? Colors.blue: Colors.grey),
+                            style: TextStyle(color: _pageIndex == 3 ? Colors.blue: Colors.grey),
                           )
                         ],
                       ),
