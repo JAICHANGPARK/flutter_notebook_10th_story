@@ -17,7 +17,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
             Expanded(
                 flex: 2,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text(
                       "Discover",
@@ -66,9 +66,11 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             child: Stack(
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12),
                                   child: Center(
-                                    child: Text("Browse"),
+                                    child: Text("Browse",style: TextStyle(
+                                      fontSize: 16,
+                                    ),),
                                   ),
                                 ),
                                 Positioned(child: Container(height: 2,
@@ -80,28 +82,33 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             ),
                           ),
                         ),
-                        Container(
-                          height: 32,
-                          decoration: BoxDecoration(
-                              color: Colors.blueAccent[100],
-                              borderRadius: BorderRadius.circular(4)
-                          ),
-                          child: Stack(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Center(
-                                  child: Text("Browse"),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                          child: Container(
+                            height: 32,
+                            decoration: BoxDecoration(
+                                color: Colors.blueAccent[100],
+                                borderRadius: BorderRadius.circular(4)
+                            ),
+                            child: Stack(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                                  child: Center(
+                                    child: Text("Browse",style: TextStyle(
+                                      fontSize: 16,
+                                    ),),
+                                  ),
                                 ),
-                              ),
-                              Positioned(child: Container(height: 2,
-                                color: Colors.black,),
-                                left: 24,
-                                right: 24,
-                                bottom: 0,)
-                            ],
+                                Positioned(child: Container(height: 2,
+                                  color: Colors.black,),
+                                  left: 24,
+                                  right: 24,
+                                  bottom: 0,)
+                              ],
+                            ),
                           ),
-                        )
+                        ),
                       ],
                     )
                   ],
