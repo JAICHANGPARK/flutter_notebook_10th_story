@@ -28,15 +28,24 @@ class _ArtMainPageState extends State<ArtMainPage> {
                       children: [
                         Container(
                           height: 32,
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+
                           decoration: BoxDecoration(
-                            color: Colors.blueAccent
+                            color: Colors.blueAccent[100],
+                            borderRadius: BorderRadius.circular(4)
                           ),
                           child: Stack(
                             children: [
-                              Center(
-                                child: Text("Browse"),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Center(
+                                  child: Text("Browse"),
+                                ),
                               ),
+                              Positioned(child: Container(height: 2,
+                              color: Colors.black,),
+                              left: 24,
+                              right: 24,
+                              bottom: 0,)
                             ],
                           ),
                         )
