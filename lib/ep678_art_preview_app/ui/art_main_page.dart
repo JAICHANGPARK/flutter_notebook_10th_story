@@ -67,55 +67,71 @@ class _ArtMainPageState extends State<ArtMainPage> {
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8),
-                          child: Container(
-                            height: 32,
-                            decoration: BoxDecoration(
-                                color: Colors.blueAccent[100],
-                                borderRadius: BorderRadius.circular(4)
-                            ),
-                            child: Stack(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 12),
-                                  child: Center(
-                                    child: Text("Artists",style: TextStyle(
-                                      fontSize: 16,
-                                    ),),
+                          child: GestureDetector(
+                            onTap: (){
+                              setState(() {
+                                _tabIndex = 0;
+                              });
+                            },
+                            child: Container(
+                              height: 32,
+                              decoration: BoxDecoration(
+                                  color: _tabIndex == 0 ? Colors.blueAccent[100] : Colors.white,
+                                  borderRadius: BorderRadius.circular(4)
+                              ),
+                              child: Stack(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                                    child: Center(
+                                      child: Text("Browse",style: TextStyle(
+                                          fontSize: 16,
+                                          color:  _tabIndex == 0 ? Colors.black : Colors.grey
+                                      ),),
+                                    ),
                                   ),
-                                ),
-                                Positioned(child: Container(height: 2,
-                                  color: Colors.black,),
-                                  left: 30,
-                                  right: 30,
-                                  bottom: 0,)
-                              ],
+                                  Positioned(child: Container(height: 2,
+                                    color: _tabIndex == 0 ? Colors.black : Colors.transparent,),
+                                    left: 30,
+                                    right: 30,
+                                    bottom: 0,)
+                                ],
+                              ),
                             ),
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8),
-                          child: Container(
-                            height: 32,
-                            decoration: BoxDecoration(
-                                color: Colors.blueAccent[100],
-                                borderRadius: BorderRadius.circular(4)
-                            ),
-                            child: Stack(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 12),
-                                  child: Center(
-                                    child: Text("Galleries",style: TextStyle(
-                                      fontSize: 16,
-                                    ),),
+                          child: GestureDetector(
+                            onTap: (){
+                              setState(() {
+                                _tabIndex = 0;
+                              });
+                            },
+                            child: Container(
+                              height: 32,
+                              decoration: BoxDecoration(
+                                  color: _tabIndex == 0 ? Colors.blueAccent[100] : Colors.white,
+                                  borderRadius: BorderRadius.circular(4)
+                              ),
+                              child: Stack(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                                    child: Center(
+                                      child: Text("Browse",style: TextStyle(
+                                          fontSize: 16,
+                                          color:  _tabIndex == 0 ? Colors.black : Colors.grey
+                                      ),),
+                                    ),
                                   ),
-                                ),
-                                Positioned(child: Container(height: 2,
-                                  color: Colors.black,),
-                                  left: 30,
-                                  right: 30,
-                                  bottom: 0,)
-                              ],
+                                  Positioned(child: Container(height: 2,
+                                    color: _tabIndex == 0 ? Colors.black : Colors.transparent,),
+                                    left: 30,
+                                    right: 30,
+                                    bottom: 0,)
+                                ],
+                              ),
                             ),
                           ),
                         ),
