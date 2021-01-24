@@ -26,13 +26,38 @@ class _ArtMainPageState extends State<ArtMainPage> {
                       ),
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Container(
+                            height: 32,
+                            decoration: BoxDecoration(
+                              color: Colors.blueAccent[100],
+                              borderRadius: BorderRadius.circular(4)
+                            ),
+                            child: Stack(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Center(
+                                    child: Text("Browse"),
+                                  ),
+                                ),
+                                Positioned(child: Container(height: 2,
+                                color: Colors.black,),
+                                left: 24,
+                                right: 24,
+                                bottom: 0,)
+                              ],
+                            ),
+                          ),
+                        ),
                         Container(
                           height: 32,
-
                           decoration: BoxDecoration(
-                            color: Colors.blueAccent[100],
-                            borderRadius: BorderRadius.circular(4)
+                              color: Colors.blueAccent[100],
+                              borderRadius: BorderRadius.circular(4)
                           ),
                           child: Stack(
                             children: [
@@ -43,10 +68,32 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                 ),
                               ),
                               Positioned(child: Container(height: 2,
-                              color: Colors.black,),
-                              left: 24,
-                              right: 24,
-                              bottom: 0,)
+                                color: Colors.black,),
+                                left: 24,
+                                right: 24,
+                                bottom: 0,)
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: 32,
+                          decoration: BoxDecoration(
+                              color: Colors.blueAccent[100],
+                              borderRadius: BorderRadius.circular(4)
+                          ),
+                          child: Stack(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Center(
+                                  child: Text("Browse"),
+                                ),
+                              ),
+                              Positioned(child: Container(height: 2,
+                                color: Colors.black,),
+                                left: 24,
+                                right: 24,
+                                bottom: 0,)
                             ],
                           ),
                         )
