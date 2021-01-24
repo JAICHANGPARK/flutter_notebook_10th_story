@@ -15,8 +15,9 @@ class _ArtMainPageState extends State<ArtMainPage> {
         child: Column(
           children: [
             Expanded(
-                flex: 3,
+                flex: 2,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       "Discover",
