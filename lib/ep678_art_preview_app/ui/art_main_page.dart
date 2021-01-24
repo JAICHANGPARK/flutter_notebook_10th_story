@@ -139,7 +139,9 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     )
                   ],
                 )),
-            Expanded(flex: 10, child: Placeholder()),
+            Expanded(flex: 10, child: Placeholder(
+              color: Colors.grey[100],
+            )),
           ],
         ),
       ),
