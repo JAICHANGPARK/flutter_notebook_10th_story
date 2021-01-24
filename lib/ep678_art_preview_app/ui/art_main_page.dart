@@ -25,7 +25,22 @@ class _ArtMainPageState extends State<ArtMainPage> {
                       ),
                     ),
                     Row(
-                      children: [],
+                      children: [
+                        Container(
+                          height: 64,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.blueAccent
+                          ),
+                          child: Stack(
+                            children: [
+                              Center(
+                                child: Text("Browse"),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
                     )
                   ],
                 )),
