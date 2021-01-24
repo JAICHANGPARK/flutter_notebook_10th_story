@@ -39,7 +39,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                               });
                             },
                             child: Container(
-                              height: 32,
+                              height: 38,
                               decoration: BoxDecoration(
                                 color: _tabIndex == 0 ? Colors.blueAccent[100] : Colors.white,
                                 borderRadius: BorderRadius.circular(4)
@@ -70,13 +70,13 @@ class _ArtMainPageState extends State<ArtMainPage> {
                           child: GestureDetector(
                             onTap: (){
                               setState(() {
-                                _tabIndex = 0;
+                                _tabIndex = 1;
                               });
                             },
                             child: Container(
                               height: 32,
                               decoration: BoxDecoration(
-                                  color: _tabIndex == 0 ? Colors.blueAccent[100] : Colors.white,
+                                  color: _tabIndex == 1 ? Colors.blueAccent[100] : Colors.white,
                                   borderRadius: BorderRadius.circular(4)
                               ),
                               child: Stack(
@@ -84,14 +84,14 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                   Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 12),
                                     child: Center(
-                                      child: Text("Browse",style: TextStyle(
+                                      child: Text("Artists",style: TextStyle(
                                           fontSize: 16,
-                                          color:  _tabIndex == 0 ? Colors.black : Colors.grey
+                                          color:  _tabIndex == 1 ? Colors.black : Colors.grey
                                       ),),
                                     ),
                                   ),
                                   Positioned(child: Container(height: 2,
-                                    color: _tabIndex == 0 ? Colors.black : Colors.transparent,),
+                                    color: _tabIndex == 1 ? Colors.black : Colors.transparent,),
                                     left: 30,
                                     right: 30,
                                     bottom: 0,)
@@ -105,13 +105,13 @@ class _ArtMainPageState extends State<ArtMainPage> {
                           child: GestureDetector(
                             onTap: (){
                               setState(() {
-                                _tabIndex = 0;
+                                _tabIndex = 2;
                               });
                             },
                             child: Container(
                               height: 32,
                               decoration: BoxDecoration(
-                                  color: _tabIndex == 0 ? Colors.blueAccent[100] : Colors.white,
+                                  color: _tabIndex == 2 ? Colors.blueAccent[100] : Colors.white,
                                   borderRadius: BorderRadius.circular(4)
                               ),
                               child: Stack(
@@ -119,14 +119,14 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                   Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 12),
                                     child: Center(
-                                      child: Text("Browse",style: TextStyle(
+                                      child: Text("Galleries",style: TextStyle(
                                           fontSize: 16,
-                                          color:  _tabIndex == 0 ? Colors.black : Colors.grey
+                                          color:  _tabIndex == 2 ? Colors.black : Colors.grey
                                       ),),
                                     ),
                                   ),
                                   Positioned(child: Container(height: 2,
-                                    color: _tabIndex == 0 ? Colors.black : Colors.transparent,),
+                                    color: _tabIndex == 2 ? Colors.black : Colors.transparent,),
                                     left: 30,
                                     right: 30,
                                     bottom: 0,)
