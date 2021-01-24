@@ -109,7 +109,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                               });
                             },
                             child: Container(
-                              height: 32,
+                              height: 38,
                               decoration: BoxDecoration(
                                   color: _tabIndex == 2 ? Colors.blueAccent[100] : Colors.white,
                                   borderRadius: BorderRadius.circular(4)
