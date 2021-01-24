@@ -27,8 +27,8 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     Row(
                       children: [
                         Container(
-                          height: 64,
-                          width: 120,
+                          height: 32,
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           decoration: BoxDecoration(
                             color: Colors.blueAccent
                           ),
