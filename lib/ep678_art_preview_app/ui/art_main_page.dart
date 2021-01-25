@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_10th_story/ep678_art_preview_app/model/art.dart';
 
 class ArtMainPage extends StatefulWidget {
   ArtMainPage({Key key}) : super(key: key);
@@ -10,6 +11,21 @@ class ArtMainPage extends StatefulWidget {
 class _ArtMainPageState extends State<ArtMainPage> {
   int _tabIndex = 0;
   int _pageIndex = 0;
+
+  List<Art> artItems = [
+    Art(img: "https://cdn.pixabay.com/photo/2017/11/20/02/00/fantasy-2964231_960_720.jpg",
+    name: "Abstract",
+    detail: "by Dreamwalker Resin on Canvas",
+    isFeature: true,
+    height: "36",
+    width: "48"),
+    Art(img: "https://cdn.pixabay.com/photo/2017/11/20/02/00/fantasy-2964231_960_720.jpg",
+        name: "Abstract",
+        detail: "by Dreamwalker Resin on Canvas",
+        isFeature: true,
+        height: "36",
+        width: "48"),
+  ];
 
   @override
   Widget build(BuildContext context) {
