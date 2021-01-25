@@ -159,6 +159,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 200,
+                    color: Colors.grey,
                   );
                 },
                 separatorBuilder: (BuildContext context, int index) {
