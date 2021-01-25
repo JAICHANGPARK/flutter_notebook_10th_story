@@ -161,7 +161,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
 
                   }, separatorBuilder: (BuildContext context, int index) {
                     return Divider();
-              },),
+              }, itemCount: 10,),
 
             ),
           ],
