@@ -10,6 +10,7 @@ class ArtMainPage extends StatefulWidget {
 class _ArtMainPageState extends State<ArtMainPage> {
   int _tabIndex = 0;
   int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +34,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: GestureDetector(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _tabIndex = 0;
                               });
@@ -41,25 +42,29 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             child: Container(
                               height: 38,
                               decoration: BoxDecoration(
-                                color: _tabIndex == 0 ? Colors.blueAccent[100] : Colors.white,
-                                borderRadius: BorderRadius.circular(4)
-                              ),
+                                  color: _tabIndex == 0 ? Colors.blueAccent[100] : Colors.white,
+                                  borderRadius: BorderRadius.circular(4)),
                               child: Stack(
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 12),
                                     child: Center(
-                                      child: Text("Browse",style: TextStyle(
-                                        fontSize: 16,
-                                        color:  _tabIndex == 0 ? Colors.black : Colors.grey
-                                      ),),
+                                      child: Text(
+                                        "Browse",
+                                        style:
+                                            TextStyle(fontSize: 16, color: _tabIndex == 0 ? Colors.black : Colors.grey),
+                                      ),
                                     ),
                                   ),
-                                  Positioned(child: Container(height: 2,
-                                  color: _tabIndex == 0 ? Colors.black : Colors.transparent,),
-                                  left: 30,
-                                  right: 30,
-                                  bottom: 0,)
+                                  Positioned(
+                                    child: Container(
+                                      height: 2,
+                                      color: _tabIndex == 0 ? Colors.black : Colors.transparent,
+                                    ),
+                                    left: 30,
+                                    right: 30,
+                                    bottom: 0,
+                                  )
                                 ],
                               ),
                             ),
@@ -68,7 +73,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: GestureDetector(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _tabIndex = 1;
                               });
@@ -77,24 +82,28 @@ class _ArtMainPageState extends State<ArtMainPage> {
                               height: 38,
                               decoration: BoxDecoration(
                                   color: _tabIndex == 1 ? Colors.blueAccent[100] : Colors.white,
-                                  borderRadius: BorderRadius.circular(4)
-                              ),
+                                  borderRadius: BorderRadius.circular(4)),
                               child: Stack(
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 12),
                                     child: Center(
-                                      child: Text("Artists",style: TextStyle(
-                                          fontSize: 16,
-                                          color:  _tabIndex == 1 ? Colors.black : Colors.grey
-                                      ),),
+                                      child: Text(
+                                        "Artists",
+                                        style:
+                                            TextStyle(fontSize: 16, color: _tabIndex == 1 ? Colors.black : Colors.grey),
+                                      ),
                                     ),
                                   ),
-                                  Positioned(child: Container(height: 2,
-                                    color: _tabIndex == 1 ? Colors.black : Colors.transparent,),
+                                  Positioned(
+                                    child: Container(
+                                      height: 2,
+                                      color: _tabIndex == 1 ? Colors.black : Colors.transparent,
+                                    ),
                                     left: 30,
                                     right: 30,
-                                    bottom: 0,)
+                                    bottom: 0,
+                                  )
                                 ],
                               ),
                             ),
@@ -103,7 +112,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: GestureDetector(
-                            onTap: (){
+                            onTap: () {
                               setState(() {
                                 _tabIndex = 2;
                               });
@@ -112,24 +121,28 @@ class _ArtMainPageState extends State<ArtMainPage> {
                               height: 38,
                               decoration: BoxDecoration(
                                   color: _tabIndex == 2 ? Colors.blueAccent[100] : Colors.white,
-                                  borderRadius: BorderRadius.circular(4)
-                              ),
+                                  borderRadius: BorderRadius.circular(4)),
                               child: Stack(
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 12),
                                     child: Center(
-                                      child: Text("Galleries",style: TextStyle(
-                                          fontSize: 16,
-                                          color:  _tabIndex == 2 ? Colors.black : Colors.grey
-                                      ),),
+                                      child: Text(
+                                        "Galleries",
+                                        style:
+                                            TextStyle(fontSize: 16, color: _tabIndex == 2 ? Colors.black : Colors.grey),
+                                      ),
                                     ),
                                   ),
-                                  Positioned(child: Container(height: 2,
-                                    color: _tabIndex == 2 ? Colors.black : Colors.transparent,),
+                                  Positioned(
+                                    child: Container(
+                                      height: 2,
+                                      color: _tabIndex == 2 ? Colors.black : Colors.transparent,
+                                    ),
                                     left: 30,
                                     right: 30,
-                                    bottom: 0,)
+                                    bottom: 0,
+                                  )
                                 ],
                               ),
                             ),
@@ -139,9 +152,12 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     )
                   ],
                 )),
-            Expanded(flex: 10, child: Placeholder(
-              color: Colors.grey[100],
-            )),
+            Expanded(
+              flex: 10,
+              child: ListView.builder(
+                  shrinkWrap: true,
+                  itemBuilder: (context, index) {}),
+            ),
           ],
         ),
       ),
@@ -156,7 +172,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                   child: Padding(
                 padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
                 child: GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     setState(() {
                       _pageIndex = 0;
                     });
@@ -168,9 +184,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                         padding: const EdgeInsets.symmetric(horizontal: 6),
                         child: Container(
                           height: 2,
-                          decoration: BoxDecoration(color:
-                          _pageIndex == 0 ?
-                          Colors.blue : Colors.transparent),
+                          decoration: BoxDecoration(color: _pageIndex == 0 ? Colors.blue : Colors.transparent),
                         ),
                       ),
                       Icon(
@@ -180,7 +194,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                       ),
                       Text(
                         "Library",
-                        style: TextStyle(color: _pageIndex == 0 ? Colors.blue: Colors.grey),
+                        style: TextStyle(color: _pageIndex == 0 ? Colors.blue : Colors.grey),
                       )
                     ],
                   ),
@@ -188,107 +202,101 @@ class _ArtMainPageState extends State<ArtMainPage> {
               )),
               Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
-                    child: GestureDetector(
-                      onTap: (){
-                        setState(() {
-                          _pageIndex = 1;
-                        });
-                      },
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 6),
-                            child: Container(
-                              height: 2,
-                              decoration: BoxDecoration(color:
-                              _pageIndex == 1 ?
-                              Colors.blue : Colors.transparent),
-                            ),
-                          ),
-                          Icon(
-                            Icons.apps_outlined,
-                            size: 38,
-                            color: _pageIndex == 1 ? Colors.blue : Colors.grey,
-                          ),
-                          Text(
-                            "Discover",
-                            style: TextStyle(color: _pageIndex == 1 ? Colors.blue: Colors.grey),
-                          )
-                        ],
+                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _pageIndex = 1;
+                    });
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 6),
+                        child: Container(
+                          height: 2,
+                          decoration: BoxDecoration(color: _pageIndex == 1 ? Colors.blue : Colors.transparent),
+                        ),
                       ),
-                    ),
-                  )),
+                      Icon(
+                        Icons.apps_outlined,
+                        size: 38,
+                        color: _pageIndex == 1 ? Colors.blue : Colors.grey,
+                      ),
+                      Text(
+                        "Discover",
+                        style: TextStyle(color: _pageIndex == 1 ? Colors.blue : Colors.grey),
+                      )
+                    ],
+                  ),
+                ),
+              )),
               Expanded(child: Container()),
               Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
-                    child: GestureDetector(
-                      onTap: (){
-                        setState(() {
-                          _pageIndex = 2;
-                        });
-                      },
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 6),
-                            child: Container(
-                              height: 2,
-                              decoration: BoxDecoration(color:
-                              _pageIndex == 2 ?
-                              Colors.blue : Colors.transparent),
-                            ),
-                          ),
-                          Icon(
-                            Icons.favorite,
-                            size: 38,
-                            color: _pageIndex == 2 ? Colors.blue : Colors.grey,
-                          ),
-                          Text(
-                            "Feed",
-                            style: TextStyle(color: _pageIndex == 2 ? Colors.blue: Colors.grey),
-                          )
-                        ],
+                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _pageIndex = 2;
+                    });
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 6),
+                        child: Container(
+                          height: 2,
+                          decoration: BoxDecoration(color: _pageIndex == 2 ? Colors.blue : Colors.transparent),
+                        ),
                       ),
-                    ),
-                  )),
+                      Icon(
+                        Icons.favorite,
+                        size: 38,
+                        color: _pageIndex == 2 ? Colors.blue : Colors.grey,
+                      ),
+                      Text(
+                        "Feed",
+                        style: TextStyle(color: _pageIndex == 2 ? Colors.blue : Colors.grey),
+                      )
+                    ],
+                  ),
+                ),
+              )),
               Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
-                    child: GestureDetector(
-                      onTap: (){
-                        setState(() {
-                          _pageIndex = 3;
-                        });
-                      },
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 6),
-                            child: Container(
-                              height: 2,
-                              decoration: BoxDecoration(color:
-                              _pageIndex == 3 ?
-                              Colors.blue : Colors.transparent),
-                            ),
-                          ),
-                          Icon(
-                            Icons.settings,
-                            size: 38,
-                            color: _pageIndex == 3 ? Colors.blue : Colors.grey,
-                          ),
-                          Text(
-                            "Settings",
-                            style: TextStyle(color: _pageIndex == 3 ? Colors.blue: Colors.grey),
-                          )
-                        ],
+                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _pageIndex = 3;
+                    });
+                  },
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 6),
+                        child: Container(
+                          height: 2,
+                          decoration: BoxDecoration(color: _pageIndex == 3 ? Colors.blue : Colors.transparent),
+                        ),
                       ),
-                    ),
-                  )),
+                      Icon(
+                        Icons.settings,
+                        size: 38,
+                        color: _pageIndex == 3 ? Colors.blue : Colors.grey,
+                      ),
+                      Text(
+                        "Settings",
+                        style: TextStyle(color: _pageIndex == 3 ? Colors.blue : Colors.grey),
+                      )
+                    ],
+                  ),
+                ),
+              )),
             ],
           ),
         ),
