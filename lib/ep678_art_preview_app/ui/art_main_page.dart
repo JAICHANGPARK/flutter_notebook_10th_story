@@ -156,7 +156,11 @@ class _ArtMainPageState extends State<ArtMainPage> {
               flex: 10,
               child: ListView.builder(
                   shrinkWrap: true,
-                  itemBuilder: (context, index) {}),
+                  itemBuilder: (context, index) {
+                    return Container();
+
+                  }),
+
             ),
           ],
         ),
