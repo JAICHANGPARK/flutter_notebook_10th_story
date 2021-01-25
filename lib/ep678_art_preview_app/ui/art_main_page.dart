@@ -157,7 +157,9 @@ class _ArtMainPageState extends State<ArtMainPage> {
               child: ListView.separated(
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
-                    return Container();
+                    return Container(
+                      height: 200,
+                    );
 
                   }, separatorBuilder: (BuildContext context, int index) {
                     return Divider();
