@@ -232,23 +232,32 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             children: [
                               Text(artItems[index].name),
                               Text(artItems[index].detail),
-                              Container(
-                                height: 36,
-                                width: 36,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Colors.grey,
-                                ),
-                                child: Center(
-                                  child: Icon(
-                                    Icons.favorite,
-                                    color: Colors.white,
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 36,
+                                    width: 36,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Colors.grey,
+                                    ),
+                                    child: Center(
+                                      child: Icon(
+                                        Icons.favorite,
+                                        color: Colors.white,
+                                      ),
+                                    ),
                                   ),
-                                ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text("${artItems[index].height} x ${artItems[index].width} inch"),
+                                  )
+                                ],
                               )
                             ],
                           ),
                         ),
+                        Spacer(),
                         IconButton(icon: Icon(Icons.arrow_forward_ios_outlined), onPressed: () {})
                       ],
                     ),
