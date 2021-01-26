@@ -203,11 +203,20 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                 artItems[index].img
                               ),
                               fit: BoxFit.cover
-                            )
-
+                            ),
+                            borderRadius: BorderRadius.circular(12),
                           ),
+                        ),
+                        Column(
+                          children: [
+                            Text(artItems[index].name),
+                            Text(artItems[index].detail),
+                            Container(
+                              height: 48,
+                              width: 48,
+                            )
+                          ],
                         )
-
                       ],
                     ),
 
