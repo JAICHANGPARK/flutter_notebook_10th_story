@@ -192,7 +192,6 @@ class _ArtMainPageState extends State<ArtMainPage> {
                   return Container(
                     height: 160,
                     padding: EdgeInsets.all(16),
-                    color: Colors.grey[200],
                     child: Row(
                       children: [
                         Container(
