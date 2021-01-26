@@ -198,29 +198,24 @@ class _ArtMainPageState extends State<ArtMainPage> {
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage(
-                                artItems[index].img
-                              ),
-                              fit: BoxFit.cover
-                            ),
+                            image: DecorationImage(image: NetworkImage(artItems[index].img), fit: BoxFit.cover),
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Stack(
                             children: [
-                              Positioned(child: Container(
-                                padding: EdgeInsets.symmetric(vertical: 4),
-                                decoration: BoxDecoration(
-                                  color: Colors.blue[100]
+                              Positioned(
+                                child: Container(
+                                  padding: EdgeInsets.symmetric(vertical: 4),
+                                  decoration: BoxDecoration(color: Colors.blue[100]),
+                                  child: Center(
+                                      child: Text(
+                                    "FEATURED",
+                                    style: TextStyle(color: Colors.white),
+                                  )),
                                 ),
-                                child: Center(child: Text("FEATURED",
-                                style: TextStyle(
-                                  color: Colors.white
-                                ),)),
-                              ),
-                              bottom: 8,
-                              left: 8,
-                              right: 8,
+                                bottom: 8,
+                                left: 8,
+                                right: 8,
                               )
                             ],
                           ),
@@ -244,7 +239,6 @@ class _ArtMainPageState extends State<ArtMainPage> {
                         )
                       ],
                     ),
-
                   );
                 },
                 separatorBuilder: (BuildContext context, int index) {
