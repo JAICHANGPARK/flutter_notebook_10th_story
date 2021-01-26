@@ -225,7 +225,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                               : null,
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -233,14 +233,17 @@ class _ArtMainPageState extends State<ArtMainPage> {
                               Text(artItems[index].name),
                               Text(artItems[index].detail),
                               Container(
-                                height: 42,
-                                width: 42,
+                                height: 36,
+                                width: 36,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Colors.grey,
                                 ),
                                 child: Center(
-                                  child: Icon(Icons.favorite),
+                                  child: Icon(
+                                    Icons.favorite,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               )
                             ],
