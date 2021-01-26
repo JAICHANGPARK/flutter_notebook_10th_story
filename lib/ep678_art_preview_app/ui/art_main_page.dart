@@ -214,6 +214,13 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             Container(
                               height: 48,
                               width: 48,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.grey,
+                              ),
+                              child: Center(
+                                child: Icon(Icons.favorite),
+                              ),
                             )
                           ],
                         )
