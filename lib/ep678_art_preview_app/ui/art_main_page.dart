@@ -196,34 +196,36 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     child: Row(
                       children: [
                         Container(
-
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
                             image: DecorationImage(image: NetworkImage(artItems[index].img), fit: BoxFit.cover),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: artItems[index].isFeature ? Stack(
-                            children: [
-                              Positioned(
-                                child: Container(
-                                  padding: EdgeInsets.symmetric(vertical: 4),
-                                  decoration:
-                                      BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(4)),
-                                  child: Center(
-                                      child: Text(
-                                    "FEATURED",
-                                    style: TextStyle(color: Colors.white),
-                                  )),
-                                ),
-                                bottom: 8,
-                                left: 12,
-                                right: 12,
-                              )
-                            ],
-                          ): null,
+                          child: artItems[index].isFeature
+                              ? Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        padding: EdgeInsets.symmetric(vertical: 4),
+                                        decoration: BoxDecoration(
+                                            color: Colors.blue[200], borderRadius: BorderRadius.circular(4)),
+                                        child: Center(
+                                            child: Text(
+                                          "FEATURED",
+                                          style: TextStyle(color: Colors.white),
+                                        )),
+                                      ),
+                                      bottom: 8,
+                                      left: 12,
+                                      right: 12,
+                                    )
+                                  ],
+                                )
+                              : null,
                         ),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(artItems[index].name),
                             Text(artItems[index].detail),
