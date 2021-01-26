@@ -203,7 +203,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             image: DecorationImage(image: NetworkImage(artItems[index].img), fit: BoxFit.cover),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: Stack(
+                          child: artItems[index].isFeature ? Stack(
                             children: [
                               Positioned(
                                 child: Container(
@@ -221,7 +221,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                 right: 12,
                               )
                             ],
-                          ),
+                          ): null,
                         ),
                         Column(
                           children: [
