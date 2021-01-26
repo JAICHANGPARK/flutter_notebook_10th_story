@@ -206,14 +206,22 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             ),
                             borderRadius: BorderRadius.circular(12),
                           ),
+                          child: Stack(
+                            children: [
+                              Positioned(child: Container(),
+                              bottom: 8,
+                              left: 8,
+                              right: 8,)
+                            ],
+                          ),
                         ),
                         Column(
                           children: [
                             Text(artItems[index].name),
                             Text(artItems[index].detail),
                             Container(
-                              height: 48,
-                              width: 48,
+                              height: 42,
+                              width: 42,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: Colors.grey,
