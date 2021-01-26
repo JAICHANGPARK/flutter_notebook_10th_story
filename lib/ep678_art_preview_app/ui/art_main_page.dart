@@ -229,7 +229,9 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(artItems[index].name),
+                              Text(artItems[index].name, style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),),
                               Text(artItems[index].detail),
                               Row(
                                 children: [
