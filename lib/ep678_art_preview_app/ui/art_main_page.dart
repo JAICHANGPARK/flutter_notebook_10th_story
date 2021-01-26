@@ -194,7 +194,19 @@ class _ArtMainPageState extends State<ArtMainPage> {
                     color: Colors.grey,
                     child: Row(
                       children: [
-                        
+                        Container(
+                          height: 120,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                
+                              )
+                            )
+
+                          ),
+                        )
+
                       ],
                     ),
 
