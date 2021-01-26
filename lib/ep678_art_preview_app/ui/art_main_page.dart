@@ -224,24 +224,28 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                 )
                               : null,
                         ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(artItems[index].name),
-                            Text(artItems[index].detail),
-                            Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.grey,
-                              ),
-                              child: Center(
-                                child: Icon(Icons.favorite),
-                              ),
-                            )
-                          ],
-                        )
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(artItems[index].name),
+                              Text(artItems[index].detail),
+                              Container(
+                                height: 42,
+                                width: 42,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Colors.grey,
+                                ),
+                                child: Center(
+                                  child: Icon(Icons.favorite),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        IconButton(icon: Icon(Icons.arrow_forward_ios_outlined), onPressed: () {})
                       ],
                     ),
                   );
