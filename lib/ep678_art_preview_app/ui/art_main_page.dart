@@ -191,7 +191,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 160,
-                    color: Colors.grey,
+                    color: Colors.grey[200],
                     child: Row(
                       children: [
                         Container(
