@@ -213,7 +213,10 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.blue[100]
                                 ),
-                                child: Text("FEATURED"),
+                                child: Center(child: Text("FEATURED",
+                                style: TextStyle(
+                                  color: Colors.white
+                                ),)),
                               ),
                               bottom: 8,
                               left: 8,
