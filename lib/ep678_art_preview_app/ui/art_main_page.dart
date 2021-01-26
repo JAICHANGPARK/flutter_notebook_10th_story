@@ -210,6 +210,9 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             children: [
                               Positioned(child: Container(
                                 padding: EdgeInsets.symmetric(vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue[100]
+                                ),
                                 child: Text("FEATURED"),
                               ),
                               bottom: 8,
