@@ -240,7 +240,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                     width: 36,
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
-                                      color: Colors.grey,
+                                      color: Colors.grey[400],
                                     ),
                                     child: Center(
                                       child: Icon(
