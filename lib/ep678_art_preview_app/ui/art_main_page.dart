@@ -208,10 +208,14 @@ class _ArtMainPageState extends State<ArtMainPage> {
                           ),
                           child: Stack(
                             children: [
-                              Positioned(child: Container(),
+                              Positioned(child: Container(
+                                padding: EdgeInsets.symmetric(vertical: 4),
+                                child: Text("FEATURED"),
+                              ),
                               bottom: 8,
                               left: 8,
-                              right: 8,)
+                              right: 8,
+                              )
                             ],
                           ),
                         ),
