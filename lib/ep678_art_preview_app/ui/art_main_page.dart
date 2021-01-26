@@ -16,28 +16,28 @@ class _ArtMainPageState extends State<ArtMainPage> {
     Art(
         img: "https://cdn.pixabay.com/photo/2017/11/20/02/00/fantasy-2964231_960_720.jpg",
         name: "Abstract",
-        detail: "by Dreamwalker Resin on Canvas",
+        detail: "by Dreamwalker\nResin on Canvas",
         isFeature: true,
         height: "36",
         width: "48"),
     Art(
         img: "https://cdn.pixabay.com/photo/2018/02/06/22/43/painting-3135875_960_720.jpg",
         name: "Abstract",
-        detail: "by Dreamwalker Oil on Canvas",
+        detail: "by Dreamwalker\n Oil on Canvas",
         isFeature: false,
         height: "36",
         width: "48"),
     Art(
         img: "https://cdn.pixabay.com/photo/2018/03/24/08/56/color-3256055_960_720.jpg",
         name: "Abstract",
-        detail: "by Dreamwalker Oil on Canvas",
+        detail: "by Dreamwalker\n Oil on Canvas",
         isFeature: false,
         height: "36",
         width: "48"),
     Art(
         img: "https://cdn.pixabay.com/photo/2017/06/03/20/12/art-2369664_960_720.jpg",
         name: "Abstract",
-        detail: "by Dreamwalker Oil on Canvas",
+        detail: "by Dreamwalker\n Oil on Canvas",
         isFeature: true,
         height: "36",
         width: "48"),
@@ -227,6 +227,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                         Padding(
                           padding: const EdgeInsets.all(16.0),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(artItems[index].name),
