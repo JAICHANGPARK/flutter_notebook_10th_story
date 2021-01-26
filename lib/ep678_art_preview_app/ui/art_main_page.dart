@@ -200,7 +200,7 @@ class _ArtMainPageState extends State<ArtMainPage> {
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               image: NetworkImage(
-                                
+                                artItems[index].img
                               )
                             )
 
