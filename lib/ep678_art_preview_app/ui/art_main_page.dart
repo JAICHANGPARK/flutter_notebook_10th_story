@@ -201,7 +201,8 @@ class _ArtMainPageState extends State<ArtMainPage> {
                             image: DecorationImage(
                               image: NetworkImage(
                                 artItems[index].img
-                              )
+                              ),
+                              fit: BoxFit.cover
                             )
 
                           ),
