@@ -191,10 +191,12 @@ class _ArtMainPageState extends State<ArtMainPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     height: 160,
+                    padding: EdgeInsets.all(16),
                     color: Colors.grey[200],
                     child: Row(
                       children: [
                         Container(
+
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
