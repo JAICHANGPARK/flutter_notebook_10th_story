@@ -206,7 +206,8 @@ class _ArtMainPageState extends State<ArtMainPage> {
                               Positioned(
                                 child: Container(
                                   padding: EdgeInsets.symmetric(vertical: 4),
-                                  decoration: BoxDecoration(color: Colors.blue[100]),
+                                  decoration:
+                                      BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(4)),
                                   child: Center(
                                       child: Text(
                                     "FEATURED",
@@ -214,8 +215,8 @@ class _ArtMainPageState extends State<ArtMainPage> {
                                   )),
                                 ),
                                 bottom: 8,
-                                left: 8,
-                                right: 8,
+                                left: 12,
+                                right: 12,
                               )
                             ],
                           ),
