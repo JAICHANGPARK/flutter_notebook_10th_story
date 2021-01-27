@@ -11,43 +11,46 @@ class ArtDetailPage extends StatefulWidget {
 }
 
 class _ArtDetailPageState extends State<ArtDetailPage> {
+  Widget buildBottomBar(){
+    return BottomAppBar(
+      elevation: 5,
+      child: Container(
+        height: 72,
+        padding: EdgeInsets.symmetric(horizontal: 12),
+        child: Row(
+          children: [
+            Expanded(
+                child: Container(
+                  margin: EdgeInsets.all(12),
+                  decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(24)),
+                  child: Center(
+                      child: Text(
+                        "Add to Library",
+                      )),
+                )),
+            Expanded(
+                child: Container(
+                  margin: EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(24)),
+                  child: Center(
+                      child: Text(
+                        "New Preview",
+                        style: TextStyle(
+                            color: Colors.white
+                        ),
+                      )),
+                )),
+          ],
+        ),
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomAppBar(
-        elevation: 5,
-        child: Container(
-          height: 72,
-          padding: EdgeInsets.symmetric(horizontal: 12),
-          child: Row(
-            children: [
-              Expanded(
-                  child: Container(
-                margin: EdgeInsets.all(12),
-                decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(24)),
-                child: Center(
-                    child: Text(
-                  "Add to Library",
-                )),
-              )),
-              Expanded(
-                  child: Container(
-                    margin: EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(24)),
-                    child: Center(
-                        child: Text(
-                          "New Preview",
-                          style: TextStyle(
-                            color: Colors.white
-                          ),
-                        )),
-                  )),
-            ],
-          ),
-        ),
-      ),
+      bottomNavigationBar: buildBottomBar(),
     );
   }
 }
