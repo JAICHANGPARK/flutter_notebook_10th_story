@@ -55,6 +55,11 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
         foregroundColor: Colors.black,
         elevation: 0,
         iconTheme: IconThemeData(color: Colors.black),
+        centerTitle: true,
+        title: Text(widget.art.name, style: TextStyle(
+          fontSize: 18,
+          color: Colors.black
+        ),),
 
       ),
       bottomNavigationBar: buildBottomBar(),
