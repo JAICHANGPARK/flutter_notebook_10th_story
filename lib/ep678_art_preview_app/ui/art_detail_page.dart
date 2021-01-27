@@ -13,6 +13,14 @@ class ArtDetailPage extends StatefulWidget {
 class _ArtDetailPageState extends State<ArtDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        elevation: 5,
+        child: Container(
+          height: 72,
+
+        ),
+      ),
+    );
   }
 }
