@@ -61,7 +61,23 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
       bottomNavigationBar: buildBottomBar(),
       body: Column(
         children: [
+              Hero(
+                
+                tag: widget.art.name,
+                child: Container(
+                  height: 160,
+                  width: 160,
 
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+
+                      image: NetworkImage(
+                        widget.art.img
+                      )
+                    )
+                  ),
+                ),
+              )
         ],
       ),
     );
