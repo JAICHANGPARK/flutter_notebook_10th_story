@@ -22,7 +22,7 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
             children: [
               Expanded(
                   child: Container(
-                margin: EdgeInsets.all(16),
+                margin: EdgeInsets.all(12),
                 decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(24)),
                 child: Center(
                     child: Text(
@@ -31,7 +31,7 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
               )),
               Expanded(
                   child: Container(
-                    margin: EdgeInsets.all(16),
+                    margin: EdgeInsets.all(12),
                     decoration: BoxDecoration(
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(24)),
