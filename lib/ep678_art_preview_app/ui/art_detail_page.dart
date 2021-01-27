@@ -29,7 +29,20 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
                   "Add to Library",
                 )),
               )),
-              Expanded(child: Container())
+              Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(24)),
+                    child: Center(
+                        child: Text(
+                          "New Preview",
+                          style: TextStyle(
+                            color: Colors.white
+                          ),
+                        )),
+                  )),
             ],
           ),
         ),
