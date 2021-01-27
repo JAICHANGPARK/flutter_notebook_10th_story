@@ -11,7 +11,7 @@ class ArtDetailPage extends StatefulWidget {
 }
 
 class _ArtDetailPageState extends State<ArtDetailPage> {
-  Widget buildBottomBar(){
+  Widget buildBottomBar() {
     return BottomAppBar(
       elevation: 5,
       child: Container(
@@ -21,32 +21,29 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
           children: [
             Expanded(
                 child: Container(
-                  margin: EdgeInsets.all(12),
-                  decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(24)),
-                  child: Center(
-                      child: Text(
-                        "Add to Library",
-                      )),
-                )),
+              margin: EdgeInsets.all(12),
+              decoration: BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(24)),
+              child: Center(
+                  child: Text(
+                "Add to Library",
+              )),
+            )),
             Expanded(
                 child: Container(
-                  margin: EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(24)),
-                  child: Center(
-                      child: Text(
-                        "New Preview",
-                        style: TextStyle(
-                            color: Colors.white
-                        ),
-                      )),
-                )),
+              margin: EdgeInsets.all(12),
+              decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
+              child: Center(
+                  child: Text(
+                "New Preview",
+                style: TextStyle(color: Colors.white),
+              )),
+            )),
           ],
         ),
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,11 +53,10 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
         elevation: 0,
         iconTheme: IconThemeData(color: Colors.black),
         centerTitle: true,
-        title: Text(widget.art.name, style: TextStyle(
-          fontSize: 18,
-          color: Colors.black
-        ),),
-
+        title: Text(
+          widget.art.name,
+          style: TextStyle(fontSize: 18, color: Colors.black),
+        ),
       ),
       bottomNavigationBar: buildBottomBar(),
     );
