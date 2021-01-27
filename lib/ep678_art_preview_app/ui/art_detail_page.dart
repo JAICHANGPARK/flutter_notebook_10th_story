@@ -18,6 +18,7 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
         elevation: 5,
         child: Container(
           height: 72,
+          padding: EdgeInsets.symmetric(horizontal: 12),
           child: Row(
             children: [
               Expanded(
