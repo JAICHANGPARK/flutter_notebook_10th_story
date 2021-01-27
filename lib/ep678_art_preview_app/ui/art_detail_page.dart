@@ -69,6 +69,40 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
               decoration: BoxDecoration(image: DecorationImage(image: NetworkImage(widget.art.img),
               fit: BoxFit.cover)),
             ),
+          ),
+          SizedBox(height: 24,),
+          Text(widget.art.name),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: 36,
+                width: 36,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.grey[400],
+                ),
+                child: Center(
+                  child: Icon(
+                    Icons.favorite,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Text(widget.art.detail)
+            ],
+          ),
+          SizedBox(height: 32,),
+          Text("(2013) Clear epoxy resin coating applications of black, violet and yellow colors"),
+          Container(
+            height: 48,
+            width: 100,
+            child: Row(
+              children: [
+                
+              ],
+            ),
+
           )
         ],
       ),
