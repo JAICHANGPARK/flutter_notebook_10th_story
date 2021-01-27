@@ -19,7 +19,15 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
         child: Container(
           height: 72,
           child: Row(
-            children: [Expanded(child: Container())],
+            children: [Expanded(child: Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                )
+              ),
+              child: Center(child: Text("Add to Library",)),
+            )),
+
+              Expanded(child: Container())],
           ),
         ),
       ),
