@@ -262,7 +262,9 @@ class _ArtMainPageState extends State<ArtMainPage> {
                         Spacer(),
                         IconButton(icon: Icon(Icons.arrow_forward_ios_outlined), onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
-                          ArtDetailPage()));
+                          ArtDetailPage(
+                            art: artItems[index],
+                          )));
 
                         })
                       ],
