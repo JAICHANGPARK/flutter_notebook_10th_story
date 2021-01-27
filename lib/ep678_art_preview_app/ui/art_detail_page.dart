@@ -20,9 +20,11 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
           height: 72,
           child: Row(
             children: [Expanded(child: Container(
+              margin: EdgeInsets.all(16),
               decoration: BoxDecoration(
                 border: Border.all(
-                )
+                ),
+                borderRadius: BorderRadius.circular(24)
               ),
               child: Center(child: Text("Add to Library",)),
             )),
