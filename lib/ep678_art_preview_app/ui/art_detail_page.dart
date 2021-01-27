@@ -59,6 +59,26 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
         ),
       ),
       bottomNavigationBar: buildBottomBar(),
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
