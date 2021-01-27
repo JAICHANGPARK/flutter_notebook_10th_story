@@ -51,7 +51,7 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xfffefefe),
         foregroundColor: Colors.black,
         elevation: 0,
         iconTheme: IconThemeData(color: Colors.black),
