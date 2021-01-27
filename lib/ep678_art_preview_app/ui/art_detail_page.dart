@@ -64,9 +64,10 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
           Hero(
             tag: widget.art.name,
             child: Container(
-              height: 160,
-              width: 160,
-              decoration: BoxDecoration(image: DecorationImage(image: NetworkImage(widget.art.img))),
+              height: 240,
+              width: 240,
+              decoration: BoxDecoration(image: DecorationImage(image: NetworkImage(widget.art.img),
+              fit: BoxFit.cover)),
             ),
           )
         ],
