@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_10th_story/ep678_art_preview_app/model/art.dart';
+import 'package:flutter_notebook_10th_story/ep678_art_preview_app/ui/art_detail_page.dart';
 
 class ArtMainPage extends StatefulWidget {
   ArtMainPage({Key key}) : super(key: key);
@@ -259,7 +260,11 @@ class _ArtMainPageState extends State<ArtMainPage> {
                           ),
                         ),
                         Spacer(),
-                        IconButton(icon: Icon(Icons.arrow_forward_ios_outlined), onPressed: () {})
+                        IconButton(icon: Icon(Icons.arrow_forward_ios_outlined), onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                          ArtDetailPage()));
+
+                        })
                       ],
                     ),
                   );
