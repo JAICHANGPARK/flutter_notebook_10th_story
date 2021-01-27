@@ -96,10 +96,16 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
           Text("(2013) Clear epoxy resin coating applications of black, violet and yellow colors"),
           Container(
             height: 48,
-            width: 100,
+            width: 130,
+            decoration: BoxDecoration(
+              color: Colors.pink[300],
+              borderRadius: BorderRadius.circular(24)
+            ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                
+                Icon(Icons.tag),
+                Text("\$5000")
               ],
             ),
 
