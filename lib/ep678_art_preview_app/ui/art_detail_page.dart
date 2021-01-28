@@ -66,11 +66,12 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
             child: Container(
               height: 240,
               width: 240,
-              decoration: BoxDecoration(image: DecorationImage(image: NetworkImage(widget.art.img),
-              fit: BoxFit.cover)),
+              decoration: BoxDecoration(image: DecorationImage(image: NetworkImage(widget.art.img), fit: BoxFit.cover)),
             ),
           ),
-          SizedBox(height: 24,),
+          SizedBox(
+            height: 24,
+          ),
           Text(widget.art.name),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -95,29 +96,30 @@ class _ArtDetailPageState extends State<ArtDetailPage> {
               )
             ],
           ),
-          SizedBox(height: 32,),
+          SizedBox(
+            height: 32,
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 48),
             child: Text("(2013) Clear epoxy resin coating applications of black, violet and yellow colors"),
           ),
-          SizedBox(height: 16,),
+          SizedBox(
+            height: 16,
+          ),
           Container(
             height: 48,
             width: 130,
-            decoration: BoxDecoration(
-              color: Colors.pink[300],
-              borderRadius: BorderRadius.circular(24)
-            ),
+            decoration: BoxDecoration(color: Colors.pink[300], borderRadius: BorderRadius.circular(24)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.tag),
-                Text("\$5000", style: TextStyle(
-                  fontSize: 18
-                ),)
+                Text(
+                  "\$5000",
+                  style: TextStyle(fontSize: 18),
+                )
               ],
             ),
-
           )
         ],
       ),
