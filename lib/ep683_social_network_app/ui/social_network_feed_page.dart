@@ -8,6 +8,13 @@ class SocialNetworkFeedPage extends StatefulWidget {
 class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color(0xff0A0619),
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
