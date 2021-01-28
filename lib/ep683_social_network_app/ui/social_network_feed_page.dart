@@ -29,7 +29,6 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       ),
                     ),
                     Icon(Icons.search),
-
                   ],
                 )),
             //Live
@@ -39,13 +38,15 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
             //Feed
             Expanded(flex: 8, child: Placeholder()),
             //Botttom
-            Expanded(flex: 1, child: Row(
-              children: [
-                Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
-                Expanded(child: Placeholder()),
-              ],
-            )),
+            Expanded(
+                flex: 1,
+                child: Row(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                )),
           ],
         ),
       ),
