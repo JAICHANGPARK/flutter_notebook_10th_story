@@ -15,21 +15,31 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
             //app bar
             Expanded(
                 flex: 1,
-                child: Placeholder()),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.person_outline,
+                    ),
+                    Text(
+                      "FEED",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Icon(Icons.search),
+
+                  ],
+                )),
             //Live
-            Expanded(
-                flex: 3,
-                child: Placeholder()),
+            Expanded(flex: 3, child: Placeholder()),
             //Tab
-            Expanded(
-                flex: 3,child: Placeholder()),
+            Expanded(flex: 3, child: Placeholder()),
             //Feed
-            Expanded(
-                flex: 8,
-                child: Placeholder()),
+            Expanded(flex: 8, child: Placeholder()),
             //Botttom
-            Expanded(
-                flex: 1,child: Placeholder()),
+            Expanded(flex: 1, child: Placeholder()),
           ],
         ),
       ),
