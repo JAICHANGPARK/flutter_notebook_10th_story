@@ -7,7 +7,8 @@ class SocialNetworkApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       darkTheme: ThemeData.dark().copyWith(
-        accentColor: Colors.yellow
+        accentColor: Colors.yellow,
+        scaffoldBackgroundColor: Color(0xff0A0619),
       ),
       home: SocialNetworkFeedPage(),
     );
