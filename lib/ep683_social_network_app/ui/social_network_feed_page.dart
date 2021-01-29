@@ -59,7 +59,11 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                         ],
                       ),
                     )),
-                    Expanded(child: GestureDetector(
+                    Expanded(child: GestureDetector( onTap: (){
+                      setState(() {
+                        _tabIndex = 0;
+                      });
+                    },
                       child: Column(  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text("Home"),
@@ -68,7 +72,11 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                         ],
                       ),
                     )),
-                    Expanded(child: GestureDetector(
+                    Expanded(child: GestureDetector( onTap: (){
+                      setState(() {
+                        _tabIndex = 0;
+                      });
+                    },
                       child: Column(  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text("Messages"),
