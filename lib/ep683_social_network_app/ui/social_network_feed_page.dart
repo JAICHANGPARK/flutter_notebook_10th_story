@@ -55,7 +55,8 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       child: Column(
                         children: [
                           Text("Home"),
-                          CircleAvatar(radius: 4,)
+                          CircleAvatar(radius: 4,
+                            backgroundColor: Theme.of(context).accentColor,)
                         ],
                       ),
                     )),
@@ -63,7 +64,8 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       child: Column(
                         children: [
                           Text("Messages"),
-                          CircleAvatar(radius: 4,)
+                          CircleAvatar(radius: 4,
+                            backgroundColor: Theme.of(context).accentColor,)
                         ],
                       ),
                     )),
