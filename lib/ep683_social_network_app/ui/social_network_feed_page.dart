@@ -41,7 +41,11 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                   width: 100,
                   margin: EdgeInsets.all(7),
                   decoration: BoxDecoration(
-                    color: Colors.pink
+                    color: Colors.pink,
+                    image: DecorationImage(
+                      image: NetworkImage("https://cdn.pixabay.com/photo/2018/03/12/20/57/portrait-3220832__340.jpg"),
+                      fit: BoxFit.cover,
+                    )
                   ),
                 )
               ],
