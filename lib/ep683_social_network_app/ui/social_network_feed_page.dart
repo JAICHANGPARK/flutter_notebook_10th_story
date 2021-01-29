@@ -89,10 +89,14 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                               right: 8,
                               top: 8,
                               child: Container(
+                                color: Colors.white.withOpacity(0.5),
                             child: Center(
-                              child: Text("LIVE",style: TextStyle(
-                                fontSize: 12
-                              ),),
+                              child: Padding(
+                                padding: const EdgeInsets.all(2.0),
+                                child: Text("LIVE",style: TextStyle(
+                                  fontSize: 12
+                                ),),
+                              ),
                             ),
                           ))
                         ],
