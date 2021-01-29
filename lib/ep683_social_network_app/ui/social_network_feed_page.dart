@@ -42,7 +42,13 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                 flex: 1,
                 child: Row(
                   children: [
-                    Expanded(child: Placeholder()),
+                    Expanded(child: GestureDetector(
+                      child: Column(
+                        children: [
+                          
+                        ],
+                      ),
+                    )),
                     Expanded(child: Placeholder()),
                     Expanded(child: Placeholder()),
                   ],
