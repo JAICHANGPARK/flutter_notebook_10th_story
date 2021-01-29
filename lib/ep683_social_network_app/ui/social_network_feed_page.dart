@@ -70,6 +70,45 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       )
                   ),
                 ),
+                Container(
+                  width: 100,
+                  margin: EdgeInsets.all(7),
+                  decoration: BoxDecoration(
+                      color: Colors.pink,
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                          image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
+                          fit: BoxFit.cover,
+                          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2 ), BlendMode.darken)
+                      )
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  margin: EdgeInsets.all(7),
+                  decoration: BoxDecoration(
+                      color: Colors.pink,
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                          image: NetworkImage("https://cdn.pixabay.com/photo/2017/03/16/00/10/dj-2147859__340.jpg"),
+                          fit: BoxFit.cover,
+                          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2 ), BlendMode.darken)
+                      )
+                  ),
+                ),
+                Container(
+                  width: 100,
+                  margin: EdgeInsets.all(7),
+                  decoration: BoxDecoration(
+                      color: Colors.pink,
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                          image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
+                          fit: BoxFit.cover,
+                          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2 ), BlendMode.darken)
+                      )
+                  ),
+                ),
               ],
             )),
             //Tab
