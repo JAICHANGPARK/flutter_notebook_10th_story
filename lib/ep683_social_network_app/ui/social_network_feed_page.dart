@@ -6,6 +6,8 @@ class SocialNetworkFeedPage extends StatefulWidget {
 }
 
 class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
+  int _tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,6 +45,11 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                 child: Row(
                   children: [
                     Expanded(child: GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          _tabIndex = 0;
+                        });
+                      },
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
