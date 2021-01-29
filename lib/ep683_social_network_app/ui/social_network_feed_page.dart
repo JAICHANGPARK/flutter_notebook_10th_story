@@ -54,8 +54,8 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text("Notification"),
-                          CircleAvatar(radius: 4,
-                          backgroundColor: Theme.of(context).accentColor,)
+                          _tabIndex == 0 ?  CircleAvatar(radius: 4,
+                            backgroundColor: Theme.of(context).accentColor,) : Container()
                         ],
                       ),
                     )),
@@ -67,8 +67,8 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       child: Column(  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text("Home"),
-                          CircleAvatar(radius: 4,
-                            backgroundColor: Theme.of(context).accentColor,)
+                          _tabIndex == 1 ?  CircleAvatar(radius: 4,
+                            backgroundColor: Theme.of(context).accentColor,) : Container()
                         ],
                       ),
                     )),
