@@ -46,6 +46,15 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       child: Column(
                         children: [
                           Text("Notification"),
+                          CircleAvatar(radius: 4,
+                          backgroundColor: Theme.of(context).accentColor,)
+                        ],
+                      ),
+                    )),
+                    Expanded(child: GestureDetector(
+                      child: Column(
+                        children: [
+                          Text("Home"),
                           CircleAvatar(radius: 4,)
                         ],
                       ),
@@ -53,15 +62,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                     Expanded(child: GestureDetector(
                       child: Column(
                         children: [
-                          Text("Notification"),
-                          CircleAvatar(radius: 4,)
-                        ],
-                      ),
-                    )),
-                    Expanded(child: GestureDetector(
-                      child: Column(
-                        children: [
-                          Text("Notification"),
+                          Text("Messages"),
                           CircleAvatar(radius: 4,)
                         ],
                       ),
