@@ -51,7 +51,8 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                   ),
                   child: Center(
                     child: CircleAvatar(
-                      backgroundColor: Colors.white.withOpacity(0.5),
+                      backgroundColor: Colors.white.withOpacity(0.32),
+                      child: Icon(Icons.camera_alt, color: Colors.white,),
                     ),
                   ),
                 )
