@@ -42,10 +42,17 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                   margin: EdgeInsets.all(7),
                   decoration: BoxDecoration(
                     color: Colors.pink,
+                    borderRadius: BorderRadius.circular(8),
                     image: DecorationImage(
                       image: NetworkImage("https://cdn.pixabay.com/photo/2018/03/12/20/57/portrait-3220832__340.jpg"),
                       fit: BoxFit.cover,
+                      colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2 ), BlendMode.darken)
                     )
+                  ),
+                  child: Center(
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white.withOpacity(0.5),
+                    ),
                   ),
                 )
               ],
