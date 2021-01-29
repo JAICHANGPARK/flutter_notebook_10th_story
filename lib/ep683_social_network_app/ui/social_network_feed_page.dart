@@ -61,7 +61,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                     )),
                     Expanded(child: GestureDetector( onTap: (){
                       setState(() {
-                        _tabIndex = 0;
+                        _tabIndex = 1;
                       });
                     },
                       child: Column(  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -74,14 +74,14 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                     )),
                     Expanded(child: GestureDetector( onTap: (){
                       setState(() {
-                        _tabIndex = 0;
+                        _tabIndex = 2;
                       });
                     },
                       child: Column(  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text("Messages"),
-                          CircleAvatar(radius: 4,
-                            backgroundColor: Theme.of(context).accentColor,)
+                          _tabIndex == 2 ?  CircleAvatar(radius: 4,
+                            backgroundColor: Theme.of(context).accentColor,) : Container()
                         ],
                       ),
                     )),
