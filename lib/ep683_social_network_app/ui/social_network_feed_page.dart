@@ -50,8 +50,22 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                         ],
                       ),
                     )),
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
+                    Expanded(child: GestureDetector(
+                      child: Column(
+                        children: [
+                          Text("Notification"),
+                          CircleAvatar(radius: 4,)
+                        ],
+                      ),
+                    )),
+                    Expanded(child: GestureDetector(
+                      child: Column(
+                        children: [
+                          Text("Notification"),
+                          CircleAvatar(radius: 4,)
+                        ],
+                      ),
+                    )),
                   ],
                 )),
           ],
