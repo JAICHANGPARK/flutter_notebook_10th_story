@@ -44,6 +44,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                   children: [
                     Expanded(child: GestureDetector(
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text("Notification"),
                           CircleAvatar(radius: 4,
@@ -52,7 +53,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       ),
                     )),
                     Expanded(child: GestureDetector(
-                      child: Column(
+                      child: Column(  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text("Home"),
                           CircleAvatar(radius: 4,
@@ -61,7 +62,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       ),
                     )),
                     Expanded(child: GestureDetector(
-                      child: Column(
+                      child: Column(  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text("Messages"),
                           CircleAvatar(radius: 4,
