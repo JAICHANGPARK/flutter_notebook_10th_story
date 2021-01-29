@@ -56,6 +56,20 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                     ),
                   ),
                 )
+                ,
+                Container(
+                  width: 100,
+                  margin: EdgeInsets.all(7),
+                  decoration: BoxDecoration(
+                      color: Colors.pink,
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                          image: NetworkImage("https://cdn.pixabay.com/photo/2017/04/21/21/45/dj-2250056__340.jpg"),
+                          fit: BoxFit.cover,
+                          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2 ), BlendMode.darken)
+                      )
+                  ),
+                ),
               ],
             )),
             //Tab
