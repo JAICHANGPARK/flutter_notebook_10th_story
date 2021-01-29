@@ -34,7 +34,18 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                   ],
                 )),
             //Live
-            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 3, child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Container(
+                  width: 100,
+                  margin: EdgeInsets.all(7),
+                  decoration: BoxDecoration(
+                    color: Colors.pink
+                  ),
+                )
+              ],
+            )),
             //Tab
             Expanded(flex: 3, child: Placeholder()),
             //Feed
