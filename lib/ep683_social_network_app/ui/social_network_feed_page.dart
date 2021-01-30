@@ -135,8 +135,10 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
             Expanded(flex: 3, child: Column(
               children: [
                 Expanded(child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    
+                    Text("Popular"),
+                    Text("See all")
                   ],
                 )),
                 Expanded(child: Placeholder()),
