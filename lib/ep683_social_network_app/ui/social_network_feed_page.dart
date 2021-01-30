@@ -130,7 +130,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                 )),
             //Tab
             Expanded(
-                flex: 3,
+                flex: 2,
                 child: Column(
                   children: [
                     Expanded(
@@ -154,7 +154,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                     )),
                     Expanded(
                         child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      padding: const EdgeInsets.symmetric(vertical: 3),
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
@@ -199,7 +199,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                 )),
             //Feed
             Expanded(
-                flex: 8,
+                flex: 9,
                 child: Column(
                   children: [
                     Expanded(
@@ -226,8 +226,19 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       flex: 2,
                     ),
                     Expanded(
-                      child: Placeholder(),
-                      flex: 10,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
+                              fit: BoxFit.cover
+                            ),
+
+                          ),
+                        ),
+                      ),
+                      flex: 12,
                     ),
                   ],
                 )),
