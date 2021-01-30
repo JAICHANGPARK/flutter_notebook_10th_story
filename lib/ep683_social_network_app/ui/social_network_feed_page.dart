@@ -156,12 +156,20 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       ],
                     ),
                         )),
-                    Expanded(child: ListView.builder(itemBuilder: (context, index){
+                    Expanded(child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (context, index){
                       if(index == 0){
                         return Container();
                       }
                       return Container(
-
+                        decoration: BoxDecoration(
+                          color: Colors.grey
+                        ),
+                            child: Center(
+                              child: Text("Video", style: TextStyle(),),
+                            ),
                       );
                     })),
                   ],
