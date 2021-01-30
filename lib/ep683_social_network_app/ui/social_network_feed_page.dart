@@ -164,7 +164,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                           itemBuilder: (context, index){
                         if(index == 0){
                           return Padding(
-                            padding: const EdgeInsets.only(right: 8, left: 16),
+                            padding: const EdgeInsets.only(right: 8, left: 8),
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Theme.of(context).accentColor,
@@ -172,7 +172,10 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 16),
                                 child: Center(
-                                  child: Text("Friends"),
+                                  child: Text("Friends", style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold
+                                  ),),
                                 ),
                               ),
                             ),
