@@ -132,7 +132,16 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                   ],
                 )),
             //Tab
-            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 3, child: Column(
+              children: [
+                Expanded(child: Row(
+                  children: [
+                    
+                  ],
+                )),
+                Expanded(child: Placeholder()),
+              ],
+            )),
             //Feed
             Expanded(flex: 8, child: Placeholder()),
             //Botttom
