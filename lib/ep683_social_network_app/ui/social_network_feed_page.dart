@@ -156,7 +156,14 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       ],
                     ),
                         )),
-                    Expanded(child: Placeholder()),
+                    Expanded(child: ListView.builder(itemBuilder: (context, index){
+                      if(index == 0){
+                        return Container();
+                      }
+                      return Container(
+
+                      );
+                    })),
                   ],
                 )),
             //Feed
