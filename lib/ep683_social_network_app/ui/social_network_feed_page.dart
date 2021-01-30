@@ -134,24 +134,28 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                 child: Column(
                   children: [
                     Expanded(
-                        child: Row(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
-                          "Popular",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                          Text(
+                            "Popular",
+                            style: TextStyle(
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1.2
+                            ),
                           ),
-                        ),
-                        Text(
-                          "See all",
-                          style: TextStyle(
-                            color: Colors.grey,
-                          ),
-                        )
+                          Text(
+                            "See all",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
                       ],
-                    )),
+                    ),
+                        )),
                     Expanded(child: Placeholder()),
                   ],
                 )),
