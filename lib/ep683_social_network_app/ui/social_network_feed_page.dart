@@ -230,15 +230,34 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
-                              fit: BoxFit.cover
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2019/12/17/04/52/neon-4700726__340.jpg"),
+                                  fit: BoxFit.cover),
+                              borderRadius: BorderRadius.circular(16)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.favorite),
+                                    Text(
+                                      "4.6k",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Icon(Icons.favorite_border)
+                                  ],
+                                )
+                              ],
                             ),
-
                           ),
                         ),
                       ),
-                      flex: 12,
+                      flex: 10,
                     ),
                   ],
                 )),
