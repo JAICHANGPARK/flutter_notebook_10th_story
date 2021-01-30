@@ -241,17 +241,23 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                               children: [
                                 Row(
                                   children: [
-                                    Icon(Icons.favorite),
-                                    Text(
-                                      "4.6k",
-                                      style: TextStyle(
-                                        color: Colors.white,
+                                    Icon(Icons.favorite, size: 16,),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(
+                                        "4.6k",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ),
                                     Spacer(),
                                     Icon(Icons.favorite_border)
                                   ],
-                                )
+                                ),
+                                Spacer(),
+                                Text("MODEL"),
+                                Text("UNKNOWN NAME,")
                               ],
                             ),
                           ),
