@@ -157,7 +157,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                     ),
                         )),
                     Expanded(child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      padding: const EdgeInsets.symmetric(vertical: 14),
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
@@ -205,7 +205,11 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                   ],
                 )),
             //Feed
-            Expanded(flex: 8, child: Placeholder()),
+            Expanded(flex: 8, child: Column(
+              children: [
+                
+              ],
+            )),
             //Botttom
             Expanded(
                 flex: 1,
