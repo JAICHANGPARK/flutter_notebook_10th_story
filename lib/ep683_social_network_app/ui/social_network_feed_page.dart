@@ -157,18 +157,24 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                     ),
                         )),
                     Expanded(child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 9),
+                      padding: const EdgeInsets.symmetric(vertical: 12),
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
                           itemBuilder: (context, index){
                         if(index == 0){
-                          return Container(
-                            decoration: BoxDecoration(
-                              color: Theme.of(context).accentColor,
-                            ),
-                            child: Center(
-                              child: Text("Friends"),
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 8, left: 16),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Theme.of(context).accentColor,
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: Center(
+                                  child: Text("Friends"),
+                                ),
+                              ),
                             ),
                           );
                         }
