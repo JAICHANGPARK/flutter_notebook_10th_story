@@ -208,13 +208,16 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                           CircleAvatar(
                             backgroundColor: Colors.pink,
                           ),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Jake Hicks"),
-                              Text("U.K"),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Jake Hicks"),
+                                Text("U.K"),
+                              ],
+                            ),
                           ),
                           Spacer(),
                           IconButton(icon: Icon(Icons.more_horiz), onPressed: () {}),
