@@ -135,17 +135,13 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                   children: [
                     Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
                           Text(
                             "Popular",
-                            style: TextStyle(
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 1.2
-                            ),
+                            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, letterSpacing: 1.2),
                           ),
                           Text(
                             "See all",
@@ -153,66 +149,81 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                               color: Colors.grey,
                             ),
                           )
-                      ],
-                    ),
-                        )),
-                    Expanded(child: Padding(
+                        ],
+                      ),
+                    )),
+                    Expanded(
+                        child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 14),
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
-                          itemBuilder: (context, index){
-                        if(index == 0){
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 8, left: 8),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Theme.of(context).accentColor,
-                                borderRadius: BorderRadius.circular(24)
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 24),
-                                child: Center(
-                                  child: Text("Friends", style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold
-                                  ),),
+                          itemBuilder: (context, index) {
+                            if (index == 0) {
+                              return Padding(
+                                padding: const EdgeInsets.only(right: 8, left: 8),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Theme.of(context).accentColor, borderRadius: BorderRadius.circular(24)),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 24),
+                                    child: Center(
+                                      child: Text(
+                                        "Friends",
+                                        style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              );
+                            }
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 8, left: 8),
+                              child: Container(
+                                decoration:
+                                    BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(24)),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                                  child: Center(
+                                    child: Text(
+                                      "Videos",
+                                      style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
                                 ),
                               ),
-                            ),
-                          );
-                        }
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 8, left: 8),
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.grey[300],
-                                borderRadius: BorderRadius.circular(24)
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 24),
-                              child: Center(
-                                child: Text("Videos", style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold
-                                ),),
-                              ),
-                            ),
-                          ),
-                        );
-                      }),
+                            );
+                          }),
                     )),
                   ],
                 )),
             //Feed
-            Expanded(flex: 8, child: Column(
-              children: [
-                Expanded(child: Placeholder(),
-                flex: 2,),
-                Expanded(child: Placeholder(),
-                flex: 10,),
-              ],
-            )),
+            Expanded(
+                flex: 8,
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Row(
+                        children: [
+                          CircleAvatar(),
+                          Column(
+                            children: [
+                              Text("Jake Hicks"),
+                              Text("U.K"),
+                            ],
+                          ),
+                          Spacer(),
+                          IconButton(icon: Icon(Icons.more_horiz), onPressed: () {}),
+                        ],
+                      ),
+                      flex: 2,
+                    ),
+                    Expanded(
+                      child: Placeholder(),
+                      flex: 10,
+                    ),
+                  ],
+                )),
             //Botttom
             Expanded(
                 flex: 1,
