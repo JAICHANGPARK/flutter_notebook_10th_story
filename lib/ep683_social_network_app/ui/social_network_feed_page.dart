@@ -238,10 +238,14 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                           child: Padding(
                             padding: const EdgeInsets.all(16.0),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   children: [
-                                    Icon(Icons.favorite, size: 16,),
+                                    Icon(
+                                      Icons.favorite,
+                                      size: 16,
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Text(
@@ -257,7 +261,13 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                                 ),
                                 Spacer(),
                                 Text("MODEL"),
-                                Text("UNKNOWN NAME,")
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "UNKNOWN NAME,",
+                                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                                )
                               ],
                             ),
                           ),
