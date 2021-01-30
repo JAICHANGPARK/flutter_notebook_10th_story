@@ -168,9 +168,10 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Theme.of(context).accentColor,
+                                borderRadius: BorderRadius.circular(24)
                               ),
                               child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                padding: const EdgeInsets.symmetric(horizontal: 24),
                                 child: Center(
                                   child: Text("Friends", style: TextStyle(
                                     color: Colors.black,
