@@ -182,13 +182,23 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                             ),
                           );
                         }
-                        return Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey
-                          ),
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 8, left: 8),
+                          child: Container(
+                            decoration: BoxDecoration(
+                                color: Colors.grey[300],
+                                borderRadius: BorderRadius.circular(24)
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 24),
                               child: Center(
-                                child: Text("Video", style: TextStyle(),),
+                                child: Text("Videos", style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold
+                                ),),
                               ),
+                            ),
+                          ),
                         );
                       }),
                     )),
