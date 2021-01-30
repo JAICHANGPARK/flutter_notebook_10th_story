@@ -156,22 +156,32 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       ],
                     ),
                         )),
-                    Expanded(child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 10,
-                        itemBuilder: (context, index){
-                      if(index == 0){
-                        return Container();
-                      }
-                      return Container(
-                        decoration: BoxDecoration(
-                          color: Colors.grey
-                        ),
-                            child: Center(
-                              child: Text("Video", style: TextStyle(),),
+                    Expanded(child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 9),
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
+                          itemBuilder: (context, index){
+                        if(index == 0){
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: Theme.of(context).accentColor,
                             ),
-                      );
-                    })),
+                            child: Center(
+                              child: Text("Friends"),
+                            ),
+                          );
+                        }
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey
+                          ),
+                              child: Center(
+                                child: Text("Video", style: TextStyle(),),
+                              ),
+                        );
+                      }),
+                    )),
                   ],
                 )),
             //Feed
