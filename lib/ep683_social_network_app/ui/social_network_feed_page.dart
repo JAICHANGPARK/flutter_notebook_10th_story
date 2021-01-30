@@ -75,13 +75,12 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       width: 100,
                       margin: EdgeInsets.all(7),
                       decoration: BoxDecoration(
-                          color: Colors.pink,
-                          borderRadius: BorderRadius.circular(8),
-                          image: DecorationImage(
-                              image:
-                                  NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
-                              fit: BoxFit.cover,
-                              colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken)),
+                        color: Colors.pink,
+                        borderRadius: BorderRadius.circular(8),
+                        image: DecorationImage(
+                            image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/17/04/53/neon-4700730__340.jpg"),
+                            fit: BoxFit.cover,
+                            colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken)),
                       ),
                       child: Stack(
                         children: [
@@ -90,19 +89,17 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                               top: 8,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.5),
-                                  borderRadius: BorderRadius.circular(4)
+                                    color: Colors.white.withOpacity(0.5), borderRadius: BorderRadius.circular(4)),
+                                child: Center(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(2.0),
+                                    child: Text(
+                                      "LIVE",
+                                      style: TextStyle(fontSize: 10),
+                                    ),
+                                  ),
                                 ),
-                                
-                            child: Center(
-                              child: Padding(
-                                padding: const EdgeInsets.all(2.0),
-                                child: Text("LIVE",style: TextStyle(
-                                  fontSize: 10
-                                ),),
-                              ),
-                            ),
-                          ))
+                              ))
                         ],
                       ),
                     ),
@@ -132,18 +129,32 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                   ],
                 )),
             //Tab
-            Expanded(flex: 3, child: Column(
-              children: [
-                Expanded(child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Expanded(
+                flex: 3,
+                child: Column(
                   children: [
-                    Text("Popular"),
-                    Text("See all")
+                    Expanded(
+                        child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Popular",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "See all",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        )
+                      ],
+                    )),
+                    Expanded(child: Placeholder()),
                   ],
                 )),
-                Expanded(child: Placeholder()),
-              ],
-            )),
             //Feed
             Expanded(flex: 8, child: Placeholder()),
             //Botttom
