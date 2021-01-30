@@ -205,8 +205,12 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                     Expanded(
                       child: Row(
                         children: [
-                          CircleAvatar(),
+                          CircleAvatar(
+                            backgroundColor: Colors.pink,
+                          ),
                           Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Jake Hicks"),
                               Text("U.K"),
