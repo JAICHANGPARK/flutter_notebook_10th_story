@@ -64,8 +64,10 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                 bottom: 0,
               ),
               Positioned(child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(children: [
+                padding: const EdgeInsets.symmetric(horizontal: 64),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
                   CircleAvatar(
                     radius: 24
                   ),
