@@ -15,6 +15,7 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
       body: SlidingUpPanel(
         body: Stack(
           children: [
+            Positioned(child: Container()),
 
           ],
         ),
