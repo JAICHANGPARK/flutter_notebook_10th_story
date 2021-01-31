@@ -14,18 +14,11 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
     return Scaffold(
       body: SafeArea(
         child: SlidingUpPanel(
-          header:  Container(
-            height: 64,
-            color: Colors.red,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(32),
+            topRight:  Radius.circular(32),
           ),
-          footer:  Container(
-            height: 64,
-            color: Colors.red,
-          ),
-          collapsed: Container(
-            height: 64,
-            color: Colors.red,
-          ),
+          
           minHeight: MediaQuery.of(context).size.height / 3,
           body: Stack(
             children: [
