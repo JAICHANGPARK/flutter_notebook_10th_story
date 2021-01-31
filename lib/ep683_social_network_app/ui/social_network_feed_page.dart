@@ -212,7 +212,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       child: Row(
                         children: [
                           GestureDetector(
-                            onTap: (){
+                            onTap: () {
                               Navigator.of(context).push(MaterialPageRoute(builder: (context) => SocialProfilePage()));
                             },
                             child: CircleAvatar(
