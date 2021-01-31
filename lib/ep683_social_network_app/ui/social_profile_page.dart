@@ -31,23 +31,29 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                           colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.35), BlendMode.darken))),
                   child: Column(
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          IconButton(
-                              icon: Icon(Icons.arrow_back_ios),
-                              onPressed: () {
-                                Navigator.of(context).pop();
-                              }),
-                          Text("DREAMWALKER",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),),
-                          IconButton(
-                              icon: Icon(Icons.more_horiz),
-                              onPressed: () {
-                                Navigator.of(context).pop();
-                              }),
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            IconButton(
+                                icon: Icon(Icons.arrow_back_ios),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                }),
+                            Text(
+                              "DREAMWALKER",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            IconButton(
+                                icon: Icon(Icons.more_horiz),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                }),
+                          ],
+                        ),
                       )
                     ],
                   ),
@@ -57,8 +63,24 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                 top: 0,
                 bottom: 0,
               ),
+              Positioned(child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(children: [
+                  CircleAvatar(
+                    radius: 24
+                  ),
+                  CircleAvatar(
+                      radius: 48
+                  ),
+                  CircleAvatar(
+                      radius: 24
+                  ),
+                ],),
+              ))
             ],
           ),
+          backdropColor: Theme.of(context).cardColor,
+          color: Theme.of(context).cardColor,
           panel: Column(
             children: [],
           ),
