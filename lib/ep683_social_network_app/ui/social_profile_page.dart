@@ -67,28 +67,30 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                   top: 360,
                   left: 0,
                   right: 0,
-
                   child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 72),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                  CircleAvatar(
-                    radius: 24,
-                    child: Icon(Icons.send),
-                  ),
-                  CircleAvatar(
-                      radius: 42,
-                    backgroundColor: Theme.of(context).accentColor,
-                    child: Icon(Icons.favorite,
-                    size: 38,),
-                  ),
-                  CircleAvatar(
-                      radius: 24,
-                    child: Icon(Icons.book),
-                  ),
-                ],),
-              ))
+                    padding: const EdgeInsets.symmetric(horizontal: 72),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        CircleAvatar(
+                          radius: 24,
+                          child: Icon(Icons.send),
+                        ),
+                        CircleAvatar(
+                          radius: 42,
+                          backgroundColor: Theme.of(context).accentColor,
+                          child: Icon(
+                            Icons.favorite,
+                            size: 38,
+                          ),
+                        ),
+                        CircleAvatar(
+                          radius: 24,
+                          child: Icon(Icons.book),
+                        ),
+                      ],
+                    ),
+                  ))
             ],
           ),
           backdropColor: Theme.of(context).cardColor,
