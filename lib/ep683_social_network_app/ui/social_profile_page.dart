@@ -13,6 +13,8 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SlidingUpPanel(
+        header: Text("Hello"),
+        footer: Text("Hello"),
         body: Stack(
           children: [
             Positioned(child: Container(
@@ -22,7 +24,7 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.35),
 
-                  BlendMode.color)
+                  BlendMode.darken)
                 )
               ),
             ),
