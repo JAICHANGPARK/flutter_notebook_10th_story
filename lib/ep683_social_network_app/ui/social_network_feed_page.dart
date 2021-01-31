@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_10th_story/ep683_social_network_app/ui/social_profile_page.dart';
 
 class SocialNetworkFeedPage extends StatefulWidget {
   @override
@@ -51,11 +52,17 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                               fit: BoxFit.cover,
                               colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken))),
                       child: Center(
-                        child: CircleAvatar(
-                          backgroundColor: Colors.white.withOpacity(0.32),
-                          child: Icon(
-                            Icons.camera_alt,
-                            color: Colors.white,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                            SocialProfilePage()));
+                          },
+                          child: CircleAvatar(
+                            backgroundColor: Colors.white.withOpacity(0.32),
+                            child: Icon(
+                              Icons.camera_alt,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),
