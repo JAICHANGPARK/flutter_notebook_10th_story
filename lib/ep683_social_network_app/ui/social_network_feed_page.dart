@@ -54,8 +54,7 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                       child: Center(
                         child: GestureDetector(
                           onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
-                            SocialProfilePage()));
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => SocialProfilePage()));
                           },
                           child: CircleAvatar(
                             backgroundColor: Colors.white.withOpacity(0.32),
@@ -212,8 +211,13 @@ class _SocialNetworkFeedPageState extends State<SocialNetworkFeedPage> {
                     Expanded(
                       child: Row(
                         children: [
-                          CircleAvatar(
-                            backgroundColor: Colors.pink,
+                          GestureDetector(
+                            onTap: (){
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => SocialProfilePage()));
+                            },
+                            child: CircleAvatar(
+                              backgroundColor: Colors.pink,
+                            ),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
