@@ -10,6 +10,6 @@ class SocialProfilePage extends StatefulWidget {
 class _SocialProfilePageState extends State<SocialProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
