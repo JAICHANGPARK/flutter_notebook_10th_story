@@ -74,14 +74,18 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                   CircleAvatar(
-                    radius: 24
+                    radius: 24,
+                    child: Icon(Icons.send),
                   ),
                   CircleAvatar(
                       radius: 42,
                     backgroundColor: Theme.of(context).accentColor,
+                    child: Icon(Icons.favorite,
+                    size: 38,),
                   ),
                   CircleAvatar(
-                      radius: 24
+                      radius: 24,
+                    child: Icon(Icons.book),
                   ),
                 ],),
               ))
