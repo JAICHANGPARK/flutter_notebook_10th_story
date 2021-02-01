@@ -114,8 +114,10 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                   Text("#purple"),
                   Spacer(),
                   CircleAvatar(radius: 8,
-                  backgroundColor: Colors.purple,),
-                  Text("159")
+                    backgroundColor: Colors.purple,),
+                  Text("159"),
+                  Icon(Icons.favorite, size: 18,),
+                  Text("124.6 k"),
 
                 ],
               )
