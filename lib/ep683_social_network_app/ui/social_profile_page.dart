@@ -111,12 +111,17 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                   children: [
                     Text("#neon",style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      color: Colors.white.withOpacity(0.5)
 
                     ),),
                     SizedBox(
                       width: 8,
                     ),
-                    Text("#purple"),
+                    Text("#purple",style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                        color: Colors.white.withOpacity(0.5)
+
+                    ),),
                     Spacer(),
                     CircleAvatar(
                       radius: 8,
