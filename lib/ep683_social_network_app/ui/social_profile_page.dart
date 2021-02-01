@@ -96,10 +96,41 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
           backdropColor: Theme.of(context).cardColor,
           color: Theme.of(context).cardColor,
           panel: Column(
-            children: [],
+            children: [
+              SizedBox(
+                height: 16,
+              ),
+              Container(
+                height: 3,
+                width: 32,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(8)
+                ),
+              )
+            ],
           ),
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
