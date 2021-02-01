@@ -109,19 +109,17 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
                   children: [
-                    Text("#neon",style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white.withOpacity(0.5)
-
-                    ),),
+                    Text(
+                      "#neon",
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white.withOpacity(0.5)),
+                    ),
                     SizedBox(
                       width: 8,
                     ),
-                    Text("#purple",style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                        color: Colors.white.withOpacity(0.5)
-
-                    ),),
+                    Text(
+                      "#purple",
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white.withOpacity(0.5)),
+                    ),
                     Spacer(),
                     CircleAvatar(
                       radius: 8,
