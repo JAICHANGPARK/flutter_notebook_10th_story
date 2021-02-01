@@ -154,6 +154,12 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                     Icon(Icons.keyboard_arrow_down),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 240,
+                child: ListView.builder(itemBuilder: (context, index){
+
+                }),
               )
             ],
           ),
@@ -162,3 +168,17 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
