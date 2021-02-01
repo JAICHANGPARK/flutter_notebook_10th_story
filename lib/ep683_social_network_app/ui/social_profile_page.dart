@@ -137,6 +137,17 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                     Text("124.6 k"),
                   ],
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Text("Comments(159)"),
+                    Spacer(),
+                    Text("by popular"),
+                    Icon(Icons.keyboard_arrow_down),
+                  ],
+                ),
               )
             ],
           ),
