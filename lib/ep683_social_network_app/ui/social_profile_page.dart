@@ -157,8 +157,25 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
               ),
               SizedBox(
                 height: 240,
-                child: ListView.builder(itemBuilder: (context, index){
+                child: ListView.builder(itemBuilder: (context, index) {
+                  return Row(
+                    children: [
+                      CircleAvatar(),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [Text("Wendy Darling",style: TextStyle(
+                            fontWeight: FontWeight.bold,
 
+                          ),),
+                            Text("What a wonderful picture!")],
+                        ),
+                      ),
+                      Spacer(),
+                      IconButton(icon: Icon(Icons.favorite_border), onPressed: () {}),
+                    ],
+                  );
                 }),
               )
             ],
@@ -168,17 +185,3 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
