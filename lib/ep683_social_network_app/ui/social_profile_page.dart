@@ -103,23 +103,36 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
               Container(
                 height: 3,
                 width: 32,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(8)
-                ),
+                decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
               ),
-              Row(
-                children: [
-                  Text("#neon"),
-                  Text("#purple"),
-                  Spacer(),
-                  CircleAvatar(radius: 8,
-                    backgroundColor: Colors.purple,),
-                  Text("159"),
-                  Icon(Icons.favorite, size: 18,),
-                  Text("124.6 k"),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Text("#neon",style: TextStyle(
+                      fontWeight: FontWeight.bold,
 
-                ],
+                    ),),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Text("#purple"),
+                    Spacer(),
+                    CircleAvatar(
+                      radius: 8,
+                      backgroundColor: Colors.purple,
+                    ),
+                    Text("159"),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Icon(
+                      Icons.favorite,
+                      size: 18,
+                    ),
+                    Text("124.6 k"),
+                  ],
+                ),
               )
             ],
           ),
@@ -128,22 +141,3 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
