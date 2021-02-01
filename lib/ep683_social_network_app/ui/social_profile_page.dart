@@ -158,23 +158,34 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
               SizedBox(
                 height: 240,
                 child: ListView.builder(itemBuilder: (context, index) {
-                  return Row(
-                    children: [
-                      CircleAvatar(),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [Text("Wendy Darling",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-
-                          ),),
-                            Text("What a wonderful picture!")],
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Wendy Darling",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(height: 8,),
+                              Text(
+                                "What a wonderful picture!",
+                                style: TextStyle(fontSize: 12, color: Colors.white.withOpacity(0.5)),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      Spacer(),
-                      IconButton(icon: Icon(Icons.favorite_border), onPressed: () {}),
-                    ],
+                        Spacer(),
+                        IconButton(icon: Icon(Icons.favorite_border), onPressed: () {}),
+                      ],
+                    ),
                   );
                 }),
               )
