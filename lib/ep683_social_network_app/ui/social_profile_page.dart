@@ -142,7 +142,13 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
                   children: [
-                    Text("Comments(159)"),
+                    Text(
+                      "Comments(159)",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     Spacer(),
                     Text("by popular"),
                     Icon(Icons.keyboard_arrow_down),
