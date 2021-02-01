@@ -127,11 +127,12 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                     ),
                     Text("159"),
                     SizedBox(
-                      width: 8,
+                      width: 16,
                     ),
                     Icon(
                       Icons.favorite,
                       size: 18,
+                      color: Theme.of(context).accentColor,
                     ),
                     Text("124.6 k"),
                   ],
