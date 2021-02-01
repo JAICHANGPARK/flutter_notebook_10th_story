@@ -107,6 +107,17 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(8)
                 ),
+              ),
+              Row(
+                children: [
+                  Text("#neon"),
+                  Text("#purple"),
+                  Spacer(),
+                  CircleAvatar(radius: 8,
+                  backgroundColor: Colors.purple,),
+                  Text("159")
+
+                ],
               )
             ],
           ),
