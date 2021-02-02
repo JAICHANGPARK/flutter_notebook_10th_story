@@ -174,7 +174,9 @@ class _SocialProfilePageState extends State<SocialProfilePage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(height: 8,),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Text(
                                 "What a wonderful picture!",
                                 style: TextStyle(fontSize: 12, color: Colors.white.withOpacity(0.5)),
