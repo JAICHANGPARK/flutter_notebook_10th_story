@@ -31,7 +31,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                 },
                 curve: Curves.easeOutExpo,
                 // tab animation curves
-                duration: Duration(milliseconds: 900),
+                duration: Duration(milliseconds: 250),
                 // tab animation duration
                 gap: 2,
                 // the tab button gap between icon and text
