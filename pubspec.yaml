@@ -15,6 +15,7 @@ dependencies:
   sliding_up_panel: any
   badges: any
   date_picker_timeline: any
+  google_nav_bar: any
 
 dev_dependencies:
   flutter_test:
