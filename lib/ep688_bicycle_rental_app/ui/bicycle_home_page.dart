@@ -33,13 +33,13 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                 // tab animation curves
                 duration: Duration(milliseconds: 900),
                 // tab animation duration
-                gap: 8,
+                gap: 2,
                 // the tab button gap between icon and text
-                activeColor: Colors.purple,
+                activeColor: Colors.black,
                 // selected icon and text color
                 iconSize: 24,
                 // tab button icon size
-                tabBackgroundColor: Colors.purple.withOpacity(0.1),
+                tabBackgroundColor: Colors.orange,
                 // selected tab background color
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                 // navigation bar padding
