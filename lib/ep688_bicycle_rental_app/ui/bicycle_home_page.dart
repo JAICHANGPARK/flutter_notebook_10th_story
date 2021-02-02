@@ -9,6 +9,7 @@ class BicycleRentalHomePage extends StatefulWidget {
 }
 
 class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
+  int bottomIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +26,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
           height: 72,
           color: Colors.white,
           child: GNav(
+            selectedIndex: ,
               curve: Curves.easeOutExpo, // tab animation curves
               duration: Duration(milliseconds: 900), // tab animation duration
               gap: 8, // the tab button gap between icon and text
@@ -36,6 +38,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                 GButton(
                   icon: LineIcons.home,
                   text: 'Home',
+
                 ),
                 GButton(
                   icon: LineIcons.heart_o,
