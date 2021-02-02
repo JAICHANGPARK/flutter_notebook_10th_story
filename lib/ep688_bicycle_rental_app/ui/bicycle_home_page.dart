@@ -49,11 +49,11 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                     text: 'Home',
                   ),
                   GButton(
-                    icon: LineIcons.heart_o,
+                    icon: LineIcons.bicycle,
                     text: 'Likes',
                   ),
                   GButton(
-                    icon: LineIcons.search,
+                    icon: LineIcons.mail_forward,
                     text: 'Search',
                   ),
                   GButton(
