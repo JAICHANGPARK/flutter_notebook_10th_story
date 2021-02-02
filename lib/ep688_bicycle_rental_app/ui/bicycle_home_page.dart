@@ -9,6 +9,6 @@ class BicycleRentalHomePage extends StatefulWidget {
 class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
