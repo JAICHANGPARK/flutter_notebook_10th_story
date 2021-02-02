@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'ep683_social_network_app/social_network_app.dart';
+import 'ep688_bicycle_rental_app/bicycle_rental_app.dart';
 
 void main() {
-  runApp(SocialNetworkApp());
+  runApp(BicycleRentalApp());
 }
