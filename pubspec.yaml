@@ -16,6 +16,7 @@ dependencies:
   badges: any
   date_picker_timeline: any
   google_nav_bar: any
+  line_icons: ^0.2.0
 
 dev_dependencies:
   flutter_test:
