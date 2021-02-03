@@ -65,10 +65,18 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                     height: 58,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      
+                      borderRadius: BorderRadius.circular(8)
                     ),
                     width: double.infinity,
+                    child: Row(
+                      children: [
+                        TextField(),
+                        
+                      ],
+                    ),
                   ),
+
+
                 )
               ],
             ),
