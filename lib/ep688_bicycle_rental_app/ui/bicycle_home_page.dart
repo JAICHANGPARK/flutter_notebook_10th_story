@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
@@ -62,6 +63,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 9),
                     height: 58,
                     decoration: BoxDecoration(
                       color: Colors.white,
