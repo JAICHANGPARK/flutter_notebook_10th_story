@@ -116,6 +116,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
         bottomNavigationBar: BottomAppBar(
           child: Container(
             height: 72,
+            padding: EdgeInsets.symmetric(horizontal: 16),
             color: Colors.white,
             child: GNav(
                 selectedIndex: bottomIndex,
