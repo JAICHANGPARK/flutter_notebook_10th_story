@@ -25,8 +25,14 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                   padding: const EdgeInsets.all(16.0),
                   child: Row(
                     children: [
-                      Text("Hi"),
-                      Text("Dream"),
+                      Text("Hi, ", style: TextStyle(
+
+                          fontSize: 20
+                      )),
+                      Text("Dream", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20
+                      )),
                       Spacer(),
                       Container(
                         height: 36,
