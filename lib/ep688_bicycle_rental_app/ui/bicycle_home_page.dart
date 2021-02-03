@@ -48,7 +48,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                 Text.rich(TextSpan(children: [
                   TextSpan(
                       text: "To Riding",style: TextStyle(
-
+                    fontWeight: FontWeight.bold,
                   )
                   ),
                   TextSpan(
@@ -56,7 +56,13 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ))
-                ]))
+                ])),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white
+                  ),
+                  width: double.infinity,
+                )
               ],
             ),
           ),
