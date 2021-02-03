@@ -59,11 +59,16 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                         fontWeight: FontWeight.bold,
                       ))
                 ])),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    height: 58,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      
+                    ),
+                    width: double.infinity,
                   ),
-                  width: double.infinity,
                 )
               ],
             ),
