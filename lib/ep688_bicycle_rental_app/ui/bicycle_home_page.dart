@@ -52,12 +52,14 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                   TextSpan(
                       text: "To Riding",style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 24
                   )
                   ),
                   TextSpan(
                       text: "Now",
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                        
+                        fontSize: 24
                       ))
                 ])),
                 Padding(
