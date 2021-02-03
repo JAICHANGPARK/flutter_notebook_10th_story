@@ -44,7 +44,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                   child: Text.rich(TextSpan(children: [
                     TextSpan(
                       text: "Select ",style: TextStyle(
@@ -60,7 +60,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                   ])),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                   child: Text.rich(TextSpan(children: [
                     TextSpan(
                         text: "To Riding",style: TextStyle(
@@ -77,7 +77,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                   ])),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
                   child: Container(
                     padding: EdgeInsets.symmetric(horizontal: 9),
                     height: 58,
