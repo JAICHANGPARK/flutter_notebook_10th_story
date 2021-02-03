@@ -38,14 +38,15 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                 ),
                 Text.rich(TextSpan(children: [
                   TextSpan(
-                    text: "Select",style: TextStyle(
-
+                    text: "Select ",style: TextStyle(
+                      fontSize: 24
                   )
                   ),
                   TextSpan(
                       text: "Bicycle",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                          fontSize: 24
                       ))
                 ])),
                 Text.rich(TextSpan(children: [
@@ -56,9 +57,9 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                   )
                   ),
                   TextSpan(
-                      text: "Now",
+                      text: " Now",
                       style: TextStyle(
-                        
+
                         fontSize: 24
                       ))
                 ])),
