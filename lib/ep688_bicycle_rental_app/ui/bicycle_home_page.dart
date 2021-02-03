@@ -17,18 +17,26 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Text("Hi"),
-                    Text("Dream"),
-                    Spacer(),
-                    Container(
-                      height: 36,
-                      width: 36,
-                      
-                    )
-                  ],
-                )
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    children: [
+                      Text("Hi"),
+                      Text("Dream"),
+                      Spacer(),
+                      Container(
+                        height: 36,
+                        width: 36,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.orange),
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+
+                      )
+                    ],
+                  ),
+                ),
+                Text.rich(TextSpan)
               ],
             ),
           ),
