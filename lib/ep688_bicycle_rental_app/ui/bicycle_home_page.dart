@@ -13,9 +13,24 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            children: [],
+        body: SafeArea(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Text("Hi"),
+                    Text("Dream"),
+                    Spacer(),
+                    Container(
+                      height: 36,
+                      width: 36,
+                      
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
         ),
         bottomNavigationBar: BottomAppBar(
