@@ -74,6 +74,10 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             prefixIcon: Icon(Icons.search),
+                            hintText: "Where do you want to go biking?",
+                            hintStyle: TextStyle(
+                              fontSize: 12
+                            )
                           ),
 
                         )),
