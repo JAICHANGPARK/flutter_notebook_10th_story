@@ -28,15 +28,35 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                         height: 36,
                         width: 36,
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.orange),
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-
+                            border: Border.all(color: Colors.orange), borderRadius: BorderRadius.circular(8)),
                       )
                     ],
                   ),
                 ),
-                Text.rich(TextSpan)
+                Text.rich(TextSpan(children: [
+                  TextSpan(
+                    text: "Select",style: TextStyle(
+
+                  )
+                  ),
+                  TextSpan(
+                      text: "Bicycle",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ))
+                ])),
+                Text.rich(TextSpan(children: [
+                  TextSpan(
+                      text: "To Riding",style: TextStyle(
+
+                  )
+                  ),
+                  TextSpan(
+                      text: "Now",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ))
+                ]))
               ],
             ),
           ),
