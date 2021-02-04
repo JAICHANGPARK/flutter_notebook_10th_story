@@ -152,7 +152,10 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                                 fontSize: 12,
                                                 color: Colors.black54,
                                               ),),
-                                              Text("50 mil")
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                                child: Text("50 mil"),
+                                              )
                                             ],
                                           )
 
