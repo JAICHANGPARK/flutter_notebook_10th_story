@@ -124,7 +124,9 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                     Positioned(
                                         left: 16,
                                         top: 16,
-                                        child: Column(children: [
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
                                           Text("Go Cycle"),
                                           Text("Electric Bike"),
 
