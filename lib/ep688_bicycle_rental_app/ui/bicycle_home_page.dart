@@ -110,7 +110,18 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                           itemCount: 5,
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
-                            return SizedBox(child: Card());
+                            return SizedBox(child: Card(
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                      left: 16,
+                                      top: 16,
+                                      child: Column(children: [
+
+                                  ],))
+                                ],
+                              ),
+                            ));
                           })
                     ],
                   ),
