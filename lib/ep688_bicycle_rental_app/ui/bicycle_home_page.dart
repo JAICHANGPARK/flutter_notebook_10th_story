@@ -105,10 +105,10 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                     ),
                   ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 16, top: 24),
-                  child: SizedBox(
-                    height: 200,
+                SizedBox(
+                  height: 200,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 16, top: 16),
                     child: TabBarView(
                       controller: _tabController,
                       children: [
