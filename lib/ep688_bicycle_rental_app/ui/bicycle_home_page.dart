@@ -14,9 +14,8 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+        backgroundColor: Colors.blueGrey[50],
         body: SafeArea(
-
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,14 +24,8 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                   padding: const EdgeInsets.all(16.0),
                   child: Row(
                     children: [
-                      Text("Hi, ", style: TextStyle(
-
-                          fontSize: 20
-                      )),
-                      Text("Dream", style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20
-                      )),
+                      Text("Hi, ", style: TextStyle(fontSize: 20)),
+                      Text("Dream", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
                       Spacer(),
                       Container(
                         height: 36,
@@ -46,34 +39,15 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                   child: Text.rich(TextSpan(children: [
-                    TextSpan(
-                      text: "Select ",style: TextStyle(
-                        fontSize: 24
-                    )
-                    ),
-                    TextSpan(
-                        text: "Bicycle",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                            fontSize: 24
-                        ))
+                    TextSpan(text: "Select ", style: TextStyle(fontSize: 24)),
+                    TextSpan(text: "Bicycle", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24))
                   ])),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                   child: Text.rich(TextSpan(children: [
-                    TextSpan(
-                        text: "To Riding",style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24
-                    )
-                    ),
-                    TextSpan(
-                        text: " Now",
-                        style: TextStyle(
-
-                          fontSize: 24
-                        ))
+                    TextSpan(text: "To Riding", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
+                    TextSpan(text: " Now", style: TextStyle(fontSize: 24))
                   ])),
                 ),
                 Padding(
@@ -81,30 +55,25 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                   child: Container(
                     padding: EdgeInsets.symmetric(horizontal: 9),
                     height: 58,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8)
-                    ),
+                    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                     width: double.infinity,
                     child: Row(
                       children: [
-                        Expanded(child: TextField(
+                        Expanded(
+                            child: TextField(
                           decoration: InputDecoration(
-                            border: InputBorder.none,
-                            prefixIcon: Icon(Icons.search),
-                            hintText: "Where do you want to go biking?",
-                            hintStyle: TextStyle(
-                              fontSize: 12
-                            )
-                          ),
-
+                              border: InputBorder.none,
+                              prefixIcon: Icon(Icons.search),
+                              hintText: "Where do you want to go biking?",
+                              hintStyle: TextStyle(fontSize: 12)),
                         )),
                         Container(
                           height: 36,
                           width: 36,
                           decoration: BoxDecoration(
-                            color: Colors.orange,
-                              border: Border.all(color: Colors.orange), borderRadius: BorderRadius.circular(8)),
+                              color: Colors.orange,
+                              border: Border.all(color: Colors.orange),
+                              borderRadius: BorderRadius.circular(8)),
                           child: Center(
                             child: Icon(Icons.map_sharp),
                           ),
@@ -112,8 +81,6 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                       ],
                     ),
                   ),
-
-
                 )
               ],
             ),
