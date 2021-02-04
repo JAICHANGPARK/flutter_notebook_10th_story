@@ -130,10 +130,29 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                           Text("Go Cycle"),
                                           Text("Electric Bike"),
 
-                                          Text("13\$",style: TextStyle(
-                                            color: Colors.orange,
-                                            fontSize: 16
-                                          ),)
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(
+                                              vertical: 16
+                                            ),
+                                            child: Text("13\$",style: TextStyle(
+                                              color: Colors.orange,
+                                              fontSize: 16
+                                            ),),
+                                          )
+                                    ],)),
+                                    Positioned(
+                                        bottom: 16,
+                                        left: 16,
+                                        right: 16,
+                                        child: Row(children: [
+                                          Column(
+                                            
+                                            children: [
+                                              Text("Range"),
+                                              Text("50 mil")
+                                            ],
+                                          )
+
                                     ],))
                                   ],
                                 ),
