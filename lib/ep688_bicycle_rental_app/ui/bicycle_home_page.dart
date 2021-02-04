@@ -98,7 +98,14 @@ with TickerProviderStateMixin{
                 ),
                 SizedBox(
                   height: 200,
-                  child: TabBarView(),
+                  child: TabBarView(
+                    controller: _tabController,
+                    children: [
+                      ListView.builder(itemBuilder: (context, index){
+                        return SizedBox(child: Card());
+                      })
+                    ],
+                  ),
                 )
               ],
             ),
