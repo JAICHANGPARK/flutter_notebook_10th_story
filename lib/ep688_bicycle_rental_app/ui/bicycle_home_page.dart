@@ -183,7 +183,18 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                                 child: Text("387wh"),
                                               )
                                             ],
-                                          )
+                                          ),Container(
+                                            height: 36,
+                                            width: 36,
+                                            decoration: BoxDecoration(
+                                                color: Colors.orange,
+                                                border: Border.all(color: Colors.orange),
+                                                borderRadius: BorderRadius.circular(8)),
+                                            child: Center(
+                                              child: Icon(Icons.arrow_forward),
+                                            ),
+                                          ),
+
 
                                     ],))
                                   ],
