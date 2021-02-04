@@ -90,26 +90,29 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                     ),
                   ),
                 ),
-                TabBar(
-                  controller: _tabController,
-                  isScrollable: true,
-                  labelColor: Colors.black,
-                  unselectedLabelColor: Colors.grey,
-                  indicatorSize: TabBarIndicatorSize.label,
-                  indicatorColor: Colors.transparent,
-                  tabs: [
-                    Tab(
-                      text: "Newest",
-                    ),
-                    Tab(
-                      text: "Popular",
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 16),
+                  child: TabBar(
+                    controller: _tabController,
+                    isScrollable: true,
+                    labelColor: Colors.black,
+                    unselectedLabelColor: Colors.grey,
+                    indicatorSize: TabBarIndicatorSize.label,
+                    indicatorColor: Colors.transparent,
+                    tabs: [
+                      Tab(
+                        text: "Newest",
+                      ),
+                      Tab(
+                        text: "Popular",
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 200,
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 16, top: 16),
+                    padding: const EdgeInsets.only(left: 16, top: 8),
                     child: TabBarView(
                       controller: _tabController,
                       children: [
