@@ -8,16 +8,17 @@ class BicycleRentalHomePage extends StatefulWidget {
   _BicycleRentalHomePageState createState() => _BicycleRentalHomePageState();
 }
 
-class _BicycleRentalHomePageState extends State<BicycleRentalHomePage>
-with TickerProviderStateMixin{
+class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with TickerProviderStateMixin {
   int bottomIndex = 0;
   TabController _tabController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,8 +93,12 @@ with TickerProviderStateMixin{
                 TabBar(
                   controller: _tabController,
                   tabs: [
-                    Tab(text: "Newest",),
-                    Tab(text: "Popular",),
+                    Tab(
+                      text: "Newest",
+                    ),
+                    Tab(
+                      text: "Popular",
+                    ),
                   ],
                 ),
                 SizedBox(
@@ -101,9 +106,12 @@ with TickerProviderStateMixin{
                   child: TabBarView(
                     controller: _tabController,
                     children: [
-                      ListView.builder(itemBuilder: (context, index){
-                        return SizedBox(child: Card());
-                      })
+                      ListView.builder(
+                          itemCount: 5,
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return SizedBox(child: Card());
+                          })
                     ],
                   ),
                 )
