@@ -105,48 +105,51 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 200,
-                  child: TabBarView(
-                    controller: _tabController,
-                    children: [
-                      ListView.builder(
-                          itemCount: 5,
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            return SizedBox(
-                                width: MediaQuery.of(context).size.width / 1.2,
-                                child: Card(
-                              child: Stack(
-                                children: [
-                                  Positioned(
-                                      left: 16,
-                                      top: 16,
-                                      child: Column(children: [
-                                        Text("Go Cycle")
-                                  ],))
-                                ],
-                              ),
-                            ));
-                          }),
-                      ListView.builder(
-                          itemCount: 5,
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            return SizedBox(child: Card(
-                              child: Stack(
-                                children: [
-                                  Positioned(
-                                      left: 16,
-                                      top: 16,
-                                      child: Column(children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 16, top: 24),
+                  child: SizedBox(
+                    height: 200,
+                    child: TabBarView(
+                      controller: _tabController,
+                      children: [
+                        ListView.builder(
+                            itemCount: 5,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return SizedBox(
+                                  width: MediaQuery.of(context).size.width / 1.2,
+                                  child: Card(
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                        left: 16,
+                                        top: 16,
+                                        child: Column(children: [
+                                          Text("Go Cycle")
+                                    ],))
+                                  ],
+                                ),
+                              ));
+                            }),
+                        ListView.builder(
+                            itemCount: 5,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return SizedBox(child: Card(
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                        left: 16,
+                                        top: 16,
+                                        child: Column(children: [
 
-                                      ],))
-                                ],
-                              ),
-                            ));
-                          })
-                    ],
+                                        ],))
+                                  ],
+                                ),
+                              ));
+                            })
+                      ],
+                    ),
                   ),
                 )
               ],
