@@ -157,6 +157,32 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                                 child: Text("50 mil"),
                                               )
                                             ],
+                                          ),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Speed", style: TextStyle(
+                                                fontSize: 12,
+                                                color: Colors.black54,
+                                              ),),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                                child: Text("75kmh"),
+                                              )
+                                            ],
+                                          ),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Power", style: TextStyle(
+                                                fontSize: 12,
+                                                color: Colors.black54,
+                                              ),),
+                                              Padding(
+                                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                                child: Text("387wh"),
+                                              )
+                                            ],
                                           )
 
                                     ],))
