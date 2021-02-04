@@ -128,8 +128,12 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                             child: Column(
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
-                                                Text("Go Cycle"),
-                                                Text("Electric Bike"),
+                                                Text("Go Cycle", style: TextStyle(
+                                                  fontSize: 16,
+                                                ),),
+                                                Text("Electric Bike", style: TextStyle(
+                                                  fontSize: 12
+                                                ),),
                                                 Padding(
                                                   padding: const EdgeInsets.symmetric(vertical: 16),
                                                   child: Text(
