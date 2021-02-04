@@ -125,7 +125,13 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                         left: 16,
                                         top: 16,
                                         child: Column(children: [
-                                          Text("Go Cycle")
+                                          Text("Go Cycle"),
+                                          Text("Electric Bike"),
+
+                                          Text("13\$",style: TextStyle(
+                                            color: Colors.orange,
+                                            fontSize: 16
+                                          ),)
                                     ],))
                                   ],
                                 ),
