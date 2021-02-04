@@ -146,9 +146,12 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                         right: 16,
                                         child: Row(children: [
                                           Column(
-                                            
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              Text("Range"),
+                                              Text("Range", style: TextStyle(
+                                                fontSize: 12,
+                                                color: Colors.black54,
+                                              ),),
                                               Text("50 mil")
                                             ],
                                           )
