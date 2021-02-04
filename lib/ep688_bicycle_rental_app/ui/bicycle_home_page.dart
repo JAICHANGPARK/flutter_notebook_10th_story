@@ -134,15 +134,15 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                                   padding: const EdgeInsets.symmetric(vertical: 16),
                                                   child: Text(
                                                     "13\$",
-                                                    style: TextStyle(color: Colors.orange, fontSize: 16),
+                                                    style: TextStyle(color: Colors.orange, fontSize: 20),
                                                   ),
                                                 )
                                               ],
                                             )),
                                         Positioned(
                                             bottom: 16,
-                                            left: 16,
-                                            right: 16,
+                                            left: 8,
+                                            right: 8,
                                             child: Row(
                                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                               children: [
