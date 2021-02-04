@@ -92,8 +92,13 @@ with TickerProviderStateMixin{
                 TabBar(
                   controller: _tabController,
                   tabs: [
-                    Tab(text: "Newest",)
+                    Tab(text: "Newest",),
+                    Tab(text: "Popular",),
                   ],
+                ),
+                SizedBox(
+                  height: 200,
+                  child: TabBarView(),
                 )
               ],
             ),
