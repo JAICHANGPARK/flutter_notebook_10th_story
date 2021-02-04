@@ -117,7 +117,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return SizedBox(
-                                  width: MediaQuery.of(context).size.width / 1.2,
+                                  width: MediaQuery.of(context).size.width / 1.5,
                                   child: Card(
                                 child: Stack(
                                   children: [
