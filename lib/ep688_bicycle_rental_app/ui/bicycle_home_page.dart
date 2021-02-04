@@ -144,6 +144,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                             left: 16,
                                             right: 16,
                                             child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
