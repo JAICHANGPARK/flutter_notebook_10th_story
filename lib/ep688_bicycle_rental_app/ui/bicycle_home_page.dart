@@ -8,9 +8,16 @@ class BicycleRentalHomePage extends StatefulWidget {
   _BicycleRentalHomePageState createState() => _BicycleRentalHomePageState();
 }
 
-class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
+class _BicycleRentalHomePageState extends State<BicycleRentalHomePage>
+with TickerProviderStateMixin{
   int bottomIndex = 0;
-
+  TabController _tabController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 2, vsync: this);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,10 +84,16 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> {
                           child: Center(
                             child: Icon(Icons.map_sharp),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
+                ),
+                TabBar(
+                  controller: _tabController,
+                  tabs: [
+                    Tab(text: "Newest",)
+                  ],
                 )
               ],
             ),
