@@ -91,7 +91,8 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                   ),
                 ),
                 TabBar(
-                  controller: _tabController,isScrollable: true,
+                  controller: _tabController,
+                  isScrollable: true,
                   labelColor: Colors.black,
                   unselectedLabelColor: Colors.grey,
                   indicatorSize: TabBarIndicatorSize.label,
@@ -119,101 +120,110 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                               return SizedBox(
                                   width: MediaQuery.of(context).size.width / 1.5,
                                   child: Card(
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                            left: 16,
+                                            top: 16,
+                                            child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                Text("Go Cycle"),
+                                                Text("Electric Bike"),
+                                                Padding(
+                                                  padding: const EdgeInsets.symmetric(vertical: 16),
+                                                  child: Text(
+                                                    "13\$",
+                                                    style: TextStyle(color: Colors.orange, fontSize: 16),
+                                                  ),
+                                                )
+                                              ],
+                                            )),
+                                        Positioned(
+                                            bottom: 16,
+                                            left: 16,
+                                            right: 16,
+                                            child: Row(
+                                              children: [
+                                                Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      "Range",
+                                                      style: TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.black54,
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                                      child: Text("50 mil"),
+                                                    )
+                                                  ],
+                                                ),
+                                                Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      "Speed",
+                                                      style: TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.black54,
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                                      child: Text("75kmh"),
+                                                    )
+                                                  ],
+                                                ),
+                                                Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      "Power",
+                                                      style: TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.black54,
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                                      child: Text("387wh"),
+                                                    )
+                                                  ],
+                                                ),
+                                                Container(
+                                                  height: 36,
+                                                  width: 36,
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.orange,
+                                                      border: Border.all(color: Colors.orange),
+                                                      borderRadius: BorderRadius.circular(8)),
+                                                  child: Center(
+                                                    child: Icon(Icons.arrow_forward),
+                                                  ),
+                                                ),
+                                              ],
+                                            ))
+                                      ],
+                                    ),
+                                  ));
+                            }),
+                        ListView.builder(
+                            itemCount: 5,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return SizedBox(
+                                  child: Card(
                                 child: Stack(
                                   children: [
                                     Positioned(
                                         left: 16,
                                         top: 16,
                                         child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                          Text("Go Cycle"),
-                                          Text("Electric Bike"),
-
-                                          Padding(
-                                            padding: const EdgeInsets.symmetric(
-                                              vertical: 16
-                                            ),
-                                            child: Text("13\$",style: TextStyle(
-                                              color: Colors.orange,
-                                              fontSize: 16
-                                            ),),
-                                          )
-                                    ],)),
-                                    Positioned(
-                                        bottom: 16,
-                                        left: 16,
-                                        right: 16,
-                                        child: Row(children: [
-                                          Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text("Range", style: TextStyle(
-                                                fontSize: 12,
-                                                color: Colors.black54,
-                                              ),),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 8),
-                                                child: Text("50 mil"),
-                                              )
-                                            ],
-                                          ),
-                                          Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text("Speed", style: TextStyle(
-                                                fontSize: 12,
-                                                color: Colors.black54,
-                                              ),),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 8),
-                                                child: Text("75kmh"),
-                                              )
-                                            ],
-                                          ),
-                                          Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text("Power", style: TextStyle(
-                                                fontSize: 12,
-                                                color: Colors.black54,
-                                              ),),
-                                              Padding(
-                                                padding: const EdgeInsets.symmetric(vertical: 8),
-                                                child: Text("387wh"),
-                                              )
-                                            ],
-                                          ),Container(
-                                            height: 36,
-                                            width: 36,
-                                            decoration: BoxDecoration(
-                                                color: Colors.orange,
-                                                border: Border.all(color: Colors.orange),
-                                                borderRadius: BorderRadius.circular(8)),
-                                            child: Center(
-                                              child: Icon(Icons.arrow_forward),
-                                            ),
-                                          ),
-
-
-                                    ],))
-                                  ],
-                                ),
-                              ));
-                            }),
-                        ListView.builder(
-                            itemCount: 5,
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (context, index) {
-                              return SizedBox(child: Card(
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                        left: 16,
-                                        top: 16,
-                                        child: Column(children: [
-
-                                        ],))
+                                          children: [],
+                                        ))
                                   ],
                                 ),
                               ));
