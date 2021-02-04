@@ -91,7 +91,11 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                   ),
                 ),
                 TabBar(
-                  controller: _tabController,
+                  controller: _tabController,isScrollable: true,
+                  labelColor: Colors.black,
+                  unselectedLabelColor: Colors.grey,
+                  indicatorSize: TabBarIndicatorSize.label,
+                  indicatorColor: Colors.transparent,
                   tabs: [
                     Tab(
                       text: "Newest",
