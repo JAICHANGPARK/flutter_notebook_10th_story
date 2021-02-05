@@ -122,20 +122,30 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                       ),
                       Column(
                         children: [
-                          Text("Speed"),
+                          Text("Speed",style: TextStyle(
+                              fontSize: 12
+                          ),),
                           SizedBox(
                             height: 8,
                           ),
-                          Text("75kmh")
+                          Text("75kmh", style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold
+                          ),)
                         ],
                       ),
                       Column(
                         children: [
-                          Text("Power"),
+                          Text("Power",style: TextStyle(
+                              fontSize: 12
+                          ),),
                           SizedBox(
                             height: 8,
                           ),
-                          Text("387wh")
+                          Text("387wh", style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold
+                          ),)
                         ],
                       ),
                     ],
