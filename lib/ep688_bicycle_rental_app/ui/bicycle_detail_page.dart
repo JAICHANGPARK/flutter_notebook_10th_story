@@ -159,10 +159,19 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
             Positioned(child: Container(
               height: 84,
               width: 84,
-              decoration: BoxDecoration(),
-              child: CircleAvatar(),
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.orange)
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CircleAvatar(
+
+                ),
+              ),
             ),
-            bottom: 16,)
+            bottom: 16,
+            left: 0,
+            right: 0,)
           ],
         ),
       ),
