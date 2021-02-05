@@ -129,7 +129,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                       onTap: () {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(builder: (context){
-                                            return BicycleDetailPage();
+                                            return BicycleDetailPage(  "https://lh3.googleusercontent.com/proxy/T8NKqdv0Igiid-D7o3-fJyMQZR-7nJX4Anbw7ajCoZrm0SCglsTErFpyXhKdRAjGVSqJauL4bqzkaoYbsyhYcnOnzCmd1azyj2og4uZlRLiEpqLuVrPW71zABvw",);
                                           })
                                         );
                                       },
