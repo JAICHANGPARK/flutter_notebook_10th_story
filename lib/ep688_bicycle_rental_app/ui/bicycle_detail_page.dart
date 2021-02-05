@@ -51,7 +51,10 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
               left: 64,
               right: 64,
               top: 64,
-            )
+            ),
+            Positioned(child: Column(),
+            left: 16,
+            right: 16,)
           ],
         ),
       ),
