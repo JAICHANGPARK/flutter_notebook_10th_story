@@ -44,49 +44,64 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                   child: Container(
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: NetworkImage(
-                      widget.img,
-                    ),)),
+                      image: NetworkImage(
+                        widget.img,
+                      ),
+                    )),
                   )),
               left: 64,
               right: 64,
               top: 64,
             ),
-            Positioned(child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("GoCycle",style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 8),
-                          child: Text("Electric Bike",style: TextStyle(
-                            fontSize: 12,
-
-                          ),),
-                        )
-                      ],
+            Positioned(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "GoCycle",
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 8),
+                            child: Text(
+                              "Electric Bike",
+                              style: TextStyle(
+                                fontSize: 12,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                      Spacer(),
+                      Text(
+                        "13\$",
+                        style: TextStyle(fontSize: 24, color: Colors.orange, fontWeight: FontWeight.bold),
+                      ),
+                      Text(" /hour")
+                    ],
+                  ),
+                  SizedBox(height: 16,),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey,
                     ),
-                    Spacer(),
-                    Text("13\$", style: TextStyle(
-                      fontSize: 24,
-                      color: Colors.orange,
-                      fontWeight: FontWeight.bold
-                    ),),
-                    Text(" /hour")
-                  ],
-                )
-              ],
-            ),
-            top: 340,
-            left: 16,
-            right: 16,)
+                  )
+                ],
+              ),
+              top: 340,
+              left: 16,
+              right: 16,
+            )
           ],
         ),
       ),
