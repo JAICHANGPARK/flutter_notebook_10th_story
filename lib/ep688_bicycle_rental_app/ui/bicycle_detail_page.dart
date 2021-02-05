@@ -29,11 +29,15 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
               ),
             ),
             Positioned(child: CircleAvatar(
-              backgroundColor: Colors.orange[100],
+              radius: 124,
+              backgroundColor: Colors.orange[50],
             ),
-
             right: 16,
-            top: 16,)
+            top: 16,),
+            Positioned(child: Image.network(widget.img, height: 120,),
+            left: 24,
+            right: 24,
+            top: 64,)
           ],
         ),
       ),
