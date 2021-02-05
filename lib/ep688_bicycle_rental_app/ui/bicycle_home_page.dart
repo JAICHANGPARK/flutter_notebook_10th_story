@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
 
+import 'bicycle_detail_page.dart';
+
 class BicycleRentalHomePage extends StatefulWidget {
   @override
   _BicycleRentalHomePageState createState() => _BicycleRentalHomePageState();
@@ -124,7 +126,13 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                   width: MediaQuery.of(context).size.width / 1.5,
                                   child: Card(
                                     child: InkWell(
-                                      onTap: () {},
+                                      onTap: () {
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(builder: (context){
+                                            return BicycleDetailPage();
+                                          })
+                                        );
+                                      },
                                       child: Stack(
                                         children: [
                                           Positioned(
