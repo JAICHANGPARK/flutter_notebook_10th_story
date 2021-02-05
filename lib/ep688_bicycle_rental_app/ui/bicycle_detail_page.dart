@@ -9,20 +9,25 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Positioned(
-            child: Container(
-              height: 36,
-              width: 36,
-              child: Card(
-                child: Center(
-                  child: Icon(Icons.arrow_back),
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(
+              left: 16,
+              top: 16,
+              child: Container(
+                height: 48,
+                width: 48,
+                child: Card(
+                  elevation: 8,
+                  child: Center(
+                    child: Icon(Icons.arrow_back),
+                  ),
                 ),
               ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }
