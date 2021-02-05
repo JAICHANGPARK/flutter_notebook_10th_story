@@ -156,17 +156,21 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
               left: 16,
               right: 16,
             ),
-            Positioned(child: Container(
-              height: 84,
-              width: 84,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.orange),
-                shape: BoxShape.circle
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: CircleAvatar(
+            Positioned(child: PhysicalModel(
+              shape: BoxShape.circle,
+              color: Colors.orange[100],
+              child: Container(
+                height: 84,
+                width: 84,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.orange),
+                  shape: BoxShape.circle
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: CircleAvatar(
 
+                  ),
                 ),
               ),
             ),
