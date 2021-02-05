@@ -160,7 +160,8 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
               height: 84,
               width: 84,
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.orange)
+                border: Border.all(color: Colors.orange),
+                shape: BoxShape.circle
               ),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
