@@ -220,13 +220,15 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                                   ),
                                                 ],
                                               )),
-                                          Positioned(child: Container(height: 64,
+                                          Positioned(child: Container(
+                                            height: 64,
+                                          width: 64,
                                           decoration: BoxDecoration(
                                             image: DecorationImage(
                                               image: NetworkImage(
                                                 "https://lh3.googleusercontent.com/proxy/T8NKqdv0Igiid-D7o3-fJyMQZR-7nJX4Anbw7ajCoZrm0SCglsTErFpyXhKdRAjGVSqJauL4bqzkaoYbsyhYcnOnzCmd1azyj2og4uZlRLiEpqLuVrPW71zABvw",
-                                                
-                                              )
+                                              ),
+                                              fit: BoxFit.fitWidth
                                             )
                                           ),),
                                           right: 16,
