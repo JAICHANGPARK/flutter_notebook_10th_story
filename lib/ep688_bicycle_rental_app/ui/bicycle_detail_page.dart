@@ -52,7 +52,27 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
               right: 64,
               top: 64,
             ),
-            Positioned(child: Column(),
+            Positioned(child: Column(
+              children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Text("GoCycle",style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),),
+                        Text("Electric Bike")
+                      ],
+                    ),
+                    Spacer(),
+                    Text("13\$"),
+                    Text("/hour")
+                  ],
+                )
+              ],
+            ),
+            top: 300,
             left: 16,
             right: 16,)
           ],
