@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 class BicycleDetailPage extends StatefulWidget {
   final String img;
+
   BicycleDetailPage({this.img});
+
   @override
   _BicycleDetailPageState createState() => _BicycleDetailPageState();
 }
@@ -28,22 +30,31 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                 ),
               ),
             ),
-            Positioned(child: CircleAvatar(
-              radius: 124,
-              backgroundColor: Colors.orange[50],
+            Positioned(
+              child: CircleAvatar(
+                radius: 124,
+                backgroundColor: Colors.orange[50],
+              ),
+              right: 16,
+              top: 16,
             ),
-            right: 16,
-            top: 16,),
-            Positioned(child: SizedBox(
-              height: 64,
-                child: Image.network(widget.img, height: 120,)),
-            left: 24,
-            right: 24,
-            top: 64,)
+            Positioned(
+              child: SizedBox(
+                  height: 64,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                      widget.img,
+                    ))),
+                  )),
+              left: 24,
+              right: 24,
+              top: 64,
+            )
           ],
         ),
       ),
     );
   }
 }
-
