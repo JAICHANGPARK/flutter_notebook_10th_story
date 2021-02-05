@@ -108,44 +108,49 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Range",style: TextStyle(
-                            fontSize: 12
-                          ),),
+                          Text(
+                            "Range",
+                            style: TextStyle(fontSize: 12),
+                          ),
                           SizedBox(
                             height: 8,
                           ),
-                          Text("50mil", style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold
-                          ),)
+                          Text(
+                            "50mil",
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          )
                         ],
                       ),
-                      Column( crossAxisAlignment: CrossAxisAlignment.start,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Speed",style: TextStyle(
-                              fontSize: 12
-                          ),),
+                          Text(
+                            "Speed",
+                            style: TextStyle(fontSize: 12),
+                          ),
                           SizedBox(
                             height: 8,
                           ),
-                          Text("75kmh", style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold
-                          ),)
+                          Text(
+                            "75kmh",
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          )
                         ],
                       ),
-                      Column( crossAxisAlignment: CrossAxisAlignment.start,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Power",style: TextStyle(
-                              fontSize: 12
-                          ),),
+                          Text(
+                            "Power",
+                            style: TextStyle(fontSize: 12),
+                          ),
                           SizedBox(
                             height: 8,
                           ),
-                          Text("387wh", style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold
-                          ),)
+                          Text(
+                            "387wh",
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          )
                         ],
                       ),
                     ],
@@ -156,27 +161,29 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
               left: 16,
               right: 16,
             ),
-            Positioned(child: PhysicalModel(
-              shape: BoxShape.circle,
-              color: Colors.orange[100],
+            Positioned(
               child: Container(
                 height: 84,
                 width: 84,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.orange),
-                  shape: BoxShape.circle
-                ),
+                decoration: BoxDecoration(border: Border.all(color: Colors.orange), shape: BoxShape.circle),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: CircleAvatar(
-
+                    backgroundColor: Colors.orange,
+                    foregroundColor: Colors.black,
+                    child: Text(
+                      "Go",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ),
               ),
-            ),
-            bottom: 16,
-            left: 0,
-            right: 0,)
+              bottom: 16,
+              left: 0,
+              right: 0,
+            )
           ],
         ),
       ),
