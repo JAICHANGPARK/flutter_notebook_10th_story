@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BicycleDetailPage extends StatefulWidget {
-
   final String img;
-  BicycleDetailPage(this.img);
-
+  BicycleDetailPage({this.img});
   @override
   _BicycleDetailPageState createState() => _BicycleDetailPageState();
 }
@@ -29,7 +27,13 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                   ),
                 ),
               ),
-            )
+            ),
+            Positioned(child: CircleAvatar(
+              backgroundColor: Colors.orange[100],
+            ),
+
+            right: 16,
+            top: 16,)
           ],
         ),
       ),
