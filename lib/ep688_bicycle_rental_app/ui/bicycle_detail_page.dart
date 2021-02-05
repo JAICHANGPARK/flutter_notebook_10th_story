@@ -53,10 +53,12 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
               top: 64,
             ),
             Positioned(child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("GoCycle",style: TextStyle(
                           fontSize: 24,
