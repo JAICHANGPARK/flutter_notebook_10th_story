@@ -124,9 +124,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                   width: MediaQuery.of(context).size.width / 1.5,
                                   child: Card(
                                     child: InkWell(
-                                      onTap: (){
-
-                                      },
+                                      onTap: () {},
                                       child: Stack(
                                         children: [
                                           Positioned(
@@ -135,12 +133,16 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                               child: Column(
                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                 children: [
-                                                  Text("Go Cycle", style: TextStyle(
-                                                    fontSize: 16,
-                                                  ),),
-                                                  Text("Electric Bike", style: TextStyle(
-                                                    fontSize: 12
-                                                  ),),
+                                                  Text(
+                                                    "Go Cycle",
+                                                    style: TextStyle(
+                                                      fontSize: 16,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "Electric Bike",
+                                                    style: TextStyle(fontSize: 12),
+                                                  ),
                                                   Padding(
                                                     padding: const EdgeInsets.symmetric(vertical: 16),
                                                     child: Text(
