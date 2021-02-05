@@ -89,7 +89,9 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                       Text(" /hour")
                     ],
                   ),
-                  SizedBox(height: 16,),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     style: TextStyle(
@@ -97,28 +99,42 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                       color: Colors.grey,
                     ),
                   ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Range"),
-                          SizedBox(height: 8,),
-                          Text("50mil")
+                          Text("Range",style: TextStyle(
+                            fontSize: 12
+                          ),),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("50mil", style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold
+                          ),)
                         ],
                       ),
                       Column(
                         children: [
                           Text("Speed"),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("75kmh")
                         ],
                       ),
                       Column(
                         children: [
                           Text("Power"),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("387wh")
                         ],
                       ),
