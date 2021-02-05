@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class BicycleDetailPage extends StatefulWidget {
+
+  final String img;
+  BicycleDetailPage(this.img);
+
   @override
   _BicycleDetailPageState createState() => _BicycleDetailPageState();
 }
