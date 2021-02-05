@@ -90,7 +90,7 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                     ],
                   ),
                   SizedBox(
-                    height: 16,
+                    height: 24,
                   ),
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -100,7 +100,7 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                     ),
                   ),
                   SizedBox(
-                    height: 16,
+                    height: 24,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -155,7 +155,14 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
               top: 340,
               left: 16,
               right: 16,
-            )
+            ),
+            Positioned(child: Container(
+              height: 84,
+              width: 84,
+              decoration: BoxDecoration(),
+              child: CircleAvatar(),
+            ),
+            bottom: 16,)
           ],
         ),
       ),
