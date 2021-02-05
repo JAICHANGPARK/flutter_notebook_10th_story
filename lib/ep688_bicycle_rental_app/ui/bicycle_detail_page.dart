@@ -34,7 +34,9 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
             ),
             right: 16,
             top: 16,),
-            Positioned(child: Image.network(widget.img, height: 120,),
+            Positioned(child: SizedBox(
+              height: 64,
+                child: Image.network(widget.img, height: 120,)),
             left: 24,
             right: 24,
             top: 64,)
@@ -44,3 +46,4 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
     );
   }
 }
+
