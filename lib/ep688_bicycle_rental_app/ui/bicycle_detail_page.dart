@@ -120,7 +120,7 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                           ),)
                         ],
                       ),
-                      Column(
+                      Column( crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Speed",style: TextStyle(
                               fontSize: 12
@@ -134,7 +134,7 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                           ),)
                         ],
                       ),
-                      Column(
+                      Column( crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Power",style: TextStyle(
                               fontSize: 12
