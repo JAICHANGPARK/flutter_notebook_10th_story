@@ -127,11 +127,12 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                   child: Card(
                                     child: InkWell(
                                       onTap: () {
-                                        Navigator.of(context).push(
-                                          MaterialPageRoute(builder: (context){
-                                            return BicycleDetailPage(  "https://lh3.googleusercontent.com/proxy/T8NKqdv0Igiid-D7o3-fJyMQZR-7nJX4Anbw7ajCoZrm0SCglsTErFpyXhKdRAjGVSqJauL4bqzkaoYbsyhYcnOnzCmd1azyj2og4uZlRLiEpqLuVrPW71zABvw",);
-                                          })
-                                        );
+                                        Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                                          return BicycleDetailPage(
+                                              img:"https://lh3.googleusercontent.com/proxy/"
+                                                  "T8NKqdv0Igiid-D7o3-fJyMQZR-7nJX4Anbw7ajCoZrm0SCglsTErFpyXhKdRAjGVSqJauL4bqzkaoYbsyhYcnOnzCm"
+                                                  "d1azyj2og4uZlRLiEpqLuVrPW71zABvw");
+                                        }));
                                       },
                                       child: Stack(
                                         children: [
@@ -228,19 +229,19 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                                                   ),
                                                 ],
                                               )),
-                                          Positioned(child: Container(
-                                            height: 72,
-                                          width: 100,
-                                          decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                              image: NetworkImage(
-                                                "https://lh3.googleusercontent.com/proxy/T8NKqdv0Igiid-D7o3-fJyMQZR-7nJX4Anbw7ajCoZrm0SCglsTErFpyXhKdRAjGVSqJauL4bqzkaoYbsyhYcnOnzCmd1azyj2og4uZlRLiEpqLuVrPW71zABvw",
-                                              ),
-                                              fit: BoxFit.fitHeight
-                                            )
-                                          ),),
-                                          right: 16,
-                                          top: 8,
+                                          Positioned(
+                                            child: Container(
+                                              height: 72,
+                                              width: 100,
+                                              decoration: BoxDecoration(
+                                                  image: DecorationImage(
+                                                      image: NetworkImage(
+                                                        "https://lh3.googleusercontent.com/proxy/T8NKqdv0Igiid-D7o3-fJyMQZR-7nJX4Anbw7ajCoZrm0SCglsTErFpyXhKdRAjGVSqJauL4bqzkaoYbsyhYcnOnzCmd1azyj2og4uZlRLiEpqLuVrPW71zABvw",
+                                                      ),
+                                                      fit: BoxFit.fitHeight)),
+                                            ),
+                                            right: 16,
+                                            top: 8,
                                           )
                                         ],
                                       ),
