@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BicycleDetailPage extends StatefulWidget {
@@ -95,6 +96,30 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                       fontSize: 14,
                       color: Colors.grey,
                     ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        
+                        children: [
+                          Text("Range"),
+                          Text("50mil")
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Text("Speed"),
+                          Text("75kmh")
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Text("Power"),
+                          Text("387wh")
+                        ],
+                      ),
+                    ],
                   )
                 ],
               ),
