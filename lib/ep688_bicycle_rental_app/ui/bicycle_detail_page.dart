@@ -40,16 +40,16 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
             ),
             Positioned(
               child: SizedBox(
-                  height: 64,
+                  height: 240,
                   child: Container(
                     decoration: BoxDecoration(
                         image: DecorationImage(
                             image: NetworkImage(
                       widget.img,
-                    ))),
+                    ),)),
                   )),
-              left: 24,
-              right: 24,
+              left: 64,
+              right: 64,
               top: 64,
             )
           ],
