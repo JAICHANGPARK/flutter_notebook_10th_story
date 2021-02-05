@@ -74,8 +74,12 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                       ],
                     ),
                     Spacer(),
-                    Text("13\$"),
-                    Text("/hour")
+                    Text("13\$", style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.orange,
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text(" /hour")
                   ],
                 )
               ],
