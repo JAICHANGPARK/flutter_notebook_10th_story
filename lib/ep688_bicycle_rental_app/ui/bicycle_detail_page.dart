@@ -101,21 +101,24 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
-                        
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Range"),
+                          SizedBox(height: 8,),
                           Text("50mil")
                         ],
                       ),
                       Column(
                         children: [
                           Text("Speed"),
+                          SizedBox(height: 8,),
                           Text("75kmh")
                         ],
                       ),
                       Column(
                         children: [
                           Text("Power"),
+                          SizedBox(height: 8,),
                           Text("387wh")
                         ],
                       ),
