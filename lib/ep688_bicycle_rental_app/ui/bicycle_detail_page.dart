@@ -64,7 +64,13 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
                         ),),
-                        Text("Electric Bike")
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8),
+                          child: Text("Electric Bike",style: TextStyle(
+                            fontSize: 12,
+
+                          ),),
+                        )
                       ],
                     ),
                     Spacer(),
@@ -74,7 +80,7 @@ class _BicycleDetailPageState extends State<BicycleDetailPage> {
                 )
               ],
             ),
-            top: 300,
+            top: 340,
             left: 16,
             right: 16,)
           ],
