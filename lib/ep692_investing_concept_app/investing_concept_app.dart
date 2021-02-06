@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ui/investing_welcome_page.dart';
+
 
 class InvestingConceptApp extends StatelessWidget {
   @override
