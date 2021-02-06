@@ -14,9 +14,13 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
         child: Stack(
           children: [
             Positioned(child: Container(
-              height: MediaQuery.of(context).size.height / 3,
+              height: MediaQuery.of(context).size.height / 4,
               decoration: BoxDecoration(
-                color: Colors.white
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(16),
+                  topLeft: Radius.circular(16),
+                )
               ),
             ),
             top: 0,
