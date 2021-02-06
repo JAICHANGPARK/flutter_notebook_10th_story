@@ -8,6 +8,14 @@ class InvestingWelcomePage extends StatefulWidget {
 class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
