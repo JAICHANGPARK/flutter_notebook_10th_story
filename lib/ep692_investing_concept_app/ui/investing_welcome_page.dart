@@ -25,6 +25,7 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                 padding: EdgeInsets.all(8),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -42,10 +43,11 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                     Text("Choose your interests to follow and trade"),
                     Text("on your terms."),
                     Container(
-                      height: 64,
+                      height: 48,
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.blue[50]
+                          color: Colors.blue[50],
+                          width: 1.2
                         )
                       ),
                     )
