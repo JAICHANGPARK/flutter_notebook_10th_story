@@ -6,6 +6,9 @@ class InvestingConceptApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Investing Concept App",
+      routes: {
+        "/": (context)=>InvestingWelcomePage()
+      },
     );
   }
 }
