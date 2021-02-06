@@ -57,10 +57,14 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                           IconButton(icon: Icon(Icons.clear), onPressed: () {})
                         ],
                       ),
-                      Text("Choose your interests to follow and trade", style: TextStyle(
-                        color: Colors.blueGrey[200]
-                      ),),
-                      Text("on your terms."),
+                      Text(
+                        "Choose your interests to follow and trade",
+                        style: TextStyle(color: Colors.blueGrey[400]),
+                      ),
+                      Text(
+                        "on your terms.",
+                        style: TextStyle(color: Colors.blueGrey[400]),
+                      ),
                       Container(
                         height: 48,
                         decoration: BoxDecoration(border: Border.all(color: Colors.blue[50], width: 1.2)),
