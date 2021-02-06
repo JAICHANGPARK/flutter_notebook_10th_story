@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class InvestingWelcomePage extends StatefulWidget {
   @override
   _InvestingWelcomePageState createState() => _InvestingWelcomePageState();
@@ -6,6 +8,6 @@ class InvestingWelcomePage extends StatefulWidget {
 class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
