@@ -6,6 +6,13 @@ class InvestingWelcomePage extends StatefulWidget {
 }
 
 class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
+  TextEditingController _textEditingController = TextEditingController();
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _textEditingController.dispose();
+    super.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
