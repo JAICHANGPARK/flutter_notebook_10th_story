@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'ep688_bicycle_rental_app/bicycle_rental_app.dart';
+import 'ep692_investing_concept_app/investing_concept_app.dart';
 
 void main() {
-  runApp(BicycleRentalApp());
+  runApp(InvestingConceptApp());
 }
