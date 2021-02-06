@@ -13,33 +13,40 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(child: Container(
-              height: MediaQuery.of(context).size.height / 4,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(16),
-                  topLeft: Radius.circular(16),
-                )
+            Positioned(
+              child: Container(
+                height: MediaQuery.of(context).size.height / 4,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(16),
+                      topLeft: Radius.circular(16),
+                    )),
+                padding: EdgeInsets.all(8),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Welcome!",
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        IconButton(icon: Icon(Icons.clear), onPressed: () {})
+                      ],
+                    ),
+                    Text("Choose your interests to follow and trade"),
+                    Text("on your terms.")
+                  ],
+                ),
               ),
-              padding: EdgeInsets.all(16),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Welcome!"),
-                      IconButton(icon: Icon(Icons.clear), onPressed: (){
-
-                      })
-                    ],
-                  )
-                ],
-              ),
-            ),
-            top: 16,
-            left: 0,
-            right: 0,
+              top: 16,
+              left: 0,
+              right: 0,
             ),
           ],
         ),
