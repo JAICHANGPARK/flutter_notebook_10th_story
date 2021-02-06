@@ -57,6 +57,15 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                           width: 1.2
                         )
                       ),
+                      
+                      child: TextField(
+                        controller: _textEditingController,
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.search),
+                          hintText: "Search interests to follow...",
+
+                        ),
+                      ),
                     )
                   ],
                 ),
