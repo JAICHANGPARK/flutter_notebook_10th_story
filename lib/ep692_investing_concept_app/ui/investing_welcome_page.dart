@@ -7,15 +7,18 @@ class InvestingWelcomePage extends StatefulWidget {
 
 class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
   TextEditingController _textEditingController = TextEditingController();
+
   @override
   void dispose() {
     // TODO: implement dispose
     _textEditingController.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.blue[50],
       body: SafeArea(
         child: Stack(
@@ -51,20 +54,14 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                     Text("on your terms."),
                     Container(
                       height: 48,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.blue[50],
-                          width: 1.2
-                        )
-                      ),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.blue[50], width: 1.2)),
                       padding: EdgeInsets.symmetric(horizontal: 8),
                       child: TextField(
                         controller: _textEditingController,
                         decoration: InputDecoration(
-                          icon: Icon(Icons.search),
-                          hintText: "Search interests to follow...",
-
-                        ),
+                            icon: Icon(Icons.search),
+                            hintText: "Search interests to follow...",
+                            border: InputBorder.none),
                       ),
                     )
                   ],
