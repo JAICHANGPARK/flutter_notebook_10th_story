@@ -57,7 +57,7 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                           width: 1.2
                         )
                       ),
-                      
+                      padding: EdgeInsets.symmetric(horizontal: 8),
                       child: TextField(
                         controller: _textEditingController,
                         decoration: InputDecoration(
