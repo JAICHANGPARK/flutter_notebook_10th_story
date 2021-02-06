@@ -40,7 +40,15 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                       ],
                     ),
                     Text("Choose your interests to follow and trade"),
-                    Text("on your terms.")
+                    Text("on your terms."),
+                    Container(
+                      height: 64,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.blue[50]
+                        )
+                      ),
+                    )
                   ],
                 ),
               ),
