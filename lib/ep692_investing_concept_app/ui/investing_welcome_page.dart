@@ -22,8 +22,22 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                   topLeft: Radius.circular(16),
                 )
               ),
+              padding: EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Welcome!"),
+                      IconButton(icon: Icon(Icons.clear), onPressed: (){
+
+                      })
+                    ],
+                  )
+                ],
+              ),
             ),
-            top: 0,
+            top: 16,
             left: 0,
             right: 0,
             ),
