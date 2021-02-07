@@ -93,7 +93,17 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                 right: 16,
                 child: Container(
                     color: Colors.grey,
-                    child: GridView.count(crossAxisCount: 2))
+                    child: GridView.count(crossAxisCount: 2,
+                    children: [
+                      Card(
+                        child: Column(
+                          children: [
+                            Container()
+                          ],
+                        ),
+                      ),
+                    ],
+                    ),)
             ),
             Positioned(
               bottom: 32,
@@ -107,7 +117,7 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                 ),
                 child: InkWell(
                   onTap: (){
-                    
+
                   },
                   child: Center(
                     child: Text("Add to watchlist", style: TextStyle(
