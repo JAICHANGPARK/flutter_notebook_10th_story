@@ -108,7 +108,7 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                                 width: 64,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.grey),
+                                  border: Border.all(color: Colors.grey[200]),
                                 ),
                               ),
                               Text("A Company",style: TextStyle(
@@ -139,20 +139,23 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                                 width: 64,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.grey),
+                                  border: Border.all(color: Colors.grey[400]),
                                 ),
                               ),
                               Text("GameStop",style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18
                               ),),
-                              OutlinedButton(
+                              Container(
+                                width: double.infinity,
+                                child: OutlinedButton(
 
-                                onPressed: (){},
-                                child: Text("Followed",style: TextStyle(
-                                  color: Colors.black,
+                                  onPressed: (){},
+                                  child: Text("Followed",style: TextStyle(
+                                    color: Colors.black,
 
-                                ),),),
+                                  ),),),
+                              ),
                             ],
                           ),
                         ),
