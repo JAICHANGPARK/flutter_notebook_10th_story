@@ -139,7 +139,7 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                                 width: 64,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.grey[400]),
+                                  border: Border.all(color: Colors.grey[200]),
                                 ),
                               ),
                               Text("GameStop",style: TextStyle(
