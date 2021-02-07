@@ -94,6 +94,7 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                 height: 64,
                 decoration: BoxDecoration(
                   color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(12)
                 ),
               ),
             )
