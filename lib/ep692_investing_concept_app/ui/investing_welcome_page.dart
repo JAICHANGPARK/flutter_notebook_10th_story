@@ -93,7 +93,9 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                 right: 16,
                 child: Container(
                     color: Colors.grey,
-                    child: GridView.count(crossAxisCount: 2,
+                    child: GridView.count(
+                      childAspectRatio: .9,
+                      crossAxisCount: 2,
                     children: [
                       Card(
                         child: Padding(
@@ -140,16 +142,15 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                                   border: Border.all(color: Colors.grey),
                                 ),
                               ),
-                              Text("A Company",style: TextStyle(
+                              Text("GameStop",style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18
                               ),),
-                              MaterialButton(
-                                height: 32,
-                                minWidth: double.infinity,
+                              OutlineButton(
+
                                 onPressed: (){},
                                 color: Colors.black,
-                                child: Text("Follow",style: TextStyle(
+                                child: Text("Followed",style: TextStyle(
                                   color: Colors.white,
 
                                 ),),),
