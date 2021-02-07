@@ -109,7 +109,16 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                             Text("A Company",style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 18
-                            ),)
+                            ),),
+                            MaterialButton(
+                              height: 24,
+                              minWidth: double.infinity,
+                              onPressed: (){},
+                              color: Colors.black,
+                            child: Text("Follow",style: TextStyle(
+                              color: Colors.white,
+
+                            ),),),
                           ],
                         ),
                       ),
