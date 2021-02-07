@@ -98,7 +98,18 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                       Card(
                         child: Column(
                           children: [
-                            Container()
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey),
+                              ),
+                            ),
+                            Text("A Company",style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18
+                            ),)
                           ],
                         ),
                       ),
