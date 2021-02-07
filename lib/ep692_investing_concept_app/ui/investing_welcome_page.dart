@@ -87,11 +87,15 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
               right: 0,
             ),
             Positioned(
+                left: 16,
+                child: GridView.count(crossAxisCount: 2)
+            ),
+            Positioned(
               bottom: 32,
               right: 16,
               left: 16,
               child: Container(
-                height: 64,
+                height: 58,
                 decoration: BoxDecoration(
                   color: Colors.blueAccent,
                   borderRadius: BorderRadius.circular(12)
