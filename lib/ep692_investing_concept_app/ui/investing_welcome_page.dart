@@ -91,7 +91,9 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                 bottom: 0,
                 top: 100,
                 right: 16,
-                child: GridView.count(crossAxisCount: 2)
+                child: Container(
+                    color: Colors.grey,
+                    child: GridView.count(crossAxisCount: 2))
             ),
             Positioned(
               bottom: 32,
