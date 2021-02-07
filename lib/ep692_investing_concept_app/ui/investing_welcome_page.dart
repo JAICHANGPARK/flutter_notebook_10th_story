@@ -146,12 +146,11 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18
                               ),),
-                              OutlineButton(
+                              OutlinedButton(
 
                                 onPressed: (){},
-                                color: Colors.black,
                                 child: Text("Followed",style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
 
                                 ),),),
                             ],
