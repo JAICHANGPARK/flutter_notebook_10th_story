@@ -86,9 +86,34 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
               left: 0,
               right: 0,
             ),
+            Positioned(
+              bottom: 32,
+              right: 16,
+              left: 16,
+              child: Container(
+                height: 64,
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                ),
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
