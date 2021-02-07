@@ -160,6 +160,70 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                           ),
                         ),
                       ),
+                      Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.grey[200]),
+                                ),
+                              ),
+                              Text("D",style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18
+                              ),),
+                              Container(
+                                width: double.infinity,
+                                child: OutlinedButton(
+
+                                  onPressed: (){},
+                                  child: Text("Followed",style: TextStyle(
+                                    color: Colors.black,
+
+                                  ),),),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(color: Colors.grey[200]),
+                                ),
+                              ),
+                              Text("Tesla",style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18
+                              ),),
+                              MaterialButton(
+                                height: 32,
+                                minWidth: double.infinity,
+                                onPressed: (){},
+                                color: Colors.black,
+                                child: Text("Follow",style: TextStyle(
+                                  color: Colors.white,
+
+                                ),),),
+                            ],
+                          ),
+                        ),
+                      ),
+
                     ],
                     ),)
             ),
