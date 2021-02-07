@@ -89,7 +89,7 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
             Positioned(
                 left: 16,
                 bottom: 0,
-                top: 100,
+                top: 220,
                 right: 16,
                 child: Container(
                     color: Colors.grey,
