@@ -88,6 +88,9 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
             ),
             Positioned(
                 left: 16,
+                bottom: 0,
+                top: 100,
+                right: 16,
                 child: GridView.count(crossAxisCount: 2)
             ),
             Positioned(
