@@ -96,6 +96,13 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                   color: Colors.blueAccent,
                   borderRadius: BorderRadius.circular(12)
                 ),
+                child: Center(
+                  child: Text("Add to watchlist", style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 18
+                  ),),
+                ),
               ),
             )
           ],
