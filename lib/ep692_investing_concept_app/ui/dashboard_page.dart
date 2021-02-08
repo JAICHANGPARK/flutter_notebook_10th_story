@@ -50,7 +50,9 @@ class _DashboardState extends State<DashboardPage> {
                             borderRadius: BorderRadius.circular(4)
                           ),
                           child: Center(
-                            child: Text("+72.40%",),
+                            child: Text("+72.40%",style: TextStyle(
+                              color: Colors.white
+                            ),),
                           ),
                         )
                       ],
