@@ -10,6 +10,13 @@ class _DashboardState extends State<DashboardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
       backgroundColor: Colors.blue[50],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _pageIdx,
