@@ -41,18 +41,24 @@ class _DashboardState extends State<DashboardPage> {
                     Text("Portfolio balance"),
                     Row(
                       children: [
-                        Text("\$8,401.10"),
-                        Container(
-                          height: 24,
-                          width: 80,
-                          decoration: BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.circular(4)
-                          ),
-                          child: Center(
-                            child: Text("+72.40%",style: TextStyle(
-                              color: Colors.white
-                            ),),
+                        Text("\$8,401.10", style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold
+                        ),),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
+                          child: Container(
+                            height: 24,
+                            width: 80,
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(4)
+                            ),
+                            child: Center(
+                              child: Text("+72.40%",style: TextStyle(
+                                color: Colors.white
+                              ),),
+                            ),
                           ),
                         ),
                         Text("+ \$3,204.90", style: TextStyle(
