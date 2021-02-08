@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -10,12 +11,37 @@ class _DashboardState extends State<DashboardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            
-          ],
-        ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+              flex: 5,
+              child: Container(
+                padding: EdgeInsets.only(top: 64),
+                color: Colors.white,
+                child: Column(
+                  children: [
+                      Row(
+                        children: [
+                          Text("Dashboard"),
+                          Icon(Icons.search),
+                          Badge(
+                            child: Icon(Icons.notifications_none),
+
+                          )
+                        ],
+                      )
+                  ],
+                ),
+              )),
+          Expanded(
+            flex: 5,
+              child: Placeholder()),
+          Expanded(
+              flex: 7,
+              child: Placeholder()),
+
+        ],
       ),
       backgroundColor: Colors.blue[50],
       bottomNavigationBar: BottomNavigationBar(
