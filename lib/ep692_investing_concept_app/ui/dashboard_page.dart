@@ -10,6 +10,14 @@ class _DashboardState extends State<DashboardPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue[50],
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home)),
+        BottomNavigationBarItem(icon: Icon(Icons.home)),
+        BottomNavigationBarItem(icon: Icon(Icons.home)),
+        BottomNavigationBarItem(icon: Icon(Icons.home)),
+      ],
+
+      ),
     );
   }
 }
