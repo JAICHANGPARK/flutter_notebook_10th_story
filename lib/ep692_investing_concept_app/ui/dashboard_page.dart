@@ -37,7 +37,8 @@ class _DashboardState extends State<DashboardPage> {
 
                           )
                         ],
-                      )
+                      ),
+                    Text("Portfolio balance"),
                   ],
                 ),
               )),
