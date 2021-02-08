@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'dashboard_page.dart';
+
 class InvestingWelcomePage extends StatefulWidget {
   @override
   _InvestingWelcomePageState createState() => _InvestingWelcomePageState();
@@ -311,7 +313,10 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                 height: 58,
                 decoration: BoxDecoration(color: Colors.blueAccent, borderRadius: BorderRadius.circular(12)),
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=> DashboardPage()));
+
+                  },
                   child: Center(
                     child: Text(
                       "Add to watchlist",
