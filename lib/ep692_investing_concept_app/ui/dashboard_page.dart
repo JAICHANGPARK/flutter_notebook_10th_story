@@ -11,10 +11,10 @@ class _DashboardState extends State<DashboardPage> {
     return Scaffold(
       backgroundColor: Colors.blue[50],
       bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home)),
-        BottomNavigationBarItem(icon: Icon(Icons.home)),
-        BottomNavigationBarItem(icon: Icon(Icons.home)),
-        BottomNavigationBarItem(icon: Icon(Icons.home)),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Dashboard"),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Portfolio"),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Transactions"),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "More"),
       ],
 
       ),
