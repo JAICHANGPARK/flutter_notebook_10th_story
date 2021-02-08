@@ -15,12 +15,12 @@ class _DashboardState extends State<DashboardPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-              flex: 4,
+              flex: 5,
               child: Container(
-                padding: EdgeInsets.only(top: 72, left: 16, right: 16),
+                padding: EdgeInsets.only(top: 72, left: 16, right: 16, bottom: 8),
                 color: Colors.white,
                 child: Column(
-                  
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                       Row(
@@ -73,7 +73,7 @@ class _DashboardState extends State<DashboardPage> {
                 ),
               )),
           Expanded(
-            flex: 5,
+            flex: 6,
               child: Placeholder()),
           Expanded(
               flex: 7,
