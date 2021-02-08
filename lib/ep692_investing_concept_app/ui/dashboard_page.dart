@@ -17,7 +17,7 @@ class _DashboardState extends State<DashboardPage> {
           Expanded(
               flex: 5,
               child: Container(
-                padding: EdgeInsets.only(top: 64),
+                padding: EdgeInsets.only(top: 72, left: 16, right: 16),
                 color: Colors.white,
                 child: Column(
                   children: [
@@ -27,7 +27,11 @@ class _DashboardState extends State<DashboardPage> {
                             fontSize: 24,
                             fontWeight: FontWeight.bold
                           ),),
-                          Icon(Icons.search),
+                          Spacer(),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Icon(Icons.search),
+                          ),
                           Badge(
                             child: Icon(Icons.notifications_none),
 
