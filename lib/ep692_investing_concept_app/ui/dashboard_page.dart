@@ -6,11 +6,18 @@ class DashboardPage extends StatefulWidget {
 }
 
 class _DashboardState extends State<DashboardPage> {
+  int _pageIdx = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue[50],
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _pageIdx,
+        onTap: (idx){
+          setState(() {
+            _pageIdx = idx;
+          });
+        },
         type: BottomNavigationBarType.fixed,
         items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Dashboard"),
