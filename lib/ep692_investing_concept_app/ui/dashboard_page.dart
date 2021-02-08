@@ -21,7 +21,7 @@ class _DashboardState extends State<DashboardPage> {
         type: BottomNavigationBarType.fixed,
         items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Dashboard"),
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Portfolio"),
+        BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: "Portfolio"),
         BottomNavigationBarItem(icon: Icon(Icons.code), label: "Transactions"),
         BottomNavigationBarItem(icon: Icon(Icons.more_horiz), label: "More"),
       ],
