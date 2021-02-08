@@ -8,6 +8,8 @@ class DashboardPage extends StatefulWidget {
 class _DashboardState extends State<DashboardPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.blue[50],
+    );
   }
 }
