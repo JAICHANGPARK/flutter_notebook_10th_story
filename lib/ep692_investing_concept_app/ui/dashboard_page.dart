@@ -23,7 +23,10 @@ class _DashboardState extends State<DashboardPage> {
                   children: [
                       Row(
                         children: [
-                          Text("Dashboard"),
+                          Text("Dashboard" , style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold
+                          ),),
                           Icon(Icons.search),
                           Badge(
                             child: Icon(Icons.notifications_none),
