@@ -94,223 +94,229 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
                 child: GridView.count(
                   childAspectRatio: .87,
                   crossAxisCount: 2,
-                crossAxisSpacing: 8,
-                mainAxisSpacing: 8,
-
-                children: [
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            height: 64,
-                            width: 64,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.grey[200]),
+                  crossAxisSpacing: 8,
+                  mainAxisSpacing: 8,
+                  children: [
+                    Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey[200]),
+                              ),
                             ),
-                          ),
-                          Text("A Company",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18
-                          ),),
-                          MaterialButton(
-                            height: 32,
-                            minWidth: double.infinity,
-                            onPressed: (){},
-                            color: Colors.black,
-                          child: Text("Follow",style: TextStyle(
-                            color: Colors.white,
-
-                          ),),),
-                        ],
+                            Text(
+                              "A Company",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            MaterialButton(
+                              height: 32,
+                              minWidth: double.infinity,
+                              onPressed: () {},
+                              color: Colors.black,
+                              child: Text(
+                                "Follow",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            height: 64,
-                            width: 64,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.grey[200]),
+                    Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey[200]),
+                              ),
                             ),
-                          ),
-                          Text("GameStop",style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                          ),),
-                          Container(
-                            width: double.infinity,
-                            child: OutlinedButton(
-
-                              onPressed: (){},
-                              child: Text("Followed",style: TextStyle(
-                                color: Colors.black,
-
-                              ),),),
-                          ),
-                        ],
+                            Text(
+                              "GameStop",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            Container(
+                              width: double.infinity,
+                              child: OutlinedButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "Followed",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            height: 64,
-                            width: 64,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.grey[200]),
+                    Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey[200]),
+                              ),
                             ),
-                          ),
-                          Text("D",style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                          ),),
-                          Container(
-                            width: double.infinity,
-                            child: OutlinedButton(
-
-                              onPressed: (){},
-                              child: Text("Followed",style: TextStyle(
-                                color: Colors.black,
-
-                              ),),),
-                          ),
-                        ],
+                            Text(
+                              "D",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            Container(
+                              width: double.infinity,
+                              child: OutlinedButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "Followed",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            height: 64,
-                            width: 64,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.grey[200]),
+                    Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey[200]),
+                              ),
                             ),
-                          ),
-                          Text("Tesla",style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                          ),),
-                          MaterialButton(
-                            height: 32,
-                            minWidth: double.infinity,
-                            onPressed: (){},
-                            color: Colors.black,
-                            child: Text("Follow",style: TextStyle(
-                              color: Colors.white,
-
-                            ),),),
-                        ],
+                            Text(
+                              "Tesla",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            MaterialButton(
+                              height: 32,
+                              minWidth: double.infinity,
+                              onPressed: () {},
+                              color: Colors.black,
+                              child: Text(
+                                "Follow",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            height: 64,
-                            width: 64,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.grey[200]),
+                    Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey[200]),
+                              ),
                             ),
-                          ),
-                          Text("D",style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                          ),),
-                          Container(
-                            width: double.infinity,
-                            child: OutlinedButton(
-
-                              onPressed: (){},
-                              child: Text("Followed",style: TextStyle(
-                                color: Colors.black,
-
-                              ),),),
-                          ),
-                        ],
+                            Text(
+                              "D",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            Container(
+                              width: double.infinity,
+                              child: OutlinedButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "Followed",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            height: 64,
-                            width: 64,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.grey[200]),
+                    Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: Colors.grey[200]),
+                              ),
                             ),
-                          ),
-                          Text("Tesla",style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                          ),),
-                          MaterialButton(
-                            height: 32,
-                            minWidth: double.infinity,
-                            onPressed: (){},
-                            color: Colors.black,
-                            child: Text("Follow",style: TextStyle(
-                              color: Colors.white,
-
-                            ),),),
-                        ],
+                            Text(
+                              "Tesla",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            MaterialButton(
+                              height: 32,
+                              minWidth: double.infinity,
+                              onPressed: () {},
+                              color: Colors.black,
+                              child: Text(
+                                "Follow",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-
-                ],
-                )
-            ),
+                  ],
+                )),
             Positioned(
               bottom: 32,
               right: 16,
               left: 16,
               child: Container(
                 height: 58,
-                decoration: BoxDecoration(
-                  color: Colors.blueAccent,
-                  borderRadius: BorderRadius.circular(12)
-                ),
+                decoration: BoxDecoration(color: Colors.blueAccent, borderRadius: BorderRadius.circular(12)),
                 child: InkWell(
-                  onTap: (){
-
-                  },
+                  onTap: () {},
                   child: Center(
-                    child: Text("Add to watchlist", style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 18
-                    ),),
+                    child: Text(
+                      "Add to watchlist",
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                    ),
                   ),
                 ),
               ),
@@ -321,17 +327,3 @@ class _InvestingWelcomePageState extends State<InvestingWelcomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
