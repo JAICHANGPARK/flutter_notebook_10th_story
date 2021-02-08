@@ -43,8 +43,12 @@ class _DashboardState extends State<DashboardPage> {
                       children: [
                         Text("\$8,401.10"),
                         Container(
-                          height: 32,
-                          width: 120,
+                          height: 24,
+                          width: 80,
+                          decoration: BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.circular(4)
+                          ),
                           child: Center(
                             child: Text("+72.40%",),
                           ),
