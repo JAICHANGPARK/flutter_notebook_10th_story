@@ -20,6 +20,7 @@ class _DashboardState extends State<DashboardPage> {
                 padding: EdgeInsets.only(top: 72, left: 16, right: 16),
                 color: Colors.white,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                       Row(
                         children: [
@@ -34,11 +35,22 @@ class _DashboardState extends State<DashboardPage> {
                           ),
                           Badge(
                             child: Icon(Icons.notifications_none),
-
                           )
                         ],
                       ),
                     Text("Portfolio balance"),
+                    Row(
+                      children: [
+                        Text("\$8,401.10"),
+                        Container(
+                          height: 32,
+                          width: 120,
+                          child: Center(
+                            child: Text("+72.40%",),
+                          ),
+                        )
+                      ],
+                    )
                   ],
                 ),
               )),
