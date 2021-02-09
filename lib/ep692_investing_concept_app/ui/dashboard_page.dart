@@ -79,7 +79,13 @@ class _DashboardState extends State<DashboardPage> {
                       flex: 2,
                       child: Row(
                         children: [
-
+                        Text("Gainers and Losers", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),),
+                          Spacer(),
+                          Text("See all"),
+                          Icon(Icons.arrow_forward)
                         ],
                       )),
                   Expanded(
