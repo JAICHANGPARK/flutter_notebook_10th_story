@@ -109,7 +109,7 @@ class _DashboardState extends State<DashboardPage> {
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return SizedBox(
-                                  width: MediaQuery.of(context).size.width / 2,
+                                  width: MediaQuery.of(context).size.width / 2.1,
                                   child: Card(
                                     elevation: 4,
                                     child: Padding(
