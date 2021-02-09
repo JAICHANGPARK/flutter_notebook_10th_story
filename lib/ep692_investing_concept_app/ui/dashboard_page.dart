@@ -171,7 +171,12 @@ class _DashboardState extends State<DashboardPage> {
                       )),
                 ],
               )),
-          Expanded(flex: 7, child: Placeholder()),
+          Expanded(flex: 7, child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+
+            ],
+          )),
         ],
       ),
       backgroundColor: Colors.blue[50],
