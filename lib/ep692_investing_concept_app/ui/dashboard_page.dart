@@ -72,7 +72,7 @@ class _DashboardState extends State<DashboardPage> {
               )),
           Expanded(flex: 6, child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            
+
             children: [
 
             ],
