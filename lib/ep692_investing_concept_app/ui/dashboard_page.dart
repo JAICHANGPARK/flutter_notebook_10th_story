@@ -104,7 +104,12 @@ class _DashboardState extends State<DashboardPage> {
                       itemCount: 10,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index){
-                    return Card();
+                    return SizedBox(
+                        width: MediaQuery.of(context).size.width / 2,
+                        child: Card(
+
+
+                        ));
                   })),
                 ],
               )),
