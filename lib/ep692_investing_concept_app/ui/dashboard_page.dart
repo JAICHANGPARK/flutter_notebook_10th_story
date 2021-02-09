@@ -112,20 +112,28 @@ class _DashboardState extends State<DashboardPage> {
                                   width: MediaQuery.of(context).size.width / 2,
                                   child: Card(
                                     elevation: 4,
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Container(
-                                          height: 52,
-                                          width: 52,
-                                          decoration: BoxDecoration(
-                                            border: Border.all(
-                                              color: Colors.grey[400]
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Container(
+                                            height: 52,
+                                            width: 52,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                color: Colors.grey[400]
+                                              ),
+                                              shape: BoxShape.circle,
                                             ),
-                                            shape: BoxShape.circle,
                                           ),
-                                        )
-                                      ],
+                                          Text("Tesla", style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18
+                                          ),),
+                                          Text("\$855.90")
+                                        ],
+                                      ),
                                     ),
                                   ));
                             }),
