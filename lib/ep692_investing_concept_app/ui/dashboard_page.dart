@@ -127,11 +127,16 @@ class _DashboardState extends State<DashboardPage> {
                                               shape: BoxShape.circle,
                                             ),
                                           ),
-                                          Text("Tesla", style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 18
-                                          ),),
-                                          Text("\$855.90")
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 8),
+                                            child: Text("Tesla", style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 17
+                                            ),),
+                                          ),
+                                          Text("\$855.90", style: TextStyle(
+                                            fontWeight: FontWeight.bold
+                                          ),)
                                         ],
                                       ),
                                     ),
