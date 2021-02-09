@@ -178,7 +178,26 @@ class _DashboardState extends State<DashboardPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(flex: 2, child: Placeholder()),
+                    Expanded(flex: 2, child:  Row(
+                      children: [
+                        Text(
+                          "Your watchlist",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Spacer(),
+                        Text(
+                          "See all",
+                          style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                        ),
+                        Icon(
+                          Icons.arrow_forward,
+                          color: Colors.blue,
+                        )
+                      ],
+                    ),),
                     Expanded(flex: 10, child: Placeholder()),
                   ],
                 ),
