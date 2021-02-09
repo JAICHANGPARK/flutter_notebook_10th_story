@@ -122,41 +122,50 @@ class _DashboardState extends State<DashboardPage> {
                                             height: 52,
                                             width: 52,
                                             decoration: BoxDecoration(
-                                              border: Border.all(
-                                                color: Colors.grey[400]
-                                              ),
+                                              border: Border.all(color: Colors.grey[400]),
                                               shape: BoxShape.circle,
                                             ),
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(vertical: 8),
-                                            child: Text("Tesla", style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 17
-                                            ),),
+                                            child: Text(
+                                              "Tesla",
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                                            ),
                                           ),
-                                          Text("\$855.90", style: TextStyle(
-                                            fontWeight: FontWeight.bold
-                                          ),),
-                                          SizedBox(height: 16,),
+                                          Text(
+                                            "\$855.90",
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          ),
+                                          SizedBox(
+                                            height: 16,
+                                          ),
                                           Row(
                                             children: [
                                               Container(
                                                 height: 24,
                                                 width: 64,
                                                 decoration: BoxDecoration(
-                                                  color: Colors.green[50],
-                                                  borderRadius: BorderRadius.circular(4)
-                                                ),
+                                                    color: Colors.green[50], borderRadius: BorderRadius.circular(4)),
                                                 child: Center(
-                                                  child: Text("+ 15.04", style: TextStyle(
-                                                    color: Colors.green
-                                                  ),),
+                                                  child: Text(
+                                                    "+ 15.04",
+                                                    style: TextStyle(color: Colors.green),
+                                                  ),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Text(
+                                                  "+\$20.18",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.blueGrey
+                                                  ),
                                                 ),
                                               )
                                             ],
                                           )
-
                                         ],
                                       ),
                                     ),
