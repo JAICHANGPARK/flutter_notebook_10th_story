@@ -77,20 +77,30 @@ class _DashboardState extends State<DashboardPage> {
                 children: [
                   Expanded(
                       flex: 2,
-                      child: Row(
-                        children: [
-                        Text("Gainers and Losers", style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                        ),),
-                          Spacer(),
-                          Text("See all"),
-                          Icon(Icons.arrow_forward)
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Text(
+                              "Gainers and Losers",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            Spacer(),
+                            Text("See all",style: TextStyle(
+                              color: Colors.blue,
+                              fontWeight: FontWeight.bold
+                            ),),
+                            Icon(
+                              Icons.arrow_forward,
+                              color: Colors.blue,
+                            )
+                          ],
+                        ),
                       )),
-                  Expanded(
-                      flex: 6,
-                      child: Placeholder()),
+                  Expanded(flex: 6, child: Placeholder()),
                 ],
               )),
           Expanded(flex: 7, child: Placeholder()),
