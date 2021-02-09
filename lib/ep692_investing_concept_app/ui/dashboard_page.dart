@@ -115,7 +115,16 @@ class _DashboardState extends State<DashboardPage> {
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-
+                                        Container(
+                                          height: 64,
+                                          width: 64,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Colors.grey[400]
+                                            ),
+                                            shape: BoxShape.circle,
+                                          ),
+                                        )
                                       ],
                                     ),
                                   ));
