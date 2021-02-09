@@ -116,6 +116,7 @@ class _DashboardState extends State<DashboardPage> {
                                       padding: const EdgeInsets.all(8.0),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                                         children: [
                                           Container(
                                             height: 52,
@@ -137,6 +138,7 @@ class _DashboardState extends State<DashboardPage> {
                                           Text("\$855.90", style: TextStyle(
                                             fontWeight: FontWeight.bold
                                           ),),
+                                          SizedBox(height: 16,),
                                           Row(
                                             children: [
                                               Container(
