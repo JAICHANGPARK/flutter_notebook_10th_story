@@ -145,7 +145,8 @@ class _DashboardState extends State<DashboardPage> {
                                                 height: 24,
                                                 width: 64,
                                                 decoration: BoxDecoration(
-                                                  color: Colors.green[100],
+                                                  color: Colors.green[50],
+                                                  borderRadius: BorderRadius.circular(4)
                                                 ),
                                                 child: Center(
                                                   child: Text("+ 15.04", style: TextStyle(
