@@ -158,10 +158,7 @@ class _DashboardState extends State<DashboardPage> {
                                                 padding: const EdgeInsets.all(8.0),
                                                 child: Text(
                                                   "+\$20.18",
-                                                  style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                    color: Colors.blueGrey
-                                                  ),
+                                                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey),
                                                 ),
                                               )
                                             ],
