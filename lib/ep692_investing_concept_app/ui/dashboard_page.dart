@@ -89,10 +89,10 @@ class _DashboardState extends State<DashboardPage> {
                               ),
                             ),
                             Spacer(),
-                            Text("See all",style: TextStyle(
-                              color: Colors.blue,
-                              fontWeight: FontWeight.bold
-                            ),),
+                            Text(
+                              "See all",
+                              style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                            ),
                             Icon(
                               Icons.arrow_forward,
                               color: Colors.blue,
@@ -100,17 +100,27 @@ class _DashboardState extends State<DashboardPage> {
                           ],
                         ),
                       )),
-                  Expanded(flex: 8, child: ListView.builder(
-                      itemCount: 10,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index){
-                    return SizedBox(
-                        width: MediaQuery.of(context).size.width / 2,
-                        child: Card(
+                  Expanded(
+                      flex: 8,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: ListView.builder(
+                            itemCount: 10,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context, index) {
+                              return SizedBox(
+                                  width: MediaQuery.of(context).size.width / 2,
+                                  child: Card(
+                                    elevation: 4,
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
 
-
-                        ));
-                  })),
+                                      ],
+                                    ),
+                                  ));
+                            }),
+                      )),
                 ],
               )),
           Expanded(flex: 7, child: Placeholder()),
