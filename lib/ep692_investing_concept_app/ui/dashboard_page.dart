@@ -136,7 +136,19 @@ class _DashboardState extends State<DashboardPage> {
                                           ),
                                           Text("\$855.90", style: TextStyle(
                                             fontWeight: FontWeight.bold
-                                          ),)
+                                          ),),
+                                          Row(
+                                            children: [
+                                              Container(
+                                                height: 24,
+                                                width: 64,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white
+                                                ),
+                                              )
+                                            ],
+                                          )
+
                                         ],
                                       ),
                                     ),
