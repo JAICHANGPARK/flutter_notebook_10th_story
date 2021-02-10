@@ -218,7 +218,7 @@ class _DashboardState extends State<DashboardPage> {
                                         padding: const EdgeInsets.all(8.0),
                                         child: Row(
                                           children: [
-                                            Expanded(flex: 2, child: Icon(Icons.star,
+                                            Expanded(flex: 1, child: Icon(Icons.star,
                                             color: Colors.deepOrange,),),
                                             Expanded(
                                               flex: 3,
