@@ -209,9 +209,10 @@ class _DashboardState extends State<DashboardPage> {
                               itemCount: 8,
                               shrinkWrap: true,
                               itemBuilder: (context, index) {
-                                return SizedBox(height: 86, child: Card(
-
-                                ));
+                                return Container(
+                                  height: 86,
+                                  color: Colors.white,
+                                );
                               }),
                         )),
                   ],
