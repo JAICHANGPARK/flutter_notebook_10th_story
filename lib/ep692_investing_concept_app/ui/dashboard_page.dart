@@ -229,8 +229,13 @@ class _DashboardState extends State<DashboardPage> {
                                         Expanded(
                                             flex: 3,
                                             child: Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                               children: [
-                                                Text("DREAM"),
+                                                Text("DREAM",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),),
                                                 Text("+ 2.34%",style: TextStyle(
                                                   fontSize: 12,
                                                   color: Colors.green
