@@ -213,53 +213,52 @@ class _DashboardState extends State<DashboardPage> {
                                 return SizedBox(
                                   height: 72,
                                   child: Card(
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                                       child: Padding(
                                         padding: const EdgeInsets.all(8.0),
                                         child: Row(
-                                    children: [
-                                        Expanded(
-                                            flex: 2,
-                                            child: Placeholder()),
-                                        Expanded(
-                                            flex: 3,
-                                            child: Placeholder()),
-                                        Expanded(
-                                            flex: 3,
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                              children: [
-                                                Text("DREAM",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                ),),
-                                                Text("+ 2.34%",style: TextStyle(
-                                                  fontSize: 12,
-                                                  color: Colors.green
-                                                ),)
-                                              ],
-                                            )),
-                                        Expanded(
-                                            flex: 5,
-                                            child: Placeholder()),
-                                        Expanded(
-                                            flex: 2,
-                                            child: Text(
-                                              "\$7.09",style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 16
+                                          children: [
+                                            Expanded(flex: 2, child: Placeholder()),
+                                            Expanded(
+                                              flex: 3,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  border: Border.all(color: Colors.grey[200]),
+                                                ),
+                                                child: Center(
+                                                  child: Text("DRM"),
+                                                ),
+                                              ),
                                             ),
-                                            )),
-                                        Expanded(
-                                            flex: 1,
-                                            child: Icon(
-                                              Icons.more_vert
-                                            )),
-                                    ],
-                                  ),
+                                            Expanded(
+                                                flex: 3,
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                  children: [
+                                                    Text(
+                                                      "DREAM",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "+ 2.34%",
+                                                      style: TextStyle(fontSize: 12, color: Colors.green),
+                                                    )
+                                                  ],
+                                                )),
+                                            Expanded(flex: 5, child: Placeholder()),
+                                            Expanded(
+                                                flex: 2,
+                                                child: Text(
+                                                  "\$7.09",
+                                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                                )),
+                                            Expanded(flex: 1, child: Icon(Icons.more_vert)),
+                                          ],
+                                        ),
                                       )),
                                 );
                               }),
