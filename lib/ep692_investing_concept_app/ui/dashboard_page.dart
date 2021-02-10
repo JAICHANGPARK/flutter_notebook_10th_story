@@ -213,16 +213,19 @@ class _DashboardState extends State<DashboardPage> {
                                 return SizedBox(
                                   height: 72,
                                   child: Card(
-                                    child: Row(
-                                      children: [
-                                        Expanded(child: Placeholder());
-                                    Expanded(child: Placeholder());
-                                Expanded(child: Placeholder());
-                                Expanded(child: Placeholder());
-                                Expanded(child: Placeholder());
-                                      ],
-                                    )
-                                  ),
+                                      child: Row(
+                                    children: [
+                                      Expanded(
+                                          flex: 2,
+                                          child: Placeholder()),
+                                      Expanded(
+                                          flex: 2,
+                                          child: Placeholder()),
+                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Placeholder()),
+                                      Expanded(child: Placeholder()),
+                                    ],
+                                  )),
                                 );
                               }),
                         )),
