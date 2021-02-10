@@ -310,7 +310,7 @@ class _BicycleRentalHomePageState extends State<BicycleRentalHomePage> with Tick
                     text: 'Likes',
                   ),
                   GButton(
-                    icon: LineIcons.mail_forward,
+                    icon: LineIcons.voicemail,
                     text: 'Search',
                   ),
                   GButton(
