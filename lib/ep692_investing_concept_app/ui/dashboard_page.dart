@@ -253,6 +253,10 @@ class _DashboardState extends State<DashboardPage> {
                                               )),
                                           Expanded(flex: 5, child: Sparkline(
                                             data: data,
+                                            fillMode: FillMode.below,
+                                            fillGradient: LinearGradient(
+                                              colors: [Colors.green, Colors.green[300]]
+                                            ),
                                           )),
                                           Expanded(
                                               flex: 2,
