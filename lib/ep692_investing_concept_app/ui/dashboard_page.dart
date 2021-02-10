@@ -237,7 +237,9 @@ class _DashboardState extends State<DashboardPage> {
                                             child: Placeholder()),
                                         Expanded(
                                             flex: 1,
-                                            child: Placeholder()),
+                                            child: Icon(
+                                              Icons.more_vert
+                                            )),
                                     ],
                                   ),
                                       )),
