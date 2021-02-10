@@ -230,7 +230,11 @@ class _DashboardState extends State<DashboardPage> {
                                             flex: 3,
                                             child: Column(
                                               children: [
-                                                
+                                                Text("DREAM"),
+                                                Text("+ 2.34%",style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.green
+                                                ),)
                                               ],
                                             )),
                                         Expanded(
