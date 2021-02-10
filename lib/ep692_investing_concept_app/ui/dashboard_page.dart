@@ -212,7 +212,7 @@ class _DashboardState extends State<DashboardPage> {
                               itemBuilder: (context, index) {
                                 return Card(
                                   child: Container(
-                                    height: 86,
+                                    height: 72,
                                     color: Colors.white,
                                   ),
                                 );
