@@ -228,13 +228,22 @@ class _DashboardState extends State<DashboardPage> {
                                             child: Placeholder()),
                                         Expanded(
                                             flex: 3,
-                                            child: Placeholder()),
+                                            child: Column(
+                                              children: [
+                                                
+                                              ],
+                                            )),
                                         Expanded(
                                             flex: 5,
                                             child: Placeholder()),
                                         Expanded(
                                             flex: 2,
-                                            child: Placeholder()),
+                                            child: Text(
+                                              "\$7.09",style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16
+                                            ),
+                                            )),
                                         Expanded(
                                             flex: 1,
                                             child: Icon(
