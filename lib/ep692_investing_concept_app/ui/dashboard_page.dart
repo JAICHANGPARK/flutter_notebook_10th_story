@@ -10,6 +10,7 @@ class DashboardPage extends StatefulWidget {
 class _DashboardState extends State<DashboardPage> {
   int _pageIdx = 0;
   var data = [0.0, 1.0, 1.5, 2.0, 0.0, 0.0, -0.5, -1.0, -0.5, 0.0, 0.0];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -217,8 +218,13 @@ class _DashboardState extends State<DashboardPage> {
                                       padding: const EdgeInsets.all(8.0),
                                       child: Row(
                                         children: [
-                                          Expanded(flex: 1, child: Icon(Icons.star,
-                                          color: Colors.deepOrange,),),
+                                          Expanded(
+                                            flex: 1,
+                                            child: Icon(
+                                              Icons.star,
+                                              color: Colors.deepOrange,
+                                            ),
+                                          ),
                                           Expanded(
                                             flex: 3,
                                             child: Container(
@@ -227,9 +233,12 @@ class _DashboardState extends State<DashboardPage> {
                                                 border: Border.all(color: Colors.grey[200]),
                                               ),
                                               child: Center(
-                                                child: Text("DRM", style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                ),),
+                                                child: Text(
+                                                  "DRM",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -251,20 +260,27 @@ class _DashboardState extends State<DashboardPage> {
                                                   )
                                                 ],
                                               )),
-                                          Expanded(flex: 4, child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Sparkline(
-                                              data: data,
-                                              lineColor: Colors.green,
-                                              fillMode: FillMode.below,
-                                              fillGradient: LinearGradient(
-                                                begin: Alignment.topCenter,
-                                                end: Alignment.bottomCenter,
-                                                colors: [Colors.green[500], Colors.green[300],Colors.green[100]]
-                                              ),
-                                            ),
-                                          )),
-                                          SizedBox(width: 16,),
+                                          Expanded(
+                                              flex: 4,
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Sparkline(
+                                                  data: data,
+                                                  lineColor: Colors.green,
+                                                  fillMode: FillMode.below,
+                                                  fillGradient: LinearGradient(
+                                                      begin: Alignment.topCenter,
+                                                      end: Alignment.bottomCenter,
+                                                      colors: [
+                                                        Colors.green[500],
+                                                        Colors.green[300],
+                                                        Colors.green[100]
+                                                      ]),
+                                                ),
+                                              )),
+                                          SizedBox(
+                                            width: 16,
+                                          ),
                                           Expanded(
                                               flex: 2,
                                               child: Text(
