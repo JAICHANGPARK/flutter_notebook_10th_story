@@ -219,11 +219,20 @@ class _DashboardState extends State<DashboardPage> {
                                           flex: 2,
                                           child: Placeholder()),
                                       Expanded(
+                                          flex: 3,
+                                          child: Placeholder()),
+                                      Expanded(
+                                          flex: 3,
+                                          child: Placeholder()),
+                                      Expanded(
+                                          flex: 5,
+                                          child: Placeholder()),
+                                      Expanded(
                                           flex: 2,
                                           child: Placeholder()),
-                                      Expanded(child: Placeholder()),
-                                      Expanded(child: Placeholder()),
-                                      Expanded(child: Placeholder()),
+                                      Expanded(
+                                          flex: 1,
+                                          child: Placeholder()),
                                     ],
                                   )),
                                 );
