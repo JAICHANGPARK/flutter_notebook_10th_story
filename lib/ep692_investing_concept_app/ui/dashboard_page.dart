@@ -213,6 +213,9 @@ class _DashboardState extends State<DashboardPage> {
                                 return SizedBox(
                                   height: 72,
                                   child: Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)
+                                    ),
                                       child: Row(
                                     children: [
                                       Expanded(
