@@ -206,6 +206,7 @@ class _DashboardState extends State<DashboardPage> {
                         child: Container(
                           color: Colors.blueGrey,
                           child: ListView.builder(
+                            padding: EdgeInsets.zero,
                               itemCount: 8,
                               shrinkWrap: true,
                               itemBuilder: (context, index) {
