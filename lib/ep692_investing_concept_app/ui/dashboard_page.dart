@@ -216,28 +216,31 @@ class _DashboardState extends State<DashboardPage> {
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(8)
                                     ),
-                                      child: Row(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
                                     children: [
-                                      Expanded(
-                                          flex: 2,
-                                          child: Placeholder()),
-                                      Expanded(
-                                          flex: 3,
-                                          child: Placeholder()),
-                                      Expanded(
-                                          flex: 3,
-                                          child: Placeholder()),
-                                      Expanded(
-                                          flex: 5,
-                                          child: Placeholder()),
-                                      Expanded(
-                                          flex: 2,
-                                          child: Placeholder()),
-                                      Expanded(
-                                          flex: 1,
-                                          child: Placeholder()),
+                                        Expanded(
+                                            flex: 2,
+                                            child: Placeholder()),
+                                        Expanded(
+                                            flex: 3,
+                                            child: Placeholder()),
+                                        Expanded(
+                                            flex: 3,
+                                            child: Placeholder()),
+                                        Expanded(
+                                            flex: 5,
+                                            child: Placeholder()),
+                                        Expanded(
+                                            flex: 2,
+                                            child: Placeholder()),
+                                        Expanded(
+                                            flex: 1,
+                                            child: Placeholder()),
                                     ],
-                                  )),
+                                  ),
+                                      )),
                                 );
                               }),
                         )),
