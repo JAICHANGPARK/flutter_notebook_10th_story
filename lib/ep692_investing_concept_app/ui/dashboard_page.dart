@@ -201,7 +201,10 @@ class _DashboardState extends State<DashboardPage> {
                         ],
                       ),
                     ),
-                    Expanded(flex: 10, child: ListView.builder(itemBuilder: (context, index){
+                    Expanded(flex: 10, child:
+                    ListView.builder(
+                        itemCount: 8,
+                        itemBuilder: (context, index){
                       return Card();
                     })),
                   ],
