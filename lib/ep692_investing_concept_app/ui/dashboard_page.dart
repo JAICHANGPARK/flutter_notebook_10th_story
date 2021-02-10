@@ -251,13 +251,20 @@ class _DashboardState extends State<DashboardPage> {
                                                   )
                                                 ],
                                               )),
-                                          Expanded(flex: 5, child: Sparkline(
-                                            data: data,
-                                            fillMode: FillMode.below,
-                                            fillGradient: LinearGradient(
-                                              colors: [Colors.green, Colors.green[300]]
+                                          Expanded(flex: 4, child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Sparkline(
+                                              data: data,
+                                              lineColor: Colors.green,
+                                              fillMode: FillMode.below,
+                                              fillGradient: LinearGradient(
+                                                begin: Alignment.topCenter,
+                                                end: Alignment.bottomCenter,
+                                                colors: [Colors.green[500], Colors.green[300],Colors.green[100]]
+                                              ),
                                             ),
                                           )),
+                                          SizedBox(width: 16,),
                                           Expanded(
                                               flex: 2,
                                               child: Text(
