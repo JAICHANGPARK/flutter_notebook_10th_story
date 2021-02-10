@@ -206,13 +206,15 @@ class _DashboardState extends State<DashboardPage> {
                         child: Container(
                           color: Colors.blueGrey,
                           child: ListView.builder(
-                            padding: EdgeInsets.zero,
+                              padding: EdgeInsets.zero,
                               itemCount: 8,
                               shrinkWrap: true,
                               itemBuilder: (context, index) {
-                                return Container(
-                                  height: 86,
-                                  color: Colors.white,
+                                return Card(
+                                  child: Container(
+                                    height: 86,
+                                    color: Colors.white,
+                                  ),
                                 );
                               }),
                         )),
