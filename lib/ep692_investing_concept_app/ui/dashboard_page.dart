@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_sparkline/flutter_sparkline.dart';
 
 class DashboardPage extends StatefulWidget {
   @override
@@ -8,7 +9,7 @@ class DashboardPage extends StatefulWidget {
 
 class _DashboardState extends State<DashboardPage> {
   int _pageIdx = 0;
-
+  var data = [0.0, 1.0, 1.5, 2.0, 0.0, 0.0, -0.5, -1.0, -0.5, 0.0, 0.0];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -250,7 +251,9 @@ class _DashboardState extends State<DashboardPage> {
                                                   )
                                                 ],
                                               )),
-                                          Expanded(flex: 5, child: Placeholder()),
+                                          Expanded(flex: 5, child: Sparkline(
+                                            data: data,
+                                          )),
                                           Expanded(
                                               flex: 2,
                                               child: Text(
