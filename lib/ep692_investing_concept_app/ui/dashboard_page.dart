@@ -210,10 +210,18 @@ class _DashboardState extends State<DashboardPage> {
                               itemCount: 8,
                               shrinkWrap: true,
                               itemBuilder: (context, index) {
-                                return Card(
-                                  child: Container(
-                                    height: 72,
-                                    color: Colors.white,
+                                return SizedBox(
+                                  height: 72,
+                                  child: Card(
+                                    child: Row(
+                                      children: [
+                                        Expanded(child: Placeholder());
+                                    Expanded(child: Placeholder());
+                                Expanded(child: Placeholder());
+                                Expanded(child: Placeholder());
+                                Expanded(child: Placeholder());
+                                      ],
+                                    )
                                   ),
                                 );
                               }),
