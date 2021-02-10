@@ -218,7 +218,8 @@ class _DashboardState extends State<DashboardPage> {
                                         padding: const EdgeInsets.all(8.0),
                                         child: Row(
                                           children: [
-                                            Expanded(flex: 2, child: Placeholder()),
+                                            Expanded(flex: 2, child: Icon(Icons.star,
+                                            color: Colors.deepOrange,),),
                                             Expanded(
                                               flex: 3,
                                               child: Container(
@@ -227,7 +228,9 @@ class _DashboardState extends State<DashboardPage> {
                                                   border: Border.all(color: Colors.grey[200]),
                                                 ),
                                                 child: Center(
-                                                  child: Text("DRM"),
+                                                  child: Text("DRM", style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),),
                                                 ),
                                               ),
                                             ),
