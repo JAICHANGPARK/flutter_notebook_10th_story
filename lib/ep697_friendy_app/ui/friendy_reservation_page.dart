@@ -15,11 +15,20 @@ class _ReservationPageState extends State<ReservationPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder(),),
-            Expanded(child: Placeholder(),),
-            Expanded(child: Placeholder(),),
-            Expanded(child: Placeholder(),),
-            Expanded(child: Placeholder(),),
+            Expanded(
+              flex: 2,child: Placeholder(),),
+            Expanded(
+              flex: 2,child: Placeholder(),),
+            Expanded(
+              flex: 6,child: Placeholder(),),
+            Expanded(
+              flex: 2,
+              child: Placeholder(),),
+            Expanded(
+              flex: 5,
+              child: Container(
+              color: Colors.white,
+            ),),
 
           ],
         ),
