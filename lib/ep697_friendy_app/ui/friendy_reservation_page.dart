@@ -24,12 +24,15 @@ class _ReservationPageState extends State<ReservationPage> {
                       iconSize: 18,
                       onPressed: () {},
                     ),
-                    Text(
-                      "Saturday, 13 Febraury",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 24),
+                      child: Text(
+                        "Saturday, 13 February",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )
                   ],
