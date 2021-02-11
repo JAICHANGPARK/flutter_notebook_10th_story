@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ui/friendy_reservation_page.dart';
+
 
 class FriendyApp extends StatelessWidget {
   @override
