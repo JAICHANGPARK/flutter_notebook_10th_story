@@ -25,28 +25,31 @@ class _ReservationPageState extends State<ReservationPage> {
               flex: 8,child: Placeholder(  color: Colors.white,),),
             Expanded(
               flex: 1,
-              child: Row(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Row(
 
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Colors.deepOrangeAccent,
-                    radius: 8,
-                  ),
-                  Text("Selected"),
-                  Spacer(),
-                  CircleAvatar(
-                    backgroundColor: Colors.deepOrangeAccent,
-                    radius: 8,
-                  ),
-                  Text("Selected"),
-                  Spacer(),
-                  CircleAvatar(
-                    backgroundColor: Colors.deepOrangeAccent,
-                    radius: 8,
-                  ),
-                  Text("Selected"),
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.deepOrangeAccent,
+                      radius: 8,
+                    ),
+                    Text("Selected"),
+                    Spacer(),
+                    CircleAvatar(
+                      backgroundColor: Colors.deepOrangeAccent,
+                      radius: 8,
+                    ),
+                    Text("Selected"),
+                    Spacer(),
+                    CircleAvatar(
+                      backgroundColor: Colors.deepOrangeAccent,
+                      radius: 8,
+                    ),
+                    Text("Selected"),
 
-                ],
+                  ],
+                ),
               ),),
             Expanded(
               flex: 5,
