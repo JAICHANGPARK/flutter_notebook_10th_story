@@ -26,6 +26,7 @@ class _ReservationPageState extends State<ReservationPage> {
             Expanded(
               flex: 1,
               child: Row(
+
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.deepOrangeAccent,
@@ -38,6 +39,7 @@ class _ReservationPageState extends State<ReservationPage> {
                     radius: 8,
                   ),
                   Text("Selected"),
+                  Spacer(),
                   CircleAvatar(
                     backgroundColor: Colors.deepOrangeAccent,
                     radius: 8,
