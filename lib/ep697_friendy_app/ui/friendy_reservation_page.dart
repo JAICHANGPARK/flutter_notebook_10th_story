@@ -42,7 +42,7 @@ class _ReservationPageState extends State<ReservationPage> {
                     ),
                     Spacer(),
                     CircleAvatar(
-                      backgroundColor: Colors.deepOrangeAccent,
+                      backgroundColor: Colors.white.withOpacity(0.7),
                       radius: 8,
                     ),
                     Padding(
@@ -60,7 +60,7 @@ class _ReservationPageState extends State<ReservationPage> {
                         border: Border.all(color: Colors.white)
                       ),
                     ),
-                   
+
                     Padding(
                       padding: const EdgeInsets.all(4.0),
                       child: Text("Available", style: TextStyle(
