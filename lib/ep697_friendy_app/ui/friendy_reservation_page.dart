@@ -12,10 +12,17 @@ class _ReservationPageState extends State<ReservationPage> {
     return Scaffold(
       //76 89 247   4C 59 F7
       backgroundColor: Color(0xFF4C59F7),
-      body: Column(
-        children: [
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder(),),
+            Expanded(child: Placeholder(),),
+            Expanded(child: Placeholder(),),
+            Expanded(child: Placeholder(),),
+            Expanded(child: Placeholder(),),
 
-        ],
+          ],
+        ),
       ),
     );
   }
