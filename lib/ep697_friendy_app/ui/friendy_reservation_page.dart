@@ -16,13 +16,15 @@ class _ReservationPageState extends State<ReservationPage> {
         child: Column(
           children: [
             Expanded(
-              flex: 2,child: Placeholder(),),
+              flex: 1,child: Placeholder(
+              color: Colors.white,
+            ),),
             Expanded(
-              flex: 2,child: Placeholder(),),
+              flex: 1,child: Placeholder(),),
             Expanded(
-              flex: 6,child: Placeholder(),),
+              flex: 8,child: Placeholder(),),
             Expanded(
-              flex: 2,
+              flex: 1,
               child: Placeholder(),),
             Expanded(
               flex: 5,
