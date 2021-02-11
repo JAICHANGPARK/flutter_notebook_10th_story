@@ -29,7 +29,14 @@ class _ReservationPageState extends State<ReservationPage> {
             Expanded(
               flex: 5,
               child: Container(
-              color: Colors.white,
+
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  )
+                ),
             ),),
 
           ],
