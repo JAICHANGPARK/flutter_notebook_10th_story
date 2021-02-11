@@ -9,6 +9,14 @@ class ReservationPage extends StatefulWidget {
 class _ReservationPageState extends State<ReservationPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      //76 89 247   4C 59 F7
+      backgroundColor: Color(0xFF4C59F7),
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
