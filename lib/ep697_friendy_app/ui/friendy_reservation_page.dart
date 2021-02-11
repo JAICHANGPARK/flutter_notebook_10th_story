@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ReservationPage extends StatefulWidget {
@@ -16,19 +15,27 @@ class _ReservationPageState extends State<ReservationPage> {
         child: Column(
           children: [
             Expanded(
-              flex: 1,child: Placeholder(
-              color: Colors.white,
-            ),),
+                flex: 1,
+                child: Row(
+                  children: [IconButton(icon: Icon(Icons.arrow_back_ios), iconSize: 18, onPressed: () {})],
+                )),
             Expanded(
-              flex: 1,child: Placeholder(  color: Colors.white,),),
+              flex: 1,
+              child: Placeholder(
+                color: Colors.white,
+              ),
+            ),
             Expanded(
-              flex: 8,child: Placeholder(  color: Colors.white,),),
+              flex: 8,
+              child: Placeholder(
+                color: Colors.white,
+              ),
+            ),
             Expanded(
               flex: 1,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Row(
-
                   children: [
                     CircleAvatar(
                       backgroundColor: Colors.deepOrangeAccent,
@@ -36,9 +43,10 @@ class _ReservationPageState extends State<ReservationPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(4.0),
-                      child: Text("Selected", style: TextStyle(
-                        color: Colors.white.withOpacity(0.7)
-                      ),),
+                      child: Text(
+                        "Selected",
+                        style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                      ),
                     ),
                     Spacer(),
                     CircleAvatar(
@@ -47,42 +55,39 @@ class _ReservationPageState extends State<ReservationPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(4.0),
-                      child: Text("Reserved", style: TextStyle(
-                          color: Colors.white.withOpacity(0.7)
-                      ),),
+                      child: Text(
+                        "Reserved",
+                        style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                      ),
                     ),
                     Spacer(),
                     Container(
                       height: 16,
                       width: 16,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(color: Colors.white)
-                      ),
+                      decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: Colors.white)),
                     ),
-
                     Padding(
                       padding: const EdgeInsets.all(4.0),
-                      child: Text("Available", style: TextStyle(
-                          color: Colors.white.withOpacity(0.7)
-                      ),),
+                      child: Text(
+                        "Available",
+                        style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                      ),
                     ),
-
                   ],
                 ),
-              ),),
+              ),
+            ),
             Expanded(
               flex: 5,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(16),
-                    topRight: Radius.circular(16),
-                  )
-                ),
-            ),),
-
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16),
+                    )),
+              ),
+            ),
           ],
         ),
       ),
