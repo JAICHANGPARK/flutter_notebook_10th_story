@@ -7,7 +7,7 @@ class FriendyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/",
       routes: {
-        "/" : 
+        "/" : (context) =>ReservationPage()
       }, 
     );
   }
