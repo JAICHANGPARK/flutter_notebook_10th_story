@@ -20,12 +20,12 @@ class _ReservationPageState extends State<ReservationPage> {
               color: Colors.white,
             ),),
             Expanded(
-              flex: 1,child: Placeholder(),),
+              flex: 1,child: Placeholder(  color: Colors.white,),),
             Expanded(
-              flex: 8,child: Placeholder(),),
+              flex: 8,child: Placeholder(  color: Colors.white,),),
             Expanded(
               flex: 1,
-              child: Placeholder(),),
+              child: Placeholder(  color: Colors.white,),),
             Expanded(
               flex: 5,
               child: Container(
