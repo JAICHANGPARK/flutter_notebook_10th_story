@@ -17,7 +17,22 @@ class _ReservationPageState extends State<ReservationPage> {
             Expanded(
                 flex: 1,
                 child: Row(
-                  children: [IconButton(icon: Icon(Icons.arrow_back_ios), iconSize: 18, onPressed: () {})],
+                  children: [
+                    IconButton(
+                      color: Colors.white,
+                      icon: Icon(Icons.arrow_back_ios),
+                      iconSize: 18,
+                      onPressed: () {},
+                    ),
+                    Text(
+                      "Saturday, 13 Febraury",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ],
                 )),
             Expanded(
               flex: 1,
