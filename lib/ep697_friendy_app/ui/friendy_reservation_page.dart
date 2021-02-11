@@ -45,13 +45,28 @@ class _ReservationPageState extends State<ReservationPage> {
                       backgroundColor: Colors.deepOrangeAccent,
                       radius: 8,
                     ),
-                    Text("Selected"),
-                    Spacer(),
-                    CircleAvatar(
-                      backgroundColor: Colors.deepOrangeAccent,
-                      radius: 8,
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Text("Reserved", style: TextStyle(
+                          color: Colors.white.withOpacity(0.7)
+                      ),),
                     ),
-                    Text("Selected"),
+                    Spacer(),
+                    Container(
+                      height: 16,
+                      width: 16,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.white)
+                      ),
+                    ),
+                   
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Text("Available", style: TextStyle(
+                          color: Colors.white.withOpacity(0.7)
+                      ),),
+                    ),
 
                   ],
                 ),
