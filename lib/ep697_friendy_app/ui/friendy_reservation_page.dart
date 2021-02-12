@@ -71,7 +71,7 @@ class _ReservationPageState extends State<ReservationPage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Center(
-                            child: Text("15:00 PM",style: TextStyle(
+                            child: Text("17:00 PM",style: TextStyle(
                               color: Colors.white.withOpacity(0.7),
 
                             ),),
