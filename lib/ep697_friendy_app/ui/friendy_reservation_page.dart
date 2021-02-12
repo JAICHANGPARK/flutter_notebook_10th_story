@@ -187,7 +187,8 @@ class _ReservationPageState extends State<ReservationPage> {
                     )),
                 child: Column(
                   children: [
-                    
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
                   ],
                 ),
               ),
