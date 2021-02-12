@@ -49,7 +49,7 @@ class _ReservationPageState extends State<ReservationPage> {
                     children: [
                       Expanded(
                         child: GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             setState(() {
                               tabIndex = 0;
                             });
@@ -59,12 +59,13 @@ class _ReservationPageState extends State<ReservationPage> {
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.white, width: 2),
                               borderRadius: BorderRadius.circular(8),
+                              color: tabIndex == 0 ? Colors.white : Colors.transparent,
                             ),
                             child: Center(
                               child: Text(
                                 "15:00 PM",
                                 style: TextStyle(
-                                  color: Colors.white.withOpacity(0.7),
+                                  color: tabIndex == 0 ? reserveAppColor : Colors.white.withOpacity(0.7),
                                 ),
                               ),
                             ),
@@ -73,7 +74,7 @@ class _ReservationPageState extends State<ReservationPage> {
                       ),
                       Expanded(
                         child: GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             setState(() {
                               tabIndex = 1;
                             });
@@ -83,7 +84,7 @@ class _ReservationPageState extends State<ReservationPage> {
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.white, width: 2),
                               borderRadius: BorderRadius.circular(8),
-                                color: tabIndex == 1 ? Colors.white : Colors.transparent,
+                              color: tabIndex == 1 ? Colors.white : Colors.transparent,
                             ),
                             child: Center(
                               child: Text(
