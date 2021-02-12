@@ -208,7 +208,7 @@ class _ReservationPageState extends State<ReservationPage> {
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Text(
-                                      "Tenet",
+                                      "Tenet"
                                     ),
                                     Text("Duration: 150min"),
                                     Text("K-Cineplex"),
