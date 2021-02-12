@@ -63,9 +63,18 @@ class _ReservationPageState extends State<ReservationPage> {
                         ),
                       ),
                       Expanded(
-                        child:  Container(
+                        child: Container(
+                          margin: EdgeInsets.only(right: 8, top: 4, bottom: 4),
                           decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white)
+                            border: Border.all(color: Colors.white,
+                                width: 2),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Center(
+                            child: Text("15:00 PM",style: TextStyle(
+                              color: Colors.white.withOpacity(0.7),
+
+                            ),),
                           ),
                         ),
                       ),
