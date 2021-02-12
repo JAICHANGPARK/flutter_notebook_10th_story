@@ -67,13 +67,16 @@ class _ReservationPageState extends State<ReservationPage> {
                       Expanded(
                         child: GestureDetector(
                           onTap: (){
-                            
+                            setState(() {
+                              tabIndex = 1;
+                            });
                           },
                           child: Container(
                             margin: EdgeInsets.only(right: 12, top: 4, bottom: 4),
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.white, width: 2),
                               borderRadius: BorderRadius.circular(8),
+                                color: tabIndex == 1 ? Colors.white : Colors.transparent,
                             ),
                             child: Center(
                               child: Text(
