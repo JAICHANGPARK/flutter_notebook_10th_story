@@ -195,7 +195,8 @@ class _ReservationPageState extends State<ReservationPage> {
                         flex: 3,
                         child: Container(
                           decoration: BoxDecoration(
-                            color: reserveAppColor
+                            color: reserveAppColor,
+                            borderRadius: BorderRadius.circular(16)
                           ),
                         )),
                   ],
