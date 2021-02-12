@@ -188,52 +188,51 @@ class _ReservationPageState extends State<ReservationPage> {
                 padding: EdgeInsets.only(left: 24, right: 24, bottom: 16, top: 8),
                 child: Column(
                   children: [
-                    Expanded(flex: 6, child: Row(
-                      children: [
-                        Expanded(
-                          flex: 4,
-                          child: Container(
-                            margin: EdgeInsets.all(8),
-                            decoration: BoxDecoration(
-                              color: Colors.green,
-                              borderRadius: BorderRadius.circular(9)
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          flex: 6,
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                Text("Tenet",),
-                                Text("Duration: 150min"),
-                                Text("K-Cineplex"),
-                                Text("Sat 13 Feb - 20:00"),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    )),
                     Expanded(
-                        flex: 2,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: reserveAppColor,
-                              borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Center(
-                            child: Text("Pay \$ 26.00", style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold
-                            ),),
+                        flex: 6,
+                        child: Row(
+                          children: [
+                            Expanded(
+                              flex: 4,
+                              child: Container(
+                                margin: EdgeInsets.all(8),
+                                decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(9)),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 6,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text(
+                                      "Tenet",
+                                    ),
+                                    Text("Duration: 150min"),
+                                    Text("K-Cineplex"),
+                                    Text("Sat 13 Feb - 20:00"),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        )),
+                    Expanded(
+                      flex: 2,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: reserveAppColor,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Pay \$ 26.00",
+                            style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                         ),
-
+                      ),
                     ),
                   ],
                 ),
