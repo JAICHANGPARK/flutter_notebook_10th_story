@@ -188,8 +188,12 @@ class _ReservationPageState extends State<ReservationPage> {
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                      flex: 8,
+                        child: Placeholder()),
+                    Expanded(
+                        flex: 2,
+                        child: Placeholder()),
                   ],
                 ),
               ),
