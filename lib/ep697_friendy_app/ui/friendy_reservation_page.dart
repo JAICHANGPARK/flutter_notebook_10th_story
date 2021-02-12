@@ -197,7 +197,11 @@ class _ReservationPageState extends State<ReservationPage> {
                               borderRadius: BorderRadius.circular(16),
                           ),
                           child: Center(
-                            child: Text("Pay \$ 26.00"),
+                            child: Text("Pay \$ 26.00", style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold
+                            ),),
                           ),
                         ),
 
