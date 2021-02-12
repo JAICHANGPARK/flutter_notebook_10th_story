@@ -51,7 +51,13 @@ class _ReservationPageState extends State<ReservationPage> {
                           margin: EdgeInsets.all(4),
                           decoration: BoxDecoration(
                             border: Border.all(color: Colors.white),
-                            borderRadius: BorderRadius.circular(8)
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Center(
+                            child: Text("15:00 PM",style: TextStyle(
+                              color: Colors.white,
+
+                            ),),
                           ),
                         ),
                       ),
