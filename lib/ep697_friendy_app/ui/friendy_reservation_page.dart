@@ -185,6 +185,7 @@ class _ReservationPageState extends State<ReservationPage> {
                       topLeft: Radius.circular(16),
                       topRight: Radius.circular(16),
                     )),
+                padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
                     Expanded(child: Placeholder()),
