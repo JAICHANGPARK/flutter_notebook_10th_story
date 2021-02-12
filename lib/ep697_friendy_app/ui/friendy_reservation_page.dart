@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ReservationPage extends StatefulWidget {
@@ -41,18 +42,35 @@ class _ReservationPageState extends State<ReservationPage> {
                 )),
             Expanded(
                 flex: 1,
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Placeholder(),
-                    ),
-                    Expanded(
-                      child: Placeholder(),
-                    ),
-                    Expanded(
-                      child: Placeholder(),
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white),
+                            borderRadius: BorderRadius.circular(8)
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child:  Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white)
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child:  Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white)
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 )),
             Expanded(
               flex: 8,
