@@ -8,7 +8,8 @@ class ReservationPage extends StatefulWidget {
 
 class _ReservationPageState extends State<ReservationPage> {
   int tabIndex = 0;
-  Color reserveAppColor  = Color(0xFF4C59F7);
+  Color reserveAppColor = Color(0xFF4C59F7);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,15 +51,16 @@ class _ReservationPageState extends State<ReservationPage> {
                         child: Container(
                           margin: EdgeInsets.only(right: 12, top: 4, bottom: 4),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white,
-                            width: 2),
+                            border: Border.all(color: Colors.white, width: 2),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Center(
-                            child: Text("15:00 PM",style: TextStyle(
-                              color: Colors.white.withOpacity(0.7),
-
-                            ),),
+                            child: Text(
+                              "15:00 PM",
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(0.7),
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -66,21 +68,22 @@ class _ReservationPageState extends State<ReservationPage> {
                         child: Container(
                           margin: EdgeInsets.only(right: 12, top: 4, bottom: 4),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white,
-                                width: 2),
+                            border: Border.all(color: Colors.white, width: 2),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Center(
-                            child: Text("17:00 PM",style: TextStyle(
-                              color: Colors.white.withOpacity(0.7),
-
-                            ),),
+                            child: Text(
+                              "17:00 PM",
+                              style: TextStyle(
+                                color: Colors.white.withOpacity(0.7),
+                              ),
+                            ),
                           ),
                         ),
                       ),
                       Expanded(
                         child: GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             setState(() {
                               tabIndex = 2;
                             });
@@ -88,16 +91,16 @@ class _ReservationPageState extends State<ReservationPage> {
                           child: Container(
                             margin: EdgeInsets.only(right: 12, top: 4, bottom: 4),
                             decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white,
-                                  width: 2),
-                              borderRadius: BorderRadius.circular(8),
-                              color: tabIndex  == 2 ? Colors.white : Colors.transparent
-                            ),
+                                border: Border.all(color: Colors.white, width: 2),
+                                borderRadius: BorderRadius.circular(8),
+                                color: tabIndex == 2 ? Colors.white : Colors.transparent),
                             child: Center(
-                              child: Text("20:00 PM",style: TextStyle(
-                                color: tabIndex == 2? ColorsColors.white.withOpacity(0.7),
-
-                              ),),
+                              child: Text(
+                                "20:00 PM",
+                                style: TextStyle(
+                                  color: tabIndex == 2 ? reserveAppColor : Colors.white.withOpacity(0.7),
+                                ),
+                              ),
                             ),
                           ),
                         ),
