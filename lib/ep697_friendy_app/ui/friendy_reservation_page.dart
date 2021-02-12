@@ -6,7 +6,6 @@ class ReservationPage extends StatefulWidget {
 }
 
 class _ReservationPageState extends State<ReservationPage> {
-
   int tabIndex = 0;
 
   @override
@@ -41,11 +40,20 @@ class _ReservationPageState extends State<ReservationPage> {
                   ],
                 )),
             Expanded(
-              flex: 1,
-              child:Row(children: [
-                Expanded(child: Placeholder(),),
-              ],)
-            ),
+                flex: 1,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      child: Placeholder(),
+                    ),
+                  ],
+                )),
             Expanded(
               flex: 8,
               child: Placeholder(
