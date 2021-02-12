@@ -126,8 +126,8 @@ class _ReservationPageState extends State<ReservationPage> {
                 )),
             Expanded(
               flex: 8,
-              child: Placeholder(
-                color: Colors.white,
+              child: Container(
+                child: Placeholder(),
               ),
             ),
             Expanded(
@@ -185,6 +185,11 @@ class _ReservationPageState extends State<ReservationPage> {
                       topLeft: Radius.circular(16),
                       topRight: Radius.circular(16),
                     )),
+                child: Column(
+                  children: [
+                    
+                  ],
+                ),
               ),
             ),
           ],
