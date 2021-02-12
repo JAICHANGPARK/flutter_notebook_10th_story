@@ -202,7 +202,13 @@ class _ReservationPageState extends State<ReservationPage> {
                         ),
                         Expanded(
                           flex: 6,
-                          child: Placeholder(),
+                          child: Column(
+                            children: [
+                              Text("Tenet"),
+                              Text("Duration: 150min"),
+                              Text("K-Cineplex")
+                            ],
+                          ),
                         ),
                       ],
                     )),
