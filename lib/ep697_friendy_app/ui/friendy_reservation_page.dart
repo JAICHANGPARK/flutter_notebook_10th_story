@@ -8,12 +8,12 @@ class ReservationPage extends StatefulWidget {
 
 class _ReservationPageState extends State<ReservationPage> {
   int tabIndex = 0;
-
+  Color reserveAppColor  = Color(0xFF4C59F7);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       //76 89 247   4C 59 F7
-      backgroundColor: Color(0xFF4C59F7),
+      backgroundColor: reserveAppColor,
       body: SafeArea(
         child: Column(
           children: [
@@ -79,18 +79,26 @@ class _ReservationPageState extends State<ReservationPage> {
                         ),
                       ),
                       Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(right: 12, top: 4, bottom: 4),
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white,
-                                width: 2),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Center(
-                            child: Text("20:00 PM",style: TextStyle(
-                              color: Colors.white.withOpacity(0.7),
+                        child: GestureDetector(
+                          onTap: (){
+                            setState(() {
+                              tabIndex = 2;
+                            });
+                          },
+                          child: Container(
+                            margin: EdgeInsets.only(right: 12, top: 4, bottom: 4),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white,
+                                  width: 2),
+                              borderRadius: BorderRadius.circular(8),
+                              color: tabIndex  == 2 ? Colors.white : Colors.transparent
+                            ),
+                            child: Center(
+                              child: Text("20:00 PM",style: TextStyle(
+                                color: tabIndex == 2? ColorsColors.white.withOpacity(0.7),
 
-                            ),),
+                              ),),
+                            ),
                           ),
                         ),
                       ),
