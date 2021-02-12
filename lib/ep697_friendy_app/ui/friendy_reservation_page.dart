@@ -6,6 +6,9 @@ class ReservationPage extends StatefulWidget {
 }
 
 class _ReservationPageState extends State<ReservationPage> {
+
+  int tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,9 +42,9 @@ class _ReservationPageState extends State<ReservationPage> {
                 )),
             Expanded(
               flex: 1,
-              child: Placeholder(
-                color: Colors.white,
-              ),
+              child:Row(children: [
+                Expanded(child: Placeholder(),),
+              ],)
             ),
             Expanded(
               flex: 8,
