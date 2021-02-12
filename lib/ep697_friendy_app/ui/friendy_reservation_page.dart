@@ -185,10 +185,14 @@ class _ReservationPageState extends State<ReservationPage> {
                       topLeft: Radius.circular(16),
                       topRight: Radius.circular(16),
                     )),
-                padding: EdgeInsets.only(left: 24, right: 24),
+                padding: EdgeInsets.only(left: 24, right: 24, bottom: 16, top: 8),
                 child: Column(
                   children: [
-                    Expanded(flex: 6, child: Placeholder()),
+                    Expanded(flex: 6, child: Row(
+                      children: [
+                        
+                      ],
+                    )),
                     Expanded(
                         flex: 2,
                         child: Container(
