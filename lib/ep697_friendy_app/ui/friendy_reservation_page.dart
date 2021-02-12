@@ -48,17 +48,24 @@ class _ReservationPageState extends State<ReservationPage> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(right: 12, top: 4, bottom: 4),
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white, width: 2),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "15:00 PM",
-                              style: TextStyle(
-                                color: Colors.white.withOpacity(0.7),
+                        child: GestureDetector(
+                          onTap: (){
+                            setState(() {
+                              tabIndex = 0;
+                            });
+                          },
+                          child: Container(
+                            margin: EdgeInsets.only(right: 12, top: 4, bottom: 4),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white, width: 2),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "15:00 PM",
+                                style: TextStyle(
+                                  color: Colors.white.withOpacity(0.7),
+                                ),
                               ),
                             ),
                           ),
