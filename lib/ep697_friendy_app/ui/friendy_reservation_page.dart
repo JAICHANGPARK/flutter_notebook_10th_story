@@ -192,8 +192,12 @@ class _ReservationPageState extends State<ReservationPage> {
                       flex: 8,
                         child: Placeholder()),
                     Expanded(
-                        flex: 2,
-                        child: Placeholder()),
+                        flex: 3,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: reserveAppColor
+                          ),
+                        )),
                   ],
                 ),
               ),
