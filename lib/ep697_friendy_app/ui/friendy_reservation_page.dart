@@ -188,17 +188,20 @@ class _ReservationPageState extends State<ReservationPage> {
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
-                    Expanded(
-                      flex: 8,
-                        child: Placeholder()),
+                    Expanded(flex: 8, child: Placeholder()),
                     Expanded(
                         flex: 3,
                         child: Container(
                           decoration: BoxDecoration(
                             color: reserveAppColor,
-                            borderRadius: BorderRadius.circular(16)
+                              borderRadius: BorderRadius.circular(16),
                           ),
-                        )),
+                          child: Center(
+                            child: Text("Pay \$ 26.00"),
+                          ),
+                        ),
+
+                    ),
                   ],
                 ),
               ),
