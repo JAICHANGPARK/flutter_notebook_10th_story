@@ -50,7 +50,8 @@ class _ReservationPageState extends State<ReservationPage> {
                         child: Container(
                           margin: EdgeInsets.all(4),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white),
+                            border: Border.all(color: Colors.white,
+                            width: 2),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Center(
