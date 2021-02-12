@@ -82,7 +82,7 @@ class _ReservationPageState extends State<ReservationPage> {
                               child: Text(
                                 "17:00 PM",
                                 style: TextStyle(
-                                  color: tabIndex == 2 ? reserveAppColor : Colors.white.withOpacity(0.7),
+                                  color: tabIndex == 1 ? reserveAppColor : Colors.white.withOpacity(0.7),
                                 ),
                               ),
                             ),
