@@ -202,12 +202,18 @@ class _ReservationPageState extends State<ReservationPage> {
                         ),
                         Expanded(
                           flex: 6,
-                          child: Column(
-                            children: [
-                              Text("Tenet"),
-                              Text("Duration: 150min"),
-                              Text("K-Cineplex")
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text("Tenet"),
+                                Text("Duration: 150min"),
+                                Text("K-Cineplex"),
+                                Text("Sat 13 Feb - 20:00"),
+                              ],
+                            ),
                           ),
                         ),
                       ],
