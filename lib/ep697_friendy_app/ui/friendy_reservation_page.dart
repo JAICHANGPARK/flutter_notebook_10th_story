@@ -207,7 +207,10 @@ class _ReservationPageState extends State<ReservationPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Text("Tenet"),
+                                    Text("Tenet", style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16
+                                    ),),
                                     Text("Duration: 150min"),
                                     Text("K-Cineplex"),
                                     Text("Sat 13 Feb - 20:00"),
