@@ -151,7 +151,7 @@ class _ReservationPageState extends State<ReservationPage> {
                          height: 24,
                          width: 24,
                          decoration: BoxDecoration(
-                             color: b ? Colors.white : Colors.transparent,
+                             color: b ? Colors.white.withOpacity(0.7) : Colors.transparent,
                              shape: BoxShape.circle,
                              border: Border.all(color: Colors.white)
                          ),
