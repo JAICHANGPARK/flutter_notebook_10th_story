@@ -195,7 +195,7 @@ class _ReservationPageState extends State<ReservationPage> {
                             Expanded(
                               flex: 4,
                               child: Container(
-                                margin: EdgeInsets.all(8),
+                                margin: EdgeInsets.only(left: 0, right: 16,top: 8,bottom: 8 ),
                                 decoration: BoxDecoration(
                                     image: DecorationImage(
                                       image: NetworkImage("https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"),
