@@ -196,7 +196,9 @@ class _ReservationPageState extends State<ReservationPage> {
                               flex: 4,
                               child: Container(
                                 margin: EdgeInsets.all(8),
-                                decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(9)),
+                                decoration: BoxDecoration(
+                                    
+                                    color: Colors.green, borderRadius: BorderRadius.circular(9)),
                               ),
                             ),
                             Expanded(
@@ -207,16 +209,24 @@ class _ReservationPageState extends State<ReservationPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Text("Tenet", style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18
-                                    ),),
-                                    Text("Duration: 150min", style: TextStyle(),),
-                                    Text("K-Cineplex", style: TextStyle(
-                                      fontSize: 12,
-                                      color: reserveAppColor
-                                    ),),
-                                    Text("Sat 13 Feb - 20:00"),
+                                    Text(
+                                      "Tenet",
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                    ),
+                                    Text(
+                                      "Duration: 150min",
+                                      style: TextStyle(),
+                                    ),
+                                    Text(
+                                      "K-Cineplex",
+                                      style: TextStyle(fontSize: 12, color: reserveAppColor),
+                                    ),
+                                    Text(
+                                      "Sat 13 Feb - 20:00",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
