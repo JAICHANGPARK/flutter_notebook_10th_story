@@ -197,7 +197,10 @@ class _ReservationPageState extends State<ReservationPage> {
                               child: Container(
                                 margin: EdgeInsets.all(8),
                                 decoration: BoxDecoration(
-                                    
+                                    image: DecorationImage(
+                                      image: NetworkImage("https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"),
+                                      fit: BoxFit.cover
+                                    ),
                                     color: Colors.green, borderRadius: BorderRadius.circular(9)),
                               ),
                             ),
