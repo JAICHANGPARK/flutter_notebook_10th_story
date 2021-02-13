@@ -141,15 +141,18 @@ class _ReservationPageState extends State<ReservationPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: items.map((a) => Row(children:
-                   a.map((b) => Container(
-                      height: 24,
-                      width: 24,
-                      decoration: BoxDecoration(
-                        color: b ? Colors.white : Colors.transparent,
-                        shape: BoxShape.circle,
-                        border: Border.all(color: Colors.white)
+                   a.map((b) => Padding(
+                     padding: const EdgeInsets.all(8.0),
+                     child: Container(
+                        height: 24,
+                        width: 24,
+                        decoration: BoxDecoration(
+                          color: b ? Colors.white : Colors.transparent,
+                          shape: BoxShape.circle,
+                          border: Border.all(color: Colors.white)
+                        ),
                       ),
-                    )).toList(),)).toList(),
+                   )).toList(),)).toList(),
                 ),
               ),
             ),
