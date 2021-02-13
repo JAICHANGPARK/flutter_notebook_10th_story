@@ -147,13 +147,20 @@ class _ReservationPageState extends State<ReservationPage> {
                    a.map((b){
                      return Padding(
                        padding: const EdgeInsets.all(8.0),
-                       child: Container(
-                         height: 24,
-                         width: 24,
-                         decoration: BoxDecoration(
-                             color: b ? Colors.white.withOpacity(0.7) : Colors.transparent,
-                             shape: BoxShape.circle,
-                             border: Border.all(color: Colors.white)
+                       child: GestureDetector(
+                         onTap: (){
+                           setState(() {
+                            b = !b;
+                           });
+                         },
+                         child: Container(
+                           height: 24,
+                           width: 24,
+                           decoration: BoxDecoration(
+                               color: b ? Colors.white.withOpacity(0.6) : Colors.transparent,
+                               shape: BoxShape.circle,
+                               border: Border.all(color: Colors.white)
+                           ),
                          ),
                        ),
                      );
