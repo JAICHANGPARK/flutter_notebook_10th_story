@@ -211,8 +211,11 @@ class _ReservationPageState extends State<ReservationPage> {
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18
                                     ),),
-                                    Text("Duration: 150min"),
-                                    Text("K-Cineplex"),
+                                    Text("Duration: 150min", style: TextStyle(),),
+                                    Text("K-Cineplex", style: TextStyle(
+                                      fontSize: 12,
+                                      color: reserveAppColor
+                                    ),),
                                     Text("Sat 13 Feb - 20:00"),
                                   ],
                                 ),
