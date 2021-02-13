@@ -140,7 +140,10 @@ class _ReservationPageState extends State<ReservationPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: items.map((a) => Row(children:
+                  children: items.map((a) => Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children:
                    a.map((b){
                      return Padding(
                        padding: const EdgeInsets.all(8.0),
@@ -155,7 +158,7 @@ class _ReservationPageState extends State<ReservationPage> {
                        ),
                      );
                    }
-                   
+
                    ).toList(),)).toList(),
                 ),
               ),
