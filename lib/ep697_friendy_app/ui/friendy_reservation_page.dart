@@ -209,7 +209,7 @@ class _ReservationPageState extends State<ReservationPage> {
                                   children: [
                                     Text("Tenet", style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 16
+                                      fontSize: 18
                                     ),),
                                     Text("Duration: 150min"),
                                     Text("K-Cineplex"),
