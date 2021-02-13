@@ -10,6 +10,11 @@ class _ReservationPageState extends State<ReservationPage> {
   int tabIndex = 0;
   Color reserveAppColor = Color(0xFF4C59F7);
 
+  var items = [
+    [false, true, true, false, false, false],
+    [false, false, true, true, true, true, true, false],
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -195,13 +200,14 @@ class _ReservationPageState extends State<ReservationPage> {
                             Expanded(
                               flex: 4,
                               child: Container(
-                                margin: EdgeInsets.only(left: 16, right: 16,top: 8,bottom: 8 ),
+                                margin: EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
                                 decoration: BoxDecoration(
                                     image: DecorationImage(
-                                      image: NetworkImage("https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"),
-                                      fit: BoxFit.cover
-                                    ),
-                                    color: Colors.green, borderRadius: BorderRadius.circular(9)),
+                                        image: NetworkImage(
+                                            "https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"),
+                                        fit: BoxFit.cover),
+                                    color: Colors.green,
+                                    borderRadius: BorderRadius.circular(9)),
                               ),
                             ),
                             Expanded(
