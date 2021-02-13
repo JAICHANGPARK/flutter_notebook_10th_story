@@ -137,16 +137,20 @@ class _ReservationPageState extends State<ReservationPage> {
             Expanded(
               flex: 8,
               child: Container(
-                child: Column(
-                  children: items.map((a) => Row(children:
-                   a.map((b) => Container(
-                      height: 32,
-                      width: 32,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        
-                      ),
-                    )).toList(),)).toList(),
+                child: Center(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: items.map((a) => Row(children:
+                     a.map((b) => Container(
+                        height: 32,
+                        width: 32,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+
+                        ),
+                      )).toList(),)).toList(),
+                  ),
                 ),
               ),
             ),
