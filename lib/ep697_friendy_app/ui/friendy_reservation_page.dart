@@ -30,6 +30,56 @@ class _ReservationPageState extends State<ReservationPage> {
       Reservation.reserved,
       Reservation.reserved,
       Reservation.available,
+    ],
+    [
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.reserved,
+      Reservation.reserved,
+      Reservation.available,
+      Reservation.available,
+    ],
+    [
+      Reservation.available,
+      Reservation.reserved,
+      Reservation.reserved,
+      Reservation.reserved,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+    ],
+    [
+      Reservation.available,
+      Reservation.available,
+      Reservation.selected,
+      Reservation.selected,
+      Reservation.selected,
+      Reservation.selected,
+      Reservation.available,
+      Reservation.available,
+    ],
+    [
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+    ],
+    [
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
     ]
   ];
 
@@ -50,7 +100,6 @@ class _ReservationPageState extends State<ReservationPage> {
           padding: const EdgeInsets.all(8.0),
           child: GestureDetector(
             onTap: () {
-
             },
             child: Container(
               height: 24,
@@ -198,7 +247,7 @@ class _ReservationPageState extends State<ReservationPage> {
                                   onTap: () {
                                     print("${a} , ${b}");
                                     setState(() {
-
+                                      b = Reservation.selected;
                                     });
                                   },
                                   child: Container(
