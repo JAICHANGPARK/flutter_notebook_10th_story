@@ -252,7 +252,10 @@ class _ReservationPageState extends State<ReservationPage> {
                                     height: 24,
                                     width: 24,
                                     decoration: BoxDecoration(
-                                        color: b == Reservation.reserved ? Colors.white.withOpacity(0.6) : Colors.transparent,
+                                        color: b == Reservation.reserved ? Colors.white.withOpacity(0.6) :
+                                        b == Reservation.selected ?
+                                            Colors.deepOrange:
+                                        Colors.transparent,
                                         shape: BoxShape.circle,
                                         border: Border.all(color: Colors.white)),
                                   ),
