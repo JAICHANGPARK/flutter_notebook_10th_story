@@ -12,9 +12,24 @@ class _ReservationPageState extends State<ReservationPage> {
   int tabIndex = 0;
   Color reserveAppColor = Color(0xFF4C59F7);
 
-  List<List<Reservation>> dataList= [
+  List<List<Reservation>> dataList = [
     [
-
+      Reservation.available,
+      Reservation.reserved,
+      Reservation.reserved,
+      Reservation.available,
+      Reservation.available,
+      Reservation.available,
+    ],
+    [
+      Reservation.available,
+      Reservation.available,
+      Reservation.reserved,
+      Reservation.reserved,
+      Reservation.reserved,
+      Reservation.reserved,
+      Reservation.reserved,
+      Reservation.available,
     ]
   ];
 
@@ -27,6 +42,29 @@ class _ReservationPageState extends State<ReservationPage> {
     [false, false, false, false, false, false, false, false],
     [false, true, true, true, true, true],
   ];
+
+  Widget buildSeatWidget() {
+    for (int i = 0; i < dataList.length; i++) {
+      for (int j = 0; j < dataList[i].length; j++) {
+        return Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: GestureDetector(
+            onTap: () {
+
+            },
+            child: Container(
+              height: 24,
+              width: 24,
+              decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.6) ,
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white)),
+            ),
+          ),
+        );
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -148,34 +186,33 @@ class _ReservationPageState extends State<ReservationPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: items.map((a) => Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children:
-                   a.map((b){
-                     return Padding(
-                       padding: const EdgeInsets.all(8.0),
-                       child: GestureDetector(
-                         onTap: (){
-                           print("${a} , ${b}");
-                           setState(() {
-                            b = !b;
-                           });
-                         },
-                         child: Container(
-                           height: 24,
-                           width: 24,
-                           decoration: BoxDecoration(
-                               color: b ? Colors.white.withOpacity(0.6) : Colors.transparent,
-                               shape: BoxShape.circle,
-                               border: Border.all(color: Colors.white)
-                           ),
-                         ),
-                       ),
-                     );
-                   }
-
-                   ).toList(),)).toList(),
+                  children: items
+                      .map((a) => Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: a.map((b) {
+                              return Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: GestureDetector(
+                                  onTap: () {
+                                    print("${a} , ${b}");
+                                    setState(() {
+                                      b = !b;
+                                    });
+                                  },
+                                  child: Container(
+                                    height: 24,
+                                    width: 24,
+                                    decoration: BoxDecoration(
+                                        color: b ? Colors.white.withOpacity(0.6) : Colors.transparent,
+                                        shape: BoxShape.circle,
+                                        border: Border.all(color: Colors.white)),
+                                  ),
+                                ),
+                              );
+                            }).toList(),
+                          ))
+                      .toList(),
                 ),
               ),
             ),
