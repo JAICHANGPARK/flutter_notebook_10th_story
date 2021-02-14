@@ -186,7 +186,8 @@ class _ReservationPageState extends State<ReservationPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: items
+                  children:
+                  dataList
                       .map((a) => Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -197,14 +198,14 @@ class _ReservationPageState extends State<ReservationPage> {
                                   onTap: () {
                                     print("${a} , ${b}");
                                     setState(() {
-                                      b = !b;
+
                                     });
                                   },
                                   child: Container(
                                     height: 24,
                                     width: 24,
                                     decoration: BoxDecoration(
-                                        color: b ? Colors.white.withOpacity(0.6) : Colors.transparent,
+                                        color: b == Reservation.reserved ? Colors.white.withOpacity(0.6) : Colors.transparent,
                                         shape: BoxShape.circle,
                                         border: Border.all(color: Colors.white)),
                                   ),
