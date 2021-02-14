@@ -149,7 +149,7 @@ class _ReservationPageState extends State<ReservationPage> {
                        padding: const EdgeInsets.all(8.0),
                        child: GestureDetector(
                          onTap: (){
-                           print(b);
+                           print("${a} , ${b}");
                            setState(() {
                             b = !b;
                            });
