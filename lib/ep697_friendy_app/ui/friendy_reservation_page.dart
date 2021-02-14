@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../reservation.dart';
+
 class ReservationPage extends StatefulWidget {
   @override
   _ReservationPageState createState() => _ReservationPageState();
@@ -9,6 +11,12 @@ class ReservationPage extends StatefulWidget {
 class _ReservationPageState extends State<ReservationPage> {
   int tabIndex = 0;
   Color reserveAppColor = Color(0xFF4C59F7);
+
+  List<List<Reservation>> dataList= [
+    [
+
+    ]
+  ];
 
   var items = [
     [false, true, true, false, false, false],
