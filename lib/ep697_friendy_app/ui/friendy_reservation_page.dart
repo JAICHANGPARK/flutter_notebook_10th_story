@@ -75,11 +75,9 @@ class _ReservationPageState extends State<ReservationPage> {
       Reservation.available,
       Reservation.available,
       Reservation.available,
-      Reservation.available,
-      Reservation.available,
-      Reservation.available,
-      Reservation.available,
-      Reservation.available,
+      Reservation.reserved,
+      Reservation.reserved,
+      Reservation.reserved,
     ]
   ];
 
